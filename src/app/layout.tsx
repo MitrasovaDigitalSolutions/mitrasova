@@ -4,6 +4,7 @@ import './globals.css';
 import { QueryProvider } from '@/components/providers/QueryProvider';
 import { Navbar } from '@/components/common/Navbar';
 import { Footer } from '@/components/common/Footer';
+import { ScrollProgressBar } from '@/components/common/ScrollProgressBar';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -28,8 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" className={`${inter.variable} ${outfit.variable} dark scroll-smooth`}>
-      <body className="min-h-screen flex flex-col bg-[#090D16] text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+      <body className="min-h-screen flex flex-col bg-[#070A11] text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950">
         <QueryProvider>
+          <ScrollProgressBar />
           <Navbar />
           <main className="flex-grow">{children}</main>
           <Footer />

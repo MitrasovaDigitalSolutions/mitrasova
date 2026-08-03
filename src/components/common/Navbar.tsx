@@ -62,7 +62,7 @@ export const Navbar: React.FC = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-3">
-            <Link href="/admin">
+            <Link href="/admin/login">
               <AppButton variant="outline" size="sm">
                 Admin Portal
               </AppButton>
@@ -102,7 +102,7 @@ export const Navbar: React.FC = () => {
             );
           })}
           <div className="pt-3 border-t border-slate-800 flex flex-col gap-2">
-            <Link href="/admin" onClick={() => setMobileMenuOpen(false)}>
+            <Link href="/admin/login" onClick={() => setMobileMenuOpen(false)}>
               <AppButton variant="outline" size="md" className="w-full">
                 Admin Portal
               </AppButton>

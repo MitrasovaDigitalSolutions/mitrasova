@@ -1,5 +1,11 @@
 import React from 'react';
-import { SelectPrimitive, SelectPrimitiveProps } from '@/components/ui/select';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
 import { Label } from '@/components/ui/label';
 import { cn } from '@/lib/utils';
 
@@ -8,47 +14,73 @@ interface SelectOption {
   value: string;
 }
 
-interface FormSelectProps extends SelectPrimitiveProps {
+interface FormSelectProps {
   label?: string;
   error?: string;
   options: SelectOption[];
   helperText?: string;
+  placeholder?: string;
+  value?: string;
+  defaultValue?: string;
+  onChange?: (e: { target: { value: string; name?: string } }) => void;
+  onValueChange?: (value: string) => void;
+  name?: string;
+  className?: string;
+  disabled?: boolean;
 }
 
-export const FormSelect = React.forwardRef<HTMLSelectElement, FormSelectProps>(
-  ({ label, error, options, helperText, className, id, ...props }, ref) => {
-    const selectId = id || (label ? label.toLowerCase().replace(/\s+/g, '-') : undefined);
+export const FormSelect: React.FC<FormSelectProps> = ({
+  label,
+  error,
+  options,
+  helperText,
+  placeholder = 'Pilih opsi...',
+  value,
+  defaultValue,
+  onChange,
+  onValueChange,
+  name,
+  className,
+  disabled,
+}) => {
+  const handleValueChange = (val: string) => {
+    if (onValueChange) {
+      onValueChange(val);
+    }
+    if (onChange) {
+      onChange({ target: { value: val, name } });
+    }
+  };
 
-    return (
-      <div className="space-y-1.5 w-full">
-        {label && (
-          <Label htmlFor={selectId} className="block text-xs font-semibold text-slate-300">
-            {label}
-          </Label>
-        )}
-        <SelectPrimitive
-          id={selectId}
-          ref={ref}
-          className={cn(
-            'bg-slate-900 border-slate-800 text-slate-100 rounded-xl h-11 px-4 text-xs focus:ring-indigo-500 transition-colors',
-            error && 'border-rose-500 focus:ring-rose-500',
-            className
-          )}
-          {...props}
-        >
+  return (
+    <div className="space-y-1.5 w-full">
+      {label && (
+        <Label className="block text-xs font-mono font-semibold text-slate-300">
+          {label}
+        </Label>
+      )}
+      <Select
+        value={value}
+        defaultValue={defaultValue}
+        onValueChange={handleValueChange}
+        disabled={disabled}
+      >
+        <SelectTrigger className={cn(error && 'border-rose-500 focus:ring-rose-500', className)}>
+          <SelectValue placeholder={placeholder} />
+        </SelectTrigger>
+        <SelectContent>
           {options.map((opt) => (
-            <option key={opt.value} value={opt.value} className="bg-slate-900 text-white">
+            <SelectItem key={opt.value} value={opt.value}>
               {opt.label}
-            </option>
+            </SelectItem>
           ))}
-        </SelectPrimitive>
-        {error ? (
-          <p className="text-xs text-rose-400 font-medium">{error}</p>
-        ) : helperText ? (
-          <p className="text-xs text-slate-400">{helperText}</p>
-        ) : null}
-      </div>
-    );
-  }
-);
-FormSelect.displayName = 'FormSelect';
+        </SelectContent>
+      </Select>
+      {error ? (
+        <p className="text-xs text-rose-400 font-medium">{error}</p>
+      ) : helperText ? (
+        <p className="text-xs text-slate-400">{helperText}</p>
+      ) : null}
+    </div>
+  );
+};
