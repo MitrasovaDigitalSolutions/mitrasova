@@ -1,0 +1,137 @@
+datasource db {
+  provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// User & Admin Management
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String    @unique
+  passwordHash  String
+  image         String?
+  role          Role      @default(ADMIN)
+  accounts      Account[]
+  sessions      Session[]
+  posts         Post[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+enum Role {
+  ADMIN
+  EDITOR
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// System Services (Dedicated Service Pages & Service-Scoped Docs)
+model Service {
+  id           String   @id @default(cuid())
+  title        String   // e.g. "Mitrasova POS", "Mitrasova Daya", "Mitrasova Nexus", "Mitrasova Labs"
+  slug         String   @unique // e.g. "mitrasova-pos", "mitrasova-daya", "mitrasova-nexus", "mitrasova-labs"
+  heroTagline  String
+  summary      String
+  description  String   @db.Text
+  icon         String   // Lucide Icon name
+  category     String   // "SaaS", "Infrastructure", "Custom Engineering"
+  features     Json     // Dynamic list of features
+  faqs         Json?    // Service specific FAQs
+  isActive     Boolean  @default(true)
+  order        Int      @default(0)
+  posts        Post[]   // Docs & Articles scoped to this service
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+// Master Categories (Pengumuman, Dokumentasi, Tutorial, Release Notes, Guide)
+model Category {
+  id          String   @id @default(cuid())
+  name        String   // e.g. "Tutorial", "Guide", "Release Notes", "Pengumuman"
+  slug        String   @unique
+  description String?
+  order       Int      @default(0)
+  posts       Post[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// Post Management (Docs, Tutorial, Release Notes)
+model Post {
+  id           String     @id @default(cuid())
+  title        String
+  slug         String     @unique
+  summary      String?    @db.Text
+  contentHtml  String     @db.Text
+  contentJson  Json?
+  coverImage   String?
+  status       PostStatus @default(DRAFT)
+
+  serviceId    String?    // Service scope (mitrasova-pos, mitrasova-daya, etc)
+  service      Service?   @relation(fields: [serviceId], references: [id])
+
+  categoryId   String
+  category     Category   @relation(fields: [categoryId], references: [id])
+
+  authorId     String
+  author       User       @relation(fields: [authorId], references: [id])
+
+  views        Int        @default(0)
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+
+  @@index([slug])
+  @@index([serviceId, categoryId, status])
+}
+
+enum PostStatus {
+  DRAFT
+  PUBLISHED
+}
+
+// Client Consultation Inquiry Form
+model Consultation {
+  id               String             @id @default(cuid())
+  name             String
+  company          String?
+  email            String
+  phone            String
+  selectedServices String[]
+  message          String             @db.Text
+  status           ConsultationStatus @default(NEW)
+  createdAt        DateTime           @default(now())
+}
+
+enum ConsultationStatus {
+  NEW
+  CONTACTED
+  RESOLVED
+}
