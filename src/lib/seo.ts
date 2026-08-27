@@ -1,4 +1,4 @@
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL;
+export const SITE_URL: string = process.env.NEXT_PUBLIC_SITE_URL || 'https://mitrasova.com';
 
 export const SEO_DEFAULTS = {
   siteName: 'Mitrasova Digital Solutions',
