@@ -22,9 +22,10 @@ export const ServiceFeaturesGrid: React.FC<ServiceFeaturesGridProps> = ({ servic
         description={t('services.detail.keyFeaturesDesc')}
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {/* Architectural Open 2x2 Matrix with Hairline Dividers (No Heavy Cards) */}
+      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 border-t border-b border-slate-800/80 divide-y md:divide-y-0 md:divide-x divide-slate-800/80">
         {service.features.map((feature, idx) => (
-          <ServiceFeatureCard key={idx} feature={feature} />
+          <ServiceFeatureCard key={idx} feature={feature} index={idx} />
         ))}
       </div>
     </section>

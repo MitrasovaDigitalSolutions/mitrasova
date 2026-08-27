@@ -1,24 +1,21 @@
 'use client';
 
-import React, { useState, useRef } from 'react';
-import Link from 'next/link';
-import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
-import { SectionHeading, AppButton } from '@/components/shared';
+import { AppButton, SectionHeading } from '@/components/shared';
 import { getLocalizedServices } from '@/lib/data';
 import { useTranslation } from '@/lib/i18n';
+import { AnimatePresence, motion, useScroll, useTransform } from 'framer-motion';
 import {
-  ShoppingBag,
-  Users,
-  Server,
-  Code,
   ArrowRight,
-  ChevronRight,
   CheckCircle2,
-  Cpu,
-  Database,
-  Activity,
+  ChevronRight,
+  Code,
   Layers,
+  Server,
+  ShoppingBag,
+  Users
 } from 'lucide-react';
+import Link from 'next/link';
+import React, { useRef, useState } from 'react';
 
 const iconMap: Record<string, React.ElementType> = {
   ShoppingBag,
@@ -189,11 +186,10 @@ export const ProductSuiteGrid: React.FC = () => {
               key={srv.id}
               type="button"
               onClick={() => setActiveIndex(idx)}
-              className={`relative px-4 py-2.5 rounded-xl text-xs font-semibold transition-all cursor-pointer select-none flex items-center gap-2.5 shrink-0 min-h-[42px] ${
-                isSelected
+              className={`relative px-4 py-2.5 rounded-xl text-xs font-semibold transition-all cursor-pointer select-none flex items-center gap-2.5 shrink-0 min-h-[42px] ${isSelected
                   ? 'text-white'
                   : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/40'
-              }`}
+                }`}
             >
               {isSelected && (
                 <motion.div
