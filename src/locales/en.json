@@ -85,6 +85,10 @@
       "titleGradient": "Business Operations",
       "description": "Four transparent, measurable implementation phases ensuring a seamless transition without disrupting daily business operations.",
       "resultLabel": "Output: ",
+      "prevStep": "Previous Step",
+      "nextStep": "Next Step",
+      "stepOf": "of",
+      "consultNow": "Consult This Phase",
       "steps": {
         "step1": {
           "step": "01",

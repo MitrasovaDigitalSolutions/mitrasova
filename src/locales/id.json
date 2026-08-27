@@ -85,6 +85,10 @@
       "titleGradient": "Operasional Bisnis Anda",
       "description": "Empat tahapan implementasi yang terukur dan terencana untuk memastikan transisi sistem berlangsung mulus tanpa mengganggu aktivitas bisnis.",
       "resultLabel": "Hasil: ",
+      "prevStep": "Tahap Sebelumnya",
+      "nextStep": "Tahap Selanjutnya",
+      "stepOf": "dari",
+      "consultNow": "Mulai Konsultasi Tahap Ini",
       "steps": {
         "step1": {
           "step": "01",
