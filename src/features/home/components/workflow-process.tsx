@@ -3,48 +3,63 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { SectionHeading, GlassCard } from '@/components/shared';
-import { Search, Sliders, Users, Rocket } from 'lucide-react';
+import { Search, Sliders, Users, Rocket, CheckCircle2 } from 'lucide-react';
 
 interface StepItem {
-  number: string;
+  step: string;
+  phase: string;
   title: string;
-  subtitle: string;
   description: string;
+  deliverable: string;
   icon: React.ReactNode;
+  accentColor: string;
+  borderAccent: string;
 }
 
-const STEPS: StepItem[] = [
+const WORKFLOW_STEPS: StepItem[] = [
   {
-    number: '01',
+    step: '01',
+    phase: 'Tahap 1: Discovery',
     title: 'Audit & Konsultasi Kebutuhan',
-    subtitle: 'Discovery & Requirement Analysis',
     description:
-      'Kami membedah alur operasional kasir, sistem penggajian karyawan, atau kebutuhan arsitektur custom software yang sesuai skala bisnis Anda.',
+      'Kami membedah alur operasional kasir, sistem absensi & payroll, atau arsitektur custom software yang paling relevan dengan skala bisnis Anda.',
+    deliverable: 'Blueprint Sistem & Analisis Kebutuhan',
     icon: <Search className="w-5 h-5 text-cyan-400" />,
+    accentColor: 'text-cyan-400 bg-cyan-500/10 border-cyan-500/30',
+    borderAccent: 'group-hover:border-cyan-500/40',
   },
   {
-    number: '02',
-    title: 'Konfigurasi & Penyesuaian Sistem',
-    subtitle: 'Setup, Customizing & Integration',
+    step: '02',
+    phase: 'Tahap 2: Konfigurasi',
+    title: 'Penyesuaian & Integrasi Sistem',
     description:
-      'Penyusunan database terpusat, pengujian integrasi hardware (printer kasir/barcode), pengaturan shift, serta konfigurasi akses role pengguna.',
+      'Penyusunan basis data terpusat, pengujian hardware printer & scanner kasir, pengaturan shift kerja, serta konfigurasi hak akses pengguna.',
+    deliverable: 'Sistem Terkonfigurasi & Siap Uji',
     icon: <Sliders className="w-5 h-5 text-indigo-400" />,
+    accentColor: 'text-indigo-400 bg-indigo-500/10 border-indigo-500/30',
+    borderAccent: 'group-hover:border-indigo-500/40',
   },
   {
-    number: '03',
+    step: '03',
+    phase: 'Tahap 3: Onboarding',
     title: 'Migrasi Data & Pelatihan Staf',
-    subtitle: 'Seamless Onboarding & Staff Training',
     description:
-      'Pemindahan master data barang, harga, dan profil staf ke dalam ekosistem Mitrasova, disertai sesi pelatihan interaktif hingga tim Anda mahir.',
+      'Pemindahan aman master data produk, harga, dan profil karyawan ke dalam sistem, disertai sesi pelatihan interaktif hingga tim Anda mahir.',
+    deliverable: 'Master Data Rapi & Tim Terlatih',
     icon: <Users className="w-5 h-5 text-purple-400" />,
+    accentColor: 'text-purple-400 bg-purple-500/10 border-purple-500/30',
+    borderAccent: 'group-hover:border-purple-500/40',
   },
   {
-    number: '04',
-    title: 'Go-Live & Pendampingan 24/7',
-    subtitle: 'Production Launch & SLA Monitoring',
+    step: '04',
+    phase: 'Tahap 4: Go-Live',
+    title: 'Peluncuran & Monitoring 24/7',
     description:
-      'Sistem resmi beroperasi melayani transaksi Anda. Didukung pemantauan uptime server berkala, backup otomatis, dan bantuan teknis cepat tanggap.',
+      'Sistem resmi beroperasi melayani transaksi bisnis Anda. Didukung pemantauan uptime server berkala, backup harian otomatis, dan tim support responsif.',
+    deliverable: 'Sistem Live & Jaminan SLA 99.9%',
     icon: <Rocket className="w-5 h-5 text-emerald-400" />,
+    accentColor: 'text-emerald-400 bg-emerald-500/10 border-emerald-500/30',
+    borderAccent: 'group-hover:border-emerald-500/40',
   },
 ];
 
@@ -52,47 +67,61 @@ export const WorkflowProcess: React.FC = () => {
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <SectionHeading
-        badge="Proses Implementasi Terstruktur"
+        badge="Alur Implementasi Terstruktur"
         title="Bagaimana Kami Mentransformasi"
         gradientText="Operasional Bisnis Anda"
-        description="Empat tahapan transparan dan terukur untuk memastikan transisi sistem berjalan mulus tanpa mengganggu aktivitas bisnis harian."
+        description="Empat tahapan implementasi yang terukur dan terencana untuk memastikan transisi sistem berlangsung mulus tanpa mengganggu aktivitas bisnis."
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 relative">
-        {STEPS.map((step, index) => (
+        {WORKFLOW_STEPS.map((item, index) => (
           <motion.div
-            key={step.number}
-            initial={{ opacity: 0, y: 20 }}
+            key={item.step}
+            initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="relative"
+            className="group relative flex flex-col h-full"
           >
-            <GlassCard className="p-6 h-full flex flex-col justify-between border-slate-800 bg-slate-950/70 hover:border-slate-700 transition-colors">
-              <div>
-                <div className="flex items-center justify-between mb-6">
+            <GlassCard
+              className={`p-6 sm:p-7 h-full flex flex-col justify-between border-slate-800/90 bg-slate-950/80 transition-colors duration-300 ${item.borderAccent}`}
+            >
+              {/* Card Header: Icon & Step Number */}
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
                   <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 shadow-inner">
-                    {step.icon}
+                    {item.icon}
                   </div>
-                  <span className="font-mono text-2xl font-black text-slate-700 select-none">
-                    {step.number}
+                  <span className={`px-2.5 py-1 rounded-md text-xs font-mono font-bold border ${item.accentColor}`}>
+                    {item.step}
                   </span>
                 </div>
 
-                <p className="text-[10px] font-mono uppercase tracking-wider text-cyan-400 font-semibold mb-1">
-                  {step.subtitle}
-                </p>
-                <h3 className="text-base font-bold text-white tracking-tight mb-2.5">
-                  {step.title}
-                </h3>
-                <p className="text-xs text-slate-300 leading-relaxed">
-                  {step.description}
+                {/* Phase Tag & Title */}
+                <div>
+                  <p className="text-[11px] font-mono font-semibold uppercase tracking-wider text-slate-400">
+                    {item.phase}
+                  </p>
+                  <h3 className="text-base sm:text-lg font-bold text-white tracking-tight mt-1 leading-snug">
+                    {item.title}
+                  </h3>
+                </div>
+
+                {/* Description */}
+                <p className="text-xs sm:text-[13px] text-slate-300 leading-relaxed font-normal">
+                  {item.description}
                 </p>
               </div>
 
-              <div className="pt-4 mt-6 border-t border-slate-900 flex items-center gap-1.5 text-[11px] font-mono text-slate-300 font-medium">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                <span>Tahap {step.number} Terstandarisasi</span>
+              {/* Deliverable Box */}
+              <div className="pt-4 mt-6 border-t border-slate-800/80">
+                <div className="p-2.5 rounded-lg bg-slate-900/90 border border-slate-800/80 flex items-start gap-2">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5" />
+                  <div className="text-[11px] leading-tight">
+                    <span className="text-slate-400 font-mono">Hasil: </span>
+                    <span className="text-slate-200 font-medium">{item.deliverable}</span>
+                  </div>
+                </div>
               </div>
             </GlassCard>
           </motion.div>
