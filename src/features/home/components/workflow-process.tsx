@@ -1,8 +1,8 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Link from 'next/link';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import { SectionHeading, AppButton } from '@/components/shared';
 import { useTranslation } from '@/lib/i18n';
 import {
@@ -21,7 +21,15 @@ import {
 export const WorkflowProcess: React.FC = () => {
   const { t, dict } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(0);
+  const sectionRef = useRef<HTMLElement>(null);
   const wf = dict.home.workflow.steps;
+
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ['start end', 'end start'],
+  });
+
+  const parallaxY = useTransform(scrollYProgress, [0, 1], ['2%', '-2%']);
 
   const steps = [
     {
@@ -94,7 +102,7 @@ export const WorkflowProcess: React.FC = () => {
   };
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section ref={sectionRef} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <SectionHeading
         badge={t('home.workflow.badge')}
         title={t('home.workflow.title')}
@@ -102,7 +110,7 @@ export const WorkflowProcess: React.FC = () => {
         description={t('home.workflow.description')}
       />
 
-      <div className="mt-10 space-y-8">
+      <motion.div style={{ y: parallaxY }} className="mt-10 space-y-8">
         {/* Minimalist Horizontal Step Timeline Bar */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3 p-1.5 rounded-2xl bg-slate-900/40 border border-slate-800/80 backdrop-blur-md">
           {steps.map((s, idx) => {
@@ -264,7 +272,7 @@ export const WorkflowProcess: React.FC = () => {
             </div>
           </motion.div>
         </AnimatePresence>
-      </div>
+      </motion.div>
     </section>
   );
 };

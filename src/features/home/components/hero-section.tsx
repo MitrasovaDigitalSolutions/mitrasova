@@ -1,8 +1,8 @@
 'use client';
 
-import React from 'react';
+import React, { useRef } from 'react';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { AppButton } from '@/components/shared';
 import { RogHeroVisual } from './rog-hero-visual';
 import { APP_VERSION } from '@/lib/version';
@@ -11,24 +11,41 @@ import { Sparkles, ArrowRight, BookOpen, ShieldCheck } from 'lucide-react';
 
 export const HeroSection: React.FC = () => {
   const { t } = useTranslation();
+  const sectionRef = useRef<HTMLElement>(null);
+
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ['start start', 'end start'],
+  });
+
+  const bgParallaxY = useTransform(scrollYProgress, [0, 1], ['0%', '25%']);
+  const visualParallaxY = useTransform(scrollYProgress, [0, 1], ['0%', '-8%']);
+  const textOpacity = useTransform(scrollYProgress, [0, 0.75], [1, 0.85]);
 
   return (
-    <section className="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
-      {/* Dynamic Ambient Background Glows */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[450px] bg-gradient-to-tr from-indigo-600/20 via-cyan-500/15 to-purple-600/10 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute top-10 right-10 w-72 h-72 bg-cyan-500/10 rounded-full blur-[100px] pointer-events-none" />
+    <section ref={sectionRef} className="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
+      {/* Dynamic Ambient Background Glows with Subtle Scroll Parallax */}
+      <motion.div
+        style={{ y: bgParallaxY }}
+        className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] sm:w-[900px] h-[450px] bg-gradient-to-tr from-indigo-600/15 via-cyan-500/10 to-purple-600/10 rounded-full blur-[140px] pointer-events-none"
+      />
+      <motion.div
+        style={{ y: bgParallaxY }}
+        className="absolute top-10 right-10 w-72 h-72 bg-cyan-500/10 rounded-full blur-[100px] pointer-events-none"
+      />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           {/* Left Column: Value Proposition */}
           <motion.div
+            style={{ opacity: textOpacity }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
             className="lg:col-span-6 space-y-8 text-center lg:text-left"
           >
             {/* Live Version Tag */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono font-semibold bg-indigo-500/10 text-cyan-300 border border-indigo-500/30">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-cyan-300 border border-indigo-500/30">
               <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
               <span>{t('home.hero.liveBadge')} v{APP_VERSION}</span>
             </div>
@@ -42,7 +59,7 @@ export const HeroSection: React.FC = () => {
             </h1>
 
             {/* Description */}
-            <p className="text-sm sm:text-base text-slate-300 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            <p className="text-sm sm:text-base text-slate-300 max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal">
               {t('home.hero.description')}
             </p>
 
@@ -72,7 +89,7 @@ export const HeroSection: React.FC = () => {
             </div>
 
             {/* Quality Badges */}
-            <div className="pt-6 border-t border-slate-800/80 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-slate-400 font-mono">
+            <div className="pt-6 border-t border-slate-800/80 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-slate-400">
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-emerald-400" />
                 <span>{t('home.hero.uptimeBadge')}</span>
@@ -88,10 +105,10 @@ export const HeroSection: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Right Column: 3D ROG Visual Telemetry Frame */}
-          <div className="lg:col-span-6">
+          {/* Right Column: 3D ROG Visual Telemetry Frame with Parallax Floating */}
+          <motion.div style={{ y: visualParallaxY }} className="lg:col-span-6">
             <RogHeroVisual />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
