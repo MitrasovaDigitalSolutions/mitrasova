@@ -139,30 +139,34 @@
     "items": {
       "mitrasova-pos": {
         "title": "Mitrasova POS",
-        "heroTagline": "Offline-First POS & Integrated Accounting for Retail & Business",
-        "summary": "Offline-First Cashier System with Multi-Branch Inventory Management, Balance Sheet & General Ledger Accounting.",
-        "description": "Mitrasova POS is a next-generation smart point-of-sale software solution. Engineered to accelerate checkout transactions with robust full offline mode, cashier shift tracking, multi-branch inventory sync, and integrated accounting modules (balance sheet, profit & loss, and general ledger).",
+        "heroTagline": "Offline-First POS, Consignment & Integrated Accounting",
+        "summary": "Offline-First Cashier System with Supplier Consignment Management, Multi-Branch Stock, Balance Sheet & General Ledger.",
+        "description": "Mitrasova POS is a next-generation smart point-of-sale software solution. Engineered for retail & wholesale operations with robust offline mode, supplier consignment tracking & revenue share, multi-branch stock sync, and integrated accounting modules (balance sheet, profit & loss, and general ledger).",
         "category": "SaaS POS & Accounting",
-        "badge": "Offline POS & Accounting",
+        "badge": "Offline POS & Consignment",
         "features": [
           {
             "title": "Offline-First Mode & Auto-Sync",
             "description": "Cashiers process transactions seamlessly without internet interruptions, with automatic cloud sync when network reconnects."
           },
           {
+            "title": "Consignment & Supplier Revenue Share",
+            "description": "Manage consigned inventory receipts, automated commission calculations, supplier return tracking, and periodic settlement payouts."
+          },
+          {
             "title": "Accounting Module & General Ledger",
             "description": "Automated transaction journaling, trial balance sheets, General Ledger, profit & loss reports, and profit margin analytics."
           },
           {
-            "title": "Multi-Outlet Stock Sync",
-            "description": "Monitor and transfer inventory stock across dozens of branches with centralized real-time accuracy."
-          },
-          {
-            "title": "Thermal Receipt Printing & Shift Tracking",
-            "description": "Support for ESC/POS Bluetooth/LAN thermal printers, barcode scanners, cashier float tracking, and end-of-shift cash reconciliation."
+            "title": "Multi-Outlet Stock Sync & Thermal Printing",
+            "description": "Monitor stock across dozens of branches, inter-warehouse transfers, Bluetooth/LAN thermal printing, and cashier shift management."
           }
         ],
         "faqs": [
+          {
+            "question": "Does Mitrasova POS support consignment (titipan) inventory management?",
+            "answer": "Yes! Mitrasova POS includes an integrated consignment module to track consignors/suppliers, automate sales revenue splits, monitor consignment stock, and generate supplier settlement invoices."
+          },
           {
             "question": "Can Mitrasova POS operate without an internet connection (Offline Mode)?",
             "answer": "Yes! Mitrasova POS is engineered with an Offline-First architecture. You can continue processing sales when offline, and all transaction data automatically syncs once connection is restored."

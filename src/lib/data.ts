@@ -84,12 +84,12 @@ export const INITIAL_SERVICES: ServiceItem[] = [
     id: 'srv-pos',
     title: 'Mitrasova POS',
     slug: 'mitrasova-pos',
-    heroTagline: 'Kasir Offline-First & Akuntansi Terpadu Skala Retail & Bisnis',
-    summary: 'Sistem Kasir Offline Mode dengan Manajemen Stok Multi-Cabang, Akuntansi Neraca & General Ledger, serta Cetak Struk Thermal.',
-    description: 'Mitrasova POS adalah solusi perangkat lunak kasir pintar generasi terbaru. Didesain untuk mempercepat transaksi kasir dengan dukungan mode offline penuh, manajemen shift kasir, sinkronisasi stok multi-cabang, serta sistem akuntansi terintegrasi (neraca, laba rugi, dan general ledger).',
+    heroTagline: 'Kasir Offline-First, Konsinyasi & Akuntansi Terpadu',
+    summary: 'Sistem Kasir Offline Mode dengan Manajemen Konsinyasi & Bagi Hasil Supplier, Stok Multi-Cabang, serta Akuntansi Neraca & General Ledger.',
+    description: 'Mitrasova POS adalah solusi perangkat lunak kasir pintar generasi terbaru. Didesain untuk operasional ritel & grosir dengan dukungan mode offline penuh, pencatatan barang konsinyasi & bagi komisi supplier, sinkronisasi stok multi-cabang, serta sistem akuntansi terintegrasi (neraca, laba rugi, dan general ledger).',
     icon: 'ShoppingBag',
     category: 'SaaS POS & Accounting',
-    badge: 'Offline POS & Accounting',
+    badge: 'Offline POS & Konsinyasi',
     gradient: 'from-indigo-500 to-cyan-500',
     features: [
       {
@@ -98,22 +98,26 @@ export const INITIAL_SERVICES: ServiceItem[] = [
         iconName: 'Zap',
       },
       {
+        title: 'Manajemen Konsinyasi & Bagi Hasil',
+        description: 'Kelola penerimaan barang titipan/konsinyasi, perhitungan komisi otomatis, pemantauan retur, dan rekap pembayaran berkala ke supplier.',
+        iconName: 'Share2',
+      },
+      {
         title: 'Modul Akuntansi & General Ledger',
         description: 'Pencatatan jurnal transaksi otomatis, neraca saldo, buku besar (General Ledger), laporan laba rugi, dan analisis margin keuntungan.',
         iconName: 'Layers',
       },
       {
-        title: 'Multi-Outlet Stock Sync',
-        description: 'Pantau persediaan dan transfer stok barang di puluhan cabang secara terpusat dan akurat.',
-        iconName: 'Layers',
-      },
-      {
-        title: 'Cetak Struk Thermal & Manajemen Shift',
-        description: 'Dukungan printer thermal Bluetooth/LAN ESC/POS, barcode scanner, manajemen modal kasir awal, dan rekonsiliasi kas per shift.',
+        title: 'Multi-Outlet Stock Sync & Cetak Struk',
+        description: 'Pantau persediaan di puluhan cabang, transfer stok gudang, cetak printer thermal Bluetooth/LAN ESC/POS, dan manajemen shift kasir.',
         iconName: 'Receipt',
       },
     ],
     faqs: [
+      {
+        question: 'Apakah Mitrasova POS mendukung manajemen barang konsinyasi / titipan?',
+        answer: 'Ya! Mitrasova POS memiliki modul konsinyasi terpadu untuk mencatat master data supplier konsinyasi, menghitung bagi hasil komisi otomatis, sisa stok titipan, dan rekap pembayaran faktur konsinyasi.',
+      },
       {
         question: 'Apakah Mitrasova POS bisa berjalan tanpa koneksi internet (Offline Mode)?',
         answer: 'Ya! Mitrasova POS dirancang dengan arsitektur Offline-First. Anda tetap bisa memproses transaksi kasir saat internet padam, dan data transaksi akan otomatis tersinkronisasi ke server pusat saat jaringan pulih.',
