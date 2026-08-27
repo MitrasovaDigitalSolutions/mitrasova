@@ -1,18 +1,21 @@
 import React from 'react';
 import { Controller, UseFormReturn } from 'react-hook-form';
-import { FormCombobox } from '@/components/shared';
-import { INITIAL_SERVICES, INITIAL_CATEGORIES } from '@/lib/data';
+import { FormCombobox, FormInput } from '@/components/shared';
+import { INITIAL_CATEGORIES } from '@/lib/data';
 import { PostFormValues } from '../../schemas/post-schema';
 
 export const PostTaxonomyFields: React.FC<{ form: UseFormReturn<PostFormValues> }> = ({
   form,
 }) => {
-  const { control, formState: { errors } } = form;
+  const { control, register, watch, formState: { errors } } = form;
+  const currentType = watch('type');
 
-  const serviceOptions = INITIAL_SERVICES.map((srv) => ({
-    label: `${srv.title} (${srv.badge})`,
-    value: srv.slug,
-  }));
+  const typeOptions = [
+    { label: 'Wawasan & Blog (Artikel)', value: 'ARTICLE' },
+    { label: 'Berita & Pengumuman (News)', value: 'NEWS' },
+    { label: 'Events & Webinar (Acara)', value: 'EVENT' },
+    { label: 'Rilis Pembaruan Produk (Release)', value: 'RELEASE' },
+  ];
 
   const categoryOptions = INITIAL_CATEGORIES.map((cat) => ({
     label: cat.name,
@@ -20,37 +23,62 @@ export const PostTaxonomyFields: React.FC<{ form: UseFormReturn<PostFormValues> 
   }));
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <Controller
-        control={control}
-        name="serviceSlug"
-        render={({ field }) => (
-          <FormCombobox
-            label="Target Ekosistem Layanan *"
-            placeholder="Pilih layanan target..."
-            searchPlaceholder="Cari layanan..."
-            options={serviceOptions}
-            value={field.value}
-            onValueChange={field.onChange}
-            error={errors.serviceSlug?.message}
-          />
-        )}
-      />
+    <div className="space-y-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <Controller
+          control={control}
+          name="type"
+          render={({ field }) => (
+            <FormCombobox
+              label="Tipe Konten Publikasi *"
+              placeholder="Pilih tipe konten..."
+              searchPlaceholder="Cari tipe..."
+              options={typeOptions}
+              value={field.value}
+              onValueChange={field.onChange}
+              error={errors.type?.message}
+            />
+          )}
+        />
 
-      <Controller
-        control={control}
-        name="categorySlug"
-        render={({ field }) => (
-          <FormCombobox
-            label="Kategori Dokumentasi *"
-            placeholder="Pilih kategori..."
-            searchPlaceholder="Cari kategori..."
-            options={categoryOptions}
-            value={field.value}
-            onValueChange={field.onChange}
-            error={errors.categorySlug?.message}
+        <Controller
+          control={control}
+          name="categorySlug"
+          render={({ field }) => (
+            <FormCombobox
+              label="Kategori Publikasi *"
+              placeholder="Pilih kategori..."
+              searchPlaceholder="Cari kategori..."
+              options={categoryOptions}
+              value={field.value}
+              onValueChange={field.onChange}
+              error={errors.categorySlug?.message}
+            />
+          )}
+        />
+      </div>
+
+      {/* Conditional Event Date & Location fields */}
+      {currentType === 'EVENT' && (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 rounded-xl bg-purple-950/20 border border-purple-800/30">
+          <FormInput
+            label="Tanggal Pelaksanaan Event (Opsional)"
+            placeholder="Contoh: 2026-09-18T09:00"
+            type="datetime-local"
+            {...register('eventDate')}
           />
-        )}
+          <FormInput
+            label="Lokasi Acara (Offline / Online)"
+            placeholder="Contoh: Solo Technopark / Hybrid Zoom"
+            {...register('eventLocation')}
+          />
+        </div>
+      )}
+
+      <FormInput
+        label="Tags / Topik (Pisahkan dengan koma)"
+        placeholder="Contoh: POS Kasir, Offline Mode, Retail, Solo Raya"
+        {...register('tags')}
       />
     </div>
   );

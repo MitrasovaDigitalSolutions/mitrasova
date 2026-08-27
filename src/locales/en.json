@@ -3,17 +3,34 @@
     "version": "v",
     "learnMore": "Learn More",
     "consultation": "Free Consultation",
-    "docsHub": "Open Docs Hub",
     "contactUs": "Contact Us",
     "allRightsReserved": "All Rights Reserved.",
     "allOperational": "All Systems Operational",
-    "systemStatus": "System Status"
+    "systemStatus": "System Status",
+    "readArticle": "Read Article",
+    "viewProduct": "View Product",
+    "requestDemo": "Request Demo",
+    "viewDetail": "View Details",
+    "visitOfficialWeb": "Visit Official Website",
+    "back": "Back"
   },
   "navbar": {
     "home": "Home",
+    "products": "Products & Solutions",
     "services": "Services Ecosystem",
-    "docs": "Docs Hub",
-    "startConsultation": "Get Started"
+    "blog": "Blog & News",
+    "startConsultation": "Get Started",
+    "megaMenu": {
+      "saasTitle": "Business & Operations Apps",
+      "saasDesc": "Smart software for frictionless checkout, consignment, and workforce HR",
+      "infraTitle": "Infrastructure & Engineering",
+      "infraDesc": "High-availability managed cloud hosting and custom enterprise development",
+      "viewAllServices": "View All Products & Solutions",
+      "demoCardTitle": "Live Consultation & Demo",
+      "demoCardDesc": "Discuss integrated system architecture directly with our Solution Architects.",
+      "demoCardBtn": "Schedule Demo",
+      "integratedNote": "Integrated software suite with one unified database"
+    }
   },
   "home": {
     "hero": {
@@ -22,7 +39,7 @@
       "titleGradient": "Modern Business Scalability",
       "description": "Integrated application architecture ranging from Multi-Branch POS, Enterprise HRIS & Payroll, High-Availability Cloud Infrastructure, to Custom Software & Mobile Engineering.",
       "ctaPrimary": "Free Consultation",
-      "ctaSecondary": "Open Docs Hub",
+      "ctaSecondary": "Explore Products",
       "uptimeBadge": "99.99% SLA Uptime",
       "dbBadge": "PostgreSQL Cloud DB",
       "encryptionBadge": "256-Bit End-to-End Encryption",
@@ -57,7 +74,7 @@
       "title": "Four Core Solutions",
       "titleGradient": "One Unified Database",
       "description": "Each product is engineered to communicate in real-time, eliminating data silos and accelerating corporate workflows.",
-      "learnService": "Explore Service"
+      "learnService": "Explore Product"
     },
     "advantages": {
       "badge": "Architecture Highlights",
@@ -159,24 +176,20 @@
   "services": {
     "overview": {
       "badge": "Enterprise Ecosystem",
-      "title": "Product & Service Ecosystem",
+      "title": "Product & Solutions Ecosystem",
       "titleGradient": "Mitrasova Digital",
       "description": "Comprehensive, fully integrated software solutions engineered to digitize every facet of your business operations.",
-      "exploreDocs": "Explore Documentation",
       "consultSolution": "Schedule Consultation",
       "specsTitle": "Specifications & Capabilities",
       "prodReady": "PROD READY",
       "slaNote": "99.9% SLA Guarantee & Integrated Onboarding Setup"
     },
     "detail": {
-      "backToServices": "Back to Services Ecosystem",
+      "backToServices": "Back to Products & Solutions",
       "keyFeatures": "Core Features & Architecture",
       "keyFeaturesDesc": "Engineered modules and technological capabilities designed for maximum business efficiency.",
       "faqTitle": "Frequently Asked Questions (FAQ)",
-      "faqDesc": "Technical and operational answers to common inquiries regarding this service.",
-      "docsBannerTitle": "Comprehensive Docs & Technical Guides",
-      "docsBannerDesc": "Explore step-by-step setup guides, version release notes, and API integration specifications for this service.",
-      "openDocsBtn": "Open Service Documentation"
+      "faqDesc": "Technical and operational answers to common inquiries regarding this service."
     },
     "items": {
       "mitrasova-pos": {
@@ -425,7 +438,7 @@
       "emailPlaceholder": "e.g. name@company.com",
       "phone": "WhatsApp / Phone Number",
       "phonePlaceholder": "e.g. +62 812 3456 7890",
-      "servicesLabel": "Select Services of Interest (Multiple selection allowed)",
+      "servicesLabel": "Select Services / Products of Interest (Multiple selection allowed)",
       "message": "Project Scope or Inquiries",
       "messagePlaceholder": "Describe your operational challenges or specific custom features required...",
       "submitBtn": "Submit Consultation Request",
@@ -444,46 +457,224 @@
       "ndaDesc": "All proprietary business processes and technical specifications are protected under standard Non-Disclosure Agreements."
     }
   },
-  "docs": {
+  "blog": {
     "hub": {
-      "badge": "Structured Documentation Center",
-      "title": "Official Service Documentation",
-      "titleGradient": "Mitrasova Digital Solutions",
-      "description": "Access setup tutorials, daily operational guides, latest version release notes, and integrated API references.",
-      "searchPlaceholder": "Search guides, tutorials, or feature modules...",
-      "articlesCount": "Articles",
-      "readArticle": "Read Guide"
+      "badge": "Mitrasova Publication & Media",
+      "title": "Blog, News & Tech",
+      "titleGradient": "Digital Insights",
+      "description": "Curated software engineering trends, product release highlights, retail & HR business strategies, and Mitrasova tech events.",
+      "searchPlaceholder": "Search articles, topics, or keywords...",
+      "allTab": "All Publications",
+      "articlesTab": "Insights & Blog",
+      "newsTab": "News & Press",
+      "eventsTab": "Events & Agenda",
+      "updatesTab": "Product Releases",
+      "featuredTag": "FEATURED ARTICLE",
+      "readArticle": "Read Article",
+      "emptyTitle": "No publications found",
+      "emptyDesc": "Try adjusting your search query or category filter."
     },
-    "sidebar": {
-      "allServices": "All Services",
-      "allCategories": "All Categories",
-      "backToHub": "Back to Docs Hub"
+    "card": {
+      "readAction": "Read",
+      "eventAction": "Event Details",
+      "types": {
+        "article": "Insights & Blog",
+        "news": "News & Media",
+        "event": "Events & Webinar",
+        "release": "Product Release"
+      }
     },
     "article": {
       "author": "Author",
-      "updatedAt": "Last Updated",
+      "updatedAt": "Published On",
       "readTime": "Read Time",
-      "share": "Share Article",
-      "tableOfContents": "Table of Contents"
+      "share": "Share",
+      "tableOfContents": "Table of Contents",
+      "relatedTitle": "Recommended Publications",
+      "backToBlog": "Back to Blog Hub",
+      "eventInfoTitle": "Event Details",
+      "dateLabel": "Date & Time",
+      "locationLabel": "Event Location",
+      "registerBtn": "Register For Event",
+      "relatedTags": "Related Topics:",
+      "likeArticle": "Enjoyed this article?",
+      "shareWithTeam": "Share these insights with your team and colleagues.",
+      "consultBadge": "MITRASOVA SOLUTION CONSULTING",
+      "consultTitle": "Looking to Implement Similar Solutions in Your Business?",
+      "consultDesc": "Mitrasova Solution Architects are ready to discuss offline POS architecture, payroll automation, or cloud infrastructure tailored to your company.",
+      "consultBtn": "Schedule Free Consultation"
+    },
+    "eventBanner": {
+      "badge": "TECH EVENT & COMMUNITY AGENDA",
+      "title": "Event Registration & Participation",
+      "timeLabel": "Event Schedule",
+      "locationLabel": "Event Location",
+      "actionBtn": "Register For Event"
+    },
+    "share": {
+      "shareModalTitle": "Share Publication",
+      "shareModalDesc": "Choose a channel to share this publication",
+      "copyLink": "Copy Link",
+      "copied": "Copied!",
+      "sendEmail": "Send via Email",
+      "copyFullUrl": "Copy Full URL:"
+    }
+  },
+  "product": {
+    "badge": "Enterprise Solution Showcase",
+    "overviewTitle": "Overview & Feature Modules",
+    "capabilitiesTitle": "Capabilities & Architecture",
+    "useCasesTitle": "Tailored For Your Business Scale",
+    "faqTitle": "Frequently Asked Questions",
+    "ctaTitle": "Ready to Transform Your Business Operations?",
+    "ctaDesc": "Schedule an interactive demo with a Mitrasova Solution Architect to see the system live in action.",
+    "ctaBtn": "Start Consultation & Demo",
+    "backToProducts": "Back to Home",
+    "hub": {
+      "badge": "MITRASOVA PRODUCTS & SOLUTIONS CATALOG",
+      "title": "A Unified Software Suite For",
+      "titleGradient": "Your Business Growth",
+      "description": "Explore integrated software solutions: Offline-First POS, Enterprise HRIS & Payroll, Tier-4 Managed Cloud, and Custom Engineering.",
+      "searchPlaceholder": "Search products, features, modules...",
+      "allCategory": "All Products",
+      "categories": {
+        "all": "All Products",
+        "pos": "SaaS POS & Cashier",
+        "hris": "HRIS & Payroll",
+        "cloud": "Cloud & Infrastructure",
+        "custom": "Custom Engineering"
+      },
+      "emptyTitle": "No matching products found",
+      "emptyDesc": "Try using different search keywords or choosing another category.",
+      "consultBadge": "INTEGRATED SOLUTION CONSULTING",
+      "consultTitle": "Need a Tailored Recommendation?",
+      "consultDesc": "Discuss your operational workflows and business technology requirements with our Solution Architects.",
+      "consultBtn": "Schedule Consultation"
+    },
+    "hero": {
+      "learnMoreExternal": "Learn More on Official Website",
+      "requestDemo": "Request Demo",
+      "slaGuarantee": "99.9% SLA Uptime Guarantee",
+      "support": "Dedicated Regional Support",
+      "prodGrade": "Production Grade Architecture"
+    },
+    "card": {
+      "viewDetail": "View Details",
+      "openWeb": "Visit Product Web"
+    },
+    "detail": {
+      "moreInfoTitle": "Want to Learn More About {{title}}?",
+      "moreInfoDesc": "Access the official product website to explore comprehensive guides, interactive demos, and implementation scope.",
+      "openOfficialWeb": "Visit Official {{title}} Website"
+    },
+    "features": {
+      "badge": "Core Modules & Capabilities",
+      "title": "Engineered Specifically For",
+      "titleGradient": "Maximum Operational Efficiency",
+      "description": "Every module is engineered to enterprise software standards for dependable, high-speed performance.",
+      "provenBadge": "Production-tested and synchronized in real-time"
+    },
+    "useCases": {
+      "badge": "Target Implementation",
+      "title": "Tailored Across Diverse",
+      "titleGradient": "Business Profiles",
+      "description": "Flexible solutions configurable to match your team size and operational workflow complexity.",
+      "items": {
+        "mitrasova-pos": [
+          {
+            "title": "Modern Retail & Supermarkets",
+            "desc": "Offline-first cashier guarantees fast checkout queues with zero lag during network or power drops.",
+            "benefits": ["Instant barcode scanning", "Multi-cashier shift reporting", "Automated low-stock alerts"]
+          },
+          {
+            "title": "Fashion Retail & Consignment Networks",
+            "desc": "Automated consignment revenue splits, supplier invoice settlement, and returns tracking.",
+            "benefits": ["Automated commission split", "Print return slips", "Consignment invoice reconciliation"]
+          },
+          {
+            "title": "Wholesale Distribution & Multi-Branch Networks",
+            "desc": "Multi-branch warehouse stock sync and centralized general ledger accounting.",
+            "benefits": ["Inter-branch stock transfer", "Real-time trial balance", "Instant P&L journaling"]
+          }
+        ],
+        "mitrasova-daya": [
+          {
+            "title": "Corporations & Large Enterprises",
+            "desc": "Calculate thousands of payslips with progressive tax and social security deductions in 1 click.",
+            "benefits": ["Automated 2026 tax calculation", "Bank transfer export ready", "Payroll activity audit logs"]
+          },
+          {
+            "title": "Manufacturing & Multi-Shift Plants",
+            "desc": "Flexible shift roster scheduling, automated overtime calculation, and anti-fake GPS attendance.",
+            "benefits": ["Shift roster generator", "Automated overtime formula", "Face liveness verification"]
+          },
+          {
+            "title": "Remote & Hybrid Workforces",
+            "desc": "Self-service employee mobile portal for leave requests, overtime approvals, and payslips.",
+            "benefits": ["Self-service mobile ESS", "Instant leave approvals", "Encrypted PDF payslip distribution"]
+          }
+        ],
+        "mitrasova-nexus": [
+          {
+            "title": "Mission-Critical SaaS & Enterprise Apps",
+            "desc": "High-availability cloud infrastructure with a 99.99% uptime SLA and multi-zone redundancy.",
+            "benefits": ["NVMe PCIe 4.0 storage", "2 Tbps DDoS scrubbing filter", "Multi-region disaster failover"]
+          },
+          {
+            "title": "E-Commerce & High-Concurrency Sales",
+            "desc": "Dynamic auto-scaling clusters that seamlessly absorb traffic spikes during major campaigns.",
+            "benefits": ["Kubernetes auto-scaling", "Ultra-low latency (<15ms)", "Edge CDN content distribution"]
+          },
+          {
+            "title": "Fintech & Sensitive Data Clusters",
+            "desc": "Daily encrypted off-site snapshots and perimeter firewall security shields.",
+            "benefits": ["AES-256 encrypted snapshots", "Minute-level RPO disaster recovery", "24/7/365 dedicated NOC engineers"]
+          }
+        ],
+        "mitrasova-labs": [
+          {
+            "title": "Enterprises Requiring Custom Software",
+            "desc": "Large-scale custom software development with microservices and modern API architecture.",
+            "benefits": ["Fullstack Next.js & Go/Node", "RESTful & GraphQL API gateway", "100% IP & Source Code Ownership"]
+          },
+          {
+            "title": "Legacy ERP & System Integration",
+            "desc": "Connecting legacy databases (SAP, Oracle) with modern digital platforms via unified API bridges.",
+            "benefits": ["Real-time sync data pipeline", "OWASP Top 10 security audits", "Zero-downtime cutover plan"]
+          },
+          {
+            "title": "Native iOS & Android Mobile Apps",
+            "desc": "High-performance mobile applications engineered for end customers or field operational teams.",
+            "benefits": ["Cross-platform & Native apps", "Offline-first local cache", "Push notification gateway"]
+          }
+        ]
+      }
+    },
+    "faq": {
+      "badge": "Product FAQ",
+      "title": "Frequently Asked Questions",
+      "titleGradient": "About {{title}}",
+      "description": "Answers regarding technical specifications, rollout timelines, and daily operational questions."
     }
   },
   "footer": {
-    "brandDesc": "Mitrasova Digital Solutions is a premier technology and software engineering provider. We deliver POS, HRIS & Payroll, Managed Cloud Server, Custom Web & Mobile App Ecosystems.",
+    "brandDesc": "Mitrasova Digital Solutions is an enterprise technology and software engineering provider. Delivering Offline POS, HRIS & Payroll, Managed Cloud Server, Custom Web & Mobile App Ecosystems.",
     "productSuite": "Product Ecosystem",
     "pos": "Mitrasova POS",
     "daya": "Mitrasova Daya (HRIS)",
     "nexus": "Mitrasova Nexus (Cloud)",
-    "labs": "Mitrasova Labs (Web & App)",
-    "docsCenter": "Documentation Center",
-    "posDocs": "POS Setup & Tutorials",
-    "dayaDocs": "Payroll & HRIS Guides",
-    "nexusDocs": "Cloud Server Release Notes",
-    "labsDocs": "API Integration Docs",
+    "labs": "Mitrasova Labs (Custom App)",
+    "publications": "Blog & Media",
+    "insights": "Insights & Blog",
+    "news": "News & Announcements",
+    "events": "Events & Seminars",
+    "releases": "Product Release Notes",
     "contact": "Contact Us",
     "navLinks": {
+      "products": "Products",
       "services": "Services",
       "consultation": "Consultation",
-      "docs": "Documentation"
+      "blog": "Blog & News"
     }
   },
   "console": {

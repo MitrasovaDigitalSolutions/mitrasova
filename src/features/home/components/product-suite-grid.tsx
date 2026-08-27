@@ -7,12 +7,11 @@ import { AnimatePresence, motion, useScroll, useTransform } from 'framer-motion'
 import {
   ArrowRight,
   CheckCircle2,
-  ChevronRight,
   Code,
   Layers,
   Server,
   ShoppingBag,
-  Users
+  Users,
 } from 'lucide-react';
 import Link from 'next/link';
 import React, { useRef, useState } from 'react';
@@ -174,21 +173,19 @@ export const ProductSuiteGrid: React.FC = () => {
 
               {/* Direct Actions */}
               <div className="flex flex-wrap items-center gap-4 pt-2">
-                <Link href={`/layanan/${activeService.slug}`}>
+                <Link href={`/product/${activeService.slug}`}>
                   <AppButton
                     variant="primary"
                     size="md"
                     rightIcon={<ArrowRight className="w-4 h-4" />}
                   >
-                    {t('common.learnMore')}
+                    {t('common.viewProduct')}
                   </AppButton>
                 </Link>
-                <Link
-                  href={`/docs/${activeService.slug}`}
-                  className="text-xs text-slate-400 hover:text-slate-200 font-medium flex items-center gap-1 group/link py-2"
-                >
-                  <span>{t('docs.hub.readArticle')}</span>
-                  <ChevronRight className="w-3.5 h-3.5 group-hover/link:translate-x-1 transition-transform text-cyan-400" />
+                <Link href="/konsultasi">
+                  <AppButton variant="outline" size="md">
+                    {t('common.requestDemo')}
+                  </AppButton>
                 </Link>
               </div>
             </div>

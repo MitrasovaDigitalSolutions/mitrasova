@@ -24,9 +24,12 @@ export const usePostEditor = () => {
       title: '',
       slug: '',
       summary: '',
-      serviceSlug: 'mitrasova-pos',
-      categorySlug: 'tutorial',
-      contentHtml: '<h2>Pengenalan Dokumentasi</h2><p>Tuliskan panduan teknis, langkah-langkah penggunaan, atau pengumuman di sini dengan mudah...</p>',
+      type: 'ARTICLE',
+      categorySlug: 'wawasan',
+      contentHtml: '<h2>Pengenalan Artikel</h2><p>Tuliskan wawasan teknis, berita perusahaan, atau pengumuman event di sini dengan mudah...</p>',
+      eventDate: '',
+      eventLocation: '',
+      tags: '',
     },
   });
 

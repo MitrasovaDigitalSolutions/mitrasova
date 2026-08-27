@@ -3,17 +3,34 @@
     "version": "v",
     "learnMore": "Pelajari Selengkapnya",
     "consultation": "Konsultasi Gratis",
-    "docsHub": "Buka Docs Hub",
     "contactUs": "Hubungi Kami",
     "allRightsReserved": "Hak Cipta Dilindungi Undang-Undang.",
     "allOperational": "Seluruh Sistem Beroperasi Normal",
-    "systemStatus": "Status Sistem"
+    "systemStatus": "Status Sistem",
+    "readArticle": "Baca Selengkapnya",
+    "viewProduct": "Lihat Produk",
+    "requestDemo": "Jadwalkan Demo",
+    "viewDetail": "Lihat Detail",
+    "visitOfficialWeb": "Buka Web Resmi",
+    "back": "Kembali"
   },
   "navbar": {
     "home": "Beranda",
+    "products": "Produk & Solusi",
     "services": "Ekosistem Layanan",
-    "docs": "Docs Hub",
-    "startConsultation": "Mulai Konsultasi"
+    "blog": "Blog & Kabar",
+    "startConsultation": "Mulai Konsultasi",
+    "megaMenu": {
+      "saasTitle": "Aplikasi Bisnis & Operasional",
+      "saasDesc": "Software cerdas untuk efisiensi transaksi, konsinyasi, dan manajemen SDM",
+      "infraTitle": "Infrastruktur & Rekayasa",
+      "infraDesc": "Cloud hosting high-availability dan rekayasa custom enterprise",
+      "viewAllServices": "Lihat Semua Produk & Solusi",
+      "demoCardTitle": "Konsultasi & Demo Live",
+      "demoCardDesc": "Diskusikan implementasi sistem terintegrasi bersama Solution Architect kami.",
+      "demoCardBtn": "Jadwalkan Demo",
+      "integratedNote": "Solusi terintegrasi dalam satu basis data terpadu"
+    }
   },
   "home": {
     "hero": {
@@ -22,7 +39,7 @@
       "titleGradient": "Skalabilitas Bisnis Modern",
       "description": "Arsitektur aplikasi terintegrasi mulai dari POS Kasir Multi-Cabang, Manajemen SDM & Payroll Terpadu, Infrastruktur Cloud Berkinerja Tinggi, hingga Pengembangan Aplikasi Kustom.",
       "ctaPrimary": "Konsultasi Gratis",
-      "ctaSecondary": "Buka Docs Hub",
+      "ctaSecondary": "Jelajahi Produk",
       "uptimeBadge": "99.99% SLA Uptime",
       "dbBadge": "PostgreSQL Cloud DB",
       "encryptionBadge": "256-Bit Enkripsi End-to-End",
@@ -57,7 +74,7 @@
       "title": "Empat Solusi Inti",
       "titleGradient": "Satu Basis Data Terpadu",
       "description": "Setiap produk dirancang untuk saling berkomunikasi secara real-time, mengeliminasi duplikasi data dan mempercepat alur kerja perusahaan.",
-      "learnService": "Pelajari Layanan"
+      "learnService": "Pelajari Produk"
     },
     "advantages": {
       "badge": "Keunggulan Arsitektur",
@@ -159,24 +176,20 @@
   "services": {
     "overview": {
       "badge": "Enterprise Ecosystem",
-      "title": "Ekosistem Produk & Layanan",
+      "title": "Ekosistem Produk & Solusi",
       "titleGradient": "Mitrasova Digital",
       "description": "Solusi perangkat lunak lengkap dan terintegrasi untuk mendigitalkan seluruh lini operasi bisnis Anda.",
-      "exploreDocs": "Lihat Dokumentasi",
       "consultSolution": "Jadwalkan Konsultasi",
       "specsTitle": "Spesifikasi & Kapabilitas",
       "prodReady": "PROD READY",
       "slaNote": "Dukungan SLA 99.9% & Setup Implementasi Terpadu"
     },
     "detail": {
-      "backToServices": "Kembali ke Ekosistem Layanan",
+      "backToServices": "Kembali ke Produk & Solusi",
       "keyFeatures": "Fitur Utama & Keunggulan",
       "keyFeaturesDesc": "Modul dan kapabilitas teknologi yang dirancang untuk efisiensi maksimal bisnis Anda.",
       "faqTitle": "Pertanyaan Umum (FAQ)",
-      "faqDesc": "Informasi teknis dan operasional yang sering ditanyakan seputar layanan ini.",
-      "docsBannerTitle": "Dokumentasi Lengkap & Panduan Teknis",
-      "docsBannerDesc": "Pelajari panduan setup langkah demi langkah, rilis pembaruan versi, dan integrasi API untuk layanan ini.",
-      "openDocsBtn": "Buka Dokumentasi Layanan"
+      "faqDesc": "Informasi teknis dan operasional yang sering ditanyakan seputar layanan ini."
     },
     "items": {
       "mitrasova-pos": {
@@ -425,7 +438,7 @@
       "emailPlaceholder": "cth. name@company.com",
       "phone": "Nomor WhatsApp / Telepon",
       "phonePlaceholder": "cth. 081234567890",
-      "servicesLabel": "Pilih Layanan Yang Diminati (Bisa lebih dari 1)",
+      "servicesLabel": "Pilih Layanan / Produk Yang Diminati (Bisa lebih dari 1)",
       "message": "Deskripsi Kebutuhan atau Catatan",
       "messagePlaceholder": "Ceritakan mengenai kendala operasional saat ini atau fitur khusus yang Anda butuhkan...",
       "submitBtn": "Kirim Jadwal Konsultasi",
@@ -444,46 +457,224 @@
       "ndaDesc": "Setiap data proses bisnis dan dokumen spesifikasi dilindungi Non-Disclosure Agreement standar industri."
     }
   },
-  "docs": {
+  "blog": {
     "hub": {
-      "badge": "Pusat Dokumentasi Terstruktur",
-      "title": "Dokumentasi Resmi Layanan",
-      "titleGradient": "Mitrasova Digital Solutions",
-      "description": "Akses tutorial instalasi, panduan operasional harian, release notes versi terbaru, dan dokumentasi API terintegrasi.",
-      "searchPlaceholder": "Cari panduan, tutorial, atau modul fitur...",
-      "articlesCount": "Artikel",
-      "readArticle": "Baca Panduan"
+      "badge": "Mitrasova Publication & Media",
+      "title": "Blog, Berita & Wawasan",
+      "titleGradient": "Teknologi Digital",
+      "description": "Kumpulan artikel tren rekayasa perangkat lunak, kabar rilis produk, wawasan bisnis retail & HR, serta agenda event teknologi Mitrasova.",
+      "searchPlaceholder": "Cari artikel, topik, atau kata kunci...",
+      "allTab": "Semua Publikasi",
+      "articlesTab": "Wawasan & Blog",
+      "newsTab": "Berita & Media",
+      "eventsTab": "Events & Agenda",
+      "updatesTab": "Rilis Produk",
+      "featuredTag": "ARTIKEL UNGGULAN",
+      "readArticle": "Baca Selengkapnya",
+      "emptyTitle": "Tidak ada artikel ditemukan",
+      "emptyDesc": "Coba cari dengan kata kunci atau filter kategori yang lain."
     },
-    "sidebar": {
-      "allServices": "Semua Layanan",
-      "allCategories": "Semua Kategori",
-      "backToHub": "Kembali ke Docs Hub"
+    "card": {
+      "readAction": "Baca",
+      "eventAction": "Detail Event",
+      "types": {
+        "article": "Wawasan & Blog",
+        "news": "Berita & Media",
+        "event": "Event & Webinar",
+        "release": "Rilis Pembaruan"
+      }
     },
     "article": {
       "author": "Penulis",
-      "updatedAt": "Pembaruan Terakhir",
+      "updatedAt": "Dipublikasikan",
       "readTime": "Waktu Baca",
-      "share": "Bagikan Artikel",
-      "tableOfContents": "Daftar Isi"
+      "share": "Bagikan",
+      "tableOfContents": "Daftar Isi",
+      "relatedTitle": "Rekomendasi Publikasi",
+      "backToBlog": "Kembali ke Blog Hub",
+      "eventInfoTitle": "Detail Pelaksanaan Acara",
+      "dateLabel": "Tanggal & Waktu",
+      "locationLabel": "Lokasi Acara",
+      "registerBtn": "Daftar Acara Sekarang",
+      "relatedTags": "Topik Terkait:",
+      "likeArticle": "Suka artikel ini?",
+      "shareWithTeam": "Bagikan wawasan ini kepada rekan kerja dan tim Anda.",
+      "consultBadge": "KONSULTASI SOLUSI MITRASOVA",
+      "consultTitle": "Ingin Mengimplementasikan Solusi Serupa di Bisnis Anda?",
+      "consultDesc": "Tim Solution Architect Mitrasova siap mendiskusikan arsitektur POS offline, payroll TER, atau cloud infrastructure perusahaan Anda.",
+      "consultBtn": "Jadwalkan Konsultasi Gratis"
+    },
+    "eventBanner": {
+      "badge": "AGENDA ACARA & TEMU TEKNOLOGI",
+      "title": "Pendaftaran & Partisipasi Event",
+      "timeLabel": "Waktu Pelaksanaan",
+      "locationLabel": "Lokasi Acara",
+      "actionBtn": "Registrasi / Hadiri Acara"
+    },
+    "share": {
+      "shareModalTitle": "Bagikan Publikasi",
+      "shareModalDesc": "Pilih media untuk menyebarkan informasi ini",
+      "copyLink": "Salin Tautan",
+      "copied": "Tersalin!",
+      "sendEmail": "Kirim via Email",
+      "copyFullUrl": "Salin URL Lengkap:"
+    }
+  },
+  "product": {
+    "badge": "Enterprise Solution Showcase",
+    "overviewTitle": "Gambaran Umum & Modul Fitur",
+    "capabilitiesTitle": "Kapabilitas & Arsitektur",
+    "useCasesTitle": "Cocok Untuk Skala Bisnis Anda",
+    "faqTitle": "Pertanyaan yang Sering Diajukan",
+    "ctaTitle": "Siap Mentransformasi Operasional Bisnis Anda?",
+    "ctaDesc": "Jadwalkan demo interaktif bersama Solution Architect Mitrasova untuk melihat sistem berjalan langsung.",
+    "ctaBtn": "Mulai Konsultasi & Demo",
+    "backToProducts": "Kembali ke Beranda",
+    "hub": {
+      "badge": "KATALOG PRODUK & SOLUSI MITRASOVA",
+      "title": "Satu Ekosistem Software Untuk",
+      "titleGradient": "Pertumbuhan Bisnis Anda",
+      "description": "Eksplorasi solusi perangkat lunak terpadu: Kasir Offline Mode, HRIS & Payroll TER, Cloud Hosting Tier-4, dan Rekayasa Software Enterprise.",
+      "searchPlaceholder": "Cari nama produk, fitur, modul...",
+      "allCategory": "Semua Produk",
+      "categories": {
+        "all": "Semua Produk",
+        "pos": "SaaS Kasir & POS",
+        "hris": "HRIS & Payroll",
+        "cloud": "Cloud & Server",
+        "custom": "Custom Engineering"
+      },
+      "emptyTitle": "Tidak ada produk yang cocok",
+      "emptyDesc": "Coba gunakan kata kunci pencarian atau pilih kategori solusi yang lain.",
+      "consultBadge": "KONSULTASI SOLUSI TERPADU",
+      "consultTitle": "Butuh Rekomendasi Solusi yang Paling Pas?",
+      "consultDesc": "Diskusikan alur operasional dan kebutuhan teknologi bisnis Anda bersama Solution Architect kami.",
+      "consultBtn": "Jadwalkan Sesi Konsultasi"
+    },
+    "hero": {
+      "learnMoreExternal": "Pelajari Lebih Lanjut di Web Resmi",
+      "requestDemo": "Jadwalkan Demo",
+      "slaGuarantee": "99.9% Uptime SLA Guarantee",
+      "support": "Dedicated Support Solo Raya",
+      "prodGrade": "Production Grade Architecture"
+    },
+    "card": {
+      "viewDetail": "Lihat Detail",
+      "openWeb": "Buka Web Produk"
+    },
+    "detail": {
+      "moreInfoTitle": "Ingin Mengetahui Lebih Lengkap Seputar {{title}}?",
+      "moreInfoDesc": "Akses website resmi produk untuk melihat panduan lengkap, demo interaktif, dan simulasi implementasi.",
+      "openOfficialWeb": "Buka Web Resmi {{title}}"
+    },
+    "features": {
+      "badge": "Modul & Kapabilitas Unggulan",
+      "title": "Dirancang Khusus Untuk",
+      "titleGradient": "Efisiensi Maksimal",
+      "description": "Setiap modul dikembangkan dengan standar rekayasa perangkat lunak enterprise untuk performa tinggi tanpa kendala.",
+      "provenBadge": "Teruji di lingkungan produksi & tersinkron real-time"
+    },
+    "useCases": {
+      "badge": "Target Penerapan",
+      "title": "Dirancang Pas Untuk Berbagai",
+      "titleGradient": "Karakteristik Bisnis",
+      "description": "Solusi yang fleksibel dan dapat dikonfigurasi sesuai dengan ukuran tim dan kompleksitas alur kerja perusahaan Anda.",
+      "items": {
+        "mitrasova-pos": [
+          {
+            "title": "Toko Ritel & Minimarket Modern",
+            "desc": "Kasir offline-first menjamin operasional antrean cepat tanpa lag walau koneksi mati listrik/internet.",
+            "benefits": ["Scan barcode instan", "Multi-kasir shift report", "Stok alert otomatis"]
+          },
+          {
+            "title": "Ritel Fashion & Multi-Supplier Konsinyasi",
+            "desc": "Otomatisasi bagi hasil supplier konsinyasi, rekap faktur pembayaran, dan pemantauan retur barang.",
+            "benefits": ["Bagi komisi otomatis", "Cetak nota retur", "Rekonsiliasi faktur titipan"]
+          },
+          {
+            "title": "Jaringan Grosir & Multi-Cabang",
+            "desc": "Sinkronisasi persediaan stok lintas puluhan gudang cabang dan pencatatan buku besar akuntansi terpadu.",
+            "benefits": ["Transfer stok antar cabang", "Neraca saldo real-time", "Jurnal laba rugi instan"]
+          }
+        ],
+        "mitrasova-daya": [
+          {
+            "title": "Perusahaan Korporat & Enterprise",
+            "desc": "Kalkulasi ribuan slip gaji dengan potongan PPh 21 TER dan BPJS dalam 1 klik tanpa rumus excel.",
+            "benefits": ["Otomatisasi PPh 21 TER", "Export format bank transfer", "Audit log payroll"]
+          },
+          {
+            "title": "Pabrik & Operasional Multi-Shift",
+            "desc": "Manajemen shift roster fleksibel, lembur otomatis sesuai formula Depnaker, dan absensi GPS anti-fake.",
+            "benefits": ["Roster shift generator", "Perhitungan lembur otomatis", "Liveness face verification"]
+          },
+          {
+            "title": "Perusahaan Remote & Hybrid Team",
+            "desc": "Aplikasi ESS karyawan untuk mengajukan cuti, lembur, klaim reimbursement, dan unduh slip gaji.",
+            "benefits": ["Self-service mobile ESS", "Persetujuan cuti instan", "Distribusi slip gaji PDF"]
+          }
+        ],
+        "mitrasova-nexus": [
+          {
+            "title": "Aplikasi Enterprise & SaaS Mission-Critical",
+            "desc": "Infrastruktur cloud server dengan jaminan uptime 99.99% dan arsitektur redundant multi-zone.",
+            "benefits": ["NVMe PCIe 4.0 storage", "Anti-DDoS 2 Tbps", "Multi-region failover"]
+          },
+          {
+            "title": "Platform E-Commerce & Flash Sale",
+            "desc": "Auto-scaling cluster yang secara dinamis menambah node saat lonjakan trafik diskon tinggi.",
+            "benefits": ["Kubernetes auto-scale", "Low latency <15ms", "Edge CDN caching"]
+          },
+          {
+            "title": "Fintech & Basis Data Sensitif",
+            "desc": "Enkripsi backup harian off-site dan perlindungan perimeter firewall lapis keamanan standar ISO.",
+            "benefits": ["AES-256 encrypted snapshot", "Disaster recovery RPO menit", "24/7/365 NOC engineer"]
+          }
+        ],
+        "mitrasova-labs": [
+          {
+            "title": "Perusahaan yang Membutuhkan Sistem Kustom",
+            "desc": "Pengembangan perangkat lunak kustom berskala besar dengan arsitektur microservices dan API modern.",
+            "benefits": ["Fullstack Next.js & Go/Node", "API REST & GraphQL", "100% Hak Milik Source Code"]
+          },
+          {
+            "title": "Integrasi Sistem ERP Legacy",
+            "desc": "Menghubungkan software database lama (SAP, Oracle, AS400) dengan aplikasi modern via gateway API terpadu.",
+            "benefits": ["Data sync pipeline", "Audit keamanan OWASP", "Zero downtime transition"]
+          },
+          {
+            "title": "Aplikasi Mobile Native iOS & Android",
+            "desc": "Pembuatan aplikasi seluler performa tinggi untuk pelanggan atau operasional lapangan staf.",
+            "benefits": ["Cross-platform & Native", "Offline cache support", "Push notification gateway"]
+          }
+        ]
+      }
+    },
+    "faq": {
+      "badge": "FAQ Produk",
+      "title": "Pertanyaan yang Sering Diajukan",
+      "titleGradient": "Seputar {{title}}",
+      "description": "Jawaban seputar spesifikasi teknis, skema implementasi, dan operasional harian produk ini."
     }
   },
   "footer": {
-    "brandDesc": "Mitrasova Digital Solutions adalah penyedia teknologi dan rekayasa perangkat lunak. Kami menghadirkan ekosistem POS Kasir, HRIS & Payroll, Managed Cloud Server, Custom Web & Mobile App Development.",
+    "brandDesc": "Mitrasova Digital Solutions adalah penyedia teknologi dan rekayasa perangkat lunak enterprise. Menghadirkan solusi POS Kasir Offline, HRIS & Payroll, Managed Cloud Server, Custom Web & Mobile App.",
     "productSuite": "Ekosistem Produk",
     "pos": "Mitrasova POS",
     "daya": "Mitrasova Daya (HRIS)",
     "nexus": "Mitrasova Nexus (Cloud)",
-    "labs": "Mitrasova Labs (Web & App)",
-    "docsCenter": "Pusat Dokumentasi",
-    "posDocs": "Tutorial & Setup POS",
-    "dayaDocs": "Panduan Payroll & HRIS",
-    "nexusDocs": "Release Notes Cloud Server",
-    "labsDocs": "Dokumentasi Integrasi API",
+    "labs": "Mitrasova Labs (Custom App)",
+    "publications": "Blog & Publikasi",
+    "insights": "Wawasan & Artikel",
+    "news": "Berita & Pengumuman",
+    "events": "Events & Seminar",
+    "releases": "Catatan Rilis Produk",
     "contact": "Hubungi Kami",
     "navLinks": {
+      "products": "Produk",
       "services": "Layanan",
       "consultation": "Konsultasi",
-      "docs": "Dokumentasi"
+      "blog": "Blog & Kabar"
     }
   },
   "console": {

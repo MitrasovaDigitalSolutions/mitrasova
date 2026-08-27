@@ -7,7 +7,7 @@ import { AppButton } from '@/components/shared';
 import { RogHeroVisual } from './rog-hero-visual';
 import { APP_VERSION } from '@/lib/version';
 import { useTranslation } from '@/lib/i18n';
-import { Sparkles, ArrowRight, BookOpen, ShieldCheck } from 'lucide-react';
+import { Sparkles, ArrowRight, ShieldCheck } from 'lucide-react';
 
 export const HeroSection: React.FC = () => {
   const { t } = useTranslation();
@@ -76,12 +76,12 @@ export const HeroSection: React.FC = () => {
                 </AppButton>
               </Link>
 
-              <Link href="/docs" className="w-full sm:w-auto">
+              <Link href="/product/mitrasova-pos" className="w-full sm:w-auto">
                 <AppButton
                   variant="outline"
                   size="lg"
                   className="w-full sm:w-auto justify-center"
-                  leftIcon={<BookOpen className="w-4 h-4 text-cyan-400" />}
+                  leftIcon={<Sparkles className="w-4 h-4 text-cyan-400" />}
                 >
                   {t('home.hero.ctaSecondary')}
                 </AppButton>

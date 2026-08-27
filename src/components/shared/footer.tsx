@@ -6,7 +6,7 @@ import { APP_VERSION } from '@/lib/version';
 import { SEO_DEFAULTS } from '@/lib/seo';
 import { MitrasovaLogo } from './mitrasova-logo';
 import { useTranslation } from '@/lib/i18n';
-import { ArrowRight, Mail, MapPin } from 'lucide-react';
+import { ArrowRight, Mail, MapPin, Sparkles } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -82,25 +82,25 @@ export const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-2.5 text-xs font-medium">
               <li>
-                <Link href="/layanan/mitrasova-pos" className="hover:text-indigo-400 transition-colors flex items-center gap-1.5">
+                <Link href="/product/mitrasova-pos" className="hover:text-indigo-400 transition-colors flex items-center gap-1.5">
                   <ArrowRight className="w-3.5 h-3.5 text-indigo-500" />
                   {t('footer.pos')}
                 </Link>
               </li>
               <li>
-                <Link href="/layanan/mitrasova-daya" className="hover:text-indigo-400 transition-colors flex items-center gap-1.5">
+                <Link href="/product/mitrasova-daya" className="hover:text-indigo-400 transition-colors flex items-center gap-1.5">
                   <ArrowRight className="w-3.5 h-3.5 text-indigo-500" />
                   {t('footer.daya')}
                 </Link>
               </li>
               <li>
-                <Link href="/layanan/mitrasova-nexus" className="hover:text-indigo-400 transition-colors flex items-center gap-1.5">
+                <Link href="/product/mitrasova-nexus" className="hover:text-indigo-400 transition-colors flex items-center gap-1.5">
                   <ArrowRight className="w-3.5 h-3.5 text-indigo-500" />
                   {t('footer.nexus')}
                 </Link>
               </li>
               <li>
-                <Link href="/layanan/mitrasova-labs" className="hover:text-indigo-400 transition-colors flex items-center gap-1.5">
+                <Link href="/product/mitrasova-labs" className="hover:text-indigo-400 transition-colors flex items-center gap-1.5">
                   <ArrowRight className="w-3.5 h-3.5 text-indigo-500" />
                   {t('footer.labs')}
                 </Link>
@@ -108,30 +108,31 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Resources & Docs */}
+          {/* Blog & Publications */}
           <div>
             <h4 className="text-xs font-semibold text-white tracking-wider uppercase mb-4 font-mono">
-              {t('footer.docsCenter')}
+              {t('footer.publications')}
             </h4>
             <ul className="space-y-2.5 text-xs font-medium">
               <li>
-                <Link href="/docs/mitrasova-pos" className="hover:text-cyan-400 transition-colors">
-                  {t('footer.posDocs')}
+                <Link href="/blog" className="hover:text-cyan-400 transition-colors flex items-center gap-1.5">
+                  <Sparkles className="w-3 h-3 text-cyan-400" />
+                  {t('footer.insights')}
                 </Link>
               </li>
               <li>
-                <Link href="/docs/mitrasova-daya" className="hover:text-cyan-400 transition-colors">
-                  {t('footer.dayaDocs')}
+                <Link href="/blog" className="hover:text-cyan-400 transition-colors">
+                  {t('footer.news')}
                 </Link>
               </li>
               <li>
-                <Link href="/docs/mitrasova-nexus" className="hover:text-cyan-400 transition-colors">
-                  {t('footer.nexusDocs')}
+                <Link href="/blog" className="hover:text-cyan-400 transition-colors">
+                  {t('footer.events')}
                 </Link>
               </li>
               <li>
-                <Link href="/docs/mitrasova-labs" className="hover:text-cyan-400 transition-colors">
-                  {t('footer.labsDocs')}
+                <Link href="/blog" className="hover:text-cyan-400 transition-colors">
+                  {t('footer.releases')}
                 </Link>
               </li>
             </ul>
@@ -160,9 +161,9 @@ export const Footer: React.FC = () => {
         <div className="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-medium text-slate-500">
           <p>© {currentYear} Mitrasova Digital Solutions v{APP_VERSION}. {t('common.allRightsReserved')}</p>
           <div className="flex items-center gap-6">
-            <Link href="/layanan" className="hover:text-slate-400">{t('footer.navLinks.services')}</Link>
+            <Link href="/product" className="hover:text-slate-400">{t('footer.navLinks.products')}</Link>
+            <Link href="/blog" className="hover:text-slate-400">{t('footer.navLinks.blog')}</Link>
             <Link href="/konsultasi" className="hover:text-slate-400">{t('footer.navLinks.consultation')}</Link>
-            <Link href="/docs" className="hover:text-slate-400">{t('footer.navLinks.docs')}</Link>
           </div>
         </div>
       </div>

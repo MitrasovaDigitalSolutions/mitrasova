@@ -1,7 +1,7 @@
 import { z } from 'zod';
 
 export const postSchema = z.object({
-  title: z.string().min(3, 'Judul artikel minimal 3 karakter'),
+  title: z.string().min(3, 'Judul postingan minimal 3 karakter'),
   slug: z
     .string()
     .min(3, 'Slug URL minimal 3 karakter')
@@ -10,9 +10,12 @@ export const postSchema = z.object({
       'Slug URL hanya boleh berisi huruf kecil, angka, dan tanda hubung (-)'
     ),
   summary: z.string().optional(),
-  serviceSlug: z.string().min(1, 'Pilih layanan target'),
-  categorySlug: z.string().min(1, 'Pilih kategori dokumen'),
-  contentHtml: z.string().min(10, 'Isi konten dokumen minimal 10 karakter'),
+  type: z.enum(['ARTICLE', 'NEWS', 'EVENT', 'RELEASE']),
+  categorySlug: z.string().min(1, 'Pilih kategori publikasi'),
+  contentHtml: z.string().min(10, 'Isi konten postingan minimal 10 karakter'),
+  eventDate: z.string().optional(),
+  eventLocation: z.string().optional(),
+  tags: z.string().optional(),
 });
 
 export type PostFormValues = z.infer<typeof postSchema>;

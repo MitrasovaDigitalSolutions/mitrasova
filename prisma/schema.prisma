@@ -53,7 +53,7 @@ model Session {
   user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
-// System Services (Dedicated Service Pages & Service-Scoped Docs)
+// System Services (Products & Enterprise Solutions)
 model Service {
   id           String   @id @default(cuid())
   title        String   // e.g. "Mitrasova POS", "Mitrasova Daya", "Mitrasova Nexus", "Mitrasova Labs"
@@ -62,20 +62,20 @@ model Service {
   summary      String
   description  String   @db.Text
   icon         String   // Lucide Icon name
-  category     String   // "SaaS", "Infrastructure", "Custom Engineering"
+  category     String   // "SaaS POS & Accounting", "HRIS & Workforce", "Cloud Infrastructure", "Custom Engineering"
+  badge        String?  // e.g. "Offline POS & Konsinyasi"
   features     Json     // Dynamic list of features
   faqs         Json?    // Service specific FAQs
   isActive     Boolean  @default(true)
   order        Int      @default(0)
-  posts        Post[]   // Docs & Articles scoped to this service
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 }
 
-// Master Categories (Pengumuman, Dokumentasi, Tutorial, Release Notes, Guide)
+// Master Categories (Blog & Wawasan, Berita Perusahaan, Events & Webinar, Rilis Produk)
 model Category {
   id          String   @id @default(cuid())
-  name        String   // e.g. "Tutorial", "Guide", "Release Notes", "Pengumuman"
+  name        String   // e.g. "Wawasan & Blog", "Berita Perusahaan", "Events & Webinar", "Rilis Produk"
   slug        String   @unique
   description String?
   order       Int      @default(0)
@@ -84,32 +84,44 @@ model Category {
   updatedAt   DateTime @updatedAt
 }
 
-// Post Management (Docs, Tutorial, Release Notes)
+// Post Management (Articles, News, Events, Release Notes)
 model Post {
-  id           String     @id @default(cuid())
-  title        String
-  slug         String     @unique
-  summary      String?    @db.Text
-  contentHtml  String     @db.Text
-  contentJson  Json?
-  coverImage   String?
-  status       PostStatus @default(DRAFT)
+  id            String     @id @default(cuid())
+  title         String
+  slug          String     @unique
+  summary       String?    @db.Text
+  contentHtml   String     @db.Text
+  contentJson   Json?
+  coverImage    String?
+  type          PostType   @default(ARTICLE)
+  status        PostStatus @default(DRAFT)
+  featured      Boolean    @default(false)
+  readTime      String?    // e.g. "5 min baca"
+  eventDate     DateTime?  // Optional for Events
+  eventLocation String?    // Optional for Events (e.g. "Solo Technopark / Hybrid Online")
+  tags          String[]   @default([])
 
-  serviceId    String?    // Service scope (mitrasova-pos, mitrasova-daya, etc)
-  service      Service?   @relation(fields: [serviceId], references: [id])
+  categoryId    String
+  category      Category   @relation(fields: [categoryId], references: [id])
 
-  categoryId   String
-  category     Category   @relation(fields: [categoryId], references: [id])
+  authorId      String
+  author        User       @relation(fields: [authorId], references: [id])
 
-  authorId     String
-  author       User       @relation(fields: [authorId], references: [id])
-
-  views        Int        @default(0)
-  createdAt    DateTime   @default(now())
-  updatedAt    DateTime   @updatedAt
+  views         Int        @default(0)
+  publishedAt   DateTime?
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
 
   @@index([slug])
-  @@index([serviceId, categoryId, status])
+  @@index([type, status, publishedAt])
+  @@index([categoryId, status])
+}
+
+enum PostType {
+  ARTICLE
+  NEWS
+  EVENT
+  RELEASE
 }
 
 enum PostStatus {

@@ -20,9 +20,12 @@ export interface ServiceItem {
   category: string;
   badge: string;
   gradient: string;
+  externalUrl?: string;
   features: FeatureItem[];
   faqs: FaqItem[];
 }
+
+export type ProductItem = ServiceItem;
 
 export interface CategoryItem {
   id: string;
@@ -31,16 +34,46 @@ export interface CategoryItem {
   description: string;
 }
 
+export type PostType = 'ARTICLE' | 'NEWS' | 'EVENT' | 'RELEASE';
+
 export interface PostItem {
   id: string;
   title: string;
   slug: string;
   summary: string;
   contentHtml: string;
-  serviceSlug: string;
+  type: PostType;
   categorySlug: string;
   categoryName: string;
   authorName: string;
+  authorRole?: string;
+  authorAvatar?: string;
   readTime: string;
+  tags?: string[];
+  featured?: boolean;
+  eventDate?: string;
+  eventLocation?: string;
   updatedAt: string;
+  createdAt?: string;
+}
+
+export interface ProductDetailItem extends ServiceItem {
+  tagline: string;
+  targetAudience: string[];
+  valueProps: {
+    title: string;
+    description: string;
+    icon: string;
+  }[];
+  modules: {
+    title: string;
+    subtitle: string;
+    description: string;
+    highlights: string[];
+    badge?: string;
+  }[];
+  specs: {
+    label: string;
+    value: string;
+  }[];
 }

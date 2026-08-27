@@ -1,48 +1,6 @@
 import idLocale from '@/locales/id.json';
 import enLocale from '@/locales/en.json';
-
-export interface ServiceItem {
-  id: string;
-  title: string;
-  slug: string;
-  heroTagline: string;
-  summary: string;
-  description: string;
-  icon: string;
-  category: string;
-  badge: string;
-  gradient: string;
-  features: {
-    title: string;
-    description: string;
-    iconName: string;
-  }[];
-  faqs: {
-    question: string;
-    answer: string;
-  }[];
-}
-
-export interface CategoryItem {
-  id: string;
-  name: string;
-  slug: string;
-  description: string;
-}
-
-export interface PostItem {
-  id: string;
-  title: string;
-  slug: string;
-  summary: string;
-  contentHtml: string;
-  serviceSlug: string;
-  categorySlug: string;
-  categoryName: string;
-  authorName: string;
-  readTime: string;
-  updatedAt: string;
-}
+import { ServiceItem, CategoryItem, PostItem } from '@/types';
 
 export const getLocalizedServices = (locale: 'id' | 'en' = 'id'): ServiceItem[] => {
   const dict = locale === 'en' ? enLocale : idLocale;
@@ -79,6 +37,9 @@ export const getLocalizedService = (slug: string, locale: 'id' | 'en' = 'id'): S
   return services.find((s) => s.slug === slug);
 };
 
+export const getLocalizedProducts = getLocalizedServices;
+export const getLocalizedProduct = getLocalizedService;
+
 export const INITIAL_SERVICES: ServiceItem[] = [
   {
     id: 'srv-pos',
@@ -91,6 +52,7 @@ export const INITIAL_SERVICES: ServiceItem[] = [
     category: 'SaaS POS & Accounting',
     badge: 'Offline POS & Konsinyasi',
     gradient: 'from-indigo-500 to-cyan-500',
+    externalUrl: 'https://www.mitrasovapos.web.id/',
     features: [
       {
         title: 'Mode Kasir Offline-First & Auto-Sync',
@@ -139,6 +101,7 @@ export const INITIAL_SERVICES: ServiceItem[] = [
     category: 'HRIS & Workforce',
     badge: 'HRIS & Payroll Enterprise',
     gradient: 'from-cyan-500 to-indigo-500',
+    externalUrl: 'https://daya.mitrasova.com',
     features: [
       {
         title: 'Kalkulasi Payroll & PPh 21 Otomatis',
@@ -183,6 +146,7 @@ export const INITIAL_SERVICES: ServiceItem[] = [
     category: 'Cloud Infrastructure',
     badge: 'Tier-4 Managed Cloud',
     gradient: 'from-indigo-600 to-purple-600',
+    externalUrl: 'https://nexus.mitrasova.com',
     features: [
       {
         title: '99.99% Guaranteed Uptime SLA',
@@ -227,6 +191,7 @@ export const INITIAL_SERVICES: ServiceItem[] = [
     category: 'Custom Engineering',
     badge: 'Enterprise Engineering',
     gradient: 'from-cyan-400 to-indigo-600',
+    externalUrl: 'https://labs.mitrasova.com',
     features: [
       {
         title: 'Modern Fullstack Architecture',
@@ -245,7 +210,7 @@ export const INITIAL_SERVICES: ServiceItem[] = [
       },
       {
         title: 'Agile Development Sprint & SLA Support',
-        description: 'Transparansi progres mingguan dengan metode Scrum, dokumentasi API Swagger, serta garansi garansi pemeliharaan.',
+        description: 'Transparansi progres mingguan dengan metode Scrum, dokumentasi API Swagger, serta garansi pemeliharaan.',
         iconName: 'GitBranch',
       },
     ],
@@ -256,112 +221,132 @@ export const INITIAL_SERVICES: ServiceItem[] = [
       },
       {
         question: 'Apakah hak cipta kode sumber (Source Code) sepenuhnya menjadi milik klien?',
-        answer: 'Ya 100%. Setelah pengerjaan selasai dan serah terima, seluruh Intellectual Property (IP) dan Source Code menjadi hak milik klien.',
+        answer: 'Ya 100%. Setelah pengerjaan selesai dan serah terima, seluruh Intellectual Property (IP) dan Source Code menjadi hak milik klien.',
       },
     ],
   },
 ];
 
+export const INITIAL_PRODUCTS = INITIAL_SERVICES;
+
 export const INITIAL_CATEGORIES: CategoryItem[] = [
-  { id: 'cat-tutorial', name: 'Tutorial & Setup', slug: 'tutorial', description: 'Panduan langkah demi langkah penggunaan produk' },
-  { id: 'cat-guide', name: 'Panduan & Best Practices', slug: 'guide', description: 'Tips optimasi operasional dan modul fitur' },
-  { id: 'cat-release', name: 'Release Notes & Updates', slug: 'release-notes', description: 'Rilis pembaruan versi dan fitur baru' },
-  { id: 'cat-announcement', name: 'Pengumuman', slug: 'pengumuman', description: 'Kabar resmi dan pengumuman sistem' },
+  { id: 'cat-insights', name: 'Wawasan & Artikel', slug: 'wawasan', description: 'Artikel tren teknologi, strategi bisnis, dan studi kasus digital' },
+  { id: 'cat-news', name: 'Berita & Pengumuman', slug: 'berita', description: 'Kabar resmi, siaran pers, dan pembaruan perusahaan Mitrasova' },
+  { id: 'cat-events', name: 'Events & Webinar', slug: 'events', description: 'Jadwal workshop, seminar teknologi, dan temu komunitas' },
+  { id: 'cat-updates', name: 'Rilis Produk', slug: 'rilis-produk', description: 'Catatan pembaruan fitur, changelog, dan kapabilitas sistem baru' },
 ];
 
 export const INITIAL_POSTS: PostItem[] = [
   {
     id: 'post-1',
-    title: 'Panduan Lengkap Setup Printer Thermal Bluetooth & LAN di Mitrasova POS',
-    slug: 'setup-printer-thermal',
-    summary: 'Langkah mudah mengoneksikan printer struk kasir Bluetooth & LAN ke tablet/PC Mitrasova POS.',
-    serviceSlug: 'mitrasova-pos',
-    categorySlug: 'tutorial',
-    categoryName: 'Tutorial & Setup',
-    authorName: 'Tim Support Mitrasova POS',
-    readTime: '4 min baca',
-    updatedAt: '2026-07-28',
+    title: 'Peluncuran Mitrasova POS v2.0: Dukungan Offline-First & Rekonsiliasi Otomatis Konsinyasi',
+    slug: 'peluncuran-mitrasova-pos-v2',
+    summary: 'Mitrasova resmi merilis pembaruan besar untuk POS Kasir, menghadirkan zero-delay transaksi offline dan kalkulasi bagi hasil supplier otomatis.',
     contentHtml: `
-      <h2>Pendahuluan Setup Printer Struk</h2>
-      <p>Mengoneksikan printer thermal dengan Mitrasova POS dapat dilakukan dalam hitungan menit. Sistem kami mendukung protokol standar ESC/POS yang kompatibel dengan berbagai brand printer kasir di pasaran.</p>
+      <h2>Revolusi Kasir Retail Tanpa Tergantung Koneksi Internet</h2>
+      <p>Masalah utama yang kerap dihadapi bisnis ritel modern adalah ketidakstabilan koneksi internet di titik penjualan. Melalui rilis Mitrasova POS v2.0, kami menghadirkan arsitektur <strong>Offline-First SQLite Cache</strong> yang memungkinkan kasir tetap bertransaksi 100% lancar walau jaringan padam seketika.</p>
       
-      <h2>Langkah 1: Mengaktifkan Bluetooth / Koneksi LAN</h2>
-      <p>Pastikan printer thermal Anda telah dinyalakan dan dalam kondisi <em>ready state</em> (lampu indikator biru/hijau menyala konstan). Untuk printer LAN, sambungkan kabel RJ45 ke router lokasi kasir Anda.</p>
-      
-      <h2>Langkah 2: Membuka Menu Pengaturan Mitrasova POS</h2>
-      <p>Masuk ke aplikasi <strong>Mitrasova POS</strong> > Pilih ikon <strong>Pengaturan (Settings)</strong> di pojok kanan atas > Klik tab <strong>Perangkat & Printer Struk</strong>.</p>
+      <h2>Modul Baru: Otomatisasi Konsinyasi & Bagi Hasil Supplier</h2>
+      <p>Bagi pemilik toko serba ada atau ritel fashion, mengelola barang titipan sering kali memakan waktu rekonsiliasi manual berhari-hari. Dengan modul konsinyasi baru:</p>
+      <ul>
+        <li>Master data supplier konsinyasi dan persentase komisi otomatis dihitung per item terjual.</li>
+        <li>Faktur rekap pembayaran supplier diterbitkan otomatis setiap akhir periode.</li>
+        <li>Pemantauan sisa stok titipan dan penerbitan nota retur instan.</li>
+      </ul>
 
-      <h2>Langkah 3: Pemindaian (Device Scan) & Test Print</h2>
-      <p>Klik tombol <strong>Cari Perangkat Baru</strong>. Pilih nama printer Anda (misal: <em>POS-58Printer</em> atau IP <em>192.168.1.200</em>). Tekan tombol <strong>Uji Cetak Struk (Test Print)</strong> untuk memastikan koneksi berhasil.</p>
-      
-      <h2>Troubleshooting & Tips Perawatan</h2>
-      <p>Jika struk tidak keluar, pastikan kertas thermal terpasang dengan arah gulungan yang benar (tidak terbalik) dan pastikan izin Bluetooth/Location pada aplikasi sudah aktif.</p>
+      <h2>Integrasi Buku Besar Akuntansi</h2>
+      <p>Seluruh penjualan langsung terhubung dengan General Ledger (buku besar), laporan laba-rugi harian, dan mutasi kas kecil tanpa perlu input ulang data ke spreadsheet.</p>
     `,
+    type: 'RELEASE',
+    categorySlug: 'rilis-produk',
+    categoryName: 'Rilis Produk',
+    authorName: 'Raihan Marwanda',
+    authorRole: 'Head of Product',
+    readTime: '4 min baca',
+    featured: true,
+    tags: ['POS Kasir', 'Offline Mode', 'Konsinyasi', 'Akuntansi'],
+    updatedAt: '2026-08-15',
+    createdAt: '2026-08-15',
   },
   {
     id: 'post-2',
-    title: 'Cara Mengatur Manajemen Shift & Kalkulasi Lembur Otomatis di Mitrasova Daya',
-    slug: 'manajemen-shift-payroll',
-    summary: 'Optimalkan penjadwalan tim operasional dan dapatkan kalkulasi lembur sesuai regulasi UU Cipta Kerja.',
-    serviceSlug: 'mitrasova-daya',
-    categorySlug: 'guide',
-    categoryName: 'Panduan & Best Practices',
-    authorName: 'Spesialis HR Mitrasova',
-    readTime: '6 min baca',
-    updatedAt: '2026-07-25',
+    title: 'Strategi Optimasi Payroll & PPh 21 TER 2026 untuk Perusahaan Skala Menengah',
+    slug: 'strategi-optimasi-payroll-pph-21-ter',
+    summary: 'Memahami implementasi Tarif Efektif Rata-Rata (TER) PPh 21 dan otomatisasi absensi GPS untuk menekan kebocoran biaya operasional SDM.',
     contentHtml: `
-      <h2>Membuat Pola Shift Kerja</h2>
-      <p>Mitrasova Daya menyediakan fitur <em>Flexible Shift Pattern Generator</em> yang memungkinkan Anda membuat jadwal kerja roster (misal: 3 Hari Kerja 1 Hari Libur, atau Shift Pagi/Siang/Malam).</p>
+      <h2>Tantangan Penghitungan Pajak Karyawan di Era Baru</h2>
+      <p>Penerapan skema PPh 21 TER (Tarif Efektif Rata-Rata) menuntut departemen HR untuk lebih teliti dalam memetakan kategori PTKP karyawan setiap bulannya. Perhitungan manual berisiko tinggi terhadap kesalahan setor pajak dan denda administratif.</p>
       
-      <h2>Kalkulasi Lembur Otomatis Sesuai Formula Depnaker</h2>
-      <p>Sistem secara otomatis menghitung upah lembur jam pertama (1.5x upah sejam) dan jam berikutnya (2x upah sejam) berdasarkan log presensi masuk dan keluar karyawan.</p>
+      <h2>Liveness Face Verification vs Titip Absen</h2>
+      <p>Mitrasova Daya menerapkan algoritma <em>3D Facial Liveness Detection</em> yang memastikan bahwa karyawan yang melakukan absensi hadir secara fisik di lokasi koordinat geofencing perusahaan.</p>
       
-      <h2>Pengajuan & Persetujuan Lembur (Overtime Approval Flow)</h2>
-      <p>Karyawan dapat membuat permohonan lembur via aplikasi mobile ESS, dan atasan langsung dapat menyetujuinya dalam sekali tap.</p>
+      <h2>Distribusi Slip Gaji Terenkripsi via WhatsApp & Email</h2>
+      <p>Karyawan tidak perlu lagi mengantre slip fisik. Dokumen slip gaji berformat PDF dengan proteksi PIN tanggal lahir dikirimkan dalam hitungan detik setelah proses payroll disetujui atasan.</p>
     `,
+    type: 'ARTICLE',
+    categorySlug: 'wawasan',
+    categoryName: 'Wawasan & Artikel',
+    authorName: 'Dimas Prasetyo',
+    authorRole: 'Senior HR Consultant',
+    readTime: '6 min baca',
+    featured: false,
+    tags: ['HRIS', 'Payroll', 'PPh 21 TER', 'Manajemen SDM'],
+    updatedAt: '2026-08-20',
+    createdAt: '2026-08-20',
   },
   {
     id: 'post-3',
-    title: 'Update Sistem Keamanan & Peningkatan Kapasitas Backup Harian Mitrasova Nexus',
-    slug: 'update-backup-security-nexus',
-    summary: 'Rilis fitur baru: Backup snapshot terenkripsi AES-256 dan deteksi serangan ransomware proaktif.',
-    serviceSlug: 'mitrasova-nexus',
-    categorySlug: 'release-notes',
-    categoryName: 'Release Notes & Updates',
-    authorName: 'Cloud DevOps Team',
-    readTime: '3 min baca',
-    updatedAt: '2026-07-30',
+    title: 'Mitrasova Tech Summit 2026: Transformasi Ekosistem Digital Bisnis Soloraya',
+    slug: 'mitrasova-tech-summit-2026',
+    summary: 'Hadiri seminar teknologi dan temu industri tahunan terbesar di Solo Raya bersama para praktisi software engineering dan pimpinan bisnis lokal.',
     contentHtml: `
-      <h2>Highlight Pembaruan Versi 4.2.0</h2>
-      <p>Kami dengan bangga mengumumkan pembaruan infrastruktur keamanan pada seluruh node server Mitrasova Nexus di Data Center Jakarta & Singapura.</p>
+      <h2>Tentang Acara</h2>
+      <p>Mitrasova dengan bangga menyelenggarakan <strong>Mitrasova Tech Summit 2026</strong> bertempat di Convention Hall Solo Technopark. Acara ini mempertemukan lebih dari 500 pelaku bisnis ritel, manufaktur, dan pengembang perangkat lunak.</p>
       
-      <h2>Fitur Baru: Encrypted Off-Site Backup</h2>
-      <p>Seluruh snapshot database dan storage pengguna kini secara otomatis dienkripsi dengan standar AES-256 sebelum ditransfer ke lokasi secondary disaster recovery center.</p>
-      
-      <h2>Peningkatan Proteksi Anti-DDoS Layer 7</h2>
-      <p>Penyaringan trafik HTTP/S malicious kini 40% lebih cepat dengan mitigasi otomatis tanpa mempengaruhi waktu respon aplikasi pengguna.</p>
+      <h2>Topik Diskusi Utama</h2>
+      <ul>
+        <li><strong>Arsitektur Cloud High-Availability:</strong> Mencegah downtime toko online saat flash sale.</li>
+        <li><strong>Automasi ERP & Integrasi API:</strong> Menghubungkan platform legacy dengan aplikasi modern.</li>
+        <li><strong>Cybersecurity Standards:</strong> Perlindungan data konsumen standar UU PDP di Indonesia.</li>
+      </ul>
+
+      <h2>Sesi Konsultasi 1-on-1 dengan Solution Architect</h2>
+      <p>Peserta yang terdaftar berkesempatan mendapatkan audit gratis arsitektur sistem dan konsultasi langsung bersama tim engineer Mitrasova.</p>
     `,
+    type: 'EVENT',
+    categorySlug: 'events',
+    categoryName: 'Events & Webinar',
+    authorName: 'Tim Humas Mitrasova',
+    authorRole: 'Community Lead',
+    readTime: '3 min baca',
+    eventDate: '2026-09-18T09:00:00.000Z',
+    eventLocation: 'Solo Technopark Convention Center & Hybrid Zoom',
+    tags: ['Event', 'Seminar', 'Tech Summit', 'Solo Raya'],
+    featured: true,
+    updatedAt: '2026-08-22',
+    createdAt: '2026-08-22',
   },
   {
     id: 'post-4',
-    title: 'Panduan Integrasi Rest API Web Commerce dengan Mitrasova Labs Gateway',
-    slug: 'integrasi-api-web-labs',
-    summary: 'Panduan teknis pengembang untuk mengintegrasikan REST API Mitrasova dengan toko online custom Anda.',
-    serviceSlug: 'mitrasova-labs',
-    categorySlug: 'guide',
-    categoryName: 'Panduan & Best Practices',
-    authorName: 'Senior Software Architect',
-    readTime: '5 min baca',
-    updatedAt: '2026-07-29',
+    title: 'Kemitraan Strategis: Mitrasova dan Asosiasi Pengusaha Retail Jawa Tengah',
+    slug: 'kemitraan-strategis-pengusaha-retail-jateng',
+    summary: 'Inisiatif bersama untuk mempercepat digitalisasi 1.000+ UMKM ritel melalui standardisasi kasir terintegrasi dan akuntansi modern.',
     contentHtml: `
-      <h2>Otentikasi API Token</h2>
-      <p>Setiap permintaan API ke Mitrasova Gateway membutuhkan Authorization Header dengan format <code>Bearer your_api_secret_key</code>.</p>
+      <h2>Mendorong Daya Saing Retail Tradisional ke Ranah Modern</h2>
+      <p>Mitrasova Digital Solutions resmi menandatangani nota kesepahaman (MoU) dengan Asosiasi Pengusaha Retail Jawa Tengah. Kolaborasi ini bertujuan memberikan pendampingan implementasi software kasir cerdas dan pelatihan pembukuan keuangan bagi toko kelontong, mini market, dan jaringan grosir daerah.</p>
       
-      <h2>Endpoint Sinkronisasi Katalog Produk</h2>
-      <p>Gunakan endpoint <code>GET /api/v1/products</code> untuk mendapatkan daftar produk beserta stok dan harga terkini secara real-time.</p>
-      
-      <h2>Webhook Notifikasi Transaksi</h2>
-      <p>Daftarkan URL webhook toko online Anda di Dashboard Admin untuk menerima event instant saat transaksi dinyatakan sukses oleh payment gateway.</p>
+      <h2>Program Onboarding & Subsidi Perangkat</h2>
+      <p>Melalui program ini, anggota asosiasi memperoleh akses paket bundling software Mitrasova POS lengkap dengan printer struk thermal dan pelatihan operasional di lokasi tanpa biaya setup awal.</p>
     `,
+    type: 'NEWS',
+    categorySlug: 'berita',
+    categoryName: 'Berita & Pengumuman',
+    authorName: 'Tim Redaksi Mitrasova',
+    authorRole: 'Corporate Communications',
+    readTime: '3 min baca',
+    tags: ['Kemitraan', 'Retail', 'UMKM', 'Jawa Tengah'],
+    featured: false,
+    updatedAt: '2026-08-25',
+    createdAt: '2026-08-25',
   },
 ];

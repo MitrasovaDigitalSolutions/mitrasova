@@ -121,7 +121,7 @@ export const EcosystemAdvantages: React.FC = () => {
 
             <div className="pt-6 mt-6 border-t border-slate-800/60">
               <Link
-                href="/layanan"
+                href="/product"
                 className="text-xs text-slate-400 hover:text-white font-semibold flex items-center justify-between group/link"
               >
                 <span>{t('common.learnMore')}</span>

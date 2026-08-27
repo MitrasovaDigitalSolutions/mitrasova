@@ -31,14 +31,14 @@ export const AdminDashboardContainer: React.FC = () => {
             Dashboard Console Mitrasova
           </h1>
           <p className="text-xs sm:text-sm text-slate-400">
-            Kelola Layanan, Kategori, & Service-Scoped Documentation Hub secara terpusat.
+            Kelola Blog, Berita, Acara, & Media Publikasi Perusahaan secara terpusat.
           </p>
         </div>
 
         <div className="flex items-center gap-3">
           <Link href="/console/posts/new">
             <AppButton variant="primary" size="md" leftIcon={<Plus className="w-4 h-4" />}>
-              Buat Artikel Docs Baru
+              Buat Artikel / Berita Baru
             </AppButton>
           </Link>
         </div>

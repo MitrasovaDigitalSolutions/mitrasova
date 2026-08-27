@@ -6,7 +6,7 @@ import { motion, Variants } from 'framer-motion';
 import { GlassCard, AppButton } from '@/components/shared';
 import { ServiceItem } from '@/types';
 import { useTranslation } from '@/lib/i18n';
-import { ShoppingBag, Users, Server, Code, Zap, CheckCircle, ChevronRight, ArrowRight } from 'lucide-react';
+import { ShoppingBag, Users, Server, Code, Zap, CheckCircle, ArrowRight } from 'lucide-react';
 
 const iconMap: Record<string, React.ElementType> = {
   ShoppingBag,
@@ -64,15 +64,15 @@ export const ProductCard: React.FC<{ service: ServiceItem }> = ({ service }) => 
 
         <div className="pt-6 mt-6 border-t border-slate-800/80 flex items-center justify-between">
           <Link
-            href={`/docs/${service.slug}`}
-            className="text-xs text-slate-400 hover:text-slate-200 font-medium flex items-center gap-1 group/link"
+            href={`/product/${service.slug}`}
+            className="text-xs text-cyan-400 hover:text-cyan-300 font-semibold flex items-center gap-1 group/link"
           >
-            <span>{t('docs.hub.readArticle')}</span>
-            <ChevronRight className="w-3.5 h-3.5 group-hover/link:translate-x-1 transition-transform" />
+            <span>{t('common.viewProduct')}</span>
+            <ArrowRight className="w-3.5 h-3.5 group-hover/link:translate-x-1 transition-transform" />
           </Link>
-          <Link href={`/layanan/${service.slug}`}>
-            <AppButton variant="primary" size="sm" rightIcon={<ArrowRight className="w-3.5 h-3.5" />}>
-              {t('common.learnMore')}
+          <Link href="/konsultasi">
+            <AppButton variant="outline" size="sm">
+              {t('common.requestDemo')}
             </AppButton>
           </Link>
         </div>

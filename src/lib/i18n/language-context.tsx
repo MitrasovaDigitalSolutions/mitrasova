@@ -9,7 +9,7 @@ interface LanguageContextType {
   locale: Locale;
   setLocale: (locale: Locale) => void;
   dict: TranslationSchema;
-  t: (keyPath: string, fallback?: string) => string;
+  t: (keyPath: string, optionsOrFallback?: string | Record<string, unknown>) => string;
 }
 
 const LanguageContext = createContext<LanguageContextType | null>(null);
@@ -44,12 +44,16 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const { t: i18nT } = useReactI18nextTranslation();
 
   const t = useCallback(
-    (keyPath: string, fallback?: string): string => {
+    (keyPath: string, optionsOrFallback?: string | Record<string, unknown>): string => {
+      if (typeof optionsOrFallback === 'object') {
+        const res = i18nT(keyPath, optionsOrFallback);
+        return typeof res === 'string' ? res : keyPath;
+      }
       const translated = i18nT(keyPath);
-      if (translated && translated !== keyPath) {
+      if (typeof translated === 'string' && translated !== keyPath) {
         return translated;
       }
-      return fallback || keyPath;
+      return typeof optionsOrFallback === 'string' ? optionsOrFallback : keyPath;
     },
     [i18nT]
   );
@@ -80,7 +84,14 @@ export const useTranslation = () => {
       locale: 'id' as Locale,
       setLocale: (locale: Locale) => i18n.changeLanguage(locale),
       dict: dictionaries.id,
-      t: (keyPath: string, fallback?: string) => i18n.t(keyPath) || fallback || keyPath,
+      t: (keyPath: string, optionsOrFallback?: string | Record<string, unknown>): string => {
+        if (typeof optionsOrFallback === 'object') {
+          const res = i18n.t(keyPath, optionsOrFallback);
+          return typeof res === 'string' ? res : keyPath;
+        }
+        const res = i18n.t(keyPath);
+        return typeof res === 'string' && res ? res : (typeof optionsOrFallback === 'string' ? optionsOrFallback : keyPath);
+      },
     };
   }
   return context;

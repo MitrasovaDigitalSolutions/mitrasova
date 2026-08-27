@@ -26,10 +26,10 @@ export const PostEditorForm: React.FC = () => {
             <span>Kembali ke Console</span>
           </Link>
           <h1 className="text-2xl sm:text-3xl font-black text-white">
-            Buat Artikel Dokumentasi Baru
+            Buat Postingan / Berita Baru
           </h1>
           <p className="text-xs text-slate-400">
-            Tuliskan panduan teknis yang terisolasi ke layanan dan kategori tertentu.
+            Publikasikan artikel wawasan teknologi, rilis produk, siaran pers, atau agenda acara.
           </p>
         </div>
       </div>
@@ -37,7 +37,7 @@ export const PostEditorForm: React.FC = () => {
       {successMsg && (
         <div className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono flex items-center gap-2">
           <CheckCircle2 className="w-5 h-5 shrink-0" />
-          <span>Artikel berhasil disimpan! Mengarahkan kembali ke console...</span>
+          <span>Postingan berhasil disimpan! Mengarahkan kembali ke console...</span>
         </div>
       )}
 
@@ -58,11 +58,11 @@ export const PostEditorForm: React.FC = () => {
             name="contentHtml"
             render={({ field }) => (
               <RichEditor
-                label="Isi Konten Dokumen (Visual Rich Editor) *"
+                label="Isi Konten Artikel (Visual Rich Editor) *"
                 value={field.value}
                 onChange={field.onChange}
                 error={errors.contentHtml?.message}
-                helperText="Mendukung headings, lists, inline code, syntax blocks, dan upload gambar."
+                helperText="Mendukung headings, lists, inline code, syntax blocks, dan formatting visual."
               />
             )}
           />

@@ -68,7 +68,7 @@ export function WebSiteJsonLd() {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: `${SITE_URL}/docs?q={search_term_string}`,
+        urlTemplate: `${SITE_URL}/blog?q={search_term_string}`,
       },
       'query-input': 'required name=search_term_string',
     },
@@ -185,6 +185,98 @@ export function FaqJsonLd({ faqs }: { faqs: FaqItem[] }) {
         text: faq.answer,
       },
     })),
+  };
+
+  return <JsonLd data={data} />;
+}
+
+interface BlogPostingProps {
+  title: string;
+  description: string;
+  url: string;
+  datePublished: string;
+  dateModified?: string;
+  authorName: string;
+  categoryName?: string;
+}
+
+export function BlogPostingJsonLd({
+  title,
+  description,
+  url,
+  datePublished,
+  dateModified,
+  authorName,
+  categoryName,
+}: BlogPostingProps) {
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: title,
+    description,
+    url,
+    datePublished,
+    dateModified: dateModified || datePublished,
+    author: {
+      '@type': 'Person',
+      name: authorName,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: SEO_DEFAULTS.siteName,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${SITE_URL}/logo.png`,
+      },
+    },
+    articleSection: categoryName,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': url,
+    },
+  };
+
+  return <JsonLd data={data} />;
+}
+
+interface EventJsonLdProps {
+  name: string;
+  description: string;
+  url: string;
+  startDate: string;
+  locationName: string;
+}
+
+export function EventJsonLd({
+  name,
+  description,
+  url,
+  startDate,
+  locationName,
+}: EventJsonLdProps) {
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'Event',
+    name,
+    description,
+    url,
+    startDate,
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode: 'https://schema.org/MixedEventAttendanceMode',
+    location: {
+      '@type': 'Place',
+      name: locationName,
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Surakarta',
+        addressCountry: 'ID',
+      },
+    },
+    organizer: {
+      '@type': 'Organization',
+      name: SEO_DEFAULTS.siteName,
+      url: SITE_URL,
+    },
   };
 
   return <JsonLd data={data} />;
