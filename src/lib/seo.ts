@@ -9,6 +9,11 @@ export const SEO_DEFAULTS = {
   type: 'website' as const,
   twitterHandle: '@mitrasova',
   ogImagePath: '/og-image.png',
+  socialLinks: {
+    linkedin: 'https://www.linkedin.com/company/mitrasova',
+    facebook: 'https://www.facebook.com/mitrasovads/',
+    instagram: 'https://www.instagram.com/mitrasovads/',
+  },
   keywords: [
     'Mitrasova',
     'Mitrasova Digital Solutions',
@@ -48,6 +53,7 @@ export const SEO_DEFAULTS = {
     addressRegion: 'Jawa Tengah',
     postalCode: '57711',
     addressCountry: 'ID',
+    formattedAddress: 'Karanganyar, Jawa Tengah, Indonesia',
   },
 } as const;
 

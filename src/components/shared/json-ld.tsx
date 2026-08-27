@@ -46,9 +46,9 @@ export function OrganizationJsonLd() {
       'Software Engineering',
     ],
     sameAs: [
-      // Add social media profiles when available
-      // 'https://www.instagram.com/mitrasova',
-      // 'https://www.linkedin.com/company/mitrasova',
+      SEO_DEFAULTS.socialLinks.linkedin,
+      SEO_DEFAULTS.socialLinks.facebook,
+      SEO_DEFAULTS.socialLinks.instagram,
     ],
   };
 

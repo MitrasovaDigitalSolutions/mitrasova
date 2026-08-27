@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { AppButton } from './app-button';
-import { ShieldCheck, BookOpen, Layers, PhoneCall, Menu, X, ArrowUpRight } from 'lucide-react';
+import { ShieldCheck, BookOpen, Layers, Menu, X, ArrowUpRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export const Navbar: React.FC = () => {
@@ -15,7 +15,6 @@ export const Navbar: React.FC = () => {
     { href: '/', label: 'Beranda', icon: ShieldCheck },
     { href: '/layanan', label: 'Ekosistem Layanan', icon: Layers },
     { href: '/docs', label: 'Docs Hub', icon: BookOpen },
-    { href: '/konsultasi', label: 'Konsultasi', icon: PhoneCall },
   ];
 
   return (
