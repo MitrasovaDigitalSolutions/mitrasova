@@ -1,7 +1,10 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import { ServiceItem } from '@/types';
 import { GlassCard, AppButton } from '@/components/shared';
+import { useTranslation } from '@/lib/i18n';
 import { ShoppingBag, Users, Server, Code, Zap, ArrowRight, ChevronRight, CheckCircle2 } from 'lucide-react';
 
 const iconMap: Record<string, React.ElementType> = {
@@ -13,6 +16,7 @@ const iconMap: Record<string, React.ElementType> = {
 
 export const ServiceCard: React.FC<{ service: ServiceItem }> = ({ service }) => {
   const IconComponent = iconMap[service.icon] || Zap;
+  const { t } = useTranslation();
 
   return (
     <GlassCard className="p-8 border-slate-800 flex flex-col justify-between group hover:border-slate-700 transition-colors bg-slate-950/70">
@@ -49,12 +53,12 @@ export const ServiceCard: React.FC<{ service: ServiceItem }> = ({ service }) => 
           href={`/docs/${service.slug}`}
           className="text-xs text-slate-400 hover:text-cyan-400 font-medium flex items-center gap-1"
         >
-          <span>Docs Hub</span>
+          <span>{t('navbar.docs')}</span>
           <ChevronRight className="w-3.5 h-3.5" />
         </Link>
         <Link href={`/layanan/${service.slug}`}>
           <AppButton variant="primary" size="sm" rightIcon={<ArrowRight className="w-3.5 h-3.5" />}>
-            Detail Layanan
+            {t('common.learnMore')}
           </AppButton>
         </Link>
       </div>

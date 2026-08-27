@@ -11,3 +11,4 @@ export * from './navbar';
 export * from './footer';
 export * from './rich-editor';
 export * from './mitrasova-logo';
+export * from './language-switcher';

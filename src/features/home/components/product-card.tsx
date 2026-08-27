@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { motion, Variants } from 'framer-motion';
 import { GlassCard, AppButton } from '@/components/shared';
 import { ServiceItem } from '@/types';
+import { useTranslation } from '@/lib/i18n';
 import { ShoppingBag, Users, Server, Code, Zap, CheckCircle, ChevronRight, ArrowRight } from 'lucide-react';
 
 const iconMap: Record<string, React.ElementType> = {
@@ -28,6 +29,7 @@ const cardVariants: Variants = {
 
 export const ProductCard: React.FC<{ service: ServiceItem }> = ({ service }) => {
   const IconComponent = iconMap[service.icon] || Zap;
+  const { t } = useTranslation();
 
   return (
     <motion.div variants={cardVariants} className="h-full">
@@ -65,12 +67,12 @@ export const ProductCard: React.FC<{ service: ServiceItem }> = ({ service }) => 
             href={`/docs/${service.slug}`}
             className="text-xs text-slate-400 hover:text-slate-200 font-medium flex items-center gap-1 group/link"
           >
-            <span>Baca Docs</span>
+            <span>{t('docs.hub.readArticle')}</span>
             <ChevronRight className="w-3.5 h-3.5 group-hover/link:translate-x-1 transition-transform" />
           </Link>
           <Link href={`/layanan/${service.slug}`}>
             <AppButton variant="primary" size="sm" rightIcon={<ArrowRight className="w-3.5 h-3.5" />}>
-              Pelajari {service.title}
+              {t('common.learnMore')}
             </AppButton>
           </Link>
         </div>

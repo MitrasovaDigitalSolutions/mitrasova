@@ -1,20 +1,25 @@
+'use client';
+
 import React from 'react';
 import { ServiceItem } from '@/types';
 import { SectionHeading } from '@/components/shared';
 import { ServiceFeatureCard } from './service-feature-card';
+import { useTranslation } from '@/lib/i18n';
 
 export interface ServiceFeaturesGridProps {
   service: ServiceItem;
 }
 
 export const ServiceFeaturesGrid: React.FC<ServiceFeaturesGridProps> = ({ service }) => {
+  const { t } = useTranslation();
+
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <SectionHeading
-        badge="Fitur & Kapabilitas"
-        title="Keunggulan Utama"
+        badge={t('services.detail.keyFeatures')}
+        title={t('services.detail.keyFeatures')}
         gradientText={service.title}
-        description="Arsitektur fitur yang dirancang khusus untuk performa maksimal dan stabilitas operasional harian."
+        description={t('services.detail.keyFeaturesDesc')}
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

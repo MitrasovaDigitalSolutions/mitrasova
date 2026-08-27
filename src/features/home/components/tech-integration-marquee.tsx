@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from '@/lib/i18n';
 import {
   CreditCard,
   Database,
@@ -13,33 +14,29 @@ import {
   Lock,
 } from 'lucide-react';
 
-interface TechPartnerItem {
-  name: string;
-  category: string;
-  icon: React.ReactNode;
-}
-
-const TECH_ITEMS: TechPartnerItem[] = [
-  { name: 'QRIS Standar BI', category: 'Payment Integration', icon: <CreditCard className="w-4 h-4 text-rose-400" /> },
-  { name: 'Bank Transfer (BCA, Mandiri, BRI)', category: 'Gateway Direct', icon: <Zap className="w-4 h-4 text-blue-400" /> },
-  { name: 'E-Wallet (GoPay, OVO, Dana)', category: 'Instant Checkout', icon: <CreditCard className="w-4 h-4 text-emerald-400" /> },
-  { name: 'PostgreSQL High-Availability', category: 'Relational DB', icon: <Database className="w-4 h-4 text-cyan-400" /> },
-  { name: 'Redis In-Memory Caching', category: 'Low-Latency Cache', icon: <Server className="w-4 h-4 text-red-400" /> },
-  { name: 'Docker & Microservices', category: 'Containerized Infra', icon: <Cpu className="w-4 h-4 text-indigo-400" /> },
-  { name: 'Next.js & React 19', category: 'Fullstack Framework', icon: <Layers className="w-4 h-4 text-white" /> },
-  { name: 'Cloudflare Edge CDN', category: 'DDoS & Global Edge', icon: <Globe className="w-4 h-4 text-amber-400" /> },
-  { name: '256-Bit TLS / SSL Encryption', category: 'Enterprise Security', icon: <Lock className="w-4 h-4 text-teal-400" /> },
-];
-
 export const TechIntegrationMarquee: React.FC = () => {
+  const { t } = useTranslation();
+
+  const techItems = [
+    { name: 'QRIS Standar BI', category: t('home.marquee.paymentIntegration'), icon: <CreditCard className="w-4 h-4 text-rose-400" /> },
+    { name: 'Bank Transfer (BCA, Mandiri, BRI)', category: t('home.marquee.gatewayDirect'), icon: <Zap className="w-4 h-4 text-blue-400" /> },
+    { name: 'E-Wallet (GoPay, OVO, Dana)', category: t('home.marquee.instantCheckout'), icon: <CreditCard className="w-4 h-4 text-emerald-400" /> },
+    { name: 'PostgreSQL High-Availability', category: t('home.marquee.relationalDb'), icon: <Database className="w-4 h-4 text-cyan-400" /> },
+    { name: 'Redis In-Memory Caching', category: t('home.marquee.lowLatencyCache'), icon: <Server className="w-4 h-4 text-red-400" /> },
+    { name: 'Docker & Microservices', category: t('home.marquee.containerizedInfra'), icon: <Cpu className="w-4 h-4 text-indigo-400" /> },
+    { name: 'Next.js & React 19', category: t('home.marquee.fullstackFramework'), icon: <Layers className="w-4 h-4 text-white" /> },
+    { name: 'Cloudflare Edge CDN', category: t('home.marquee.ddosGlobalEdge'), icon: <Globe className="w-4 h-4 text-amber-400" /> },
+    { name: '256-Bit TLS / SSL Encryption', category: t('home.marquee.enterpriseSecurity'), icon: <Lock className="w-4 h-4 text-teal-400" /> },
+  ];
+
   // Duplicate list to create a seamless infinite loop
-  const marqueeItems = [...TECH_ITEMS, ...TECH_ITEMS];
+  const marqueeItems = [...techItems, ...techItems];
 
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 relative z-10 overflow-hidden">
       <div className="text-center mb-6">
         <p className="text-[11px] font-mono font-semibold uppercase tracking-widest text-slate-500">
-          Infrastruktur & Standar Integrasi Teruji
+          {t('home.marquee.caption')}
         </p>
       </div>
 

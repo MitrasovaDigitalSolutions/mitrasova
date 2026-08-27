@@ -5,17 +5,20 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { AppButton } from './app-button';
 import { MitrasovaLogo } from './mitrasova-logo';
+import { LanguageSwitcher } from './language-switcher';
+import { useTranslation } from '@/lib/i18n';
 import { ShieldCheck, BookOpen, Layers, Menu, X, ArrowUpRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const { t } = useTranslation();
 
   const navLinks = [
-    { href: '/', label: 'Beranda', icon: ShieldCheck },
-    { href: '/layanan', label: 'Ekosistem Layanan', icon: Layers },
-    { href: '/docs', label: 'Docs Hub', icon: BookOpen },
+    { href: '/', label: t('navbar.home'), icon: ShieldCheck },
+    { href: '/layanan', label: t('navbar.services'), icon: Layers },
+    { href: '/docs', label: t('navbar.docs'), icon: BookOpen },
   ];
 
   return (
@@ -58,24 +61,28 @@ export const Navbar: React.FC = () => {
             })}
           </nav>
 
-          {/* Desktop CTA Action Button */}
+          {/* Desktop Actions & Language Switcher */}
           <div className="hidden md:flex items-center gap-3">
+            <LanguageSwitcher />
             <Link href="/konsultasi">
               <AppButton variant="primary" size="sm" rightIcon={<ArrowUpRight className="w-3.5 h-3.5" />}>
-                Mulai Konsultasi
+                {t('navbar.startConsultation')}
               </AppButton>
             </Link>
           </div>
 
-          {/* Mobile Menu Toggle Button */}
-          <button
-            type="button"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle navigation menu"
-            className="md:hidden p-2 rounded-xl text-slate-300 hover:text-white bg-slate-900 border border-slate-800 cursor-pointer min-h-[40px] min-w-[40px] flex items-center justify-center"
-          >
-            {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-          </button>
+          {/* Mobile Menu & Language Toggle */}
+          <div className="flex md:hidden items-center gap-2">
+            <LanguageSwitcher variant="compact" />
+            <button
+              type="button"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Toggle navigation menu"
+              className="p-2 rounded-xl text-slate-300 hover:text-white bg-slate-900 border border-slate-800 cursor-pointer min-h-[40px] min-w-[40px] flex items-center justify-center"
+            >
+              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -105,7 +112,7 @@ export const Navbar: React.FC = () => {
           <div className="pt-3 border-t border-slate-800 flex flex-col gap-2">
             <Link href="/konsultasi" onClick={() => setMobileMenuOpen(false)}>
               <AppButton variant="primary" size="md" className="w-full justify-center">
-                Mulai Konsultasi
+                {t('navbar.startConsultation')}
               </AppButton>
             </Link>
           </div>

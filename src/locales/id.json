@@ -1,0 +1,227 @@
+{
+  "common": {
+    "version": "v",
+    "learnMore": "Pelajari Selengkapnya",
+    "consultation": "Konsultasi Gratis",
+    "docsHub": "Buka Docs Hub",
+    "contactUs": "Hubungi Kami",
+    "allRightsReserved": "Hak Cipta Dilindungi Undang-Undang.",
+    "allOperational": "Seluruh Sistem Beroperasi Normal",
+    "systemStatus": "Status Sistem"
+  },
+  "navbar": {
+    "home": "Beranda",
+    "services": "Ekosistem Layanan",
+    "docs": "Docs Hub",
+    "startConsultation": "Mulai Konsultasi"
+  },
+  "home": {
+    "hero": {
+      "liveBadge": "MITRASOVA ENTERPRISE CLOUD ECOSYSTEM",
+      "title": "Satu Ekosistem Software Untuk",
+      "titleGradient": "Skalabilitas Bisnis Modern",
+      "description": "Arsitektur aplikasi terintegrasi mulai dari POS Kasir Multi-Cabang, Manajemen SDM & Payroll Terpadu, Infrastruktur Cloud Berkinerja Tinggi, hingga Pengembangan Aplikasi Kustom.",
+      "ctaPrimary": "Konsultasi Gratis",
+      "ctaSecondary": "Buka Docs Hub",
+      "uptimeBadge": "99.99% SLA Uptime",
+      "dbBadge": "PostgreSQL Cloud DB",
+      "encryptionBadge": "256-Bit Enkripsi End-to-End"
+    },
+    "marquee": {
+      "caption": "Infrastruktur & Standar Integrasi Teruji",
+      "paymentIntegration": "Integrasi Pembayaran",
+      "gatewayDirect": "Gateway Langsung",
+      "instantCheckout": "Pembayaran Instan",
+      "relationalDb": "Basis Data Relasional",
+      "lowLatencyCache": "Cache Latensi Rendah",
+      "containerizedInfra": "Infrastruktur Kontainer",
+      "fullstackFramework": "Kerangka Kerja Fullstack",
+      "ddosGlobalEdge": "DDoS & Distribusi Global",
+      "enterpriseSecurity": "Keamanan Enterprise"
+    },
+    "products": {
+      "badge": "Enterprise Suite",
+      "title": "Empat Solusi Inti",
+      "titleGradient": "Satu Basis Data Terpadu",
+      "description": "Setiap produk dirancang untuk saling berkomunikasi secara real-time, mengeliminasi duplikasi data dan mempercepat alur kerja perusahaan.",
+      "learnService": "Pelajari Layanan"
+    },
+    "advantages": {
+      "badge": "Keunggulan Arsitektur",
+      "title": "Mengapa Memilih Ekosistem",
+      "titleGradient": "Teknologi Mitrasova?",
+      "description": "Dirancang secara presisi untuk menunjang skalabilitas bisnis Anda dari puluhan hingga ribuan transaksi setiap harinya.",
+      "consultCta": "Konsultasi Implementasi",
+      "items": {
+        "sync": {
+          "badge": "Real-Time Sync",
+          "title": "Sinkronisasi Multi-Cabang Instan",
+          "description": "Seluruh transaksi penjualan kasir, transfer persediaan gudang, dan rekonsiliasi keuangan antar cabang terhubung dalam satu basis data terpadu tanpa delay.",
+          "points": ["Stok inventaris terpusat", "Mendukung mode offline & online", "Rekonsiliasi transaksi otomatis"]
+        },
+        "security": {
+          "badge": "Enterprise Security",
+          "title": "Keamanan Data & Role Permission",
+          "description": "Perlindungan data transaksi dan privasi karyawan dengan Role-Based Access Control (RBAC), enkripsi end-to-end 256-bit, dan pencatatan audit log komprehensif.",
+          "points": ["Hak akses bertingkat per jabatan", "Audit trail aktivitas pengguna", "Backup harian otomatis & terenkripsi"]
+        },
+        "uptime": {
+          "badge": "Cloud Reliability",
+          "title": "Infrastruktur Cloud High-Availability",
+          "description": "Arsitektur cloud modern dengan load balancing adaptif, auto-scaling saat jam sibuk, dan jaminan uptime 99.9% untuk kelancaran operasional bisnis tanpa henti.",
+          "points": ["SLA Uptime 99.9% bergaransi", "Proteksi DDoS & firewall pintar", "Node server redundansi ganda"]
+        },
+        "support": {
+          "badge": "Local Engineering",
+          "title": "Dukungan Teknis Lokal Solo Raya",
+          "description": "Dukungan langsung dari tim engineer Mitrasova di Karanganyar & Solo Raya. Kami siap mendampingi proses audit, implementasi, pelatihan tim, hingga kustomisasi.",
+          "points": ["Pendampingan setup & onboarding staf", "Respon cepat melalui hotline khusus", "Dukungan on-site & remote"]
+        }
+      }
+    },
+    "workflow": {
+      "badge": "Alur Implementasi Terstruktur",
+      "title": "Bagaimana Kami Mentransformasi",
+      "titleGradient": "Operasional Bisnis Anda",
+      "description": "Empat tahapan implementasi yang terukur dan terencana untuk memastikan transisi sistem berlangsung mulus tanpa mengganggu aktivitas bisnis.",
+      "resultLabel": "Hasil: ",
+      "steps": {
+        "step1": {
+          "step": "01",
+          "phase": "Tahap 1: Discovery",
+          "title": "Audit & Konsultasi Kebutuhan",
+          "description": "Kami membedah alur operasional kasir, sistem absensi & payroll, atau arsitektur custom software yang paling relevan dengan skala bisnis Anda.",
+          "deliverable": "Blueprint Sistem & Analisis Kebutuhan"
+        },
+        "step2": {
+          "step": "02",
+          "phase": "Tahap 2: Konfigurasi",
+          "title": "Penyesuaian & Integrasi Sistem",
+          "description": "Penyusunan basis data terpusat, pengujian hardware printer & scanner kasir, pengaturan shift kerja, serta konfigurasi hak akses pengguna.",
+          "deliverable": "Sistem Terkonfigurasi & Siap Uji"
+        },
+        "step3": {
+          "step": "03",
+          "phase": "Tahap 3: Onboarding",
+          "title": "Migrasi Data & Pelatihan Staf",
+          "description": "Pemindahan aman master data produk, harga, dan profil karyawan ke dalam sistem, disertai sesi pelatihan interaktif hingga tim Anda mahir.",
+          "deliverable": "Master Data Rapi & Tim Terlatih"
+        },
+        "step4": {
+          "step": "04",
+          "phase": "Tahap 4: Go-Live",
+          "title": "Peluncuran & Monitoring 24/7",
+          "description": "Sistem resmi beroperasi melayani transaksi bisnis Anda. Didukung pemantauan uptime server berkala, backup harian otomatis, dan tim support responsif.",
+          "deliverable": "Sistem Live & Jaminan SLA 99.9%"
+        }
+      }
+    }
+  },
+  "services": {
+    "overview": {
+      "badge": "Enterprise Ecosystem",
+      "title": "Ekosistem Produk & Layanan",
+      "titleGradient": "Mitrasova Digital",
+      "description": "Solusi perangkat lunak lengkap dan terintegrasi untuk mendigitalkan seluruh lini operasi bisnis Anda.",
+      "exploreDocs": "Lihat Dokumentasi",
+      "consultSolution": "Jadwalkan Konsultasi"
+    },
+    "detail": {
+      "backToServices": "Kembali ke Ekosistem Layanan",
+      "keyFeatures": "Fitur Utama & Keunggulan",
+      "keyFeaturesDesc": "Modul dan kapabilitas teknologi yang dirancang untuk efisiensi maksimal bisnis Anda.",
+      "faqTitle": "Pertanyaan Umum (FAQ)",
+      "faqDesc": "Informasi teknis dan operasional yang sering ditanyakan seputar layanan ini.",
+      "docsBannerTitle": "Dokumentasi Lengkap & Panduan Teknis",
+      "docsBannerDesc": "Pelajari panduan setup langkah demi langkah, rilis pembaruan versi, dan integrasi API untuk layanan ini.",
+      "openDocsBtn": "Buka Dokumentasi Layanan"
+    }
+  },
+  "consultation": {
+    "header": {
+      "badge": "Konsultasi Solusi Bisnis",
+      "title": "Diskusikan Transformasi Digital",
+      "titleGradient": "Bersama Tim Ahli Kami",
+      "description": "Jadwalkan sesi konsultasi gratis bersama Solution Architect Mitrasova. Kami siap membantu merancang arsitektur sistem yang tepat untuk bisnis Anda."
+    },
+    "form": {
+      "fullName": "Nama Lengkap",
+      "fullNamePlaceholder": "cth. Raihan Marwanda",
+      "companyName": "Nama Perusahaan / Bisnis (Opsional)",
+      "companyPlaceholder": "cth. PT Retail Sukses Mandiri",
+      "email": "Alamat Email Bisnis",
+      "emailPlaceholder": "cth. name@company.com",
+      "phone": "Nomor WhatsApp / Telepon",
+      "phonePlaceholder": "cth. 081234567890",
+      "servicesLabel": "Pilih Layanan Yang Diminati (Bisa lebih dari 1)",
+      "message": "Deskripsi Kebutuhan atau Catatan",
+      "messagePlaceholder": "Ceritakan mengenai kendala operasional saat ini atau fitur khusus yang Anda butuhkan...",
+      "submitBtn": "Kirim Jadwal Konsultasi",
+      "submittingBtn": "Mengirim Permintaan...",
+      "successTitle": "Permintaan Konsultasi Berhasil Terkirim!",
+      "successDesc": "Terima kasih telah menghubungi Mitrasova. Tim Solution Architect kami akan menghubungi Anda melalui WhatsApp / Email dalam 1x24 jam."
+    },
+    "infoCard": {
+      "cardTitle": "Konsultasi Solusi Enterprise",
+      "cardDesc": "Diskusikan kebutuhan arsitektur sistem, POS Kasir, HRIS, custom web & mobile app, atau deployment cloud bersama tim engineer Mitrasova.",
+      "officeLocation": "Lokasi Kantor",
+      "fastResponse": "Respon Cepat 1x24 Jam",
+      "fastResponseDesc": "Tim kami akan mengkaji kebutuhan Anda dan menjadwalkan sesi demo interaktif.",
+      "officialEmail": "Email Resmi",
+      "ndaGuarantee": "Garansi Kerahasiaan (NDA)",
+      "ndaDesc": "Setiap data proses bisnis dan dokumen spesifikasi dilindungi Non-Disclosure Agreement standar industri."
+    }
+  },
+  "docs": {
+    "hub": {
+      "badge": "Pusat Dokumentasi Terstruktur",
+      "title": "Dokumentasi Resmi Layanan",
+      "titleGradient": "Mitrasova Digital Solutions",
+      "description": "Akses tutorial instalasi, panduan operasional harian, release notes versi terbaru, dan dokumentasi API terintegrasi.",
+      "searchPlaceholder": "Cari panduan, tutorial, atau modul fitur...",
+      "articlesCount": "Artikel",
+      "readArticle": "Baca Panduan"
+    },
+    "sidebar": {
+      "allServices": "Semua Layanan",
+      "allCategories": "Semua Kategori",
+      "backToHub": "Kembali ke Docs Hub"
+    },
+    "article": {
+      "author": "Penulis",
+      "updatedAt": "Pembaruan Terakhir",
+      "readTime": "Waktu Baca",
+      "share": "Bagikan Artikel",
+      "tableOfContents": "Daftar Isi"
+    }
+  },
+  "footer": {
+    "brandDesc": "Mitrasova Digital Solutions adalah penyedia teknologi dan rekayasa perangkat lunak. Kami menghadirkan ekosistem POS Kasir, HRIS & Payroll, Managed Cloud Server, Custom Web & Mobile App Development.",
+    "productSuite": "Ekosistem Produk",
+    "pos": "Mitrasova POS",
+    "daya": "Mitrasova Daya (HRIS)",
+    "nexus": "Mitrasova Nexus (Cloud)",
+    "labs": "Mitrasova Labs (Web & App)",
+    "docsCenter": "Pusat Dokumentasi",
+    "posDocs": "Tutorial & Setup POS",
+    "dayaDocs": "Panduan Payroll & HRIS",
+    "nexusDocs": "Release Notes Cloud Server",
+    "labsDocs": "Dokumentasi Integrasi API",
+    "contact": "Hubungi Kami",
+    "navLinks": {
+      "services": "Layanan",
+      "consultation": "Konsultasi",
+      "docs": "Dokumentasi"
+    }
+  },
+  "console": {
+    "header": {
+      "title": "CONSOLE",
+      "status": "ONLINE",
+      "dashboard": "Dashboard",
+      "newPost": "New Post",
+      "liveSite": "Live Site",
+      "logout": "Keluar"
+    }
+  }
+}

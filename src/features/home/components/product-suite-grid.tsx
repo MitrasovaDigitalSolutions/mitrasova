@@ -5,6 +5,7 @@ import { motion, Variants } from 'framer-motion';
 import { SectionHeading } from '@/components/shared';
 import { INITIAL_SERVICES } from '@/lib/data';
 import { ProductCard } from './product-card';
+import { useTranslation } from '@/lib/i18n';
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -17,13 +18,15 @@ const containerVariants: Variants = {
 };
 
 export const ProductSuiteGrid: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <SectionHeading
-        badge="Ekosistem Produk"
-        title="Empat Pilar Solusi Teknologi"
-        gradientText="Pilihan Bisnis Modern"
-        description="Setiap produk didesain secara khusus untuk mempercepat pertumbuhan bisnis, mengotomatisasi operasional, dan menjaga keamanan data enterprise."
+        badge={t('home.products.badge')}
+        title={t('home.products.title')}
+        gradientText={t('home.products.titleGradient')}
+        description={t('home.products.description')}
       />
 
       <motion.div

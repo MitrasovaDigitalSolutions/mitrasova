@@ -6,9 +6,12 @@ import { motion } from 'framer-motion';
 import { AppButton } from '@/components/shared';
 import { RogHeroVisual } from './rog-hero-visual';
 import { APP_VERSION } from '@/lib/version';
+import { useTranslation } from '@/lib/i18n';
 import { Sparkles, ArrowRight, BookOpen, ShieldCheck } from 'lucide-react';
 
 export const HeroSection: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
       {/* Dynamic Ambient Background Glows */}
@@ -27,20 +30,20 @@ export const HeroSection: React.FC = () => {
             {/* Live Version Tag */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono font-semibold bg-indigo-500/10 text-cyan-300 border border-indigo-500/30">
               <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
-              <span>MITRASOVA ENTERPRISE CLOUD ECOSYSTEM v{APP_VERSION}</span>
+              <span>{t('home.hero.liveBadge')} v{APP_VERSION}</span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.1]">
-              Satu Ekosistem Software Untuk{' '}
+              {t('home.hero.title')}{' '}
               <span className="bg-gradient-to-r from-cyan-400 via-indigo-300 to-purple-400 bg-clip-text text-transparent">
-                Skalabilitas Bisnis Modern
+                {t('home.hero.titleGradient')}
               </span>
             </h1>
 
             {/* Description */}
             <p className="text-sm sm:text-base text-slate-300 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Arsitektur aplikasi terintegrasi mulai dari POS Kasir Multi-Cabang, Manajemen SDM & Payroll Terpadu, Infrastruktur Cloud Berkinerja Tinggi, hingga Pengembangan Aplikasi Kustom.
+              {t('home.hero.description')}
             </p>
 
             {/* Call to Actions */}
@@ -52,7 +55,7 @@ export const HeroSection: React.FC = () => {
                   className="w-full sm:w-auto justify-center"
                   rightIcon={<ArrowRight className="w-4 h-4" />}
                 >
-                  Konsultasi Gratis
+                  {t('home.hero.ctaPrimary')}
                 </AppButton>
               </Link>
 
@@ -63,7 +66,7 @@ export const HeroSection: React.FC = () => {
                   className="w-full sm:w-auto justify-center"
                   leftIcon={<BookOpen className="w-4 h-4 text-cyan-400" />}
                 >
-                  Buka Docs Hub
+                  {t('home.hero.ctaSecondary')}
                 </AppButton>
               </Link>
             </div>
@@ -72,15 +75,15 @@ export const HeroSection: React.FC = () => {
             <div className="pt-6 border-t border-slate-800/80 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-slate-400 font-mono">
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-emerald-400" />
-                <span>99.99% SLA Uptime</span>
+                <span>{t('home.hero.uptimeBadge')}</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
-                <span>PostgreSQL Cloud DB</span>
+                <span>{t('home.hero.dbBadge')}</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-indigo-400 font-bold">256-Bit</span>
-                <span>End-to-End Encryption</span>
+                <span>{t('home.hero.encryptionBadge')}</span>
               </div>
             </div>
           </motion.div>

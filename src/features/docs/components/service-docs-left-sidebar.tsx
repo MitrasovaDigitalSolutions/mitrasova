@@ -1,7 +1,10 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import { ServiceItem, CategoryItem, PostItem } from '@/types';
 import { GlassCard } from '@/components/shared';
+import { useTranslation } from '@/lib/i18n';
 import { Layers } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -21,13 +24,14 @@ export const ServiceDocsLeftSidebar: React.FC<ServiceDocsLeftSidebarProps> = ({
   allPosts,
 }) => {
   const servicePosts = allPosts.filter((p) => p.serviceSlug === currentService.slug);
+  const { t } = useTranslation();
 
   return (
     <aside className="lg:col-span-3 space-y-6 sticky top-28">
       {/* Service Switcher Box */}
       <GlassCard className="p-4 border-slate-800 bg-slate-950/70">
         <label className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2 font-mono">
-          Pilih Layanan Docs:
+          {t('docs.sidebar.allServices')}:
         </label>
         <div className="space-y-1.5">
           {allServices.map((srv) => (
@@ -52,7 +56,7 @@ export const ServiceDocsLeftSidebar: React.FC<ServiceDocsLeftSidebarProps> = ({
       <GlassCard className="p-5 border-slate-800 space-y-4 bg-slate-950/70">
         <div className="flex items-center gap-2 text-xs font-bold text-slate-300 pb-2 border-b border-slate-800 font-mono uppercase tracking-wider">
           <Layers className="w-4 h-4 text-cyan-400" />
-          <span>Dokumentasi {currentService.title}</span>
+          <span>{currentService.title}</span>
         </div>
 
         <div className="space-y-3">
@@ -79,7 +83,7 @@ export const ServiceDocsLeftSidebar: React.FC<ServiceDocsLeftSidebarProps> = ({
                     </Link>
                   ))
                 ) : (
-                  <span className="text-[11px] text-slate-500 italic block pl-2">Belum ada artikel</span>
+                  <span className="text-[11px] text-slate-500 italic block pl-2">-</span>
                 )}
               </div>
             );

@@ -1,6 +1,9 @@
+'use client';
+
 import React from 'react';
 import { ServiceItem } from '@/types';
 import { SectionHeading, GlassCard } from '@/components/shared';
+import { useTranslation } from '@/lib/i18n';
 import { HelpCircle } from 'lucide-react';
 
 export interface ServiceFaqSectionProps {
@@ -8,13 +11,15 @@ export interface ServiceFaqSectionProps {
 }
 
 export const ServiceFaqSection: React.FC<ServiceFaqSectionProps> = ({ service }) => {
+  const { t } = useTranslation();
+
   return (
     <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <SectionHeading
-        badge="FAQ & Panduan"
-        title="Pertanyaan Umum"
+        badge="FAQ"
+        title={t('services.detail.faqTitle')}
         gradientText={service.title}
-        description="Jawaban seputar implementasi, integrasi teknis, dan dukungan operasional."
+        description={t('services.detail.faqDesc')}
       />
 
       <div className="space-y-4">

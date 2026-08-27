@@ -1,7 +1,10 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import { ServiceItem } from '@/types';
 import { AppButton } from '@/components/shared';
+import { useTranslation } from '@/lib/i18n';
 import { ShoppingBag, Users, Server, Code, Zap, ArrowRight, BookOpen } from 'lucide-react';
 
 export interface ServiceHeroProps {
@@ -17,6 +20,7 @@ const iconMap: Record<string, React.ElementType> = {
 
 export const ServiceHero: React.FC<ServiceHeroProps> = ({ service }) => {
   const ServiceIcon = iconMap[service.icon] || Zap;
+  const { t } = useTranslation();
 
   return (
     <section className="relative pt-16 pb-20 bg-gradient-to-b from-slate-950 via-slate-900 to-[#090D16] border-b border-slate-800/80">
@@ -42,12 +46,12 @@ export const ServiceHero: React.FC<ServiceHeroProps> = ({ service }) => {
           <div className="pt-6 flex flex-wrap items-center justify-center gap-4">
             <Link href="/konsultasi">
               <AppButton variant="primary" size="lg" rightIcon={<ArrowRight className="w-4 h-4" />}>
-                Konsultasikan {service.title}
+                {t('common.consultation')}
               </AppButton>
             </Link>
             <Link href={`/docs/${service.slug}`}>
               <AppButton variant="outline" size="lg" leftIcon={<BookOpen className="w-4 h-4 text-cyan-400" />}>
-                Dokumentasi & Tutorial Hub
+                {t('common.docsHub')}
               </AppButton>
             </Link>
           </div>

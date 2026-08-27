@@ -4,11 +4,13 @@ import React from 'react';
 import { GlassCard, AppButton, FormInput, FormTextarea } from '@/components/shared';
 import { INITIAL_SERVICES } from '@/lib/data';
 import { CheckCircle, Send } from 'lucide-react';
+import { useTranslation } from '@/lib/i18n';
 import { useConsultationForm } from '../hooks/use-consultation-form';
 
 export const ConsultationForm: React.FC = () => {
   const { form, isSubmitted, selectedServices, toggleService, handleSubmit } = useConsultationForm();
   const { register, formState: { errors, isSubmitting } } = form;
+  const { t } = useTranslation();
 
   return (
     <GlassCard className="p-8 md:p-10 border-slate-800 bg-slate-950/80">
@@ -17,24 +19,24 @@ export const ConsultationForm: React.FC = () => {
           <div className="w-16 h-16 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto border border-emerald-500/30">
             <CheckCircle className="w-10 h-10" />
           </div>
-          <h3 className="text-2xl font-bold text-white">Formulir Terkirim!</h3>
+          <h3 className="text-2xl font-bold text-white">{t('consultation.form.successTitle')}</h3>
           <p className="text-xs text-slate-300 max-w-md mx-auto">
-            Terima kasih. Tim Solution Architect Mitrasova akan menghubungi Anda dalam waktu 1x24 jam.
+            {t('consultation.form.successDesc')}
           </p>
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-5 text-xs">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <FormInput
-              label="Nama Lengkap *"
-              placeholder="Nama Anda"
+              label={`${t('consultation.form.fullName')} *`}
+              placeholder={t('consultation.form.fullNamePlaceholder')}
               {...register('name')}
               error={errors.name?.message}
             />
             <FormInput
-              label="Email Perusahaan *"
+              label={`${t('consultation.form.email')} *`}
               type="email"
-              placeholder="email@perusahaan.com"
+              placeholder={t('consultation.form.emailPlaceholder')}
               {...register('email')}
               error={errors.email?.message}
             />
@@ -42,15 +44,15 @@ export const ConsultationForm: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <FormInput
-              label="Nama Perusahaan"
-              placeholder="PT Mitra Digital Jaya"
+              label={t('consultation.form.companyName')}
+              placeholder={t('consultation.form.companyPlaceholder')}
               {...register('company')}
               error={errors.company?.message}
             />
             <FormInput
-              label="Nomor Telepon / WhatsApp *"
+              label={`${t('consultation.form.phone')} *`}
               type="tel"
-              placeholder="+62 812 3456 7890"
+              placeholder={t('consultation.form.phonePlaceholder')}
               {...register('phone')}
               error={errors.phone?.message}
             />
@@ -58,7 +60,7 @@ export const ConsultationForm: React.FC = () => {
 
           <div>
             <label className="block text-xs font-semibold text-slate-300 mb-2">
-              Pilih Layanan yang Diminati (Bisa Lebih Dari 1):
+              {t('consultation.form.servicesLabel')}:
             </label>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               {INITIAL_SERVICES.map((srv) => {
@@ -88,8 +90,8 @@ export const ConsultationForm: React.FC = () => {
           </div>
 
           <FormTextarea
-            label="Pesan & Kebutuhan Spesifik"
-            placeholder="Tuliskan gambaran singkat kebutuhan atau pertanyaan Anda..."
+            label={t('consultation.form.message')}
+            placeholder={t('consultation.form.messagePlaceholder')}
             rows={4}
             {...register('message')}
             error={errors.message?.message}
@@ -103,7 +105,7 @@ export const ConsultationForm: React.FC = () => {
             isLoading={isSubmitting}
             rightIcon={<Send className="w-4 h-4" />}
           >
-            Kirim Formulir Konsultasi
+            {isSubmitting ? t('consultation.form.submittingBtn') : t('consultation.form.submitBtn')}
           </AppButton>
         </form>
       )}

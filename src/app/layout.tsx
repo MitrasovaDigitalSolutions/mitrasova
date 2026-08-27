@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { Inter, Outfit } from 'next/font/google';
 import './globals.css';
 import { QueryProvider } from '@/components/providers/QueryProvider';
+import { LanguageProvider } from '@/lib/i18n';
 import { SEO_DEFAULTS, buildCanonicalUrl, buildOgImageUrl } from '@/lib/seo';
 
 const inter = Inter({
@@ -95,7 +96,9 @@ export default function RootLayout({
     <html lang="id" className={`${inter.variable} ${outfit.variable} dark scroll-smooth`}>
       <body className="min-h-[100dvh] flex flex-col bg-[#060911] text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950">
         <QueryProvider>
-          {children}
+          <LanguageProvider>
+            {children}
+          </LanguageProvider>
         </QueryProvider>
       </body>
     </html>

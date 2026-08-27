@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import { signOut } from 'next-auth/react';
 import { Plus, ExternalLink, LogOut, LayoutDashboard } from 'lucide-react';
 import { APP_VERSION } from '@/lib/version';
-import { MitrasovaLogo } from '@/components/shared';
+import { MitrasovaLogo, LanguageSwitcher } from '@/components/shared';
 import { cn } from '@/lib/utils';
 
 export const ConsoleHeader: React.FC = () => {
@@ -83,11 +83,14 @@ export const ConsoleHeader: React.FC = () => {
               <span className="hidden md:inline">Live Site</span>
             </Link>
 
+            {/* Language Switcher */}
+            <LanguageSwitcher variant="compact" />
+
             {/* Logout Button */}
             <button
               type="button"
               onClick={handleLogout}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono text-rose-400 hover:bg-rose-500/10 border border-rose-500/20 transition-colors cursor-pointer ml-2"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono text-rose-400 hover:bg-rose-500/10 border border-rose-500/20 transition-colors cursor-pointer ml-1"
               title="Keluar dari sesi console"
             >
               <LogOut className="w-3.5 h-3.5" />

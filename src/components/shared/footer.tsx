@@ -1,12 +1,16 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import { APP_VERSION } from '@/lib/version';
 import { SEO_DEFAULTS } from '@/lib/seo';
 import { MitrasovaLogo } from './mitrasova-logo';
+import { useTranslation } from '@/lib/i18n';
 import { ArrowRight, Mail, MapPin } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
+  const { t } = useTranslation();
 
   return (
     <footer className="bg-slate-950 border-t border-slate-800/80 pt-16 pb-12 text-slate-400 relative overflow-hidden">
@@ -30,7 +34,7 @@ export const Footer: React.FC = () => {
               </div>
             </div>
             <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
-              Mitrasova Digital Solutions adalah penyedia teknologi dan rekayasa perangkat lunak. Kami menghadirkan ekosistem POS Kasir, HRIS & Payroll, Managed Cloud Server, Custom Web & Mobile App Development.
+              {t('footer.brandDesc')}
             </p>
 
             {/* Social Media Links */}
@@ -73,30 +77,32 @@ export const Footer: React.FC = () => {
 
           {/* Product Suite */}
           <div>
-            <h4 className="text-xs font-semibold text-white tracking-wider uppercase mb-4 font-mono">Ekosistem Produk</h4>
+            <h4 className="text-xs font-semibold text-white tracking-wider uppercase mb-4 font-mono">
+              {t('footer.productSuite')}
+            </h4>
             <ul className="space-y-2.5 text-xs font-medium">
               <li>
                 <Link href="/layanan/mitrasova-pos" className="hover:text-indigo-400 transition-colors flex items-center gap-1.5">
                   <ArrowRight className="w-3.5 h-3.5 text-indigo-500" />
-                  Mitrasova POS
+                  {t('footer.pos')}
                 </Link>
               </li>
               <li>
                 <Link href="/layanan/mitrasova-daya" className="hover:text-indigo-400 transition-colors flex items-center gap-1.5">
                   <ArrowRight className="w-3.5 h-3.5 text-indigo-500" />
-                  Mitrasova Daya (HRIS)
+                  {t('footer.daya')}
                 </Link>
               </li>
               <li>
                 <Link href="/layanan/mitrasova-nexus" className="hover:text-indigo-400 transition-colors flex items-center gap-1.5">
                   <ArrowRight className="w-3.5 h-3.5 text-indigo-500" />
-                  Mitrasova Nexus (Cloud)
+                  {t('footer.nexus')}
                 </Link>
               </li>
               <li>
                 <Link href="/layanan/mitrasova-labs" className="hover:text-indigo-400 transition-colors flex items-center gap-1.5">
                   <ArrowRight className="w-3.5 h-3.5 text-indigo-500" />
-                  Mitrasova Labs (Web & App)
+                  {t('footer.labs')}
                 </Link>
               </li>
             </ul>
@@ -104,26 +110,28 @@ export const Footer: React.FC = () => {
 
           {/* Resources & Docs */}
           <div>
-            <h4 className="text-xs font-semibold text-white tracking-wider uppercase mb-4 font-mono">Pusat Dokumentasi</h4>
+            <h4 className="text-xs font-semibold text-white tracking-wider uppercase mb-4 font-mono">
+              {t('footer.docsCenter')}
+            </h4>
             <ul className="space-y-2.5 text-xs font-medium">
               <li>
                 <Link href="/docs/mitrasova-pos" className="hover:text-cyan-400 transition-colors">
-                  Tutorial & Setup POS
+                  {t('footer.posDocs')}
                 </Link>
               </li>
               <li>
                 <Link href="/docs/mitrasova-daya" className="hover:text-cyan-400 transition-colors">
-                  Panduan Payroll & HRIS
+                  {t('footer.dayaDocs')}
                 </Link>
               </li>
               <li>
                 <Link href="/docs/mitrasova-nexus" className="hover:text-cyan-400 transition-colors">
-                  Release Notes Cloud Server
+                  {t('footer.nexusDocs')}
                 </Link>
               </li>
               <li>
                 <Link href="/docs/mitrasova-labs" className="hover:text-cyan-400 transition-colors">
-                  Dokumentasi Integrasi API
+                  {t('footer.labsDocs')}
                 </Link>
               </li>
             </ul>
@@ -131,7 +139,9 @@ export const Footer: React.FC = () => {
 
           {/* Contact & Location */}
           <div>
-            <h4 className="text-xs font-semibold text-white tracking-wider uppercase mb-4 font-mono">Hubungi Kami</h4>
+            <h4 className="text-xs font-semibold text-white tracking-wider uppercase mb-4 font-mono">
+              {t('footer.contact')}
+            </h4>
             <ul className="space-y-3 text-xs">
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-indigo-400 shrink-0 mt-0.5" />
@@ -148,11 +158,11 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-medium text-slate-500">
-          <p>© {currentYear} Mitrasova Digital Solutions v{APP_VERSION}. Hak Cipta Dilindungi Undang-Undang.</p>
+          <p>© {currentYear} Mitrasova Digital Solutions v{APP_VERSION}. {t('common.allRightsReserved')}</p>
           <div className="flex items-center gap-6">
-            <Link href="/layanan" className="hover:text-slate-400">Layanan</Link>
-            <Link href="/konsultasi" className="hover:text-slate-400">Konsultasi</Link>
-            <Link href="/docs" className="hover:text-slate-400">Dokumentasi</Link>
+            <Link href="/layanan" className="hover:text-slate-400">{t('footer.navLinks.services')}</Link>
+            <Link href="/konsultasi" className="hover:text-slate-400">{t('footer.navLinks.consultation')}</Link>
+            <Link href="/docs" className="hover:text-slate-400">{t('footer.navLinks.docs')}</Link>
           </div>
         </div>
       </div>

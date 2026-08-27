@@ -1,0 +1,227 @@
+{
+  "common": {
+    "version": "v",
+    "learnMore": "Learn More",
+    "consultation": "Free Consultation",
+    "docsHub": "Open Docs Hub",
+    "contactUs": "Contact Us",
+    "allRightsReserved": "All Rights Reserved.",
+    "allOperational": "All Systems Operational",
+    "systemStatus": "System Status"
+  },
+  "navbar": {
+    "home": "Home",
+    "services": "Services Ecosystem",
+    "docs": "Docs Hub",
+    "startConsultation": "Get Started"
+  },
+  "home": {
+    "hero": {
+      "liveBadge": "MITRASOVA ENTERPRISE CLOUD ECOSYSTEM",
+      "title": "A Unified Software Ecosystem For",
+      "titleGradient": "Modern Business Scalability",
+      "description": "Integrated application architecture ranging from Multi-Branch POS, Enterprise HRIS & Payroll, High-Availability Cloud Infrastructure, to Custom Software & Mobile Engineering.",
+      "ctaPrimary": "Free Consultation",
+      "ctaSecondary": "Open Docs Hub",
+      "uptimeBadge": "99.99% SLA Uptime",
+      "dbBadge": "PostgreSQL Cloud DB",
+      "encryptionBadge": "256-Bit End-to-End Encryption"
+    },
+    "marquee": {
+      "caption": "Battle-Tested Infrastructure & Integration Standards",
+      "paymentIntegration": "Payment Integration",
+      "gatewayDirect": "Direct Gateway",
+      "instantCheckout": "Instant Checkout",
+      "relationalDb": "Relational Database",
+      "lowLatencyCache": "Low-Latency Cache",
+      "containerizedInfra": "Containerized Infra",
+      "fullstackFramework": "Fullstack Framework",
+      "ddosGlobalEdge": "DDoS & Global Edge",
+      "enterpriseSecurity": "Enterprise Security"
+    },
+    "products": {
+      "badge": "Enterprise Suite",
+      "title": "Four Core Solutions",
+      "titleGradient": "One Unified Database",
+      "description": "Each product is engineered to communicate in real-time, eliminating data silos and accelerating corporate workflows.",
+      "learnService": "Explore Service"
+    },
+    "advantages": {
+      "badge": "Architecture Highlights",
+      "title": "Why Choose The Mitrasova",
+      "titleGradient": "Technology Ecosystem?",
+      "description": "Precision-engineered to support your business scalability from dozens to thousands of daily transactions.",
+      "consultCta": "Consult Implementation",
+      "items": {
+        "sync": {
+          "badge": "Real-Time Sync",
+          "title": "Instant Multi-Branch Synchronization",
+          "description": "All cashier sales transactions, warehouse inventory transfers, and inter-branch financial reconciliations connect seamlessly in real-time.",
+          "points": ["Centralized inventory stock", "Offline & online mode support", "Automated sales reconciliation"]
+        },
+        "security": {
+          "badge": "Enterprise Security",
+          "title": "Data Security & Role Permissions",
+          "description": "Protection of transaction data and employee privacy with Role-Based Access Control (RBAC), 256-bit encryption, and comprehensive audit logs.",
+          "points": ["Granular role permissions", "Complete user activity audit trail", "Automated encrypted daily backups"]
+        },
+        "uptime": {
+          "badge": "Cloud Reliability",
+          "title": "High-Availability Cloud Infrastructure",
+          "description": "Modern cloud architecture with adaptive load balancing, peak-hour auto-scaling, and a 99.9% uptime SLA for seamless 24/7 operations.",
+          "points": ["Guaranteed 99.9% SLA uptime", "Smart firewall & DDoS protection", "Dual-redundant server nodes"]
+        },
+        "support": {
+          "badge": "Local Engineering",
+          "title": "Dedicated Central Java Tech Support",
+          "description": "Direct support from Mitrasova engineers in Karanganyar & Solo Raya. We assist with system auditing, rollout, staff onboarding, and custom engineering.",
+          "points": ["System onboarding & staff training", "Dedicated priority hotline support", "On-site and remote assistance"]
+        }
+      }
+    },
+    "workflow": {
+      "badge": "Structured Delivery Roadmap",
+      "title": "How We Transform Your",
+      "titleGradient": "Business Operations",
+      "description": "Four transparent, measurable implementation phases ensuring a seamless transition without disrupting daily business operations.",
+      "resultLabel": "Output: ",
+      "steps": {
+        "step1": {
+          "step": "01",
+          "phase": "Phase 1: Discovery",
+          "title": "Audit & Requirements Consultation",
+          "description": "We analyze your cashier workflows, HR attendance & payroll rules, or custom software architecture requirements tailored to your business scale.",
+          "deliverable": "System Blueprint & Technical Scope"
+        },
+        "step2": {
+          "step": "02",
+          "phase": "Phase 2: Configuration",
+          "title": "System Customization & Integration",
+          "description": "Setting up centralized databases, testing thermal printer/barcode hardware, configuring shift matrices, and user role permission access.",
+          "deliverable": "Configured & Staging-Ready System"
+        },
+        "step3": {
+          "step": "03",
+          "phase": "Phase 3: Onboarding",
+          "title": "Data Migration & Staff Training",
+          "description": "Secure migration of product catalogs, price lists, and employee profiles, accompanied by interactive training sessions until staff proficiency.",
+          "deliverable": "Migrated Data & Trained Operational Team"
+        },
+        "step4": {
+          "step": "04",
+          "phase": "Phase 4: Go-Live",
+          "title": "Production Launch & 24/7 SLA",
+          "description": "System officially goes live to process your business transactions. Backed by proactive server monitoring, daily backups, and responsive engineering support.",
+          "deliverable": "Live Operations & 99.9% SLA Guarantee"
+        }
+      }
+    }
+  },
+  "services": {
+    "overview": {
+      "badge": "Enterprise Ecosystem",
+      "title": "Product & Service Ecosystem",
+      "titleGradient": "Mitrasova Digital",
+      "description": "Comprehensive, integrated software solutions engineered to digitize every facet of your enterprise operations.",
+      "exploreDocs": "Explore Documentation",
+      "consultSolution": "Schedule Consultation"
+    },
+    "detail": {
+      "backToServices": "Back to Services Ecosystem",
+      "keyFeatures": "Core Features & Architecture",
+      "keyFeaturesDesc": "Engineered modules and technological capabilities designed for maximum business efficiency.",
+      "faqTitle": "Frequently Asked Questions (FAQ)",
+      "faqDesc": "Technical and operational answers to common inquiries regarding this service.",
+      "docsBannerTitle": "Comprehensive Docs & Technical Guides",
+      "docsBannerDesc": "Explore step-by-step setup guides, version release notes, and API integration specifications for this service.",
+      "openDocsBtn": "Open Service Documentation"
+    }
+  },
+  "consultation": {
+    "header": {
+      "badge": "Enterprise Business Consultation",
+      "title": "Discuss Your Digital Transformation",
+      "titleGradient": "With Our Engineering Team",
+      "description": "Schedule a complimentary consultation session with a Mitrasova Solution Architect. We design precision system architectures tailored to your business."
+    },
+    "form": {
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "e.g. Raihan Marwanda",
+      "companyName": "Company / Organization Name (Optional)",
+      "companyPlaceholder": "e.g. Retail Enterprise Ltd",
+      "email": "Business Email Address",
+      "emailPlaceholder": "e.g. name@company.com",
+      "phone": "WhatsApp / Phone Number",
+      "phonePlaceholder": "e.g. +62 812 3456 7890",
+      "servicesLabel": "Select Services of Interest (Multiple selection allowed)",
+      "message": "Project Scope or Inquiries",
+      "messagePlaceholder": "Describe your operational challenges or specific custom features required...",
+      "submitBtn": "Submit Consultation Request",
+      "submittingBtn": "Submitting Request...",
+      "successTitle": "Consultation Request Submitted Successfully!",
+      "successDesc": "Thank you for reaching out to Mitrasova. Our Solution Architect will contact you via WhatsApp / Email within 24 hours."
+    },
+    "infoCard": {
+      "cardTitle": "Enterprise Solution Consultation",
+      "cardDesc": "Discuss system architecture, POS solutions, HRIS & Payroll, custom web & mobile apps, or cloud deployment with Mitrasova engineers.",
+      "officeLocation": "Office Location",
+      "fastResponse": "Fast 24-Hour Response",
+      "fastResponseDesc": "Our team reviews your technical requirements and schedules an interactive demonstration.",
+      "officialEmail": "Official Email",
+      "ndaGuarantee": "Confidentiality Guarantee (NDA)",
+      "ndaDesc": "All proprietary business processes and technical specifications are protected under standard Non-Disclosure Agreements."
+    }
+  },
+  "docs": {
+    "hub": {
+      "badge": "Structured Documentation Center",
+      "title": "Official Service Documentation",
+      "titleGradient": "Mitrasova Digital Solutions",
+      "description": "Access setup tutorials, daily operational guides, latest version release notes, and integrated API references.",
+      "searchPlaceholder": "Search guides, tutorials, or feature modules...",
+      "articlesCount": "Articles",
+      "readArticle": "Read Guide"
+    },
+    "sidebar": {
+      "allServices": "All Services",
+      "allCategories": "All Categories",
+      "backToHub": "Back to Docs Hub"
+    },
+    "article": {
+      "author": "Author",
+      "updatedAt": "Last Updated",
+      "readTime": "Read Time",
+      "share": "Share Article",
+      "tableOfContents": "Table of Contents"
+    }
+  },
+  "footer": {
+    "brandDesc": "Mitrasova Digital Solutions is a premier technology and software engineering provider. We deliver POS, HRIS & Payroll, Managed Cloud Server, Custom Web & Mobile App Ecosystems.",
+    "productSuite": "Product Ecosystem",
+    "pos": "Mitrasova POS",
+    "daya": "Mitrasova Daya (HRIS)",
+    "nexus": "Mitrasova Nexus (Cloud)",
+    "labs": "Mitrasova Labs (Web & App)",
+    "docsCenter": "Documentation Center",
+    "posDocs": "POS Setup & Tutorials",
+    "dayaDocs": "Payroll & HRIS Guides",
+    "nexusDocs": "Cloud Server Release Notes",
+    "labsDocs": "API Integration Docs",
+    "contact": "Contact Us",
+    "navLinks": {
+      "services": "Services",
+      "consultation": "Consultation",
+      "docs": "Documentation"
+    }
+  },
+  "console": {
+    "header": {
+      "title": "CONSOLE",
+      "status": "ONLINE",
+      "dashboard": "Dashboard",
+      "newPost": "New Post",
+      "liveSite": "Live Site",
+      "logout": "Sign Out"
+    }
+  }
+}
