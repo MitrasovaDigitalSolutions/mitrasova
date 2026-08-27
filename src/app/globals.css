@@ -30,22 +30,35 @@
 
   html {
     color-scheme: dark;
+    font-family: var(--font-sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
   }
 
   body {
     background-color: #060911;
     color: #F8FAFC;
-    font-family: var(--font-sans, system-ui, -apple-system, sans-serif);
+    font-family: var(--font-sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading, var(--font-sans, system-ui, sans-serif));
-    letter-spacing: -0.025em;
+  h1, h2, h3, h4, h5, h6, button, input, select, textarea {
+    font-family: var(--font-sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+    letter-spacing: -0.02em;
   }
+
+  code, kbd, samp, pre {
+    font-family: var(--font-sans, -apple-system, BlinkMacSystemFont, sans-serif);
+    font-feature-settings: 'tnum' 1;
+  }
+}
+
+/* Harmonized Typography Classes */
+.font-mono {
+  font-family: var(--font-sans, -apple-system, BlinkMacSystemFont, sans-serif) !important;
+  font-feature-settings: 'tnum' 1, 'cv02' 1, 'cv03' 1, 'cv04' 1;
+  letter-spacing: 0.03em;
 }
 
 /* Glassmorphism & High-Craft Surface Effects (Clean & Stable - No Disorienting Movements) */

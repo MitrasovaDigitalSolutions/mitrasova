@@ -89,34 +89,55 @@
       "nextStep": "Tahap Selanjutnya",
       "stepOf": "dari",
       "consultNow": "Mulai Konsultasi Tahap Ini",
+      "keyActivitiesTitle": "Aktivitas Kunci Tahap",
       "steps": {
         "step1": {
           "step": "01",
           "phase": "Tahap 1: Discovery",
           "title": "Audit & Konsultasi Kebutuhan",
           "description": "Kami membedah alur operasional kasir, sistem absensi & payroll, atau arsitektur custom software yang paling relevan dengan skala bisnis Anda.",
-          "deliverable": "Blueprint Sistem & Analisis Kebutuhan"
+          "deliverable": "Blueprint Sistem & Analisis Kebutuhan",
+          "highlights": [
+            "Audit alur transaksi kasir & shift harian",
+            "Analisis skema konsinyasi & bagi hasil supplier",
+            "Pemetaan arsitektur server & integrasi hardware"
+          ]
         },
         "step2": {
           "step": "02",
           "phase": "Tahap 2: Konfigurasi",
           "title": "Penyesuaian & Integrasi Sistem",
           "description": "Penyusunan basis data terpusat, pengujian hardware printer & scanner kasir, pengaturan shift kerja, serta konfigurasi hak akses pengguna.",
-          "deliverable": "Sistem Terkonfigurasi & Siap Uji"
+          "deliverable": "Sistem Terkonfigurasi & Siap Uji",
+          "highlights": [
+            "Pengujian printer thermal Bluetooth & LAN ESC/POS",
+            "Konfigurasi akun general ledger & bagan akun (COA)",
+            "Setup hak akses peran kasir, admin, & supervisor"
+          ]
         },
         "step3": {
           "step": "03",
           "phase": "Tahap 3: Onboarding",
           "title": "Migrasi Data & Pelatihan Staf",
           "description": "Pemindahan aman master data produk, harga, dan profil karyawan ke dalam sistem, disertai sesi pelatihan interaktif hingga tim Anda mahir.",
-          "deliverable": "Master Data Rapi & Tim Terlatih"
+          "deliverable": "Master Data Rapi & Tim Terlatih",
+          "highlights": [
+            "Import master data produk, harga, & supplier",
+            "Simulasi transaksi kasir offline & rekonsiliasi",
+            "Pelatihan interaktif staf hingga operasional mandiri"
+          ]
         },
         "step4": {
           "step": "04",
           "phase": "Tahap 4: Go-Live",
           "title": "Peluncuran & Monitoring 24/7",
           "description": "Sistem resmi beroperasi melayani transaksi bisnis Anda. Didukung pemantauan uptime server berkala, backup harian otomatis, dan tim support responsif.",
-          "deliverable": "Sistem Live & Jaminan SLA 99.9%"
+          "deliverable": "Sistem Live & Jaminan SLA 99.9%",
+          "highlights": [
+            "Peluncuran sistem resmi melayani pelanggan",
+            "Monitoring kesehatan server & auto-sync data",
+            "Hotline teknis prioritas & garansi SLA 99.9%"
+          ]
         }
       }
     }

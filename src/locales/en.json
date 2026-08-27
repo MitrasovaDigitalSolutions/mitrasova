@@ -89,34 +89,55 @@
       "nextStep": "Next Step",
       "stepOf": "of",
       "consultNow": "Consult This Phase",
+      "keyActivitiesTitle": "Key Phase Activities",
       "steps": {
         "step1": {
           "step": "01",
           "phase": "Phase 1: Discovery",
           "title": "Audit & Requirements Consultation",
           "description": "We analyze your cashier workflows, HR attendance & payroll rules, or custom software architecture requirements tailored to your business scale.",
-          "deliverable": "System Blueprint & Technical Scope"
+          "deliverable": "System Blueprint & Technical Scope",
+          "highlights": [
+            "Audit cashier transaction workflows & daily shift rules",
+            "Evaluate consignment schemes & supplier revenue splits",
+            "Map cloud server architecture & POS hardware integration"
+          ]
         },
         "step2": {
           "step": "02",
           "phase": "Phase 2: Configuration",
           "title": "System Customization & Integration",
           "description": "Setting up centralized databases, testing thermal printer/barcode hardware, configuring shift matrices, and user role permission access.",
-          "deliverable": "Configured & Staging-Ready System"
+          "deliverable": "Configured & Staging-Ready System",
+          "highlights": [
+            "Test ESC/POS Bluetooth & LAN thermal receipt printers",
+            "Configure general ledger accounts & chart of accounts (COA)",
+            "Setup granular role permissions for cashier, admin, & supervisor"
+          ]
         },
         "step3": {
           "step": "03",
           "phase": "Phase 3: Onboarding",
           "title": "Data Migration & Staff Training",
           "description": "Secure migration of product catalogs, price lists, and employee profiles, accompanied by interactive training sessions until staff proficiency.",
-          "deliverable": "Migrated Data & Trained Operational Team"
+          "deliverable": "Migrated Data & Trained Operational Team",
+          "highlights": [
+            "Import master product catalog, pricing, & supplier records",
+            "Simulate offline cashier transactions & reconciliation",
+            "Conduct interactive training sessions for operational staff"
+          ]
         },
         "step4": {
           "step": "04",
           "phase": "Phase 4: Go-Live",
           "title": "Production Launch & 24/7 SLA",
           "description": "System officially goes live to process your business transactions. Backed by proactive server monitoring, daily backups, and responsive engineering support.",
-          "deliverable": "Live Operations & 99.9% SLA Guarantee"
+          "deliverable": "Live Operations & 99.9% SLA Guarantee",
+          "highlights": [
+            "Official system launch processing live enterprise transactions",
+            "Real-time server health monitoring & automated data backup",
+            "Priority engineering hotline & guaranteed 99.9% SLA"
+          ]
         }
       }
     }

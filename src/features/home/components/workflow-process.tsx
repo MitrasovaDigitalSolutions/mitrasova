@@ -35,11 +35,7 @@ export const WorkflowProcess: React.FC = () => {
       accentColor: 'text-cyan-400 bg-cyan-500/10 border-cyan-500/30',
       activeRing: 'ring-2 ring-cyan-400/40 border-cyan-500/50',
       bgGlow: 'from-cyan-500/15 via-blue-600/10 to-transparent',
-      highlights: [
-        'Audit alur transaksi kasir & shift harian',
-        'Analisis skema konsinyasi & bagi hasil supplier',
-        'Pemetaan arsitektur server & integrasi hardware',
-      ],
+      highlights: wf.step1.highlights,
     },
     {
       index: 1,
@@ -53,11 +49,7 @@ export const WorkflowProcess: React.FC = () => {
       accentColor: 'text-indigo-400 bg-indigo-500/10 border-indigo-500/30',
       activeRing: 'ring-2 ring-indigo-400/40 border-indigo-500/50',
       bgGlow: 'from-indigo-500/15 via-purple-600/10 to-transparent',
-      highlights: [
-        'Pengujian printer thermal Bluetooth & LAN ESC/POS',
-        'Konfigurasi akun general ledger & bagan akun (COA)',
-        'Setup hak akses peran kasir, admin, & supervisor',
-      ],
+      highlights: wf.step2.highlights,
     },
     {
       index: 2,
@@ -71,11 +63,7 @@ export const WorkflowProcess: React.FC = () => {
       accentColor: 'text-purple-400 bg-purple-500/10 border-purple-500/30',
       activeRing: 'ring-2 ring-purple-400/40 border-purple-500/50',
       bgGlow: 'from-purple-500/15 via-pink-600/10 to-transparent',
-      highlights: [
-        'Import master data produk, harga, & supplier',
-        'Simulasi transaksi kasir offline & rekonsiliasi',
-        'Pelatihan interaktif staf hingga operasional mandiri',
-      ],
+      highlights: wf.step3.highlights,
     },
     {
       index: 3,
@@ -89,11 +77,7 @@ export const WorkflowProcess: React.FC = () => {
       accentColor: 'text-emerald-400 bg-emerald-500/10 border-emerald-500/30',
       activeRing: 'ring-2 ring-emerald-400/40 border-emerald-500/50',
       bgGlow: 'from-emerald-500/15 via-teal-600/10 to-transparent',
-      highlights: [
-        'Peluncuran sistem resmi melayani pelanggan',
-        'Monitoring kesehatan server & auto-sync data',
-        'Hotline teknis prioritas & garansi SLA 99.9%',
-      ],
+      highlights: wf.step4.highlights,
     },
   ];
 
@@ -134,7 +118,7 @@ export const WorkflowProcess: React.FC = () => {
         {/* Stepper Tabs & Controls Header */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           {/* Step Selector Pills */}
-          <div className="flex items-center gap-1.5 sm:gap-2 p-1.5 rounded-2xl bg-slate-900/90 border border-slate-800 backdrop-blur-md overflow-x-auto max-w-full">
+          <div className="flex items-center gap-1.5 sm:gap-2 p-1.5 rounded-2xl bg-slate-900/90 border border-slate-800 backdrop-blur-md overflow-x-auto max-w-full [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {steps.map((s, idx) => {
               const isSelected = activeIndex === idx;
               return (
@@ -142,7 +126,7 @@ export const WorkflowProcess: React.FC = () => {
                   key={s.step}
                   type="button"
                   onClick={() => setActiveIndex(idx)}
-                  className={`relative px-3.5 py-1.5 sm:py-2 rounded-xl text-xs font-mono font-bold transition-all cursor-pointer select-none flex items-center gap-2 shrink-0 ${
+                  className={`relative px-3 sm:px-3.5 py-1.5 sm:py-2 rounded-xl text-xs font-bold transition-all cursor-pointer select-none flex items-center gap-1.5 sm:gap-2 shrink-0 min-h-[36px] ${
                     isSelected
                       ? 'text-white'
                       : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50'
@@ -156,7 +140,7 @@ export const WorkflowProcess: React.FC = () => {
                     />
                   )}
                   <span className="relative z-10 font-bold">{s.step}</span>
-                  <span className="relative z-10 hidden md:inline text-[11px]">
+                  <span className="relative z-10 text-[11px] sm:inline">
                     {s.phase.split(':')[1]?.trim() || s.phase}
                   </span>
                 </button>
@@ -253,7 +237,7 @@ export const WorkflowProcess: React.FC = () => {
                 <div className="lg:col-span-5 space-y-5 bg-slate-900/50 p-5 sm:p-6 rounded-2xl border border-slate-800/80 backdrop-blur-sm">
                   <div className="flex items-center gap-2 text-xs font-mono font-semibold text-slate-400 uppercase tracking-wider">
                     <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
-                    <span>Aktivitas Kunci Tahap {current.step}</span>
+                    <span>{t('home.workflow.keyActivitiesTitle')} {current.step}</span>
                   </div>
 
                   <ul className="space-y-2.5">

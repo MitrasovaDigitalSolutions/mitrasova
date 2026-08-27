@@ -55,21 +55,21 @@ export const RogHeroVisual: React.FC = () => {
           <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-indigo-400 z-20" />
 
           {/* Top Status Header */}
-          <div className="flex items-center justify-between border-b border-slate-800/80 pb-4 text-xs font-mono">
-            <div className="flex items-center gap-2 text-cyan-400">
-              <Terminal className="w-4 h-4" />
-              <span className="font-bold">
-                MITRASOVA-CORE-OS // v{APP_VERSION} (STABLE)
+          <div className="flex flex-wrap sm:flex-nowrap items-center justify-between border-b border-slate-800/80 pb-3 sm:pb-4 gap-2 text-[10px] sm:text-xs font-mono">
+            <div className="flex items-center gap-1.5 sm:gap-2 text-cyan-400">
+              <Terminal className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+              <span className="font-bold truncate">
+                MITRASOVA-CORE-OS // v{APP_VERSION}
               </span>
             </div>
-            <div className="flex items-center gap-1.5 text-emerald-400">
+            <div className="flex items-center gap-1.5 text-emerald-400 shrink-0">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span className="text-[11px] font-semibold">ALL SYSTEMS NOMINAL</span>
+              <span className="text-[10px] sm:text-[11px] font-semibold">ALL SYSTEMS NOMINAL</span>
             </div>
           </div>
 
           {/* Telemetry Grid */}
-          <div className="grid grid-cols-2 gap-3.5">
+          <div className="grid grid-cols-2 gap-2 sm:gap-3.5">
             <TelemetryCard
               title="Cloud Query Speed"
               value="12.4ms"
