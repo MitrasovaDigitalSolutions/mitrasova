@@ -25,7 +25,20 @@
       "ctaSecondary": "Open Docs Hub",
       "uptimeBadge": "99.99% SLA Uptime",
       "dbBadge": "PostgreSQL Cloud DB",
-      "encryptionBadge": "256-Bit End-to-End Encryption"
+      "encryptionBadge": "256-Bit End-to-End Encryption",
+      "telemetry": {
+        "allSystemsNominal": "ALL SYSTEMS NOMINAL",
+        "querySpeed": "Cloud Query Speed",
+        "latencyMetric": "-38% Latency",
+        "pgSync": "PostgreSQL Sync",
+        "realtimeNode": "Real-Time Node",
+        "throughput": "API Throughput",
+        "bandwidth": "+12% Bandwidth",
+        "clusterSec": "Cluster Security",
+        "sslSecured": "SSL Secured",
+        "logReady": "[READY] System v{{version}} initialized & listening on secure edge",
+        "logGateway": "[GATEWAY] Auto-balancing active across Singapore & Jakarta DC"
+      }
     },
     "marquee": {
       "caption": "Battle-Tested Infrastructure & Integration Standards",
@@ -148,9 +161,12 @@
       "badge": "Enterprise Ecosystem",
       "title": "Product & Service Ecosystem",
       "titleGradient": "Mitrasova Digital",
-      "description": "Comprehensive, integrated software solutions engineered to digitize every facet of your enterprise operations.",
+      "description": "Comprehensive, fully integrated software solutions engineered to digitize every facet of your business operations.",
       "exploreDocs": "Explore Documentation",
-      "consultSolution": "Schedule Consultation"
+      "consultSolution": "Schedule Consultation",
+      "specsTitle": "Specifications & Capabilities",
+      "prodReady": "PROD READY",
+      "slaNote": "99.9% SLA Guarantee & Integrated Onboarding Setup"
     },
     "detail": {
       "backToServices": "Back to Services Ecosystem",
@@ -170,6 +186,26 @@
         "description": "Mitrasova POS is a next-generation smart point-of-sale software solution. Engineered for retail & wholesale operations with robust offline mode, supplier consignment tracking & revenue share, multi-branch stock sync, and integrated accounting modules (balance sheet, profit & loss, and general ledger).",
         "category": "SaaS POS & Accounting",
         "badge": "Offline POS & Consignment",
+        "blueprint": {
+          "title": "Offline POS & Accounting",
+          "badge": "Live Auto-Sync",
+          "m1Label": "Transaction Mode",
+          "m1Val": "Offline-First",
+          "m1Sub": "0ms Cashier Latency",
+          "m2Label": "Supplier Consignment",
+          "m2Val": "Automated Revenue Share",
+          "m2Sub": "Instant Settlement Invoices",
+          "f1Label": "Trial Balance & General Ledger:",
+          "f1Val": "Real-time Cloud Sync",
+          "f2Label": "Thermal Receipt Printing:",
+          "f2Val": "Bluetooth & LAN ESC/POS"
+        },
+        "specs": [
+          { "label": "Operational Mode", "value": "Full Offline-First (0ms Delay)" },
+          { "label": "Consignment Module", "value": "Supplier Revenue Split & Returns" },
+          { "label": "Accounting Engine", "value": "Balance Sheet, GL, & P&L Reports" },
+          { "label": "Hardware Support", "value": "Thermal ESC/POS Bluetooth & LAN" }
+        ],
         "features": [
           {
             "title": "Offline-First Mode & Auto-Sync",
@@ -210,6 +246,26 @@
         "description": "Mitrasova Daya empowers HR leaders and executives to manage their most valuable asset: human capital. Manage dynamic shift schedules, instant payslip generation with latest tax regulations, reimbursement claims, and objective KPI reviews.",
         "category": "HRIS & Workforce",
         "badge": "Enterprise HRIS & Payroll",
+        "blueprint": {
+          "title": "HRIS & Automated Payroll",
+          "badge": "TER Tax 2026 Engine",
+          "m1Label": "Payroll Calculation",
+          "m1Val": "Automated Tax PPh 21",
+          "m1Sub": "Health & Labor Social Security",
+          "m2Label": "Mobile Attendance",
+          "m2Val": "Anti-Fake GPS",
+          "m2Sub": "Face Verification",
+          "f1Label": "Digital Payslip Distribution:",
+          "f1Val": "1-Click PDF WhatsApp & Email",
+          "f2Label": "Monthly Summary Reports:",
+          "f2Val": "Ready Bank CSV Export Format"
+        },
+        "specs": [
+          { "label": "Tax Calculation Rules", "value": "Automated 2026 Tax Regulations" },
+          { "label": "Attendance Verification", "value": "Geolocation & Anti-Fake GPS" },
+          { "label": "Insurance Integration", "value": "National Health & Labor Social Security" },
+          { "label": "Payslip Delivery", "value": "Encrypted Instant PDF Delivery" }
+        ],
         "features": [
           {
             "title": "Automated Payroll & Tax Calculation",
@@ -246,6 +302,26 @@
         "description": "Mitrasova Nexus is an enterprise managed cloud infrastructure service engineered for mission-critical workloads. Powered by Tier-4 data centers in Jakarta and Singapore with ultra-low latency and multi-tier security shields.",
         "category": "Cloud Infrastructure",
         "badge": "Tier-4 Managed Cloud",
+        "blueprint": {
+          "title": "Enterprise Cloud Infrastructure",
+          "badge": "99.99% Uptime SLA",
+          "m1Label": "Query Response Time",
+          "m1Val": "< 15ms Latency",
+          "m1Sub": "NVMe PCIe 4.0 Storage",
+          "m2Label": "Security Perimeter",
+          "m2Val": "DDoS Edge Firewall",
+          "m2Sub": "Automated Daily Backup",
+          "f1Label": "Database Mirroring & Failover:",
+          "f1Val": "Multi-Region Redundancy",
+          "f2Label": "Data Center Backbone:",
+          "f2Val": "Equinix SG1 & Tier-4 Jakarta"
+        },
+        "specs": [
+          { "label": "Availability Guarantee", "value": "99.99% Guaranteed SLA Uptime" },
+          { "label": "Query Latency Performance", "value": "< 15ms NVMe PCIe 4.0 Storage" },
+          { "label": "Security Shield", "value": "DDoS Edge Filter & TLS 1.3" },
+          { "label": "Disaster Recovery", "value": "Automated Daily Multi-Region Backup" }
+        ],
         "features": [
           {
             "title": "99.99% Guaranteed Uptime SLA",
@@ -282,6 +358,26 @@
         "description": "Mitrasova Labs delivers dedicated software architects and senior engineers to build large-scale custom solutions for your enterprise. From modern microservices architecture and payment gateways to custom iOS/Android apps.",
         "category": "Custom Engineering",
         "badge": "Enterprise Engineering",
+        "blueprint": {
+          "title": "Custom Engineering & API Gateway",
+          "badge": "Production-Grade",
+          "m1Label": "Modern Tech Stack",
+          "m1Val": "Next.js & React 19",
+          "m1Sub": "RESTful & GraphQL API",
+          "m2Label": "Web & Mobile Native",
+          "m2Val": "iOS, Android, & Web",
+          "m2Sub": "High-Scalability Architecture",
+          "f1Label": "Structured & Clean Code:",
+          "f1Val": "OpenAPI / Swagger Documentation",
+          "f2Label": "Code Quality Assurance:",
+          "f2Val": "Security Audit & Automated Testing"
+        },
+        "specs": [
+          { "label": "Core Technology", "value": "Next.js 16, React 19, TypeScript" },
+          { "label": "Integration Protocols", "value": "RESTful API & GraphQL Gateway" },
+          { "label": "Multi-Platform Coverage", "value": "Native Web, iOS, & Android" },
+          { "label": "Architecture Standard", "value": "Clean Code, SOLID, Modular" }
+        ],
         "features": [
           {
             "title": "Modern Fullstack Architecture",

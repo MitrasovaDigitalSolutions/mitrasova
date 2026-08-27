@@ -25,7 +25,7 @@ const iconMap: Record<string, React.ElementType> = {
 };
 
 export const ProductSuiteGrid: React.FC = () => {
-  const { t, locale } = useTranslation();
+  const { t, locale, dict } = useTranslation();
   const services = getLocalizedServices(locale);
   const [activeIndex, setActiveIndex] = useState(0);
   const sectionRef = useRef<HTMLElement>(null);
@@ -40,130 +40,45 @@ export const ProductSuiteGrid: React.FC = () => {
   const activeService = services[activeIndex] || services[0];
   const IconComponent = iconMap[activeService.icon] || Layers;
 
-  // Custom live telemetry / capability preview snippets for each product
   const getProductPreview = (slug: string) => {
-    switch (slug) {
-      case 'mitrasova-pos':
-        return (
-          <div className="space-y-4">
-            <div className="flex items-center justify-between border-b border-slate-800 pb-3 text-xs">
-              <span className="text-slate-400 font-medium">Kasir Offline & Akuntansi</span>
-              <span className="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-semibold text-[11px] border border-emerald-500/20">
-                ● Live Auto-Sync
-              </span>
-            </div>
-            <div className="grid grid-cols-2 gap-3 text-xs">
-              <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
-                <span className="text-[10px] uppercase tracking-wider text-slate-500 block">Moda Transaksi</span>
-                <span className="text-sm font-bold text-white mt-1 block">Offline-First</span>
-                <span className="text-[11px] text-cyan-400 mt-0.5 block">0ms Kasir Delay</span>
-              </div>
-              <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
-                <span className="text-[10px] uppercase tracking-wider text-slate-500 block">Konsinyasi Supplier</span>
-                <span className="text-sm font-bold text-white mt-1 block">Bagi Hasil Otomatis</span>
-                <span className="text-[11px] text-indigo-400 mt-0.5 block">Rekap Faktur Instan</span>
-              </div>
-            </div>
-            <div className="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80 text-xs space-y-1.5">
-              <div className="flex justify-between text-slate-400">
-                <span>Modul Neraca Saldo & General Ledger:</span>
-                <span className="text-emerald-400 font-semibold">Tersinkron Real-time</span>
-              </div>
-              <div className="flex justify-between text-slate-400">
-                <span>Dukungan Cetak Struk:</span>
-                <span className="text-slate-200">Bluetooth & LAN ESC/POS</span>
-              </div>
-            </div>
+    const itemDict = dict.services.items[slug as keyof typeof dict.services.items];
+    const bp = itemDict?.blueprint;
+    if (!bp) return null;
+
+    return (
+      <div className="space-y-4">
+        <div className="flex items-center justify-between border-b border-slate-800 pb-3 text-xs">
+          <span className="text-slate-400 font-medium">{bp.title}</span>
+          <span className="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-semibold text-[11px] border border-emerald-500/20">
+            ● {bp.badge}
+          </span>
+        </div>
+        <div className="grid grid-cols-2 gap-3 text-xs">
+          <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
+            <span className="text-[10px] uppercase tracking-wider text-slate-500 block">{bp.m1Label}</span>
+            <span className="text-sm font-bold text-white mt-1 block">{bp.m1Val}</span>
+            <span className="text-[11px] text-cyan-400 mt-0.5 block">{bp.m1Sub}</span>
           </div>
-        );
-      case 'mitrasova-daya':
-        return (
-          <div className="space-y-4">
-            <div className="flex items-center justify-between border-b border-slate-800 pb-3 text-xs">
-              <span className="text-slate-400 font-medium">HRIS & Payroll Automation</span>
-              <span className="px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-400 font-semibold text-[11px] border border-indigo-500/20">
-                TER PPh 21 2026
-              </span>
-            </div>
-            <div className="grid grid-cols-2 gap-3 text-xs">
-              <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
-                <span className="text-[10px] uppercase tracking-wider text-slate-500 block">Kalkulasi Payroll</span>
-                <span className="text-sm font-bold text-white mt-1 block">Otomatisasi PPh 21</span>
-                <span className="text-[11px] text-cyan-400 mt-0.5 block">BPJS Kes & TK Terpadu</span>
-              </div>
-              <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
-                <span className="text-[10px] uppercase tracking-wider text-slate-500 block">Presensi Geolocation</span>
-                <span className="text-sm font-bold text-white mt-1 block">Anti-Fake GPS</span>
-                <span className="text-[11px] text-purple-400 mt-0.5 block">Face Verification</span>
-              </div>
-            </div>
-            <div className="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80 text-xs space-y-1.5">
-              <div className="flex justify-between text-slate-400">
-                <span>Penerbitan Slip Gaji Digital:</span>
-                <span className="text-emerald-400 font-semibold">1-Click PDF WhatsApp/Email</span>
-              </div>
-            </div>
+          <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
+            <span className="text-[10px] uppercase tracking-wider text-slate-500 block">{bp.m2Label}</span>
+            <span className="text-sm font-bold text-white mt-1 block">{bp.m2Val}</span>
+            <span className="text-[11px] text-indigo-400 mt-0.5 block">{bp.m2Sub}</span>
           </div>
-        );
-      case 'mitrasova-nexus':
-        return (
-          <div className="space-y-4">
-            <div className="flex items-center justify-between border-b border-slate-800 pb-3 text-xs">
-              <span className="text-slate-400 font-medium">Enterprise Cloud Infrastructure</span>
-              <span className="px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400 font-semibold text-[11px] border border-cyan-500/20">
-                99.99% Uptime SLA
-              </span>
-            </div>
-            <div className="grid grid-cols-2 gap-3 text-xs">
-              <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
-                <span className="text-[10px] uppercase tracking-wider text-slate-500 block">Query Response Time</span>
-                <span className="text-sm font-bold text-white mt-1 block">&lt; 15ms Latency</span>
-                <span className="text-[11px] text-emerald-400 mt-0.5 block">NVMe PCIe 4.0 Storage</span>
-              </div>
-              <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
-                <span className="text-[10px] uppercase tracking-wider text-slate-500 block">Security Perimeter</span>
-                <span className="text-sm font-bold text-white mt-1 block">DDoS Edge Firewall</span>
-                <span className="text-[11px] text-indigo-400 mt-0.5 block">Automated Daily Backup</span>
-              </div>
-            </div>
-            <div className="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80 text-xs space-y-1.5">
-              <div className="flex justify-between text-slate-400">
-                <span>Database Mirroring & Failover:</span>
-                <span className="text-cyan-400 font-semibold">Multi-Region Redundancy</span>
-              </div>
-            </div>
+        </div>
+        <div className="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80 text-xs space-y-1.5">
+          <div className="flex justify-between text-slate-400">
+            <span>{bp.f1Label}</span>
+            <span className="text-emerald-400 font-semibold">{bp.f1Val}</span>
           </div>
-        );
-      default:
-        return (
-          <div className="space-y-4">
-            <div className="flex items-center justify-between border-b border-slate-800 pb-3 text-xs">
-              <span className="text-slate-400 font-medium">Custom Engineering & API Gateway</span>
-              <span className="px-2 py-0.5 rounded bg-purple-500/10 text-purple-400 font-semibold text-[11px] border border-purple-500/20">
-                Production-Grade
-              </span>
+          {bp.f2Label && bp.f2Val && (
+            <div className="flex justify-between text-slate-400">
+              <span>{bp.f2Label}</span>
+              <span className="text-slate-200">{bp.f2Val}</span>
             </div>
-            <div className="grid grid-cols-2 gap-3 text-xs">
-              <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
-                <span className="text-[10px] uppercase tracking-wider text-slate-500 block">Tech Stack Modern</span>
-                <span className="text-sm font-bold text-white mt-1 block">Next.js & React 19</span>
-                <span className="text-[11px] text-cyan-400 mt-0.5 block">RESTful & GraphQL API</span>
-              </div>
-              <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-800">
-                <span className="text-[10px] uppercase tracking-wider text-slate-500 block">Mobile & Web Native</span>
-                <span className="text-sm font-bold text-white mt-1 block">iOS, Android, & Web</span>
-                <span className="text-[11px] text-emerald-400 mt-0.5 block">High-Scalability Architecture</span>
-              </div>
-            </div>
-            <div className="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80 text-xs space-y-1.5">
-              <div className="flex justify-between text-slate-400">
-                <span>Kode Terstruktur & Bersih:</span>
-                <span className="text-indigo-400 font-semibold">Dokumentasi API Standar Swagger/OpenAPI</span>
-              </div>
-            </div>
-          </div>
-        );
-    }
+          )}
+        </div>
+      </div>
+    );
   };
 
   return (

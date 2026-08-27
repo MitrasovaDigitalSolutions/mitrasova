@@ -4,9 +4,13 @@ import React from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { TelemetryCard } from './telemetry-card';
 import { APP_VERSION } from '@/lib/version';
+import { useTranslation } from '@/lib/i18n';
 import { Terminal, Cpu, Database, Network, Activity } from 'lucide-react';
 
 export const RogHeroVisual: React.FC = () => {
+  const { dict } = useTranslation();
+  const tel = dict.home.hero.telemetry;
+
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
@@ -64,37 +68,37 @@ export const RogHeroVisual: React.FC = () => {
             </div>
             <div className="flex items-center gap-1.5 text-emerald-400 shrink-0">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span className="text-[10px] sm:text-[11px] font-semibold">ALL SYSTEMS NOMINAL</span>
+              <span className="text-[10px] sm:text-[11px] font-semibold">{tel.allSystemsNominal}</span>
             </div>
           </div>
 
           {/* Telemetry Grid */}
           <div className="grid grid-cols-2 gap-2 sm:gap-3.5">
             <TelemetryCard
-              title="Cloud Query Speed"
+              title={tel.querySpeed}
               value="12.4ms"
-              metric="-38% Latency"
+              metric={tel.latencyMetric}
               icon={<Cpu className="w-4 h-4 text-cyan-400" />}
               variant="cyan"
             />
             <TelemetryCard
-              title="PostgreSQL Sync"
+              title={tel.pgSync}
               value="99.99%"
-              metric="Real-time Node"
+              metric={tel.realtimeNode}
               icon={<Database className="w-4 h-4 text-indigo-400" />}
               variant="indigo"
             />
             <TelemetryCard
-              title="API Throughput"
+              title={tel.throughput}
               value="48.2k/s"
-              metric="+12% Bandwidth"
+              metric={tel.bandwidth}
               icon={<Network className="w-4 h-4 text-purple-400" />}
               variant="purple"
             />
             <TelemetryCard
-              title="Cluster Security"
+              title={tel.clusterSec}
               value="AES-256"
-              metric="SSL Secured"
+              metric={tel.sslSecured}
               icon={<Activity className="w-4 h-4 text-emerald-400" />}
               variant="emerald"
             />
@@ -104,11 +108,11 @@ export const RogHeroVisual: React.FC = () => {
           <div className="rounded-xl bg-slate-950/90 border border-slate-800/80 p-3 text-[11px] font-mono space-y-1 text-slate-400">
             <div className="flex items-center gap-2 text-cyan-400">
               <span className="text-emerald-400">&gt;</span>
-              <span>[READY] System v{APP_VERSION} initialized & listening on secure edge</span>
+              <span>{(tel.logReady || '').replace('{{version}}', APP_VERSION ?? '1.0.0')}</span>
             </div>
             <div className="flex items-center gap-2 text-slate-400">
               <span className="text-emerald-400">&gt;</span>
-              <span>[GATEWAY] Auto-balancing active across Singapore & Jakarta DC</span>
+              <span>{tel.logGateway}</span>
             </div>
           </div>
         </div>

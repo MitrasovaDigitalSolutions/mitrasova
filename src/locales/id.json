@@ -25,7 +25,20 @@
       "ctaSecondary": "Buka Docs Hub",
       "uptimeBadge": "99.99% SLA Uptime",
       "dbBadge": "PostgreSQL Cloud DB",
-      "encryptionBadge": "256-Bit Enkripsi End-to-End"
+      "encryptionBadge": "256-Bit Enkripsi End-to-End",
+      "telemetry": {
+        "allSystemsNominal": "SELURUH SISTEM NORMAL",
+        "querySpeed": "Kecepatan Query Cloud",
+        "latencyMetric": "-38% Latensi",
+        "pgSync": "Sinkronisasi PostgreSQL",
+        "realtimeNode": "Node Real-Time",
+        "throughput": "Throughput API",
+        "bandwidth": "+12% Bandwidth",
+        "clusterSec": "Keamanan Klaster",
+        "sslSecured": "Terproteksi SSL",
+        "logReady": "[READY] Sistem v{{version}} aktif & mendengarkan di edge aman",
+        "logGateway": "[GATEWAY] Load balancing aktif di datacenter Singapura & Jakarta"
+      }
     },
     "marquee": {
       "caption": "Infrastruktur & Standar Integrasi Teruji",
@@ -150,7 +163,10 @@
       "titleGradient": "Mitrasova Digital",
       "description": "Solusi perangkat lunak lengkap dan terintegrasi untuk mendigitalkan seluruh lini operasi bisnis Anda.",
       "exploreDocs": "Lihat Dokumentasi",
-      "consultSolution": "Jadwalkan Konsultasi"
+      "consultSolution": "Jadwalkan Konsultasi",
+      "specsTitle": "Spesifikasi & Kapabilitas",
+      "prodReady": "PROD READY",
+      "slaNote": "Dukungan SLA 99.9% & Setup Implementasi Terpadu"
     },
     "detail": {
       "backToServices": "Kembali ke Ekosistem Layanan",
@@ -170,6 +186,26 @@
         "description": "Mitrasova POS adalah solusi perangkat lunak kasir pintar generasi terbaru. Didesain untuk operasional ritel & grosir dengan dukungan mode offline penuh, pencatatan barang konsinyasi & bagi komisi supplier, sinkronisasi stok multi-cabang, serta sistem akuntansi terintegrasi (neraca, laba rugi, dan general ledger).",
         "category": "SaaS POS & Accounting",
         "badge": "Offline POS & Konsinyasi",
+        "blueprint": {
+          "title": "Kasir Offline & Akuntansi",
+          "badge": "Live Auto-Sync",
+          "m1Label": "Moda Transaksi",
+          "m1Val": "Offline-First",
+          "m1Sub": "0ms Kasir Delay",
+          "m2Label": "Konsinyasi Supplier",
+          "m2Val": "Bagi Hasil Otomatis",
+          "m2Sub": "Rekap Faktur Instan",
+          "f1Label": "Modul Neraca Saldo & General Ledger:",
+          "f1Val": "Tersinkron Real-time",
+          "f2Label": "Dukungan Cetak Struk:",
+          "f2Val": "Bluetooth & LAN ESC/POS"
+        },
+        "specs": [
+          { "label": "Mode Operasional", "value": "Full Offline-First (0ms Delay)" },
+          { "label": "Manajemen Konsinyasi", "value": "Bagi Hasil & Retur Supplier" },
+          { "label": "Modul Akuntansi", "value": "Neraca, General Ledger, Laba Rugi" },
+          { "label": "Dukungan Hardware", "value": "Thermal ESC/POS Bluetooth & LAN" }
+        ],
         "features": [
           {
             "title": "Mode Kasir Offline-First & Auto-Sync",
@@ -210,6 +246,26 @@
         "description": "Mitrasova Daya memberdayakan departemen HR dan pimpinan perusahaan dalam mengelola aset terpenting: Sumber Daya Manusia. Kelola jadwal shift, kalkulasi slip gaji instan dengan pajak PPh 21 TER terbaru, klaim reimbursement, dan evaluasi kinerja karyawan secara objektif.",
         "category": "HRIS & Workforce",
         "badge": "HRIS & Payroll Enterprise",
+        "blueprint": {
+          "title": "HRIS & Otomatisasi Payroll",
+          "badge": "TER PPh 21 2026",
+          "m1Label": "Kalkulasi Payroll",
+          "m1Val": "Otomatisasi PPh 21",
+          "m1Sub": "BPJS Kes & TK Terpadu",
+          "m2Label": "Presensi Geolocation",
+          "m2Val": "Anti-Fake GPS",
+          "m2Sub": "Verifikasi Wajah",
+          "f1Label": "Penerbitan Slip Gaji Digital:",
+          "f1Val": "1-Click PDF WhatsApp & Email",
+          "f2Label": "Laporan Rekap Bulanan:",
+          "f2Val": "Siap Export Format Bank CSV"
+        },
+        "specs": [
+          { "label": "Aturan Pajak Gaji", "value": "Pajak PPh 21 TER 2026 Otomatis" },
+          { "label": "Verifikasi Presensi", "value": "Geolocation & Anti-Fake GPS" },
+          { "label": "Integrasi Jaminan", "value": "BPJS Kesehatan & Ketenagakerjaan" },
+          { "label": "Distribusi Slip Gaji", "value": "PDF Instan WhatsApp & Email" }
+        ],
         "features": [
           {
             "title": "Kalkulasi Payroll & PPh 21 Otomatis",
@@ -246,6 +302,26 @@
         "description": "Mitrasova Nexus adalah layanan infrastruktur cloud server terkelola (*Managed Cloud Services*) yang dirancang untuk aplikasi mission-critical. Didukung oleh jaringan server Tier-4 lokal di Jakarta & Singapura dengan latency ultra-rendah dan proteksi lapisan keamanan bertingkat.",
         "category": "Cloud Infrastructure",
         "badge": "Tier-4 Managed Cloud",
+        "blueprint": {
+          "title": "Infrastruktur Cloud Enterprise",
+          "badge": "99.99% Uptime SLA",
+          "m1Label": "Waktu Respon Query",
+          "m1Val": "< 15ms Latensi",
+          "m1Sub": "NVMe PCIe 4.0 Storage",
+          "m2Label": "Perimeter Keamanan",
+          "m2Val": "DDoS Edge Firewall",
+          "m2Sub": "Backup Harian Otomatis",
+          "f1Label": "Database Mirroring & Failover:",
+          "f1Val": "Redundansi Multi-Region",
+          "f2Label": "Jaringan Data Center:",
+          "f2Val": "Equinix SG1 & Tier-4 Jakarta"
+        },
+        "specs": [
+          { "label": "Jaminan Ketersediaan", "value": "99.99% Uptime SLA Guarantee" },
+          { "label": "Waktu Respon Query", "value": "< 15ms NVMe PCIe 4.0 Storage" },
+          { "label": "Keamanan Perimeter", "value": "DDoS Edge Filter & TLS 1.3" },
+          { "label": "Skema Pencadangan", "value": "Automated Daily Multi-Region" }
+        ],
         "features": [
           {
             "title": "99.99% Guaranteed Uptime SLA",
@@ -282,6 +358,26 @@
         "description": "Mitrasova Labs menghadirkan tim software architect dan senior developer untuk merealisasikan sistem kustom skala besar bagi perusahaan Anda. Dari arsitektur microservices modern, integrasi payment gateway, hingga aplikasi mobile iOS/Android khusus.",
         "category": "Custom Engineering",
         "badge": "Enterprise Engineering",
+        "blueprint": {
+          "title": "Rekayasa Kustom & API Gateway",
+          "badge": "Production-Grade",
+          "m1Label": "Tech Stack Modern",
+          "m1Val": "Next.js & React 19",
+          "m1Sub": "RESTful & GraphQL API",
+          "m2Label": "Aplikasi Web & Mobile",
+          "m2Val": "iOS, Android, & Web",
+          "m2Sub": "Arsitektur Skalabilitas Tinggi",
+          "f1Label": "Kode Terstruktur & Bersih:",
+          "f1Val": "Dokumentasi API Standar Swagger/OpenAPI",
+          "f2Label": "Jaminan Kualitas Kode:",
+          "f2Val": "Audit Keamanan & Automated Testing"
+        },
+        "specs": [
+          { "label": "Teknologi Utama", "value": "Next.js 16, React 19, TypeScript" },
+          { "label": "Protokol Integrasi", "value": "RESTful API & GraphQL Gateway" },
+          { "label": "Multi-Platform", "value": "Native Web, iOS, & Android" },
+          { "label": "Standar Arsitektur", "value": "Clean Code, SOLID, Modular" }
+        ],
         "features": [
           {
             "title": "Modern Fullstack Architecture",

@@ -18,8 +18,6 @@ import {
   CheckCircle2,
   Sparkles,
   ShieldCheck,
-  Cpu,
-  Layers,
 } from 'lucide-react';
 
 const iconMap: Record<string, React.ElementType> = {
@@ -30,7 +28,7 @@ const iconMap: Record<string, React.ElementType> = {
 };
 
 export const ServicesOverviewContainer: React.FC = () => {
-  const { t, locale } = useTranslation();
+  const { t, locale, dict } = useTranslation();
   const services = getLocalizedServices(locale);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -40,40 +38,6 @@ export const ServicesOverviewContainer: React.FC = () => {
   });
 
   const headerParallaxY = useTransform(scrollYProgress, [0, 1], ['0%', '20%']);
-
-  // Custom capability metrics / technical blueprint for each service
-  const getServiceSpecs = (slug: string) => {
-    switch (slug) {
-      case 'mitrasova-pos':
-        return [
-          { label: 'Mode Operasional', value: 'Full Offline-First (0ms Delay)' },
-          { label: 'Manajemen Konsinyasi', value: 'Bagi Hasil & Retur Supplier' },
-          { label: 'Modul Akuntansi', value: 'Neraca, General Ledger, Laba Rugi' },
-          { label: 'Dukungan Hardware', value: 'Thermal ESC/POS Bluetooth & LAN' },
-        ];
-      case 'mitrasova-daya':
-        return [
-          { label: 'Aturan Pajak Gaji', value: 'Pajak PPh 21 TER 2026 Otomatis' },
-          { label: 'Verifikasi Presensi', value: 'Geolocation & Anti-Fake GPS' },
-          { label: 'Integrasi Jaminan', value: 'BPJS Kesehatan & Ketenagakerjaan' },
-          { label: 'Distribusi Slip Gaji', value: 'PDF Instan WhatsApp & Email' },
-        ];
-      case 'mitrasova-nexus':
-        return [
-          { label: 'Jaminan Ketersediaan', value: '99.99% Uptime SLA Guarantee' },
-          { label: 'Waktu Respon Query', value: '< 15ms NVMe PCIe 4.0 Storage' },
-          { label: 'Keamanan Perimeter', value: 'DDoS Edge Filter & TLS 1.3' },
-          { label: 'Skema Pencadangan', value: 'Automated Daily Multi-Region' },
-        ];
-      default:
-        return [
-          { label: 'Teknologi Utama', value: 'Next.js 16, React 19, TypeScript' },
-          { label: 'Protokol Integrasi', value: 'RESTful API & GraphQL Gateway' },
-          { label: 'Multi-Platform', value: 'Native Web, iOS, & Android' },
-          { label: 'Standar Arsitektur', value: 'Clean Code, SOLID, Modular' },
-        ];
-    }
-  };
 
   return (
     <div ref={containerRef} className="relative overflow-hidden pb-32">
@@ -120,7 +84,8 @@ export const ServicesOverviewContainer: React.FC = () => {
         {services.map((service, index) => {
           const IconComponent = iconMap[service.icon] || Zap;
           const isEven = index % 2 === 1;
-          const specs = getServiceSpecs(service.slug);
+          const itemDict = dict.services.items[service.slug as keyof typeof dict.services.items];
+          const specs = itemDict?.specs || [];
 
           return (
             <div
@@ -209,10 +174,10 @@ export const ServicesOverviewContainer: React.FC = () => {
                 >
                   <div className="flex items-center justify-between pb-3 border-b border-slate-800/80 text-xs">
                     <span className="font-bold uppercase tracking-wider text-slate-400">
-                      Spesifikasi & Kapabilitas
+                      {dict.services.overview.specsTitle}
                     </span>
                     <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-                      PROD READY
+                      {dict.services.overview.prodReady}
                     </span>
                   </div>
 
@@ -230,7 +195,7 @@ export const ServicesOverviewContainer: React.FC = () => {
 
                   <div className="pt-4 border-t border-slate-800/80 flex items-center gap-2 text-[11px] text-slate-400">
                     <ShieldCheck className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
-                    <span>Dukungan SLA 99.9% & Setup Implementasi Terpadu</span>
+                    <span>{dict.services.overview.slaNote}</span>
                   </div>
                 </div>
               </div>
