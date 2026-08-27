@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
 import { INITIAL_POSTS } from '@/lib/data';
 import { PostItem } from '@/types';
@@ -17,6 +17,8 @@ import {
   Clock,
   X,
   Rocket,
+  ChevronLeft,
+  ChevronRight,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -26,6 +28,13 @@ export const BlogHubContainer: React.FC<{ initialPosts?: PostItem[] }> = ({
   const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState<string>('ALL');
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const pageSize = 6;
+
+  // Reset to page 1 on tab or search change
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [activeTab, searchQuery]);
 
   const featuredPost = useMemo(() => {
     return initialPosts.find((p) => p.featured) || initialPosts[0];
@@ -33,16 +42,16 @@ export const BlogHubContainer: React.FC<{ initialPosts?: PostItem[] }> = ({
 
   const tabs = [
     { id: 'ALL', label: t('blog.hub.allTab'), icon: Layers },
-    { id: 'ARTICLE', label: t('blog.hub.articlesTab'), icon: FileText },
-    { id: 'NEWS', label: t('blog.hub.newsTab'), icon: Newspaper },
-    { id: 'EVENT', label: t('blog.hub.eventsTab'), icon: Calendar },
-    { id: 'RELEASE', label: t('blog.hub.updatesTab'), icon: Rocket },
+    { id: 'wawasan-blog', label: t('blog.hub.articlesTab'), icon: FileText },
+    { id: 'berita-media', label: t('blog.hub.newsTab'), icon: Newspaper },
+    { id: 'event-agenda', label: t('blog.hub.eventsTab'), icon: Calendar },
+    { id: 'rilis-produk', label: t('blog.hub.updatesTab'), icon: Rocket },
   ];
 
   const filteredPosts = useMemo(() => {
     return initialPosts.filter((post) => {
       // Tab filter
-      if (activeTab !== 'ALL' && post.type !== activeTab) {
+      if (activeTab !== 'ALL' && post.categorySlug !== activeTab) {
         return false;
       }
       // Search query filter
@@ -58,65 +67,66 @@ export const BlogHubContainer: React.FC<{ initialPosts?: PostItem[] }> = ({
     });
   }, [initialPosts, activeTab, searchQuery]);
 
-  return (
-    <div className="relative overflow-hidden pb-32">
-      {/* Dynamic Ambient Background Glows */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[850px] h-[400px] bg-gradient-to-b from-indigo-600/15 via-cyan-500/10 to-transparent rounded-full blur-[140px] pointer-events-none" />
+  const totalPages = Math.max(1, Math.ceil(filteredPosts.length / pageSize));
+  const safeCurrentPage = Math.min(currentPage, totalPages);
+  const paginatedPosts = useMemo(() => {
+    const start = (safeCurrentPage - 1) * pageSize;
+    return filteredPosts.slice(start, start + pageSize);
+  }, [filteredPosts, safeCurrentPage, pageSize]);
 
-      {/* Header Section */}
-      <section className="pt-16 pb-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-3xl space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-cyan-300 border border-indigo-500/30 backdrop-blur-md">
+  return (
+    <div className="min-h-screen bg-slate-950 pt-28 pb-20 relative overflow-hidden">
+      {/* Dynamic Background Elements */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-indigo-600/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/3 right-10 w-[400px] h-[300px] bg-cyan-600/10 rounded-full blur-[120px] pointer-events-none" />
+
+      {/* Header Hub Section */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center max-w-3xl mx-auto space-y-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-cyan-300 border border-indigo-500/20 shadow-inner">
             <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
             <span>{t('blog.hub.badge')}</span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.1]">
-            {t('blog.hub.title')}{' '}
-            <span className="bg-gradient-to-r from-indigo-400 via-cyan-300 to-purple-300 bg-clip-text text-transparent">
-              {t('blog.hub.titleGradient')}
-            </span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight">
+            {t('blog.hub.title')}
           </h1>
 
-          <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
-            {t('blog.hub.description')}
+          <p className="text-sm sm:text-base text-slate-400 leading-relaxed">
+            {t('blog.hub.subtitle')}
           </p>
         </div>
 
-        {/* Featured Post Spotlight Banner */}
-        {featuredPost && (
-          <div className="mt-10">
-            <Link href={`/blog/${featuredPost.slug}`} className="block group">
-              <div className="p-7 sm:p-10 rounded-3xl bg-gradient-to-r from-slate-900 via-indigo-950/40 to-slate-900 border border-indigo-500/30 shadow-2xl relative overflow-hidden backdrop-blur-xl group-hover:border-cyan-400/50 transition-all duration-300">
-                <div className="absolute top-0 right-0 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
-                <div className="relative z-10 space-y-4">
-                  <div className="flex items-center gap-3">
-                    <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-cyan-500/10 text-cyan-300 border border-cyan-500/30">
-                      ★ {t('blog.hub.featuredTag')}
+        {/* Featured Editorial Post Card (Only on ALL tab & when no active search) */}
+        {activeTab === 'ALL' && !searchQuery && featuredPost && (
+          <div className="mt-12">
+            <Link
+              href={`/blog/${featuredPost.slug}`}
+              className="group block relative rounded-3xl overflow-hidden border border-slate-800 bg-slate-900/40 hover:border-indigo-500/50 transition-all duration-300 shadow-2xl"
+            >
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 p-6 sm:p-8 lg:p-10 items-center">
+                <div className="lg:col-span-12 space-y-4">
+                  <div className="flex flex-wrap items-center gap-3">
+                    <span className="px-3 py-1 rounded-full text-xs font-bold bg-indigo-500/20 text-cyan-300 border border-indigo-500/30">
+                      {featuredPost.categoryName}
                     </span>
-                    <span className="text-xs text-slate-400 font-mono flex items-center gap-1">
-                      <Clock className="w-3.5 h-3.5 text-slate-500" />
-                      {featuredPost.readTime}
-                    </span>
+                    <div className="flex items-center gap-1.5 text-xs text-slate-400 font-mono">
+                      <Clock className="w-3.5 h-3.5 text-cyan-400" />
+                      <span>{featuredPost.readTime}</span>
+                    </div>
                   </div>
 
-                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white group-hover:text-cyan-300 transition-colors leading-tight max-w-4xl tracking-tight">
+                  <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white group-hover:text-cyan-300 transition-colors leading-tight">
                     {featuredPost.title}
                   </h2>
 
-                  <p className="text-sm sm:text-base text-slate-300 max-w-3xl leading-relaxed line-clamp-2">
+                  <p className="text-sm text-slate-300 line-clamp-2 leading-relaxed">
                     {featuredPost.summary}
                   </p>
 
-                  <div className="pt-4 flex flex-wrap items-center justify-between gap-4 border-t border-slate-800/80">
-                    <div className="flex items-center gap-3">
-                      <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-indigo-600 to-cyan-500 flex items-center justify-center text-white font-bold text-xs shadow-md">
-                        {featuredPost.authorName.charAt(0)}
-                      </div>
-                      <div>
-                        <p className="text-xs font-bold text-white">{featuredPost.authorName}</p>
-                        <p className="text-[11px] text-slate-400">{featuredPost.authorRole}</p>
-                      </div>
+                  <div className="pt-2 flex items-center justify-between">
+                    <div className="text-xs text-slate-400">
+                      Oleh <span className="text-white font-medium">{featuredPost.authorName}</span>
                     </div>
 
                     <div className="inline-flex items-center gap-2 text-xs font-bold text-cyan-400 group-hover:text-cyan-300">
@@ -181,13 +191,61 @@ export const BlogHubContainer: React.FC<{ initialPosts?: PostItem[] }> = ({
       </section>
 
       {/* Blog Cards Grid */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mt-6">
-        {filteredPosts.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredPosts.map((post, idx) => (
-              <BlogCard key={post.id} post={post} index={idx} />
-            ))}
-          </div>
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mt-6 space-y-8">
+        {paginatedPosts.length > 0 ? (
+          <>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {paginatedPosts.map((post, idx) => (
+                <BlogCard key={post.id} post={post} index={idx} />
+              ))}
+            </div>
+
+            {/* Public Pagination Bar */}
+            {totalPages > 1 && (
+              <div className="flex items-center justify-center gap-2 pt-6">
+                <button
+                  type="button"
+                  onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                  disabled={safeCurrentPage === 1}
+                  className="px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs text-slate-300 hover:text-white hover:border-slate-700 disabled:opacity-40 disabled:pointer-events-none transition-all cursor-pointer flex items-center gap-1.5 font-medium"
+                >
+                  <ChevronLeft className="w-4 h-4" />
+                  <span>Sebelumnya</span>
+                </button>
+
+                <div className="flex items-center gap-1.5">
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => {
+                    const isActive = pageNum === safeCurrentPage;
+                    return (
+                      <button
+                        key={pageNum}
+                        type="button"
+                        onClick={() => setCurrentPage(pageNum)}
+                        className={cn(
+                          'w-9 h-9 rounded-xl text-xs font-bold transition-all cursor-pointer flex items-center justify-center font-mono',
+                          isActive
+                            ? 'bg-gradient-to-r from-indigo-600 to-cyan-600 text-white shadow-md shadow-indigo-600/30'
+                            : 'bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:border-slate-700'
+                        )}
+                      >
+                        {pageNum}
+                      </button>
+                    );
+                  })}
+                </div>
+
+                <button
+                  type="button"
+                  onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                  disabled={safeCurrentPage === totalPages}
+                  className="px-3.5 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs text-slate-300 hover:text-white hover:border-slate-700 disabled:opacity-40 disabled:pointer-events-none transition-all cursor-pointer flex items-center gap-1.5 font-medium"
+                >
+                  <span>Selanjutnya</span>
+                  <ChevronRight className="w-4 h-4" />
+                </button>
+              </div>
+            )}
+          </>
         ) : (
           <div className="py-20 text-center space-y-3 rounded-2xl border border-slate-800/80 bg-slate-950/40">
             <Search className="w-10 h-10 text-slate-600 mx-auto" />

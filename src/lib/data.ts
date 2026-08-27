@@ -282,7 +282,6 @@ export const INITIAL_POSTS: PostItem[] = [
       </ol>
       <p>Dengan memadukan arsitektur software kasir yang tangguh dan manajemen konsinyasi yang transparan, bisnis ritel Anda siap berkembang dari satu outlet menjadi puluhan cabang dengan kendali penuh.</p>
     `,
-    type: 'ARTICLE',
     categorySlug: 'wawasan-blog',
     categoryName: 'Wawasan & Blog',
     authorName: 'Raihan Marwanda',
@@ -329,7 +328,6 @@ export const INITIAL_POSTS: PostItem[] = [
       <h2>4. Pengawasan Kehadiran dengan Geofencing & Face Liveness Detection</h2>
       <p>Akurasi penggajian bermula dari validitas data absensi. Mitrasova Daya dilengkapi perimeter geofencing GPS anti-fake GPS dan deteksi biometrik wajah (liveness check) yang memastikan karyawan benar-benar berada di lokasi kerja saat mencatat jam masuk dan pulang.</p>
     `,
-    type: 'ARTICLE',
     categorySlug: 'wawasan-blog',
     categoryName: 'Wawasan & Blog',
     authorName: 'Solution Architect Mitrasova',
@@ -369,7 +367,6 @@ export const INITIAL_POSTS: PostItem[] = [
       <h2>4. Strategi Pencadangan & RPO / RTO dalam Hitungan Menit</h2>
       <p>Bencana hilangnya data dapat melumpuhkan kredibilitas institusi. Mitrasova Nexus menerapkan continuous database WAL archiving sehingga Recovery Point Objective (RPO) dapat ditekan hingga di bawah 1 menit, serta backup snapshot terenkripsi AES-256 harian ke off-site storage.</p>
     `,
-    type: 'ARTICLE',
     categorySlug: 'wawasan-blog',
     categoryName: 'Wawasan & Blog',
     authorName: 'Solution Architect Mitrasova',
@@ -402,7 +399,6 @@ export const INITIAL_POSTS: PostItem[] = [
       <h2>3. Standar Rekayasa Clean Code & SOLID Principles</h2>
       <p>Kualitas kode adalah investasi jangka panjang. Setiap aplikasi kustom yang dibangun mematuhi aturan baku Single Responsibility, Open/Closed Principle, Explicit Typing dengan TypeScript, serta audit keamanan OWASP Top 10 sebelum masa go-live.</p>
     `,
-    type: 'ARTICLE',
     categorySlug: 'wawasan-blog',
     categoryName: 'Wawasan & Blog',
     authorName: 'Raihan Marwanda',
@@ -432,7 +428,6 @@ export const INITIAL_POSTS: PostItem[] = [
         <li><strong>Dedicated Priority Hotline:</strong> Saluran komunikasi darurat 24 jam dengan waktu respon SLA kurang dari 15 menit.</li>
       </ul>
     `,
-    type: 'NEWS',
     categorySlug: 'berita-media',
     categoryName: 'Berita & Media',
     authorName: 'Tim Editorial Mitrasova',
@@ -468,7 +463,6 @@ export const INITIAL_POSTS: PostItem[] = [
         <li>Paket uji coba sistem eksklusif bagi peserta yang hadir.</li>
       </ul>
     `,
-    type: 'EVENT',
     categorySlug: 'event-agenda',
     categoryName: 'Events & Agenda',
     authorName: 'Tim Editorial Mitrasova',
@@ -504,7 +498,6 @@ export const INITIAL_POSTS: PostItem[] = [
         <li>Indikator status sync visual di pojok kanan atas layar kasir.</li>
       </ul>
     `,
-    type: 'RELEASE',
     categorySlug: 'rilis-produk',
     categoryName: 'Rilis Produk',
     authorName: 'Raihan Marwanda',

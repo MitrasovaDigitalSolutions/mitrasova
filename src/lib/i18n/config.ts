@@ -2,7 +2,6 @@
 
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
 import idTranslation from '@/locales/id.json';
 import enTranslation from '@/locales/en.json';
 
@@ -17,20 +16,17 @@ const resources = {
 
 if (!i18n.isInitialized) {
   i18n
-    .use(LanguageDetector)
     .use(initReactI18next)
     .init({
       resources,
+      lng: 'id',
       fallbackLng: 'id',
       supportedLngs: ['id', 'en'],
       interpolation: {
         escapeValue: false, // React already protects from XSS
       },
-      detection: {
-        order: ['localStorage', 'cookie', 'navigator'],
-        lookupLocalStorage: 'mitrasova_locale',
-        lookupCookie: 'mitrasova_locale',
-        caches: ['localStorage', 'cookie'],
+      react: {
+        useSuspense: false,
       },
     });
 }

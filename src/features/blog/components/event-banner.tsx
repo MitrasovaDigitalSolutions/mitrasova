@@ -9,7 +9,7 @@ import { useTranslation } from '@/lib/i18n';
 
 export const EventBanner: React.FC<{ post: PostItem }> = ({ post }) => {
   const { t, locale } = useTranslation();
-  if (post.type !== 'EVENT') return null;
+  if (post.categorySlug !== 'event-agenda' && !post.eventDate) return null;
 
   return (
     <div className="p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-purple-950/40 via-indigo-950/40 to-slate-950/60 border border-purple-800/40 shadow-xl space-y-6 relative overflow-hidden backdrop-blur-md">

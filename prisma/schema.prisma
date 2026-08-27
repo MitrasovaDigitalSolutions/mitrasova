@@ -93,7 +93,6 @@ model Post {
   contentHtml   String     @db.Text
   contentJson   Json?
   coverImage    String?
-  type          PostType   @default(ARTICLE)
   status        PostStatus @default(DRAFT)
   featured      Boolean    @default(false)
   readTime      String?    // e.g. "5 min baca"
@@ -113,15 +112,7 @@ model Post {
   updatedAt     DateTime   @updatedAt
 
   @@index([slug])
-  @@index([type, status, publishedAt])
-  @@index([categoryId, status])
-}
-
-enum PostType {
-  ARTICLE
-  NEWS
-  EVENT
-  RELEASE
+  @@index([categoryId, status, publishedAt])
 }
 
 enum PostStatus {

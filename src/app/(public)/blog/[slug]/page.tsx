@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { INITIAL_POSTS } from '@/lib/data';
+import { postsService } from '@/lib/posts-service';
 import { buildCanonicalUrl, buildOgImageUrl } from '@/lib/seo';
 import { BlogArticlePage } from '@/features/blog';
 import {
@@ -16,14 +16,15 @@ interface BlogArticlePageRouteProps {
 }
 
 export async function generateStaticParams() {
-  return INITIAL_POSTS.map((post) => ({
+  const posts = await postsService.getAllPosts();
+  return posts.map((post) => ({
     slug: post.slug,
   }));
 }
 
 export async function generateMetadata({ params }: BlogArticlePageRouteProps): Promise<Metadata> {
   const { slug } = await params;
-  const post = INITIAL_POSTS.find((p) => p.slug === slug);
+  const post = await postsService.getPostByIdOrSlug(slug);
 
   if (!post) {
     return { title: 'Artikel Tidak Ditemukan' };
@@ -66,14 +67,15 @@ export async function generateMetadata({ params }: BlogArticlePageRouteProps): P
 
 export default async function BlogArticleRoutePage({ params }: BlogArticlePageRouteProps) {
   const { slug } = await params;
-  const post = INITIAL_POSTS.find((p) => p.slug === slug);
+  const post = await postsService.getPostByIdOrSlug(slug);
 
   if (!post) {
     notFound();
   }
 
   const articleUrl = buildCanonicalUrl(`/blog/${slug}`);
-  const relatedPosts = INITIAL_POSTS.filter((p) => p.slug !== slug).slice(0, 3);
+  const allPosts = await postsService.getAllPosts();
+  const relatedPosts = allPosts.filter((p) => p.slug !== slug).slice(0, 3);
 
   return (
     <>
@@ -94,7 +96,7 @@ export default async function BlogArticleRoutePage({ params }: BlogArticlePageRo
         authorName={post.authorName}
         categoryName={post.categoryName}
       />
-      {post.type === 'EVENT' && post.eventDate && (
+      {post.categorySlug === 'event-agenda' && post.eventDate && (
         <EventJsonLd
           name={post.title}
           description={post.summary || post.title}

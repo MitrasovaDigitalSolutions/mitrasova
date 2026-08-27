@@ -8,14 +8,7 @@ export const PostTaxonomyFields: React.FC<{ form: UseFormReturn<PostFormValues> 
   form,
 }) => {
   const { control, register, watch, formState: { errors } } = form;
-  const currentType = watch('type');
-
-  const typeOptions = [
-    { label: 'Wawasan & Blog (Artikel)', value: 'ARTICLE' },
-    { label: 'Berita & Pengumuman (News)', value: 'NEWS' },
-    { label: 'Events & Webinar (Acara)', value: 'EVENT' },
-    { label: 'Rilis Pembaruan Produk (Release)', value: 'RELEASE' },
-  ];
+  const currentCategorySlug = watch('categorySlug');
 
   const categoryOptions = INITIAL_CATEGORIES.map((cat) => ({
     label: cat.name,
@@ -24,42 +17,24 @@ export const PostTaxonomyFields: React.FC<{ form: UseFormReturn<PostFormValues> 
 
   return (
     <div className="space-y-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <Controller
-          control={control}
-          name="type"
-          render={({ field }) => (
-            <FormCombobox
-              label="Tipe Konten Publikasi *"
-              placeholder="Pilih tipe konten..."
-              searchPlaceholder="Cari tipe..."
-              options={typeOptions}
-              value={field.value}
-              onValueChange={field.onChange}
-              error={errors.type?.message}
-            />
-          )}
-        />
-
-        <Controller
-          control={control}
-          name="categorySlug"
-          render={({ field }) => (
-            <FormCombobox
-              label="Kategori Publikasi *"
-              placeholder="Pilih kategori..."
-              searchPlaceholder="Cari kategori..."
-              options={categoryOptions}
-              value={field.value}
-              onValueChange={field.onChange}
-              error={errors.categorySlug?.message}
-            />
-          )}
-        />
-      </div>
+      <Controller
+        control={control}
+        name="categorySlug"
+        render={({ field }) => (
+          <FormCombobox
+            label="Kategori Publikasi *"
+            placeholder="Pilih kategori..."
+            searchPlaceholder="Cari kategori..."
+            options={categoryOptions}
+            value={field.value}
+            onValueChange={field.onChange}
+            error={errors.categorySlug?.message}
+          />
+        )}
+      />
 
       {/* Conditional Event Date & Location fields */}
-      {currentType === 'EVENT' && (
+      {currentCategorySlug === 'event-agenda' && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 rounded-xl bg-purple-950/20 border border-purple-800/30">
           <FormInput
             label="Tanggal Pelaksanaan Event (Opsional)"

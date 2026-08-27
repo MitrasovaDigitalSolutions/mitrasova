@@ -28,9 +28,9 @@ export const BlogArticleContainer: React.FC<BlogArticleProps> = ({
 }) => {
   const { t, locale } = useTranslation();
 
-  const isEvent = post.type === 'EVENT';
-  const isRelease = post.type === 'RELEASE';
-  const isNews = post.type === 'NEWS';
+  const isEvent = post.categorySlug === 'event-agenda';
+  const isRelease = post.categorySlug === 'rilis-produk';
+  const isNews = post.categorySlug === 'berita-media';
 
   const typeConfig = isEvent
     ? {

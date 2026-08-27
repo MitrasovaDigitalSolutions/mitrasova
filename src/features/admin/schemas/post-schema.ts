@@ -10,7 +10,6 @@ export const postSchema = z.object({
       'Slug URL hanya boleh berisi huruf kecil, angka, dan tanda hubung (-)'
     ),
   summary: z.string().optional(),
-  type: z.enum(['ARTICLE', 'NEWS', 'EVENT', 'RELEASE']),
   categorySlug: z.string().min(1, 'Pilih kategori publikasi'),
   contentHtml: z.string().min(10, 'Isi konten postingan minimal 10 karakter'),
   eventDate: z.string().optional(),
@@ -19,3 +18,4 @@ export const postSchema = z.object({
 });
 
 export type PostFormValues = z.infer<typeof postSchema>;
+

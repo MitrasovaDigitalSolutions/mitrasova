@@ -15,12 +15,22 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | null>(null);
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [currentLocale, setCurrentLocale] = useState<Locale>(() => {
-    const lang = i18n.language?.substring(0, 2);
-    return lang === 'en' ? 'en' : 'id';
-  });
+  const [currentLocale, setCurrentLocale] = useState<Locale>('id');
 
   useEffect(() => {
+    // Read saved locale on client mount
+    try {
+      const savedLocale = localStorage.getItem('mitrasova_locale');
+      if (savedLocale === 'en' || savedLocale === 'id') {
+        if (savedLocale !== i18n.language) {
+          i18n.changeLanguage(savedLocale);
+          setCurrentLocale(savedLocale);
+        }
+      }
+    } catch {
+      // ignore localStorage errors
+    }
+
     const handleLanguageChanged = (lng: string) => {
       const normalized = lng?.substring(0, 2) === 'en' ? 'en' : 'id';
       setCurrentLocale(normalized);
@@ -33,6 +43,12 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   }, []);
 
   const setLocale = useCallback((newLocale: Locale) => {
+    try {
+      localStorage.setItem('mitrasova_locale', newLocale);
+      document.cookie = `mitrasova_locale=${newLocale}; path=/; max-age=31536000; SameSite=Lax`;
+    } catch {
+      // ignore
+    }
     i18n.changeLanguage(newLocale);
     setCurrentLocale(newLocale);
   }, []);

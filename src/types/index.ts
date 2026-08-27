@@ -34,15 +34,12 @@ export interface CategoryItem {
   description: string;
 }
 
-export type PostType = 'ARTICLE' | 'NEWS' | 'EVENT' | 'RELEASE';
-
 export interface PostItem {
   id: string;
   title: string;
   slug: string;
   summary: string;
   contentHtml: string;
-  type: PostType;
   categorySlug: string;
   categoryName: string;
   authorName: string;

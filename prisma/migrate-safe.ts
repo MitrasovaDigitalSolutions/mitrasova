@@ -101,7 +101,6 @@ async function migrate() {
         "contentHtml" TEXT NOT NULL,
         "contentJson" JSONB,
         "coverImage" TEXT,
-        "type" "PostType" DEFAULT 'ARTICLE'::"PostType" NOT NULL,
         "status" "PostStatus" DEFAULT 'DRAFT'::"PostStatus" NOT NULL,
         "featured" BOOLEAN DEFAULT false NOT NULL,
         "readTime" TEXT,
@@ -115,7 +114,7 @@ async function migrate() {
         "createdAt" TIMESTAMP(3) DEFAULT CURRENT_TIMESTAMP NOT NULL,
         "updatedAt" TIMESTAMP(3) DEFAULT CURRENT_TIMESTAMP NOT NULL
       );
-      ALTER TABLE "Post" ADD COLUMN IF NOT EXISTS "type" "PostType" DEFAULT 'ARTICLE'::"PostType";
+      ALTER TABLE "Post" DROP COLUMN IF EXISTS "type";
       ALTER TABLE "Post" ADD COLUMN IF NOT EXISTS "featured" BOOLEAN DEFAULT false;
       ALTER TABLE "Post" ADD COLUMN IF NOT EXISTS "readTime" TEXT;
       ALTER TABLE "Post" ADD COLUMN IF NOT EXISTS "eventDate" TIMESTAMP(3);
@@ -123,7 +122,7 @@ async function migrate() {
       ALTER TABLE "Post" ADD COLUMN IF NOT EXISTS "tags" TEXT[] DEFAULT ARRAY[]::TEXT[];
       ALTER TABLE "Post" ADD COLUMN IF NOT EXISTS "publishedAt" TIMESTAMP(3);
     `);
-    console.log('✅ Tabel Post terverifikasi.');
+    console.log('✅ Tabel Post terverifikasi (type column disederhanakan).');
 
     // 6. Consultation Table
     await client.query(`

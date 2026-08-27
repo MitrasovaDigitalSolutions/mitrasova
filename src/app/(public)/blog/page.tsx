@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { INITIAL_POSTS } from '@/lib/data';
+import { postsService } from '@/lib/posts-service';
 import { buildCanonicalUrl, buildOgImageUrl } from '@/lib/seo';
 import { BlogHubPage } from '@/features/blog';
 import { BreadcrumbJsonLd } from '@/components/shared/json-ld';
@@ -28,7 +28,9 @@ export const metadata: Metadata = {
   },
 };
 
-export default function BlogRoutePage() {
+export default async function BlogRoutePage() {
+  const posts = await postsService.getAllPosts();
+
   return (
     <>
       <BreadcrumbJsonLd
@@ -37,7 +39,7 @@ export default function BlogRoutePage() {
           { name: 'Blog & Kabar', url: buildCanonicalUrl('/blog') },
         ]}
       />
-      <BlogHubPage initialPosts={INITIAL_POSTS} />
+      <BlogHubPage initialPosts={posts} />
     </>
   );
 }
