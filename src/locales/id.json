@@ -139,37 +139,37 @@
     "items": {
       "mitrasova-pos": {
         "title": "Mitrasova POS",
-        "heroTagline": "Kasir & Omnichannel Commerce Pintar Skala Resto & Retail",
-        "summary": "Sistem Kasir Digital Terintegrasi dengan Manajemen Stok Multi-Cabang, Laporan Real-Time, & Cetak Struk Thermal Cloud.",
-        "description": "Mitrasova POS adalah solusi perangkat lunak kasir pintar generasi terbaru. Didesain untuk mempercepat transaksi di meja kasir hingga 3x lebih cepat, mendukung pembayaran QRIS, e-wallet, EDC, manajemen meja resto, serta sinkronisasi persediaan barang secara otomatis antar cabang.",
-        "category": "SaaS POS & Commerce",
-        "badge": "Resto & Retail POS",
+        "heroTagline": "Kasir Offline-First & Akuntansi Terpadu Skala Retail & Bisnis",
+        "summary": "Sistem Kasir Offline Mode dengan Manajemen Stok Multi-Cabang, Akuntansi Neraca & General Ledger, serta Cetak Struk Thermal.",
+        "description": "Mitrasova POS adalah solusi perangkat lunak kasir pintar generasi terbaru. Didesain untuk mempercepat transaksi kasir dengan dukungan mode offline penuh, manajemen shift kasir, sinkronisasi stok multi-cabang, serta sistem akuntansi terintegrasi (neraca, laba rugi, dan general ledger).",
+        "category": "SaaS POS & Accounting",
+        "badge": "Offline POS & Accounting",
         "features": [
           {
-            "title": "Transaksi Kasir High-Speed",
-            "description": "Proses checkout kurang dari 3 detik dengan dukungan barcode scanner dan pencetakan printer thermal Bluetooth & LAN."
+            "title": "Mode Kasir Offline-First & Auto-Sync",
+            "description": "Kasir tetap dapat memproses transaksi penjualan tanpa hambatan saat koneksi internet terputus, dan data otomatis tersinkron saat kembali online."
+          },
+          {
+            "title": "Modul Akuntansi & General Ledger",
+            "description": "Pencatatan jurnal transaksi otomatis, neraca saldo, buku besar (General Ledger), laporan laba rugi, dan analisis margin keuntungan."
           },
           {
             "title": "Multi-Outlet Stock Sync",
-            "description": "Pantau stok persediaan barang di puluhan cabang secara real-time dari satu dashboard sentral."
+            "description": "Pantau persediaan dan transfer stok barang di puluhan cabang secara terpusat dan akurat."
           },
           {
-            "title": "Integrasi QRIS & Pembayaran Digital",
-            "description": "Dukungan penuh pembayaran QRIS Statis/Dinamis, Bank Transfer, Card EDC, dan e-wallet nasional."
-          },
-          {
-            "title": "Manajemen Meja & Dapur (KDS)",
-            "description": "Khusus bisnis F&B: sistem reservasi meja, Kitchen Display System (KDS), dan pesanan lewat scan QR Meja."
+            "title": "Cetak Struk Thermal & Manajemen Shift",
+            "description": "Dukungan printer thermal Bluetooth/LAN ESC/POS, barcode scanner, manajemen modal kasir awal, dan rekonsiliasi kas per shift."
           }
         ],
         "faqs": [
           {
             "question": "Apakah Mitrasova POS bisa berjalan tanpa koneksi internet (Offline Mode)?",
-            "answer": "Ya! Mitrasova POS dilengkapi dengan Local Hybrid Cache Sync. Anda tetap bisa memproses transaksi kasir saat internet terputus, dan data akan otomatis tersinkronisasi saat koneksi pulih."
+            "answer": "Ya! Mitrasova POS dirancang dengan arsitektur Offline-First. Anda tetap bisa memproses transaksi kasir saat internet padam, dan data transaksi akan otomatis tersinkronisasi ke server pusat saat jaringan pulih."
           },
           {
-            "question": "Printer thermal merk apa saja yang didukung?",
-            "answer": "Mitrasova POS mendukung seluruh printer thermal bertipe ESC/POS baik melalui Bluetooth, USB, Wi-Fi, maupun LAN (Epson, Sunmi, Xprinter, Kassen, dll)."
+            "question": "Laporan keuangan apa saja yang disediakan oleh modul akuntansi Mitrasova POS?",
+            "answer": "Mitrasova POS menyediakan laporan Neraca Keuangan, Laporan Laba Rugi (P&L), Buku Besar (General Ledger), Jurnal Otomatis Penjualan & Pembelian, serta Laporan Arus Kas."
           }
         ]
       },
