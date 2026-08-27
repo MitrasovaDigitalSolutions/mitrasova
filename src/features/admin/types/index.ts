@@ -1,8 +1,10 @@
-export interface PostFormData {
-  title: string;
-  slug: string;
-  summary: string;
-  serviceSlug: string;
-  categorySlug: string;
-  contentHtml: string;
+export * from '../schemas/post-schema';
+
+export interface AdminMetricItem {
+  label: string;
+  value: string;
+  sub: string;
+  trend: string;
+  iconName: string;
+  accent: 'cyan' | 'indigo' | 'purple' | 'emerald';
 }

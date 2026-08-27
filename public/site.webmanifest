@@ -1,0 +1,19 @@
+{
+  "name": "Mitrasova Digital Solutions",
+  "short_name": "Mitrasova",
+  "description": "Penyedia perangkat lunak enterprise terdepan di Indonesia. Solusi POS, HRIS, Cloud Server, dan Custom Web Development.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#060911",
+  "theme_color": "#060911",
+  "orientation": "portrait-primary",
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "id",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}

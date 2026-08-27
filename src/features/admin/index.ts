@@ -1,3 +1,10 @@
-export { AdminDashboardContainer as AdminDashboardPage } from './components/AdminDashboardContainer';
-export { PostEditorForm as CreatePostPage } from './components/PostEditorForm';
+export { AdminDashboardContainer as AdminDashboardPage } from './components/admin-dashboard-container';
+export { PostEditorForm as CreatePostPage } from './components/post-editor-form';
+export * from './components/console-header';
+export * from './components/admin-metric-card';
+export * from './components/admin-metrics-grid';
+export * from './components/admin-posts-table';
+export * from './hooks/use-post-editor';
+export * from './schemas/post-schema';
 export * from './types';
+export * from './constants';

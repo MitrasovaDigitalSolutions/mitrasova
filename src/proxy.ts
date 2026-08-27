@@ -7,6 +7,8 @@ export function proxy(...args: Parameters<typeof auth>) {
   return auth(...args);
 }
 
+export default proxy;
+
 export const config = {
   matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
 };

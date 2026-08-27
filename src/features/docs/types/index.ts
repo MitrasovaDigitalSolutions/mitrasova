@@ -1,4 +1,4 @@
-import { PostItem, ServiceItem, CategoryItem } from '@/types';
+import { ServiceItem, CategoryItem, PostItem } from '@/types';
 
 export interface DocsArticleProps {
   post: PostItem;
@@ -6,4 +6,9 @@ export interface DocsArticleProps {
   allServices: ServiceItem[];
   allCategories: CategoryItem[];
   allPosts: PostItem[];
+}
+
+export interface DocsHubProps {
+  services?: ServiceItem[];
+  posts?: PostItem[];
 }

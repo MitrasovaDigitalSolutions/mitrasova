@@ -13,20 +13,41 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     Credentials({
       async authorize(credentials) {
         const parsedCredentials = z
-          .object({ email: z.string().email(), password: z.string().min(6) })
+          .object({
+            email: z.string().email(),
+            password: z.string().min(6),
+          })
           .safeParse(credentials);
 
-        if (parsedCredentials.success) {
-          const { email, password } = parsedCredentials.data;
-          const user = await prisma.user.findUnique({ where: { email } });
-
-          if (!user) return null;
-
-          // Simple demo check for admin credentials
-          if (password === 'admin123' || user.passwordHash === password) {
-            return user;
-          }
+        if (!parsedCredentials.success) {
+          return null;
         }
+
+        const { email, password } = parsedCredentials.data;
+
+        try {
+          const user = await prisma.user.findUnique({
+            where: { email: email.toLowerCase() },
+          });
+
+          if (!user || !user.passwordHash) {
+            return null;
+          }
+
+          // Verify user password with database passwordHash
+          if (user.passwordHash === password) {
+            return {
+              id: user.id,
+              email: user.email,
+              name: user.name,
+              role: user.role,
+            };
+          }
+        } catch (error) {
+          console.error('[Auth Service] Database authorization error:', error);
+          return null;
+        }
+
         return null;
       },
     }),

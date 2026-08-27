@@ -2,78 +2,79 @@
 
 @layer base {
   :root {
-    --background: 222 47% 6%;
+    --background: 224 71% 4%;
     --foreground: 210 40% 98%;
 
-    --card: 222 47% 8%;
+    --card: 224 71% 6%;
     --card-foreground: 210 40% 98%;
 
     --primary: 239 84% 67%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 189 94% 43%;
-    --secondary-foreground: 222 47% 6%;
+    --secondary-foreground: 224 71% 4%;
 
-    --muted: 217 33% 17%;
+    --muted: 217 33% 15%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 217 33% 17%;
+    --accent: 217 33% 15%;
     --accent-foreground: 210 40% 98%;
 
-    --border: 217 33% 18%;
+    --border: 217 33% 16%;
     --ring: 239 84% 67%;
   }
 
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  html {
+    color-scheme: dark;
+  }
+
   body {
-    background-color: #070A11;
+    background-color: #060911;
     color: #F8FAFC;
     font-family: var(--font-sans, system-ui, -apple-system, sans-serif);
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading, var(--font-sans, system-ui, sans-serif));
+    letter-spacing: -0.025em;
   }
 }
 
-/* Glassmorphism & Custom Glow Effects */
+/* Glassmorphism & High-Craft Surface Effects (Clean & Stable - No Disorienting Movements) */
 .glass-card {
-  background: rgba(12, 18, 34, 0.75);
+  background: rgba(10, 15, 29, 0.72);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .glass-card-rog {
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(9, 13, 22, 0.95) 100%);
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(8, 12, 20, 0.96) 100%);
   backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   border: 1px solid rgba(99, 102, 241, 0.25);
-  box-shadow: 0 16px 50px -10px rgba(0, 0, 0, 0.8), 0 0 30px 0 rgba(79, 70, 229, 0.15);
+  box-shadow: 0 12px 40px -10px rgba(0, 0, 0, 0.7);
 }
 
 .glass-card-hover {
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 
 .glass-card-hover:hover {
-  border-color: rgba(6, 182, 212, 0.5);
-  box-shadow: 0 20px 50px -12px rgba(79, 70, 229, 0.4), 0 0 30px 0 rgba(6, 182, 212, 0.3);
+  border-color: rgba(99, 102, 241, 0.4);
+  background: rgba(13, 20, 38, 0.8);
 }
 
-.glow-text-indigo {
-  text-shadow: 0 0 30px rgba(99, 102, 241, 0.6);
-}
-
-.glow-text-cyan {
-  text-shadow: 0 0 30px rgba(6, 182, 212, 0.6);
-}
-
-.glow-box-cyan {
-  box-shadow: 0 0 25px rgba(6, 182, 212, 0.4);
-}
-
-.glow-box-indigo {
-  box-shadow: 0 0 25px rgba(99, 102, 241, 0.4);
-}
-
-/* ASUS ROG Cyber Grid Pattern */
+/* Background Cyber Textures */
 .bg-cyber-grid {
   background-size: 40px 40px;
   background-image: 
@@ -82,11 +83,11 @@
 }
 
 .bg-cyber-dots {
-  background-image: radial-gradient(rgba(99, 102, 241, 0.2) 1px, transparent 0);
+  background-image: radial-gradient(rgba(99, 102, 241, 0.15) 1px, transparent 0);
   background-size: 24px 24px;
 }
 
-/* Cyber Scanline Effect */
+/* Scanline Animation */
 @keyframes scanline {
   0% { transform: translateY(-100%); }
   100% { transform: translateY(1000%); }
@@ -105,15 +106,17 @@
   transform-style: preserve-3d;
 }
 
+/* Ergonomic Custom Scrollbars */
 .custom-scrollbar::-webkit-scrollbar {
   width: 6px;
+  height: 6px;
 }
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: rgba(7, 10, 17, 0.8);
+  background: rgba(6, 9, 17, 0.8);
 }
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background: linear-gradient(to bottom, #6366f1, #06b6d4);
-  border-radius: 4px;
+  border-radius: 9999px;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(to bottom, #818cf8, #22d3ee);
@@ -128,7 +131,7 @@
 .ProseMirror p {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 .ProseMirror h1 {
@@ -225,7 +228,6 @@
   cursor: pointer;
 }
 
-/* Selected Image Highlight Ring */
 .ProseMirror img.ProseMirror-selectednode {
   outline: 3px solid #22d3ee !important;
   box-shadow: 0 0 30px rgba(6, 182, 212, 0.7) !important;
