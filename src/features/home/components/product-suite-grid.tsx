@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import { SectionHeading } from '@/components/shared';
-import { INITIAL_SERVICES } from '@/lib/data';
+import { getLocalizedServices } from '@/lib/data';
 import { ProductCard } from './product-card';
 import { useTranslation } from '@/lib/i18n';
 
@@ -18,7 +18,8 @@ const containerVariants: Variants = {
 };
 
 export const ProductSuiteGrid: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, locale } = useTranslation();
+  const services = getLocalizedServices(locale);
 
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -36,7 +37,7 @@ export const ProductSuiteGrid: React.FC = () => {
         viewport={{ once: true, amount: 0.15 }}
         className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12"
       >
-        {INITIAL_SERVICES.map((service) => (
+        {services.map((service) => (
           <ProductCard key={service.id} service={service} />
         ))}
       </motion.div>

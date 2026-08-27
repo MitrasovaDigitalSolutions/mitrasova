@@ -135,6 +135,152 @@
       "docsBannerTitle": "Dokumentasi Lengkap & Panduan Teknis",
       "docsBannerDesc": "Pelajari panduan setup langkah demi langkah, rilis pembaruan versi, dan integrasi API untuk layanan ini.",
       "openDocsBtn": "Buka Dokumentasi Layanan"
+    },
+    "items": {
+      "mitrasova-pos": {
+        "title": "Mitrasova POS",
+        "heroTagline": "Kasir & Omnichannel Commerce Pintar Skala Resto & Retail",
+        "summary": "Sistem Kasir Digital Terintegrasi dengan Manajemen Stok Multi-Cabang, Laporan Real-Time, & Cetak Struk Thermal Cloud.",
+        "description": "Mitrasova POS adalah solusi perangkat lunak kasir pintar generasi terbaru. Didesain untuk mempercepat transaksi di meja kasir hingga 3x lebih cepat, mendukung pembayaran QRIS, e-wallet, EDC, manajemen meja resto, serta sinkronisasi persediaan barang secara otomatis antar cabang.",
+        "category": "SaaS POS & Commerce",
+        "badge": "Resto & Retail POS",
+        "features": [
+          {
+            "title": "Transaksi Kasir High-Speed",
+            "description": "Proses checkout kurang dari 3 detik dengan dukungan barcode scanner dan pencetakan printer thermal Bluetooth & LAN."
+          },
+          {
+            "title": "Multi-Outlet Stock Sync",
+            "description": "Pantau stok persediaan barang di puluhan cabang secara real-time dari satu dashboard sentral."
+          },
+          {
+            "title": "Integrasi QRIS & Pembayaran Digital",
+            "description": "Dukungan penuh pembayaran QRIS Statis/Dinamis, Bank Transfer, Card EDC, dan e-wallet nasional."
+          },
+          {
+            "title": "Manajemen Meja & Dapur (KDS)",
+            "description": "Khusus bisnis F&B: sistem reservasi meja, Kitchen Display System (KDS), dan pesanan lewat scan QR Meja."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Apakah Mitrasova POS bisa berjalan tanpa koneksi internet (Offline Mode)?",
+            "answer": "Ya! Mitrasova POS dilengkapi dengan Local Hybrid Cache Sync. Anda tetap bisa memproses transaksi kasir saat internet terputus, dan data akan otomatis tersinkronisasi saat koneksi pulih."
+          },
+          {
+            "question": "Printer thermal merk apa saja yang didukung?",
+            "answer": "Mitrasova POS mendukung seluruh printer thermal bertipe ESC/POS baik melalui Bluetooth, USB, Wi-Fi, maupun LAN (Epson, Sunmi, Xprinter, Kassen, dll)."
+          }
+        ]
+      },
+      "mitrasova-daya": {
+        "title": "Mitrasova Daya",
+        "heroTagline": "Platform HRIS, Payroll, & Presensi Geolocation Karyawan",
+        "summary": "Otomatisasi Hitung Gaji/Payroll, PPh 21, BPJS, Absensi Face-Recognition, & Manajemen Cuti Karyawan Enterprise.",
+        "description": "Mitrasova Daya memberdayakan departemen HR dan pimpinan perusahaan dalam mengelola aset terpenting: Sumber Daya Manusia. Kelola jadwal shift, kalkulasi slip gaji instan dengan pajak PPh 21 TER terbaru, klaim reimbursement, dan evaluasi kinerja karyawan secara objektif.",
+        "category": "HRIS & Workforce",
+        "badge": "HRIS & Payroll Enterprise",
+        "features": [
+          {
+            "title": "Kalkulasi Payroll & PPh 21 Otomatis",
+            "description": "Hitung ribuan gaji karyawan lengkap dengan potongan PPh 21 TER, BPJS Kesehatan, BPJS Ketenagakerjaan hanya dengan 1 klik."
+          },
+          {
+            "title": "Presensi Mobile + GPS & Liveness Face Check",
+            "description": "Cegah kecurangan titip absen dengan verifikasi wajah liveness detection dan radius geofencing lokasi kantor."
+          },
+          {
+            "title": "Self-Service Employee Portal (ESS)",
+            "description": "Karyawan dapat mengajukan izin, cuti, lembur, dan mengunduh slip gaji terenkripsi langsung dari smartphone."
+          },
+          {
+            "title": "Shift & Performance Review Engine",
+            "description": "Pengaturan jadwal shift fleksibel untuk ritel/pabrik dan matriks penilaian KPI bulanan."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Apakah kalkulasi PPh 21 sudah memperhitungkan skema TER 2024+?",
+            "answer": "Tentu. Rumus perhitungan PPh 21 di Mitrasova Daya selalu diperbarui sesuai dengan regulasi perpajakan Kementerian Keuangan terbaru."
+          },
+          {
+            "question": "Berapa kapasitas maksimal karyawan yang didukung?",
+            "answer": "Mitrasova Daya teruji mampu menangani hingga 50.000+ karyawan aktif dengan waktu pembuatan slip gaji massal di bawah 2 menit."
+          }
+        ]
+      },
+      "mitrasova-nexus": {
+        "title": "Mitrasova Nexus",
+        "heroTagline": "High-Availability Cloud Hosting, Managed VPS & Security",
+        "summary": "Infrastruktur Cloud Hosting Kinerja Tinggi dengan 99.99% Uptime SLA, DDoS Protection, & Auto-Scaling Server.",
+        "description": "Mitrasova Nexus adalah layanan infrastruktur cloud server terkelola (*Managed Cloud Services*) yang dirancang untuk aplikasi mission-critical. Didukung oleh jaringan server Tier-4 lokal di Jakarta & Singapura dengan latency ultra-rendah dan proteksi lapisan keamanan bertingkat.",
+        "category": "Cloud Infrastructure",
+        "badge": "Tier-4 Managed Cloud",
+        "features": [
+          {
+            "title": "99.99% Guaranteed Uptime SLA",
+            "description": "Arsitektur redundant multi-zone dengan garansi pengembalian dana jika terjadi insiden downtime."
+          },
+          {
+            "title": "Advanced Anti-DDoS Mitigation",
+            "description": "Perlindungan otomatis dari serangan DDoS layer 3, 4, dan 7 dengan kapasitas scrubbing center hingga 2 Tbps."
+          },
+          {
+            "title": "Automated Daily Cloud Snapshot Backup",
+            "description": "Backup terenkripsi setiap hari ke lokasi off-site cadangan dengan opsi Disaster Recovery Point (RPO/RTO) dalam menit."
+          },
+          {
+            "title": "Kubernetes & Auto-Scaling Ready",
+            "description": "Dukungan containerization Docker/K8s untuk menangani lonjakan trafik mendadak tanpa lag."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Di mana lokasi fisik data center Mitrasova Nexus?",
+            "answer": "Server kami berlokasi di Data Center Tier-4 Jakarta (Indonesia) dan Data Center Equinix SG1 (Singapura) untuk konektivitas IX teraman."
+          },
+          {
+            "question": "Apakah tim support teknis siaga 24 jam?",
+            "answer": "Ya, tim Cloud Engineer Mitrasova siaga 24/7/365 dengan waktu respon SLA kurang dari 15 menit."
+          }
+        ]
+      },
+      "mitrasova-labs": {
+        "title": "Mitrasova Labs",
+        "heroTagline": "Custom Software Engineering, Web & Mobile Development",
+        "summary": "Layanan Pengembangan Aplikasi Web Enterprise, Mobile Apps Native, Microservices, & Integrasi API Sistem Custom.",
+        "description": "Mitrasova Labs menghadirkan tim software architect dan senior developer untuk merealisasikan sistem kustom skala besar bagi perusahaan Anda. Dari arsitektur microservices modern, integrasi payment gateway, hingga aplikasi mobile iOS/Android khusus.",
+        "category": "Custom Engineering",
+        "badge": "Enterprise Engineering",
+        "features": [
+          {
+            "title": "Modern Fullstack Architecture",
+            "description": "Pembangunan aplikasi menggunakan teknologi Next.js, Node.js/Go, React Native, PostgreSQL, & Cloud Native stack."
+          },
+          {
+            "title": "API & Legacy System Integration",
+            "description": "Menghubungkan sistem ERP lama (SAP, Oracle) dengan platform digital modern via RESTful/GraphQL API."
+          },
+          {
+            "title": "Code Security Audit & Penetration Testing",
+            "description": "Pengujian celah keamanan aplikasi standar OWASP Top 10 sebelum masa migrasi dan komersialisasi rilis."
+          },
+          {
+            "title": "Agile Development Sprint & SLA Support",
+            "description": "Transparansi progres mingguan dengan metode Scrum, dokumentasi API Swagger, serta garansi pemeliharaan."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Berapa lama estimasi pengerjaan proyek custom web/app di Mitrasova Labs?",
+            "answer": "Tergantung pada cakupan modul. Proyek MVP menengah berkisar 4–8 minggu, sedangkan sistem enterprise skala besar membutuhkan waktu 12–24 minggu dengan sprint bertahap."
+          },
+          {
+            "question": "Apakah hak cipta kode sumber (Source Code) sepenuhnya menjadi milik klien?",
+            "answer": "Ya 100%. Setelah pengerjaan selesai dan serah terima, seluruh Intellectual Property (IP) dan Source Code menjadi hak milik klien."
+          }
+        ]
+      }
     }
   },
   "consultation": {

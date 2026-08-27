@@ -1,3 +1,6 @@
+import idLocale from '@/locales/id.json';
+import enLocale from '@/locales/en.json';
+
 export interface ServiceItem {
   id: string;
   title: string;
@@ -40,6 +43,41 @@ export interface PostItem {
   readTime: string;
   updatedAt: string;
 }
+
+export const getLocalizedServices = (locale: 'id' | 'en' = 'id'): ServiceItem[] => {
+  const dict = locale === 'en' ? enLocale : idLocale;
+  const items = dict.services.items;
+
+  return INITIAL_SERVICES.map((srv) => {
+    const loc = items[srv.slug as keyof typeof items];
+    if (!loc) return srv;
+
+    return {
+      ...srv,
+      title: loc.title,
+      heroTagline: loc.heroTagline,
+      summary: loc.summary,
+      description: loc.description,
+      category: loc.category,
+      badge: loc.badge,
+      features: srv.features.map((feat, idx) => ({
+        ...feat,
+        title: loc.features[idx]?.title || feat.title,
+        description: loc.features[idx]?.description || feat.description,
+      })),
+      faqs: srv.faqs.map((faq, idx) => ({
+        ...faq,
+        question: loc.faqs[idx]?.question || faq.question,
+        answer: loc.faqs[idx]?.answer || faq.answer,
+      })),
+    };
+  });
+};
+
+export const getLocalizedService = (slug: string, locale: 'id' | 'en' = 'id'): ServiceItem | undefined => {
+  const services = getLocalizedServices(locale);
+  return services.find((s) => s.slug === slug);
+};
 
 export const INITIAL_SERVICES: ServiceItem[] = [
   {

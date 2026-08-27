@@ -1,7 +1,11 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import { ServiceItem, PostItem } from '@/types';
 import { GlassCard, AppButton } from '@/components/shared';
+import { getLocalizedService } from '@/lib/data';
+import { useTranslation } from '@/lib/i18n';
 import { ShoppingBag, Users, Server, Code, BookOpen, ChevronRight } from 'lucide-react';
 
 const iconMap: Record<string, React.ElementType> = {
@@ -15,6 +19,8 @@ export const DocsServiceCard: React.FC<{ service: ServiceItem; posts: PostItem[]
   service,
   posts,
 }) => {
+  const { t, locale } = useTranslation();
+  const activeService = getLocalizedService(service.slug, locale) || service;
   const Icon = iconMap[service.icon] || BookOpen;
   const servicePosts = posts.filter((p) => p.serviceSlug === service.slug);
 
@@ -27,14 +33,14 @@ export const DocsServiceCard: React.FC<{ service: ServiceItem; posts: PostItem[]
 
         <div>
           <h3 className="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">
-            {service.title}
+            {activeService.title}
           </h3>
-          <p className="text-xs text-slate-400 mt-1">{service.badge}</p>
+          <p className="text-xs text-slate-400 mt-1">{activeService.badge}</p>
         </div>
 
         <div className="pt-3 border-t border-slate-800/80 space-y-1">
           <p className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider font-mono">
-            Artikel Tersedia:
+            {t('docs.hub.articlesCount')}:
           </p>
           {servicePosts.length > 0 ? (
             servicePosts.map((post) => (
@@ -47,7 +53,7 @@ export const DocsServiceCard: React.FC<{ service: ServiceItem; posts: PostItem[]
               </Link>
             ))
           ) : (
-            <p className="text-xs text-slate-400 italic">Dokumentasi umum & panduan awal</p>
+            <p className="text-xs text-slate-400 italic">-</p>
           )}
         </div>
       </div>
@@ -55,7 +61,7 @@ export const DocsServiceCard: React.FC<{ service: ServiceItem; posts: PostItem[]
       <div className="pt-6 mt-4 border-t border-slate-800">
         <Link href={`/docs/${service.slug}/tutorial/${servicePosts[0]?.slug || 'setup-printer-thermal'}`}>
           <AppButton variant="outline" size="sm" className="w-full justify-center" rightIcon={<ChevronRight className="w-3.5 h-3.5" />}>
-            Buka Docs {service.title}
+            {t('common.docsHub')} {activeService.title}
           </AppButton>
         </Link>
       </div>

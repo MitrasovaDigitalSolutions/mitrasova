@@ -135,6 +135,152 @@
       "docsBannerTitle": "Comprehensive Docs & Technical Guides",
       "docsBannerDesc": "Explore step-by-step setup guides, version release notes, and API integration specifications for this service.",
       "openDocsBtn": "Open Service Documentation"
+    },
+    "items": {
+      "mitrasova-pos": {
+        "title": "Mitrasova POS",
+        "heroTagline": "Smart Omnichannel POS & Cashier System for Restaurant & Retail Scales",
+        "summary": "Integrated Digital POS System with Multi-Branch Inventory Management, Real-Time Reporting, & Cloud Thermal Printing.",
+        "description": "Mitrasova POS is a next-generation smart point-of-sale software solution. Engineered to accelerate checkout transactions up to 3x faster, supporting QRIS, e-wallets, EDC cards, restaurant table management, and automatic multi-branch inventory synchronization.",
+        "category": "SaaS POS & Commerce",
+        "badge": "Resto & Retail POS",
+        "features": [
+          {
+            "title": "High-Speed Cashier Transactions",
+            "description": "Checkout transactions in under 3 seconds with barcode scanner and Bluetooth & LAN thermal printer support."
+          },
+          {
+            "title": "Multi-Outlet Stock Sync",
+            "description": "Monitor inventory stock across dozens of branches in real-time from a single central dashboard."
+          },
+          {
+            "title": "QRIS & Digital Payment Integration",
+            "description": "Full support for Static/Dynamic QRIS, Direct Bank Transfer, Card EDC, and national digital e-wallets."
+          },
+          {
+            "title": "Table & Kitchen Display System (KDS)",
+            "description": "Tailored for F&B: table reservation system, Kitchen Display System (KDS), and self-order table QR scan."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Can Mitrasova POS operate without an internet connection (Offline Mode)?",
+            "answer": "Yes! Mitrasova POS features Local Hybrid Cache Sync. You can continue processing transactions offline, and data automatically syncs once the connection is restored."
+          },
+          {
+            "question": "Which thermal printer brands are supported?",
+            "answer": "Mitrasova POS supports all ESC/POS thermal printers via Bluetooth, USB, Wi-Fi, and LAN (Epson, Sunmi, Xprinter, Kassen, etc.)."
+          }
+        ]
+      },
+      "mitrasova-daya": {
+        "title": "Mitrasova Daya",
+        "heroTagline": "Enterprise HRIS, Automated Payroll & Geolocation Attendance Platform",
+        "summary": "Automated Payroll Calculation, Tax PPh 21, BPJS, Face-Recognition Attendance, & Enterprise Employee Leave Management.",
+        "description": "Mitrasova Daya empowers HR leaders and executives to manage their most valuable asset: human capital. Manage dynamic shift schedules, instant payslip generation with latest tax regulations, reimbursement claims, and objective KPI reviews.",
+        "category": "HRIS & Workforce",
+        "badge": "Enterprise HRIS & Payroll",
+        "features": [
+          {
+            "title": "Automated Payroll & Tax Calculation",
+            "description": "Calculate thousands of employee salaries complete with tax deductions, health, and labor social security in just 1 click."
+          },
+          {
+            "title": "Mobile Attendance + GPS & Face Liveness",
+            "description": "Prevent attendance fraud with AI face liveness detection and office geofencing perimeter."
+          },
+          {
+            "title": "Self-Service Employee Portal (ESS)",
+            "description": "Employees can request time-off, leave, overtime, and download encrypted payslips directly from their smartphones."
+          },
+          {
+            "title": "Shift & Performance Review Engine",
+            "description": "Flexible shift matrix management for retail/manufacturing and monthly KPI objective evaluation."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Does payroll calculation support the latest 2024+ progressive tax tiers?",
+            "answer": "Yes. Tax calculation algorithms in Mitrasova Daya are continuously updated with Ministry of Finance regulatory updates."
+          },
+          {
+            "question": "What is the maximum employee capacity supported?",
+            "answer": "Mitrasova Daya is tested to handle 50,000+ active employees with bulk payslip generation in under 2 minutes."
+          }
+        ]
+      },
+      "mitrasova-nexus": {
+        "title": "Mitrasova Nexus",
+        "heroTagline": "High-Availability Cloud Hosting, Managed VPS & Security",
+        "summary": "High-Performance Cloud Hosting Infrastructure with 99.99% Uptime SLA, Multi-Layer DDoS Protection, & Server Auto-Scaling.",
+        "description": "Mitrasova Nexus is an enterprise managed cloud infrastructure service engineered for mission-critical workloads. Powered by Tier-4 data centers in Jakarta and Singapore with ultra-low latency and multi-tier security shields.",
+        "category": "Cloud Infrastructure",
+        "badge": "Tier-4 Managed Cloud",
+        "features": [
+          {
+            "title": "99.99% Guaranteed Uptime SLA",
+            "description": "Redundant multi-zone architecture with financial refund SLA guarantees against downtime."
+          },
+          {
+            "title": "Advanced Anti-DDoS Mitigation",
+            "description": "Automated defense against Layer 3, 4, and 7 attacks backed by a 2 Tbps scrubbing center."
+          },
+          {
+            "title": "Automated Daily Cloud Snapshot Backup",
+            "description": "Encrypted daily backups to off-site locations with minute-level Disaster Recovery Point (RPO/RTO) options."
+          },
+          {
+            "title": "Kubernetes & Auto-Scaling Ready",
+            "description": "Docker and Kubernetes containerization support to seamlessly absorb sudden traffic spikes without latency."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Where are Mitrasova Nexus physical data centers located?",
+            "answer": "Our servers reside in Tier-4 Data Centers in Jakarta (Indonesia) and Equinix SG1 (Singapore) for optimal peering latency."
+          },
+          {
+            "question": "Is technical support available 24 hours?",
+            "answer": "Yes, our Cloud Engineering team is on duty 24/7/365 with response SLAs under 15 minutes."
+          }
+        ]
+      },
+      "mitrasova-labs": {
+        "title": "Mitrasova Labs",
+        "heroTagline": "Custom Software Engineering, Web & Mobile Development",
+        "summary": "Custom Enterprise Web Application Engineering, Native Mobile Apps, Microservices Architecture, & API Integrations.",
+        "description": "Mitrasova Labs delivers dedicated software architects and senior engineers to build large-scale custom solutions for your enterprise. From modern microservices architecture and payment gateways to custom iOS/Android apps.",
+        "category": "Custom Engineering",
+        "badge": "Enterprise Engineering",
+        "features": [
+          {
+            "title": "Modern Fullstack Architecture",
+            "description": "Engineering applications using Next.js, Node.js/Go, React Native, PostgreSQL, and Cloud-Native stacks."
+          },
+          {
+            "title": "API & Legacy System Integration",
+            "description": "Bridging legacy ERP systems (SAP, Oracle) with modern digital platforms via RESTful and GraphQL APIs."
+          },
+          {
+            "title": "Code Security Audit & Penetration Testing",
+            "description": "Rigorous security vulnerability auditing based on OWASP Top 10 standards prior to production release."
+          },
+          {
+            "title": "Agile Development Sprint & SLA Support",
+            "description": "Transparent weekly sprint progress with Scrum methodology, Swagger API documentation, and maintenance warranties."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "What is the estimated delivery timeline for custom software projects?",
+            "answer": "Depending on module scope. Medium MVP projects range from 4–8 weeks, while enterprise core systems span 12–24 weeks with staged agile sprints."
+          },
+          {
+            "question": "Does the client retain full ownership of the source code?",
+            "answer": "Yes, 100%. Upon project handover, all Intellectual Property (IP) and Source Code rights belong entirely to the client."
+          }
+        ]
+      }
     }
   },
   "consultation": {
