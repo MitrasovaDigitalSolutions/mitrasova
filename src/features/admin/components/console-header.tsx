@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import { signOut } from 'next-auth/react';
 import { Plus, ExternalLink, LogOut, LayoutDashboard } from 'lucide-react';
 import { APP_VERSION } from '@/lib/version';
+import { MitrasovaLogo } from '@/components/shared';
 import { cn } from '@/lib/utils';
 
 export const ConsoleHeader: React.FC = () => {
@@ -27,9 +28,7 @@ export const ConsoleHeader: React.FC = () => {
           {/* Brand & Console Title */}
           <div className="flex items-center gap-4">
             <Link href="/console" className="flex items-center gap-2.5 group">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-cyan-500 flex items-center justify-center text-white font-black text-sm">
-                M
-              </div>
+              <MitrasovaLogo size={32} />
               <div className="flex items-center gap-2">
                 <span className="font-extrabold text-white text-base tracking-tight">
                   MITRASOVA

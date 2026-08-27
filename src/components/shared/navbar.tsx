@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { AppButton } from './app-button';
+import { MitrasovaLogo } from './mitrasova-logo';
 import { ShieldCheck, BookOpen, Layers, Menu, X, ArrowUpRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -23,9 +24,7 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           {/* Brand Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 via-indigo-600 to-cyan-500 flex items-center justify-center shadow-lg shadow-indigo-500/20">
-              <span className="font-black text-white text-xl tracking-tighter">M</span>
-            </div>
+            <MitrasovaLogo size={40} className="shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform" />
             <div className="flex flex-col">
               <span className="font-extrabold text-xl tracking-tight text-white group-hover:text-indigo-300 transition-colors">
                 MITRASOVA

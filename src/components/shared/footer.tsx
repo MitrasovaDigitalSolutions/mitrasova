@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { APP_VERSION } from '@/lib/version';
 import { SEO_DEFAULTS } from '@/lib/seo';
+import { MitrasovaLogo } from './mitrasova-logo';
 import { ArrowRight, Mail, MapPin } from 'lucide-react';
 
 export const Footer: React.FC = () => {
@@ -17,9 +18,7 @@ export const Footer: React.FC = () => {
           {/* Brand Info */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 via-indigo-600 to-cyan-500 flex items-center justify-center shadow-lg shadow-indigo-500/20">
-                <span className="font-black text-white text-xl">M</span>
-              </div>
+              <MitrasovaLogo size={40} className="shadow-lg shadow-indigo-500/20" />
               <div>
                 <div className="flex items-center gap-2">
                   <span className="font-extrabold text-xl tracking-tight text-white">MITRASOVA</span>

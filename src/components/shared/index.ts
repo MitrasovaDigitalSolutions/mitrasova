@@ -10,3 +10,4 @@ export * from './form-combobox';
 export * from './navbar';
 export * from './footer';
 export * from './rich-editor';
+export * from './mitrasova-logo';
