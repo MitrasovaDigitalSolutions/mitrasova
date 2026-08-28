@@ -157,7 +157,7 @@ export const BlogArticleContainer: React.FC<BlogArticleProps> = ({
 
         {/* Article Prose Body (Clean & Centered Reading Experience) */}
         <main
-          className="prose prose-invert prose-indigo max-w-none 
+          className="blog-article-content prose prose-invert prose-indigo max-w-none 
             prose-headings:font-bold prose-headings:tracking-tight prose-headings:text-white
             prose-h2:text-2xl sm:prose-h2:text-3xl prose-h2:pt-8 prose-h2:pb-2 prose-h2:border-t prose-h2:border-slate-800/80
             prose-h3:text-xl prose-h3:text-cyan-300 prose-h3:pt-4
