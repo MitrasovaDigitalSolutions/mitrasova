@@ -84,7 +84,7 @@ export const BlogArticleContainer: React.FC<BlogArticleProps> = ({
               {t('navbar.blog')}
             </Link>
             <ChevronRight className="w-3.5 h-3.5 text-slate-600 shrink-0" />
-            <span className="text-cyan-400 font-semibold truncate max-w-[200px]">
+            <span className="text-cyan-400 font-semibold truncate max-w-[220px]">
               {post.title}
             </span>
           </div>
@@ -113,14 +113,16 @@ export const BlogArticleContainer: React.FC<BlogArticleProps> = ({
             <span className="text-xs text-slate-400 font-medium">{post.categoryName}</span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-[1.15]">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-[1.18]">
             {post.title}
           </h1>
 
           {post.summary && (
-            <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
-              {post.summary}
-            </p>
+            <div className="p-4 sm:p-5 rounded-2xl bg-indigo-500/5 border-l-4 border-indigo-500/70 border border-indigo-500/15">
+              <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-normal italic">
+                {post.summary}
+              </p>
+            </div>
           )}
 
           {/* Author Bar & Integrated Social Share Bar */}
@@ -225,7 +227,7 @@ export const BlogArticleContainer: React.FC<BlogArticleProps> = ({
           <section className="pt-12 border-t border-slate-800/80 space-y-6">
             <div>
               <span className="text-xs font-semibold text-cyan-400 uppercase tracking-wider font-mono">
-                {t('blog.article.relatedTitle')}
+                {t('blog.hub.badge')}
               </span>
               <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight mt-1">
                 {t('blog.article.relatedTitle')}

@@ -75,7 +75,7 @@ export const BlogCard: React.FC<{ post: PostItem; index?: number }> = ({ post, i
       <Link href={`/blog/${post.slug}`} className="block h-full group">
         <div
           className={cn(
-            'h-full flex flex-col justify-between rounded-2xl border border-slate-800/90 bg-slate-950/75 hover:bg-slate-900/40 transition-all duration-300 relative overflow-hidden backdrop-blur-md p-6 sm:p-7 shadow-lg shadow-black/40',
+            'h-full flex flex-col justify-between rounded-2xl border border-slate-800/90 bg-slate-950/80 hover:bg-slate-900/50 transition-all duration-300 relative overflow-hidden backdrop-blur-md p-6 sm:p-7 shadow-lg shadow-black/40',
             typeConfig.accentGlow
           )}
         >
@@ -97,7 +97,7 @@ export const BlogCard: React.FC<{ post: PostItem; index?: number }> = ({ post, i
               <div className="flex items-center gap-2">
                 <span
                   className={cn(
-                    'inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[11px] font-mono font-bold border backdrop-blur-md',
+                    'inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[11px] font-mono font-semibold border backdrop-blur-md',
                     typeConfig.color
                   )}
                 >
@@ -116,13 +116,13 @@ export const BlogCard: React.FC<{ post: PostItem; index?: number }> = ({ post, i
             </div>
 
             {/* Title */}
-            <h3 className="text-lg sm:text-xl font-black text-white group-hover:text-cyan-300 transition-colors leading-snug tracking-tight">
+            <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-cyan-300 transition-colors leading-snug tracking-tight line-clamp-2">
               {post.title}
             </h3>
 
             {/* Summary */}
             {post.summary && (
-              <p className="text-xs sm:text-sm text-slate-300/90 leading-relaxed line-clamp-2 font-normal">
+              <p className="text-xs sm:text-sm text-slate-300/90 leading-relaxed line-clamp-3 font-normal">
                 {post.summary}
               </p>
             )}
@@ -175,7 +175,7 @@ export const BlogCard: React.FC<{ post: PostItem; index?: number }> = ({ post, i
                 {post.authorName.charAt(0)}
               </div>
               <div className="flex flex-col">
-                <span className="text-xs font-bold text-slate-200 group-hover:text-white transition-colors truncate max-w-[130px] sm:max-w-[160px]">
+                <span className="text-xs font-semibold text-slate-200 group-hover:text-white transition-colors truncate max-w-[130px] sm:max-w-[160px]">
                   {post.authorName}
                 </span>
                 <span className="text-[10px] text-slate-400 font-mono">

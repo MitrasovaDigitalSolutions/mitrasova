@@ -231,10 +231,10 @@ export const INITIAL_SERVICES: ServiceItem[] = [
 export const INITIAL_PRODUCTS = INITIAL_SERVICES;
 
 export const INITIAL_CATEGORIES: CategoryItem[] = [
-  { id: 'cat-insights', name: 'Wawasan & Blog', slug: 'wawasan-blog', description: 'Artikel mendalam seputar strategi bisnis ritel, HRIS & perpajakan, arsitektur cloud, dan rekayasa perangkat lunak enterprise.' },
-  { id: 'cat-news', name: 'Berita & Media', slug: 'berita-media', description: 'Kabar resmi, siaran pers, kemitraan strategis, dan pengumuman korporasi Mitrasova Digital Solutions.' },
-  { id: 'cat-events', name: 'Events & Agenda', slug: 'event-agenda', description: 'Jadwal workshop, seminar teknologi, dan temu komunitas industri digital.' },
-  { id: 'cat-updates', name: 'Rilis Produk', slug: 'rilis-produk', description: 'Catatan pembaruan fitur, changelog, dan kapabilitas sistem baru produk Mitrasova.' },
+  { id: 'cat-insights', name: 'Wawasan & Panduan', slug: 'wawasan-blog', description: 'Kajian mendalam seputar strategi bisnis ritel, HRIS & perpajakan, arsitektur cloud, dan rekayasa perangkat lunak enterprise.' },
+  { id: 'cat-news', name: 'Kabar & Siaran Pers', slug: 'berita-media', description: 'Kabar resmi, siaran pers, kemitraan strategis, dan pengumuman korporasi Mitrasova Digital Solutions.' },
+  { id: 'cat-events', name: 'Agenda & Meetup', slug: 'event-agenda', description: 'Agenda temu teknologi, workshop digitalisasi operasional, seminar industri, dan webinar live interaktif.' },
+  { id: 'cat-updates', name: 'Catatan Rilis', slug: 'rilis-produk', description: 'Catatan rilis berkala, changelog sistem, dan dokumentasi peluncuran fitur baru produk Mitrasova.' },
 ];
 
 export const INITIAL_POSTS: PostItem[] = [

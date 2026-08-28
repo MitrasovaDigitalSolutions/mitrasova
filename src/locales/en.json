@@ -2,172 +2,188 @@
   "common": {
     "version": "v",
     "learnMore": "Learn More",
-    "consultation": "Free Consultation",
+    "consultation": "Solution Consultation",
     "contactUs": "Contact Us",
     "allRightsReserved": "All Rights Reserved.",
     "allOperational": "All Systems Operational",
     "systemStatus": "System Status",
-    "readArticle": "Read Article",
-    "viewProduct": "View Product",
-    "requestDemo": "Request Demo",
+    "readArticle": "Read Full Story",
+    "viewProduct": "Explore Solution",
+    "requestDemo": "Schedule Live Demo",
     "viewDetail": "View Details",
-    "visitOfficialWeb": "Visit Official Website",
+    "visitOfficialWeb": "Visit Product Portal",
     "back": "Back"
   },
   "navbar": {
     "home": "Home",
     "products": "Products & Solutions",
-    "services": "Services Ecosystem",
-    "blog": "Blog & News",
-    "startConsultation": "Get Started",
+    "services": "Enterprise Services",
+    "blog": "Insights & Journal",
+    "startConsultation": "Book Consultation",
     "megaMenu": {
-      "saasTitle": "Business & Operations Apps",
-      "saasDesc": "Smart software for frictionless checkout, consignment, and workforce HR",
-      "infraTitle": "Infrastructure & Engineering",
-      "infraDesc": "High-availability managed cloud hosting and custom enterprise development",
-      "viewAllServices": "View All Products & Solutions",
-      "demoCardTitle": "Live Consultation & Demo",
-      "demoCardDesc": "Discuss integrated system architecture directly with our Solution Architects.",
-      "demoCardBtn": "Schedule Demo",
-      "integratedNote": "Integrated software suite with one unified database"
+      "saasTitle": "Operational & Business Software",
+      "saasDesc": "Smart software engineered for frictionless checkout, consignment reconciliation, and enterprise HR",
+      "infraTitle": "Cloud Infrastructure & Engineering",
+      "infraDesc": "High-availability managed cloud environments and tailored enterprise software development",
+      "viewAllServices": "Explore Full Product & Solution Suite",
+      "demoCardTitle": "Architect Consultation & Live Demo",
+      "demoCardDesc": "Architect robust system workflows and explore technical simulations directly with Mitrasova engineering.",
+      "demoCardBtn": "Book Technical Session",
+      "integratedNote": "Unified software ecosystem built on a synchronized relational database architecture"
     }
   },
   "home": {
     "hero": {
-      "liveBadge": "MITRASOVA ENTERPRISE CLOUD ECOSYSTEM",
-      "title": "A Unified Software Ecosystem For",
-      "titleGradient": "Modern Business Scalability",
-      "description": "Integrated application architecture ranging from Multi-Branch POS, Enterprise HRIS & Payroll, High-Availability Cloud Infrastructure, to Custom Software & Mobile Engineering.",
-      "ctaPrimary": "Free Consultation",
-      "ctaSecondary": "Explore Products",
-      "uptimeBadge": "99.99% SLA Uptime",
-      "dbBadge": "PostgreSQL Cloud DB",
+      "liveBadge": "MITRASOVA ENTERPRISE SOFTWARE SUITE",
+      "title": "Robust Software Foundations Built For",
+      "titleGradient": "Enterprise Scale & Business Acceleration",
+      "description": "An integrated operational software suite: Offline-First POS & Consignment, Automated HRIS & Payroll Compliance, Tier-4 Managed Cloud Infrastructure, and Bespoke Enterprise Software Engineering.",
+      "ctaPrimary": "Book Free Architecture Session",
+      "ctaSecondary": "Explore Our Solutions",
+      "uptimeBadge": "99.99% Guaranteed SLA Uptime",
+      "dbBadge": "PostgreSQL Cloud Architecture",
       "encryptionBadge": "256-Bit End-to-End Encryption",
       "telemetry": {
-        "allSystemsNominal": "ALL SYSTEMS NOMINAL",
+        "allSystemsNominal": "ALL CORE SYSTEMS OPERATIONAL",
         "querySpeed": "Cloud Query Speed",
-        "latencyMetric": "-38% Latency",
-        "pgSync": "PostgreSQL Sync",
-        "realtimeNode": "Real-Time Node",
-        "throughput": "API Throughput",
-        "bandwidth": "+12% Bandwidth",
-        "clusterSec": "Cluster Security",
-        "sslSecured": "SSL Secured",
-        "logReady": "[READY] System v{{version}} initialized & listening on secure edge",
-        "logGateway": "[GATEWAY] Auto-balancing active across Singapore & Jakarta DC"
+        "latencyMetric": "<15ms Average Latency",
+        "pgSync": "PostgreSQL Real-Time Sync",
+        "realtimeNode": "Active Cluster Nodes",
+        "throughput": "Enterprise API Throughput",
+        "bandwidth": "+12% Bandwidth Optimization",
+        "clusterSec": "Cluster Perimeter Defense",
+        "sslSecured": "TLS 1.3 & Encrypted",
+        "logReady": "[STATUS] System v{{version}} operational across global secure edge network",
+        "logGateway": "[GATEWAY] Redundant auto-balancing active across Singapore & Jakarta data centers"
       }
     },
     "marquee": {
-      "caption": "Battle-Tested Infrastructure & Integration Standards",
-      "paymentIntegration": "Payment Integration",
-      "gatewayDirect": "Direct Gateway",
-      "instantCheckout": "Instant Checkout",
-      "relationalDb": "Relational Database",
-      "lowLatencyCache": "Low-Latency Cache",
-      "containerizedInfra": "Containerized Infra",
-      "fullstackFramework": "Fullstack Framework",
-      "ddosGlobalEdge": "DDoS & Global Edge",
-      "enterpriseSecurity": "Enterprise Security"
+      "caption": "Battle-Tested Engineering & Architecture Standards",
+      "paymentIntegration": "Direct Payment Gateway Integration",
+      "gatewayDirect": "Direct Bank & QRIS Connectivity",
+      "instantCheckout": "Zero-Latency 0ms Cashier Checkout",
+      "relationalDb": "High-Integrity Relational ACID Database",
+      "lowLatencyCache": "Ultra-Low Latency In-Memory Cache",
+      "containerizedInfra": "Containerized Kubernetes Infrastructure",
+      "fullstackFramework": "Modern Fullstack Next.js & React 19",
+      "ddosGlobalEdge": "Automated DDoS Mitigation & Global Edge CDN",
+      "enterpriseSecurity": "Verified Enterprise OWASP Security"
     },
     "products": {
-      "badge": "Enterprise Suite",
-      "title": "Four Core Solutions",
-      "titleGradient": "One Unified Database",
-      "description": "Each product is engineered to communicate in real-time, eliminating data silos and accelerating corporate workflows.",
-      "learnService": "Explore Product"
+      "badge": "Enterprise Solution Suite",
+      "title": "Four Integrated Core Solutions,",
+      "titleGradient": "One Unified Database Architecture",
+      "description": "Each product is engineered to connect in real time, breaking down operational silos and accelerating enterprise workflows.",
+      "learnService": "Explore Solution"
     },
     "advantages": {
-      "badge": "Architecture Highlights",
-      "title": "Why Choose The Mitrasova",
-      "titleGradient": "Technology Ecosystem?",
-      "description": "Precision-engineered to support your business scalability from dozens to thousands of daily transactions.",
-      "consultCta": "Consult Implementation",
+      "badge": "System Architecture Highlights",
+      "title": "Why Industry Leaders Choose",
+      "titleGradient": "The Mitrasova Tech Ecosystem",
+      "description": "Precision-engineered with modern cloud-native standards to support your growth from dozens to tens of thousands of daily transactions.",
+      "consultCta": "Consult Your Technical Architecture",
       "items": {
         "sync": {
           "badge": "Real-Time Sync",
           "title": "Instant Multi-Branch Synchronization",
-          "description": "All cashier sales transactions, warehouse inventory transfers, and inter-branch financial reconciliations connect seamlessly in real-time.",
-          "points": ["Centralized inventory stock", "Offline & online mode support", "Automated sales reconciliation"]
+          "description": "All retail checkout transactions, inter-branch warehouse transfers, and accounting ledger entries connect seamlessly in real time without lag.",
+          "points": [
+            "Centralized real-time inventory management",
+            "Frictionless offline-first cashier operations",
+            "Automated multi-outlet sales reconciliation"
+          ]
         },
         "security": {
           "badge": "Enterprise Security",
-          "title": "Data Security & Role Permissions",
-          "description": "Protection of transaction data and employee privacy with Role-Based Access Control (RBAC), 256-bit encryption, and comprehensive audit logs.",
-          "points": ["Granular role permissions", "Complete user activity audit trail", "Automated encrypted daily backups"]
+          "title": "Data Security & Granular Access Control",
+          "description": "Safeguard business assets and employee confidentiality with Role-Based Access Control (RBAC), 256-bit encryption, and comprehensive audit logs.",
+          "points": [
+            "Granular role-based permissions per title",
+            "End-to-end audit trails for all system actions",
+            "Automated daily encrypted off-site backups"
+          ]
         },
         "uptime": {
           "badge": "Cloud Reliability",
           "title": "High-Availability Cloud Infrastructure",
-          "description": "Modern cloud architecture with adaptive load balancing, peak-hour auto-scaling, and a 99.9% uptime SLA for seamless 24/7 operations.",
-          "points": ["Guaranteed 99.9% SLA uptime", "Smart firewall & DDoS protection", "Dual-redundant server nodes"]
+          "description": "Modern cloud architecture with adaptive load balancing, peak-hour auto-scaling, and a guaranteed 99.99% uptime SLA for non-stop business.",
+          "points": [
+            "Guaranteed 99.99% SLA uptime commitment",
+            "Smart firewall & multi-layer DDoS protection",
+            "Dual-redundant server nodes across zones"
+          ]
         },
         "support": {
           "badge": "Local Engineering",
-          "title": "Dedicated Central Java Tech Support",
-          "description": "Direct support from Mitrasova engineers in Karanganyar & Solo Raya. We assist with system auditing, rollout, staff onboarding, and custom engineering.",
-          "points": ["System onboarding & staff training", "Dedicated priority hotline support", "On-site and remote assistance"]
+          "title": "Dedicated Support & Direct Onboarding",
+          "description": "Direct assistance from Mitrasova software engineers in Solo Raya & Karanganyar. We guide you through system audits, configuration, data migration, and training.",
+          "points": [
+            "Hands-on setup, data migration, and team training",
+            "Rapid technical response via dedicated priority channels",
+            "Comprehensive on-site and remote engineering support"
+          ]
         }
       }
     },
     "workflow": {
       "badge": "Structured Delivery Roadmap",
-      "title": "How We Transform Your",
-      "titleGradient": "Business Operations",
-      "description": "Four transparent, measurable implementation phases ensuring a seamless transition without disrupting daily business operations.",
-      "resultLabel": "Output: ",
-      "prevStep": "Previous Step",
-      "nextStep": "Next Step",
+      "title": "How We Seamlessly Transform",
+      "titleGradient": "Your Business Operations",
+      "description": "Four measurable, structured implementation stages ensuring hardware integration, master data migration, and team training without business disruption.",
+      "resultLabel": "Milestone: ",
+      "prevStep": "Previous Stage",
+      "nextStep": "Next Stage",
       "stepOf": "of",
-      "consultNow": "Consult This Phase",
-      "keyActivitiesTitle": "Key Phase Activities",
-      "executionAssurance": "Professional execution standards & direct technical guidance",
+      "consultNow": "Discuss This Stage",
+      "keyActivitiesTitle": "Key Stage Activities",
+      "executionAssurance": "Professional execution standards & direct technical guidance from senior software engineers",
       "steps": {
         "step1": {
           "step": "01",
-          "phase": "Phase 1: Discovery",
-          "title": "Audit & Requirements Consultation",
-          "description": "We analyze your cashier workflows, HR attendance & payroll rules, or custom software architecture requirements tailored to your business scale.",
-          "deliverable": "System Blueprint & Technical Scope",
+          "phase": "Stage 1: Discovery & Audit",
+          "title": "Workflow Audit & Requirements Blueprint",
+          "description": "We analyze your cashier workflows, supplier consignment schemes, payroll & attendance rules, or custom engineering requirements tailored to your scale.",
+          "deliverable": "System Blueprint & Technical Specification Scope",
           "highlights": [
-            "Audit cashier transaction workflows & daily shift rules",
-            "Evaluate consignment schemes & supplier revenue splits",
-            "Map cloud server architecture & POS hardware integration"
+            "Audit cashier workflows & daily shift handovers",
+            "Analyze consignment schemes & supplier commission splits",
+            "Map server topology & hardware integration points"
           ]
         },
         "step2": {
           "step": "02",
-          "phase": "Phase 2: Configuration",
-          "title": "System Customization & Integration",
-          "description": "Setting up centralized databases, testing thermal printer/barcode hardware, configuring shift matrices, and user role permission access.",
+          "phase": "Stage 2: Configuration & Integration",
+          "title": "System Customization & Hardware Integration",
+          "description": "Setting up centralized databases, testing thermal receipt printers & barcode scanners, configuring payroll tax formulas, and tuning permission matrices.",
           "deliverable": "Configured & Staging-Ready System",
           "highlights": [
-            "Test ESC/POS Bluetooth & LAN thermal receipt printers",
-            "Configure general ledger accounts & chart of accounts (COA)",
-            "Setup granular role permissions for cashier, admin, & supervisor"
+            "Verify Bluetooth & LAN ESC/POS thermal receipt printers",
+            "Configure chart of accounts (COA) & automated general ledger",
+            "Set granular role permissions for cashiers, admins, and managers"
           ]
         },
         "step3": {
           "step": "03",
-          "phase": "Phase 3: Onboarding",
-          "title": "Data Migration & Staff Training",
-          "description": "Secure migration of product catalogs, price lists, and employee profiles, accompanied by interactive training sessions until staff proficiency.",
-          "deliverable": "Migrated Data & Trained Operational Team",
+          "phase": "Stage 3: Migration & Onboarding",
+          "title": "Master Data Migration & Hands-On Training",
+          "description": "Secure migration of product catalogs, pricing, suppliers, and employee profiles into the platform, coupled with interactive training sessions.",
+          "deliverable": "Organized Master Data & Confident Operational Team",
           "highlights": [
-            "Import master product catalog, pricing, & supplier records",
-            "Simulate offline cashier transactions & reconciliation",
-            "Conduct interactive training sessions for operational staff"
+            "Secure import of product catalogs, prices, and supplier records",
+            "Simulate offline cashier workflows and closing reconciliations",
+            "Interactive training sessions until operational mastery"
           ]
         },
         "step4": {
           "step": "04",
-          "phase": "Phase 4: Go-Live",
-          "title": "Production Launch & 24/7 SLA",
-          "description": "System officially goes live to process your business transactions. Backed by proactive server monitoring, daily backups, and responsive engineering support.",
-          "deliverable": "Live Operations & 99.9% SLA Guarantee",
+          "phase": "Stage 4: Go-Live & SLA Support",
+          "title": "Production Launch & Proactive Monitoring",
+          "description": "System officially goes live to process enterprise transactions. Backed by proactive server health telemetry, automated daily backups, and responsive SLA support.",
+          "deliverable": "Smooth Live Operations with 99.99% SLA Guarantee",
           "highlights": [
-            "Official system launch processing live enterprise transactions",
-            "Real-time server health monitoring & automated data backup",
-            "Priority engineering hotline & guaranteed 99.9% SLA"
+            "Official production launch processing live enterprise traffic",
+            "Continuous server health telemetry and auto-sync monitoring",
+            "Priority technical support hotline & scheduled maintenance"
           ]
         }
       }
@@ -175,248 +191,248 @@
   },
   "services": {
     "overview": {
-      "badge": "Enterprise Ecosystem",
-      "title": "Product & Solutions Ecosystem",
+      "badge": "Product & Engineering Ecosystem",
+      "title": "Software Solutions Ecosystem",
       "titleGradient": "Mitrasova Digital",
-      "description": "Comprehensive, fully integrated software solutions engineered to digitize every facet of your business operations.",
-      "consultSolution": "Schedule Consultation",
-      "specsTitle": "Specifications & Capabilities",
+      "description": "A suite of enterprise-grade software products engineered to digitize and optimize every aspect of your business operations.",
+      "consultSolution": "Schedule Technical Session",
+      "specsTitle": "Specifications & Architectural Capabilities",
       "prodReady": "PROD READY",
-      "slaNote": "99.9% SLA Guarantee & Integrated Onboarding Setup"
+      "slaNote": "Guaranteed 99.99% SLA Uptime & Comprehensive Implementation Onboarding"
     },
     "detail": {
-      "backToServices": "Back to Products & Solutions",
+      "backToServices": "Back to Products & Solutions Catalog",
       "keyFeatures": "Core Features & Architecture",
-      "keyFeaturesDesc": "Engineered modules and technological capabilities designed for maximum business efficiency.",
+      "keyFeaturesDesc": "Engineered modules and technological capabilities designed for maximum operational efficiency and scalability.",
       "faqTitle": "Frequently Asked Questions (FAQ)",
-      "faqDesc": "Technical and operational answers to common inquiries regarding this service."
+      "faqDesc": "Technical, implementation, and operational answers regarding this solution."
     },
     "items": {
       "mitrasova-pos": {
         "title": "Mitrasova POS",
         "heroTagline": "Offline-First POS, Consignment & Integrated Accounting",
-        "summary": "Offline-First Cashier System with Supplier Consignment Management, Multi-Branch Stock, Balance Sheet & General Ledger.",
-        "description": "Mitrasova POS is a next-generation smart point-of-sale software solution. Engineered for retail & wholesale operations with robust offline mode, supplier consignment tracking & revenue share, multi-branch stock sync, and integrated accounting modules (balance sheet, profit & loss, and general ledger).",
+        "summary": "Reliable Offline-First Cashier System with Supplier Consignment Management, Multi-Branch Stock Synchronization, and Automated General Ledger.",
+        "description": "Mitrasova POS is a next-generation smart point-of-sale software engineered for retail, wholesale, and multi-outlet enterprises. Built with an Offline-First architecture that guarantees zero-latency checkout during network outages, automated supplier consignment revenue splits, cross-branch inventory sync, and a comprehensive accounting engine (balance sheet, P&L, and general ledger).",
         "category": "SaaS POS & Accounting",
         "badge": "Offline POS & Consignment",
         "blueprint": {
-          "title": "Offline POS & Accounting",
-          "badge": "Live Auto-Sync",
+          "title": "Offline POS & Integrated Accounting",
+          "badge": "Real-time Automatic Cloud Sync",
           "m1Label": "Transaction Mode",
           "m1Val": "Offline-First",
           "m1Sub": "0ms Cashier Latency",
           "m2Label": "Supplier Consignment",
-          "m2Val": "Automated Revenue Share",
+          "m2Val": "Automated Revenue Split",
           "m2Sub": "Instant Settlement Invoices",
           "f1Label": "Trial Balance & General Ledger:",
-          "f1Val": "Real-time Cloud Sync",
-          "f2Label": "Thermal Receipt Printing:",
-          "f2Val": "Bluetooth & LAN ESC/POS"
+          "f1Val": "Real-time Automated Cloud Sync",
+          "f2Label": "Receipt Printing Support:",
+          "f2Val": "Bluetooth & LAN Thermal ESC/POS"
         },
         "specs": [
-          { "label": "Operational Mode", "value": "Full Offline-First (0ms Delay)" },
-          { "label": "Consignment Module", "value": "Supplier Revenue Split & Returns" },
-          { "label": "Accounting Engine", "value": "Balance Sheet, GL, & P&L Reports" },
-          { "label": "Hardware Support", "value": "Thermal ESC/POS Bluetooth & LAN" }
+          { "label": "Cashier Operational Mode", "value": "Full Offline-First (0ms Delay)" },
+          { "label": "Consignment Module", "value": "Automated Revenue Split & Supplier Returns" },
+          { "label": "Accounting Engine", "value": "Balance Sheet, General Ledger, Profit & Loss" },
+          { "label": "Hardware Compatibility", "value": "Thermal ESC/POS Bluetooth & LAN" }
         ],
         "features": [
           {
-            "title": "Offline-First Mode & Auto-Sync",
-            "description": "Cashiers process transactions seamlessly without internet interruptions, with automatic cloud sync when network reconnects."
+            "title": "Offline-First Mode & Automated Cloud Sync",
+            "description": "Cashiers continue processing thousands of transactions seamlessly without internet interruptions. All records automatically sync to central servers once connection is restored."
           },
           {
-            "title": "Consignment & Supplier Revenue Share",
-            "description": "Manage consigned inventory receipts, automated commission calculations, supplier return tracking, and periodic settlement payouts."
+            "title": "Supplier Consignment & Revenue Share Engine",
+            "description": "Manage consigned inventory intake, automated commission splits upon sale, track item returns, and generate accurate periodic supplier settlement invoices."
           },
           {
-            "title": "Accounting Module & General Ledger",
-            "description": "Automated transaction journaling, trial balance sheets, General Ledger, profit & loss reports, and profit margin analytics."
+            "title": "Integrated Accounting & General Ledger",
+            "description": "Automated journal entries for all sales and purchases, trial balance sheets, general ledger, periodic profit & loss statements, and real-time margin analytics."
           },
           {
-            "title": "Multi-Outlet Stock Sync & Thermal Printing",
-            "description": "Monitor stock across dozens of branches, inter-warehouse transfers, Bluetooth/LAN thermal printing, and cashier shift management."
+            "title": "Multi-Branch Stock Sync & High-Speed Receipt Printing",
+            "description": "Monitor stock levels across all branch stores and warehouses, execute inter-outlet stock transfers, print thermal receipts over Bluetooth/LAN, and manage cashier shifts."
           }
         ],
         "faqs": [
           {
-            "question": "Does Mitrasova POS support consignment (titipan) inventory management?",
-            "answer": "Yes! Mitrasova POS includes an integrated consignment module to track consignors/suppliers, automate sales revenue splits, monitor consignment stock, and generate supplier settlement invoices."
+            "question": "Does Mitrasova POS support consignment (titip jual) inventory management?",
+            "answer": "Yes! Mitrasova POS features an integrated consignment engine to maintain supplier master records, automatically calculate revenue share splits upon checkout, track remaining consigned stock, and generate settlement invoices."
           },
           {
-            "question": "Can Mitrasova POS operate without an internet connection (Offline Mode)?",
-            "answer": "Yes! Mitrasova POS is engineered with an Offline-First architecture. You can continue processing sales when offline, and all transaction data automatically syncs once connection is restored."
+            "question": "Can cashiers process sales when the internet goes down (Offline Mode)?",
+            "answer": "Yes! Mitrasova POS is built on an Offline-First foundation. Cashiers process sales with zero delay without internet dependency. When the network reconnects, all transaction batches synchronize automatically with zero duplication risk."
           },
           {
-            "question": "What financial reports are generated by Mitrasova POS accounting module?",
-            "answer": "Mitrasova POS provides Balance Sheets, Profit & Loss Statements (P&L), General Ledger, Automated Sales & Purchase Journals, and Cash Flow Reports."
+            "question": "What financial statements are generated by the Mitrasova POS accounting engine?",
+            "answer": "Mitrasova POS generates complete audit-ready financial statements including Trial Balance, Profit & Loss (P&L), General Ledger, Automated Sales/Purchase Journals, and Cash Flow reports."
           }
         ]
       },
       "mitrasova-daya": {
         "title": "Mitrasova Daya",
-        "heroTagline": "Enterprise HRIS, Automated Payroll & Geolocation Attendance Platform",
-        "summary": "Automated Payroll Calculation, Tax PPh 21, BPJS, Face-Recognition Attendance, & Enterprise Employee Leave Management.",
-        "description": "Mitrasova Daya empowers HR leaders and executives to manage their most valuable asset: human capital. Manage dynamic shift schedules, instant payslip generation with latest tax regulations, reimbursement claims, and objective KPI reviews.",
-        "category": "HRIS & Workforce",
-        "badge": "Enterprise HRIS & Payroll",
+        "heroTagline": "Platform HRIS, Payroll, & Presensi Geolocation Karyawan",
+        "summary": "Unified Workforce Platform: Automated Payroll & TER Tax Compliance, BPJS Integration, Anti-Fake GPS Attendance, and Employee Self-Service.",
+        "description": "Mitrasova Daya empowers HR leaders and enterprise executives to streamline their most valuable asset: People. Manage intricate shift rosters, automate instant payroll calculations with the latest Indonesian PPh 21 TER tax rules and BPJS contributions, process mobile leave/reimbursement requests, and evaluate employee KPIs transparently.",
+        "category": "HRIS & Workforce Management",
+        "badge": "HRIS & Enterprise Payroll",
         "blueprint": {
           "title": "HRIS & Automated Payroll",
-          "badge": "TER Tax 2026 Engine",
+          "badge": "TER PPh 21 2026 Tax Compliant",
           "m1Label": "Payroll Calculation",
-          "m1Val": "Automated Tax PPh 21",
-          "m1Sub": "Health & Labor Social Security",
-          "m2Label": "Mobile Attendance",
-          "m2Val": "Anti-Fake GPS",
-          "m2Sub": "Face Verification",
+          "m1Val": "Automated PPh 21 TER",
+          "m1Sub": "Integrated Healthcare & Social Security",
+          "m2Label": "Employee Attendance",
+          "m2Val": "Geolocation & Face Check",
+          "m2Sub": "Anti-Fake GPS Protection",
           "f1Label": "Digital Payslip Distribution:",
-          "f1Val": "1-Click PDF WhatsApp & Email",
+          "f1Val": "1-Click Encrypted PDF via WhatsApp & Email",
           "f2Label": "Monthly Summary Reports:",
-          "f2Val": "Ready Bank CSV Export Format"
+          "f2Val": "Bank Transfer Ready CSV Formats"
         },
         "specs": [
-          { "label": "Tax Calculation Rules", "value": "Automated 2026 Tax Regulations" },
-          { "label": "Attendance Verification", "value": "Geolocation & Anti-Fake GPS" },
-          { "label": "Insurance Integration", "value": "National Health & Labor Social Security" },
-          { "label": "Payslip Delivery", "value": "Encrypted Instant PDF Delivery" }
+          { "label": "Payroll Tax Compliance", "value": "Automated Latest TER Tax Schedule" },
+          { "label": "Attendance Verification", "value": "Geolocation Geofence & Liveness Face Check" },
+          { "label": "Social Security Integration", "value": "Automated Healthcare & Social Security" },
+          { "label": "Payslip Delivery", "value": "Encrypted PDF via WhatsApp & Email" }
         ],
         "features": [
           {
-            "title": "Automated Payroll & Tax Calculation",
-            "description": "Calculate thousands of employee salaries complete with tax deductions, health, and labor social security in just 1 click."
+            "title": "Automated Payroll & PPh 21 TER Tax Engine",
+            "description": "Calculate thousands of employee salaries with up-to-date Indonesian TER tax brackets, BPJS deductions, allowances, and overtime rules in seconds."
           },
           {
-            "title": "Mobile Attendance + GPS & Face Liveness",
-            "description": "Prevent attendance fraud with AI face liveness detection and office geofencing perimeter."
+            "title": "Mobile Attendance with Geolocation & Liveness Check",
+            "description": "Eliminate fraudulent clock-ins using AI-powered liveness face verification and precise workplace radius geofencing on employee mobile devices."
           },
           {
-            "title": "Self-Service Employee Portal (ESS)",
-            "description": "Employees can request time-off, leave, overtime, and download encrypted payslips directly from their smartphones."
+            "title": "Employee Self-Service (ESS) Mobile Portal",
+            "description": "Employees can request medical leave, annual vacations, overtime, reimbursement claims, and download encrypted digital payslips directly from their phones."
           },
           {
-            "title": "Shift & Performance Review Engine",
-            "description": "Flexible shift matrix management for retail/manufacturing and monthly KPI objective evaluation."
+            "title": "Flexible Shift Roster & KPI Performance Reviews",
+            "description": "Configure dynamic rotating shift rosters for retail, hospitality, or manufacturing teams, with regular KPI metric evaluations and performance tracking."
           }
         ],
         "faqs": [
           {
-            "question": "Does payroll calculation support the latest 2024+ progressive tax tiers?",
-            "answer": "Yes. Tax calculation algorithms in Mitrasova Daya are continuously updated with Ministry of Finance regulatory updates."
+            "question": "Are payroll tax calculations compliant with the latest Indonesian TER regulations?",
+            "answer": "Yes! The tax computation engine in Mitrasova Daya is continuously updated in accordance with the latest regulations from the Indonesian Ministry of Finance, guaranteeing statutory compliance."
           },
           {
-            "question": "What is the maximum employee capacity supported?",
-            "answer": "Mitrasova Daya is tested to handle 50,000+ active employees with bulk payslip generation in under 2 minutes."
+            "question": "What is the maximum employee capacity supported by Mitrasova Daya?",
+            "answer": "Mitrasova Daya is built on a scalable cloud architecture capable of processing over 50,000 active employees with mass payslip generation taking under 2 minutes."
           }
         ]
       },
       "mitrasova-nexus": {
         "title": "Mitrasova Nexus",
         "heroTagline": "High-Availability Cloud Hosting, Managed VPS & Security",
-        "summary": "High-Performance Cloud Hosting Infrastructure with 99.99% Uptime SLA, Multi-Layer DDoS Protection, & Server Auto-Scaling.",
-        "description": "Mitrasova Nexus is an enterprise managed cloud infrastructure service engineered for mission-critical workloads. Powered by Tier-4 data centers in Jakarta and Singapore with ultra-low latency and multi-tier security shields.",
+        "summary": "High-Performance Managed Cloud Hosting with Guaranteed 99.99% Uptime SLA, Advanced Anti-DDoS Mitigation, and Auto-Scaling Infrastructure.",
+        "description": "Mitrasova Nexus is a managed cloud infrastructure solution engineered for enterprise mission-critical systems. Powered by secure Tier-4 data center networks in Jakarta & Singapore with ultra-low latency, NVMe PCIe 4.0 storage, multi-layered perimeter defense, and 24/7 proactive engineer monitoring.",
         "category": "Cloud Infrastructure",
         "badge": "Tier-4 Managed Cloud",
         "blueprint": {
           "title": "Enterprise Cloud Infrastructure",
-          "badge": "99.99% Uptime SLA",
-          "m1Label": "Query Response Time",
+          "badge": "Guaranteed 99.99% Uptime SLA",
+          "m1Label": "Query Response Latency",
           "m1Val": "< 15ms Latency",
-          "m1Sub": "NVMe PCIe 4.0 Storage",
-          "m2Label": "Security Perimeter",
-          "m2Val": "DDoS Edge Firewall",
-          "m2Sub": "Automated Daily Backup",
-          "f1Label": "Database Mirroring & Failover:",
-          "f1Val": "Multi-Region Redundancy",
-          "f2Label": "Data Center Backbone:",
+          "m1Sub": "NVMe PCIe 4.0 High-Speed Storage",
+          "m2Label": "Perimeter Defense",
+          "m2Val": "DDoS Mitigation Firewall",
+          "m2Sub": "Automated Daily Backups",
+          "f1Label": "Database Failover & Mirroring:",
+          "f1Val": "Standby Multi-Region Redundancy",
+          "f2Label": "Data Center Facility Locations:",
           "f2Val": "Equinix SG1 & Tier-4 Jakarta"
         },
         "specs": [
-          { "label": "Availability Guarantee", "value": "99.99% Guaranteed SLA Uptime" },
-          { "label": "Query Latency Performance", "value": "< 15ms NVMe PCIe 4.0 Storage" },
-          { "label": "Security Shield", "value": "DDoS Edge Filter & TLS 1.3" },
-          { "label": "Disaster Recovery", "value": "Automated Daily Multi-Region Backup" }
+          { "label": "Availability Commitment", "value": "Guaranteed 99.99% Uptime SLA" },
+          { "label": "Storage Access Latency", "value": "NVMe PCIe 4.0 with <15ms Latency" },
+          { "label": "Perimeter Security", "value": "Layer 3/4/7 DDoS Scrubbing & TLS 1.3" },
+          { "label": "Backup Strategy", "value": "Automated Daily Multi-Region Snapshots" }
         ],
         "features": [
           {
-            "title": "99.99% Guaranteed Uptime SLA",
-            "description": "Redundant multi-zone architecture with financial refund SLA guarantees against downtime."
+            "title": "Battle-Tested 99.99% Uptime SLA Guarantee",
+            "description": "Multi-zone redundant cloud architecture engineered to keep enterprise business systems and web services online without disruption year-round."
           },
           {
-            "title": "Advanced Anti-DDoS Mitigation",
-            "description": "Automated defense against Layer 3, 4, and 7 attacks backed by a 2 Tbps scrubbing center."
+            "title": "Advanced Anti-DDoS Mitigation Defense",
+            "description": "Automated defense against cyber threats and volumetric DDoS attacks on Layer 3, Layer 4, and Layer 7 with scrubbing centers mitigating up to 2 Tbps."
           },
           {
-            "title": "Automated Daily Cloud Snapshot Backup",
-            "description": "Encrypted daily backups to off-site locations with minute-level Disaster Recovery Point (RPO/RTO) options."
+            "title": "Automated Daily Cloud Backups & Rapid Disaster Recovery",
+            "description": "Encrypted daily database and file snapshots replicated to off-site secondary locations with RPO and RTO measured in minutes."
           },
           {
-            "title": "Kubernetes & Auto-Scaling Ready",
-            "description": "Docker and Kubernetes containerization support to seamlessly absorb sudden traffic spikes without latency."
+            "title": "Kubernetes Container Clustering & Auto-Scaling",
+            "description": "Full support for Docker containerization and Kubernetes cluster orchestration to automatically scale node capacity during sudden traffic surges."
           }
         ],
         "faqs": [
           {
-            "question": "Where are Mitrasova Nexus physical data centers located?",
-            "answer": "Our servers reside in Tier-4 Data Centers in Jakarta (Indonesia) and Equinix SG1 (Singapore) for optimal peering latency."
+            "question": "Where are the physical data center facilities located for Mitrasova Nexus?",
+            "answer": "Our servers are hosted in Tier-4 certified facilities in Jakarta (Indonesia) and the Equinix SG1 Data Center (Singapore) to ensure the fastest internet interconnects and highest physical security."
           },
           {
-            "question": "Is technical support available 24 hours?",
-            "answer": "Yes, our Cloud Engineering team is on duty 24/7/365 with response SLAs under 15 minutes."
+            "question": "Is there a 24/7 technical team monitoring system health?",
+            "answer": "Yes! Our Network Operations Center (NOC) and cloud engineers monitor systems 24 hours a day, 7 days a week, 365 days a year with priority SLA response times."
           }
         ]
       },
       "mitrasova-labs": {
         "title": "Mitrasova Labs",
         "heroTagline": "Custom Software Engineering, Web & Mobile Development",
-        "summary": "Custom Enterprise Web Application Engineering, Native Mobile Apps, Microservices Architecture, & API Integrations.",
-        "description": "Mitrasova Labs delivers dedicated software architects and senior engineers to build large-scale custom solutions for your enterprise. From modern microservices architecture and payment gateways to custom iOS/Android apps.",
-        "category": "Custom Engineering",
-        "badge": "Enterprise Engineering",
+        "summary": "Custom Enterprise Software Engineering: High-Performance Web Applications, Native Mobile Apps, Microservices, and Legacy ERP API Integrations.",
+        "description": "Mitrasova Labs delivers dedicated software architects and senior engineers to build bespoke large-scale digital solutions for your enterprise. From scalable modern application architectures, payment gateways, and legacy ERP integrations (SAP/Oracle) to high-performance native iOS & Android applications.",
+        "category": "Custom Software Engineering",
+        "badge": "Bespoke Enterprise Engineering",
         "blueprint": {
-          "title": "Custom Engineering & API Gateway",
-          "badge": "Production-Grade",
+          "title": "Bespoke Engineering & API Gateways",
+          "badge": "Production-Grade Standards",
           "m1Label": "Modern Tech Stack",
-          "m1Val": "Next.js & React 19",
-          "m1Sub": "RESTful & GraphQL API",
-          "m2Label": "Web & Mobile Native",
-          "m2Val": "iOS, Android, & Web",
+          "m1Val": "Next.js 16 & React 19",
+          "m1Sub": "RESTful & GraphQL Gateways",
+          "m2Label": "Web & Mobile Platforms",
+          "m2Val": "Web, iOS, & Android",
           "m2Sub": "High-Scalability Architecture",
-          "f1Label": "Structured & Clean Code:",
-          "f1Val": "OpenAPI / Swagger Documentation",
-          "f2Label": "Code Quality Assurance:",
-          "f2Val": "Security Audit & Automated Testing"
+          "f1Label": "Clean Code Quality:",
+          "f1Val": "OpenAPI / Swagger Standard Documentation",
+          "f2Label": "Software Quality Assurance:",
+          "f2Val": "OWASP Security Audits & Automated Testing"
         },
         "specs": [
-          { "label": "Core Technology", "value": "Next.js 16, React 19, TypeScript" },
-          { "label": "Integration Protocols", "value": "RESTful API & GraphQL Gateway" },
-          { "label": "Multi-Platform Coverage", "value": "Native Web, iOS, & Android" },
-          { "label": "Architecture Standard", "value": "Clean Code, SOLID, Modular" }
+          { "label": "Core Technologies", "value": "Next.js 16, React 19, TypeScript, PostgreSQL" },
+          { "label": "Integration Protocols", "value": "RESTful API, GraphQL Gateway, & Webhooks" },
+          { "label": "Target Platforms", "value": "Enterprise Web, Native iOS, & Android" },
+          { "label": "Architectural Principles", "value": "Clean Code, SOLID Principles, Modular Design" }
         ],
         "features": [
           {
-            "title": "Modern Fullstack Architecture",
-            "description": "Engineering applications using Next.js, Node.js/Go, React Native, PostgreSQL, and Cloud-Native stacks."
+            "title": "Modern Fullstack Architecture & High Scalability",
+            "description": "Systems engineered with modern technologies including Next.js, Node.js/Go, React Native, PostgreSQL, and cloud-native backbones ready to scale as your business expands."
           },
           {
-            "title": "API & Legacy System Integration",
-            "description": "Bridging legacy ERP systems (SAP, Oracle) with modern digital platforms via RESTful and GraphQL APIs."
+            "title": "Legacy ERP System Integration & Secure API Gateways",
+            "description": "Connect legacy databases (such as SAP, Oracle, or on-premise mainframes) with modern digital frontends via secure, high-throughput RESTful and GraphQL API pipelines."
           },
           {
-            "title": "Code Security Audit & Penetration Testing",
-            "description": "Rigorous security vulnerability auditing based on OWASP Top 10 standards prior to production release."
+            "title": "Code Security Audits & Penetration Testing",
+            "description": "Rigorous security audits compliant with OWASP Top 10 guidelines prior to staging and production rollout to safeguard critical enterprise data."
           },
           {
-            "title": "Agile Development Sprint & SLA Support",
-            "description": "Transparent weekly sprint progress with Scrum methodology, Swagger API documentation, and maintenance warranties."
+            "title": "Agile Sprint Methodology & Long-Term SLA Maintenance",
+            "description": "Transparent weekly sprint progress reports via Scrum, comprehensive Swagger API documentation, and post-delivery maintenance guarantees."
           }
         ],
         "faqs": [
           {
-            "question": "What is the estimated delivery timeline for custom software projects?",
-            "answer": "Depending on module scope. Medium MVP projects range from 4–8 weeks, while enterprise core systems span 12–24 weeks with staged agile sprints."
+            "question": "What is the typical delivery timeline for custom software projects at Mitrasova Labs?",
+            "answer": "Delivery schedules vary based on scope. Mid-sized MVP applications typically require 4–8 weeks, whereas complex integrated enterprise systems take 12–24 weeks with phased sprint milestones."
           },
           {
-            "question": "Does the client retain full ownership of the source code?",
-            "answer": "Yes, 100%. Upon project handover, all Intellectual Property (IP) and Source Code rights belong entirely to the client."
+            "question": "Does the client retain full ownership of the source code and Intellectual Property?",
+            "answer": "Yes 100%. Upon project completion and final handover, all Intellectual Property (IP) rights, repositories, and source code become the exclusive property of your company."
           }
         ]
       }
@@ -424,228 +440,229 @@
   },
   "consultation": {
     "header": {
-      "badge": "Enterprise Business Consultation",
+      "badge": "SOLUTION & ARCHITECTURE CONSULTATION",
       "title": "Discuss Your Digital Transformation",
-      "titleGradient": "With Our Engineering Team",
-      "description": "Schedule a complimentary consultation session with a Mitrasova Solution Architect. We design precision system architectures tailored to your business."
+      "titleGradient": "With Mitrasova Technical Leaders",
+      "description": "Book a complimentary technical strategy session with a Mitrasova Solution Architect. We analyze your operational workflows and architect the exact digital system your business requires."
     },
     "form": {
       "fullName": "Full Name",
       "fullNamePlaceholder": "e.g. Raihan Marwanda",
-      "companyName": "Company / Organization Name (Optional)",
-      "companyPlaceholder": "e.g. Retail Enterprise Ltd",
+      "companyName": "Company / Organization (Optional)",
+      "companyPlaceholder": "e.g. Acme Retail Solutions Ltd.",
       "email": "Business Email Address",
       "emailPlaceholder": "e.g. name@company.com",
       "phone": "WhatsApp / Phone Number",
       "phonePlaceholder": "e.g. +62 812 3456 7890",
-      "servicesLabel": "Select Services / Products of Interest (Multiple selection allowed)",
-      "message": "Project Scope or Inquiries",
-      "messagePlaceholder": "Describe your operational challenges or specific custom features required...",
+      "servicesLabel": "Select Products / Services of Interest (Multi-select enabled)",
+      "message": "Project Scope or Operational Requirements",
+      "messagePlaceholder": "Describe current operational bottlenecks, cashier/payroll/cloud requirements, or desired rollout timelines...",
       "submitBtn": "Submit Consultation Request",
       "submittingBtn": "Submitting Request...",
-      "successTitle": "Consultation Request Submitted Successfully!",
-      "successDesc": "Thank you for reaching out to Mitrasova. Our Solution Architect will contact you via WhatsApp / Email within 24 hours."
+      "successTitle": "Consultation Request Submitted!",
+      "successDesc": "Thank you for reaching out to Mitrasova. A Solution Architect will contact you via WhatsApp or Email within 1 business day."
     },
     "infoCard": {
       "cardTitle": "Enterprise Solution Consultation",
-      "cardDesc": "Discuss system architecture, POS solutions, HRIS & Payroll, custom web & mobile apps, or cloud deployment with Mitrasova engineers.",
-      "officeLocation": "Office Location",
-      "fastResponse": "Fast 24-Hour Response",
-      "fastResponseDesc": "Our team reviews your technical requirements and schedules an interactive demonstration.",
+      "cardDesc": "Discuss offline-first POS cashiers, automated HRIS & payroll, custom web & mobile engineering, or managed cloud architecture with Mitrasova engineers.",
+      "officeLocation": "Headquarters Location",
+      "fastResponse": "Rapid 1-Business-Day Response",
+      "fastResponseDesc": "Our engineering team evaluates your technical scope and arranges an interactive live demonstration.",
       "officialEmail": "Official Email",
-      "ndaGuarantee": "Confidentiality Guarantee (NDA)",
-      "ndaDesc": "All proprietary business processes and technical specifications are protected under standard Non-Disclosure Agreements."
+      "ndaGuarantee": "Confidentiality & Non-Disclosure (NDA)",
+      "ndaDesc": "All business workflows and technical documentation are protected under industry-standard Non-Disclosure Agreements."
     }
   },
   "blog": {
     "hub": {
-      "badge": "Mitrasova Publication & Media",
-      "title": "Blog, News & Tech",
-      "titleGradient": "Digital Insights",
-      "description": "Curated software engineering trends, product release highlights, retail & HR business strategies, and Mitrasova tech events.",
-      "searchPlaceholder": "Search articles, topics, or keywords...",
-      "allTab": "All Publications",
-      "articlesTab": "Insights & Blog",
+      "badge": "ENGINEERING JOURNAL & DISPATCHES",
+      "title": "Engineering Insights, Product Stories",
+      "titleGradient": "System Architecture Dispatches",
+      "subtitle": "Deep dives into scalable software engineering, modern retail & workforce automation, product changelogs, and real-world system architecture from Mitrasova.",
+      "description": "Deep dives into scalable software engineering, modern retail & workforce automation, product changelogs, and real-world system architecture from Mitrasova.",
+      "searchPlaceholder": "Search topics, architectures, case studies, or keywords...",
+      "allTab": "All Stories",
+      "articlesTab": "Deep Dives & Insights",
       "newsTab": "News & Press",
-      "eventsTab": "Events & Agenda",
+      "eventsTab": "Events & Meetups",
       "updatesTab": "Product Releases",
-      "featuredTag": "FEATURED ARTICLE",
-      "readArticle": "Read Article",
-      "emptyTitle": "No publications found",
-      "emptyDesc": "Try adjusting your search query or category filter."
+      "featuredTag": "FEATURED EDITORIAL DISPATCH",
+      "readArticle": "Read Full Story",
+      "emptyTitle": "No Matching Stories Found",
+      "emptyDesc": "Try adjusting your search query or explore a different category."
     },
     "card": {
-      "readAction": "Read",
-      "eventAction": "Event Details",
+      "readAction": "Read Story",
+      "eventAction": "Event Details & RSVP",
       "types": {
-        "article": "Insights & Blog",
-        "news": "News & Media",
-        "event": "Events & Webinar",
-        "release": "Product Release"
+        "article": "Engineering & Insights",
+        "news": "News & Press",
+        "event": "Events & Meetups",
+        "release": "Product Releases"
       }
     },
     "article": {
       "author": "Author",
-      "updatedAt": "Published On",
+      "updatedAt": "Published on",
       "readTime": "Read Time",
       "share": "Share",
       "tableOfContents": "Table of Contents",
-      "relatedTitle": "Recommended Publications",
-      "backToBlog": "Back to Blog Hub",
-      "eventInfoTitle": "Event Details",
+      "relatedTitle": "Recommended Reading",
+      "backToBlog": "Back to Editorial Index",
+      "eventInfoTitle": "Event Details & Agenda",
       "dateLabel": "Date & Time",
-      "locationLabel": "Event Location",
-      "registerBtn": "Register For Event",
-      "relatedTags": "Related Topics:",
-      "likeArticle": "Enjoyed this article?",
-      "shareWithTeam": "Share these insights with your team and colleagues.",
-      "consultBadge": "MITRASOVA SOLUTION CONSULTING",
-      "consultTitle": "Looking to Implement Similar Solutions in Your Business?",
-      "consultDesc": "Mitrasova Solution Architects are ready to discuss offline POS architecture, payroll automation, or cloud infrastructure tailored to your company.",
-      "consultBtn": "Schedule Free Consultation"
+      "locationLabel": "Location / Platform",
+      "registerBtn": "Register for Event Now",
+      "relatedTags": "Discussion Topics:",
+      "likeArticle": "Found this insightful?",
+      "shareWithTeam": "Share these findings and strategies with your team and peers.",
+      "consultBadge": "ENTERPRISE ARCHITECTURE CONSULTING",
+      "consultTitle": "Ready to Deploy Similar Architectures in Your Enterprise?",
+      "consultDesc": "Connect with Mitrasova Solution Architects to discuss offline-first POS systems, automated payroll engines, or bespoke cloud infrastructure.",
+      "consultBtn": "Schedule Free Architect Session"
     },
     "eventBanner": {
-      "badge": "TECH EVENT & COMMUNITY AGENDA",
+      "badge": "TECH COMMUNITY & WORKSHOP AGENDA",
       "title": "Event Registration & Participation",
       "timeLabel": "Event Schedule",
-      "locationLabel": "Event Location",
-      "actionBtn": "Register For Event"
+      "locationLabel": "Location / Platform",
+      "actionBtn": "Reserve Your Seat Now"
     },
     "share": {
       "shareModalTitle": "Share Publication",
-      "shareModalDesc": "Choose a channel to share this publication",
+      "shareModalDesc": "Distribute this story across your professional channels and community",
       "copyLink": "Copy Link",
-      "copied": "Copied!",
-      "sendEmail": "Send via Email",
-      "copyFullUrl": "Copy Full URL:"
+      "copied": "Link Copied!",
+      "sendEmail": "Share via Email",
+      "copyFullUrl": "Article URL:"
     }
   },
   "product": {
     "badge": "Enterprise Solution Showcase",
     "overviewTitle": "Overview & Feature Modules",
-    "capabilitiesTitle": "Capabilities & Architecture",
-    "useCasesTitle": "Tailored For Your Business Scale",
+    "capabilitiesTitle": "System Capabilities & Architecture",
+    "useCasesTitle": "Real-World Deployment Across Business Scales",
     "faqTitle": "Frequently Asked Questions",
     "ctaTitle": "Ready to Transform Your Business Operations?",
-    "ctaDesc": "Schedule an interactive demo with a Mitrasova Solution Architect to see the system live in action.",
-    "ctaBtn": "Start Consultation & Demo",
-    "backToProducts": "Back to Home",
+    "ctaDesc": "Schedule a live interactive walkthrough with a Mitrasova Solution Architect to see systems running live in production.",
+    "ctaBtn": "Book Consultation & Demo",
+    "backToProducts": "Back to Products Catalog",
     "hub": {
-      "badge": "MITRASOVA PRODUCTS & SOLUTIONS CATALOG",
-      "title": "A Unified Software Suite For",
-      "titleGradient": "Your Business Growth",
-      "description": "Explore integrated software solutions: Offline-First POS, Enterprise HRIS & Payroll, Tier-4 Managed Cloud, and Custom Engineering.",
-      "searchPlaceholder": "Search products, features, modules...",
-      "allCategory": "All Products",
+      "badge": "MITRASOVA PRODUCTS & SOLUTIONS",
+      "title": "One Unified Software Ecosystem For",
+      "titleGradient": "Your Enterprise Growth & Scalability",
+      "description": "Explore an integrated software suite: Offline-First POS Cashiers, Automated HRIS & Payroll, Tier-4 Managed Cloud, and Custom Software Engineering.",
+      "searchPlaceholder": "Search by product name, features, or requirements...",
+      "allCategory": "All Solutions",
       "categories": {
-        "all": "All Products",
-        "pos": "SaaS POS & Cashier",
+        "all": "All Solutions",
+        "pos": "SaaS Cashier & POS",
         "hris": "HRIS & Payroll",
-        "cloud": "Cloud & Infrastructure",
+        "cloud": "Cloud & Managed VPS",
         "custom": "Custom Engineering"
       },
-      "emptyTitle": "No matching products found",
-      "emptyDesc": "Try using different search keywords or choosing another category.",
+      "emptyTitle": "No matching solutions found",
+      "emptyDesc": "Try adjusting your search terms or choose another category above.",
       "consultBadge": "INTEGRATED SOLUTION CONSULTING",
-      "consultTitle": "Need a Tailored Recommendation?",
-      "consultDesc": "Discuss your operational workflows and business technology requirements with our Solution Architects.",
-      "consultBtn": "Schedule Consultation"
+      "consultTitle": "Looking for the Right Solution Architecture?",
+      "consultDesc": "Discuss your operational workflows and technical requirements directly with our Solution Architects.",
+      "consultBtn": "Schedule Architecture Session"
     },
     "hero": {
-      "learnMoreExternal": "Learn More on Official Website",
-      "requestDemo": "Request Demo",
-      "slaGuarantee": "99.9% SLA Uptime Guarantee",
-      "support": "Dedicated Regional Support",
-      "prodGrade": "Production Grade Architecture"
+      "learnMoreExternal": "Explore Details on Official Portal",
+      "requestDemo": "Schedule Live Demo",
+      "slaGuarantee": "99.99% Uptime SLA Guarantee",
+      "support": "Dedicated Direct Support",
+      "prodGrade": "Enterprise Production-Grade Architecture"
     },
     "card": {
-      "viewDetail": "View Details",
-      "openWeb": "Visit Product Web"
+      "viewDetail": "View Module Details",
+      "openWeb": "Visit Product Portal"
     },
     "detail": {
-      "moreInfoTitle": "Want to Learn More About {{title}}?",
-      "moreInfoDesc": "Access the official product website to explore comprehensive guides, interactive demos, and implementation scope.",
-      "openOfficialWeb": "Visit Official {{title}} Website"
+      "moreInfoTitle": "Want to Explore Further About {{title}}?",
+      "moreInfoDesc": "Access the official product website for comprehensive technical documentation, interactive demos, and integration guidelines.",
+      "openOfficialWeb": "Visit Official Portal for {{title}}"
     },
     "features": {
       "badge": "Core Modules & Capabilities",
       "title": "Engineered Specifically For",
-      "titleGradient": "Maximum Operational Efficiency",
-      "description": "Every module is engineered to enterprise software standards for dependable, high-speed performance.",
-      "provenBadge": "Production-tested and synchronized in real-time"
+      "titleGradient": "Maximum Efficiency & Scalability",
+      "description": "Every module is developed to enterprise software engineering standards for uninterrupted high-performance operations.",
+      "provenBadge": "Tested in production environments & synchronized in real-time"
     },
     "useCases": {
-      "badge": "Target Implementation",
-      "title": "Tailored Across Diverse",
-      "titleGradient": "Business Profiles",
-      "description": "Flexible solutions configurable to match your team size and operational workflow complexity.",
+      "badge": "Industry Deployment Scenarios",
+      "title": "Tailored For Diverse Business",
+      "titleGradient": "Scales & Workflows",
+      "description": "Flexible and adaptive solutions configurable to your team size and operational complexity.",
       "items": {
         "mitrasova-pos": [
           {
             "title": "Modern Retail & Supermarkets",
-            "desc": "Offline-first cashier guarantees fast checkout queues with zero lag during network or power drops.",
-            "benefits": ["Instant barcode scanning", "Multi-cashier shift reporting", "Automated low-stock alerts"]
+            "desc": "Offline-first cashier architecture guarantees zero-lag checkout lines even during network or power interruptions.",
+            "benefits": ["0ms instant barcode scanning", "Organized shift & closing reports", "Automated low-stock alerts"]
           },
           {
-            "title": "Fashion Retail & Consignment Networks",
-            "desc": "Automated consignment revenue splits, supplier invoice settlement, and returns tracking.",
-            "benefits": ["Automated commission split", "Print return slips", "Consignment invoice reconciliation"]
+            "title": "Fashion Boutiques & Multi-Supplier Consignment",
+            "desc": "Automate supplier consignment revenue splits, periodic settlement invoicing, and consigned return tracking.",
+            "benefits": ["Automated supplier commission splits", "Consignment return slips", "Instant settlement reconciliation"]
           },
           {
-            "title": "Wholesale Distribution & Multi-Branch Networks",
-            "desc": "Multi-branch warehouse stock sync and centralized general ledger accounting.",
-            "benefits": ["Inter-branch stock transfer", "Real-time trial balance", "Instant P&L journaling"]
+            "title": "Wholesale Chains & Multi-Branch Hubs",
+            "desc": "Real-time stock synchronization across dozens of branch warehouses with centralized general ledger accounting.",
+            "benefits": ["Inter-branch stock transfers", "Real-time trial balance sheets", "Instant P&L transaction journals"]
           }
         ],
         "mitrasova-daya": [
           {
-            "title": "Corporations & Large Enterprises",
-            "desc": "Calculate thousands of payslips with progressive tax and social security deductions in 1 click.",
-            "benefits": ["Automated 2026 tax calculation", "Bank transfer export ready", "Payroll activity audit logs"]
+            "title": "Corporate & Enterprise Organizations",
+            "desc": "Calculate thousands of employee payslips with statutory tax deductions and benefits in 1 click without manual formulas.",
+            "benefits": ["Automated tax bracket calculations", "Bank-ready CSV batch transfer files", "Comprehensive payroll audit trails"]
           },
           {
-            "title": "Manufacturing & Multi-Shift Plants",
-            "desc": "Flexible shift roster scheduling, automated overtime calculation, and anti-fake GPS attendance.",
-            "benefits": ["Shift roster generator", "Automated overtime formula", "Face liveness verification"]
+            "title": "Manufacturing Plants & Multi-Shift Facilities",
+            "desc": "Flexible rotating shift roster scheduling, automated overtime calculations, and anti-spoof GPS attendance.",
+            "benefits": ["Automated shift roster generator", "Accurate overtime formulas", "AI liveness face verification"]
           },
           {
-            "title": "Remote & Hybrid Workforces",
-            "desc": "Self-service employee mobile portal for leave requests, overtime approvals, and payslips.",
-            "benefits": ["Self-service mobile ESS", "Instant leave approvals", "Encrypted PDF payslip distribution"]
+            "title": "Remote Companies & Hybrid Teams",
+            "desc": "Employee Self-Service (ESS) mobile app to submit leave, overtime, reimbursement claims, and download encrypted payslips.",
+            "benefits": ["Mobile ESS app for staff", "Instant manager leave approvals", "Encrypted PDF payslip delivery"]
           }
         ],
         "mitrasova-nexus": [
           {
-            "title": "Mission-Critical SaaS & Enterprise Apps",
-            "desc": "High-availability cloud infrastructure with a 99.99% uptime SLA and multi-zone redundancy.",
-            "benefits": ["NVMe PCIe 4.0 storage", "2 Tbps DDoS scrubbing filter", "Multi-region disaster failover"]
+            "title": "Enterprise Apps & Mission-Critical SaaS",
+            "desc": "Cloud server infrastructure with guaranteed 99.99% uptime and multi-zone redundant architecture.",
+            "benefits": ["Ultra-fast NVMe PCIe 4.0 storage", "Anti-DDoS protection up to 2 Tbps", "Multi-region standby failover"]
           },
           {
-            "title": "E-Commerce & High-Concurrency Sales",
-            "desc": "Dynamic auto-scaling clusters that seamlessly absorb traffic spikes during major campaigns.",
-            "benefits": ["Kubernetes auto-scaling", "Ultra-low latency (<15ms)", "Edge CDN content distribution"]
+            "title": "E-Commerce Platforms & Flash Sale Surges",
+            "desc": "Auto-scaling clusters that dynamically scale node capacity during heavy shopping traffic surges.",
+            "benefits": ["Kubernetes container auto-scaling", "Low query latency <15ms", "Global Edge CDN caching"]
           },
           {
-            "title": "Fintech & Sensitive Data Clusters",
-            "desc": "Daily encrypted off-site snapshots and perimeter firewall security shields.",
-            "benefits": ["AES-256 encrypted snapshots", "Minute-level RPO disaster recovery", "24/7/365 dedicated NOC engineers"]
+            "title": "Fintech & Sensitive Database Environments",
+            "desc": "Daily encrypted off-site snapshots and perimeter firewall protection meeting ISO security standards.",
+            "benefits": ["AES-256 encrypted backups", "Disaster recovery RPO in minutes", "24/7/365 NOC engineer telemetry"]
           }
         ],
         "mitrasova-labs": [
           {
-            "title": "Enterprises Requiring Custom Software",
-            "desc": "Large-scale custom software development with microservices and modern API architecture.",
-            "benefits": ["Fullstack Next.js & Go/Node", "RESTful & GraphQL API gateway", "100% IP & Source Code Ownership"]
+            "title": "Enterprises with Custom System Needs",
+            "desc": "Large-scale bespoke software engineering built on modern microservices and API-driven architectures.",
+            "benefits": ["Fullstack Next.js, Go/Node, PostgreSQL", "RESTful & GraphQL API Gateways", "100% Client Source Code Ownership"]
           },
           {
-            "title": "Legacy ERP & System Integration",
-            "desc": "Connecting legacy databases (SAP, Oracle) with modern digital platforms via unified API bridges.",
-            "benefits": ["Real-time sync data pipeline", "OWASP Top 10 security audits", "Zero-downtime cutover plan"]
+            "title": "Legacy ERP Modernization & API Integrations",
+            "desc": "Connect legacy databases (SAP, Oracle, AS400) with modern digital portals via secure unified API gateways.",
+            "benefits": ["Secure data synchronization pipelines", "OWASP Top 10 security compliance", "Zero downtime transition"]
           },
           {
-            "title": "Native iOS & Android Mobile Apps",
-            "desc": "High-performance mobile applications engineered for end customers or field operational teams.",
-            "benefits": ["Cross-platform & Native apps", "Offline-first local cache", "Push notification gateway"]
+            "title": "Native Mobile Applications for iOS & Android",
+            "desc": "High-performance native mobile apps engineered for customer-facing portals and field staff operations.",
+            "benefits": ["Cross-platform & Native architectures", "Offline cache storage support", "High-throughput push notifications"]
           }
         ]
       }
@@ -654,27 +671,27 @@
       "badge": "Product FAQ",
       "title": "Frequently Asked Questions",
       "titleGradient": "About {{title}}",
-      "description": "Answers regarding technical specifications, rollout timelines, and daily operational questions."
+      "description": "Technical, architectural, and operational answers regarding this product."
     }
   },
   "footer": {
-    "brandDesc": "Mitrasova Digital Solutions is an enterprise technology and software engineering provider. Delivering Offline POS, HRIS & Payroll, Managed Cloud Server, Custom Web & Mobile App Ecosystems.",
-    "productSuite": "Product Ecosystem",
+    "brandDesc": "Mitrasova Digital Solutions is an enterprise technology and software engineering provider. Delivering Offline-First POS Cashiers, Automated HRIS & Payroll, Tier-4 Managed Cloud, and Bespoke Enterprise Web & Mobile Engineering.",
+    "productSuite": "Product Suite",
     "pos": "Mitrasova POS",
     "daya": "Mitrasova Daya (HRIS)",
     "nexus": "Mitrasova Nexus (Cloud)",
     "labs": "Mitrasova Labs (Custom App)",
-    "publications": "Blog & Media",
-    "insights": "Insights & Blog",
-    "news": "News & Announcements",
-    "events": "Events & Seminars",
-    "releases": "Product Release Notes",
+    "publications": "Insights & Journal",
+    "insights": "Articles & Guides",
+    "news": "News & Press",
+    "events": "Events & Meetups",
+    "releases": "Product Releases",
     "contact": "Contact Us",
     "navLinks": {
       "products": "Products",
       "services": "Services",
       "consultation": "Consultation",
-      "blog": "Blog & News"
+      "blog": "Insights & Journal"
     }
   },
   "console": {
@@ -684,7 +701,7 @@
       "dashboard": "Dashboard",
       "newPost": "New Post",
       "liveSite": "Live Site",
-      "logout": "Sign Out"
+      "logout": "Log Out"
     }
   }
 }

@@ -1,4 +1,4 @@
-import { PrismaClient, Role, PostType, PostStatus, ConsultationStatus } from '@prisma/client';
+import { PrismaClient, Role, PostStatus, ConsultationStatus } from '@prisma/client';
 import { PrismaPg } from '@prisma/adapter-pg';
 
 const connectionString = process.env.DATABASE_URL || '';
@@ -57,25 +57,25 @@ async function main() {
   console.log('📁 Membuat Master Categories...');
   const categoriesData = [
     {
-      name: 'Wawasan & Blog',
+      name: 'Wawasan & Panduan',
       slug: 'wawasan-blog',
-      description: 'Kumpulan artikel mendalam, strategi bisnis ritel & HR, arsitektur cloud, dan best practices software engineering.',
+      description: 'Kajian mendalam seputar strategi bisnis ritel, HRIS & perpajakan, arsitektur cloud, dan rekayasa perangkat lunak enterprise.',
       order: 1,
     },
     {
-      name: 'Berita & Media',
+      name: 'Kabar & Siaran Pers',
       slug: 'berita-media',
       description: 'Kabar resmi, siaran pers, kemitraan strategis, dan pengumuman korporasi Mitrasova Digital Solutions.',
       order: 2,
     },
     {
-      name: 'Events & Agenda',
+      name: 'Agenda & Meetup',
       slug: 'event-agenda',
       description: 'Agenda temu teknologi, workshop digitalisasi operasional, seminar industri, dan webinar live interaktif.',
       order: 3,
     },
     {
-      name: 'Rilis Produk',
+      name: 'Catatan Rilis',
       slug: 'rilis-produk',
       description: 'Catatan rilis berkala, changelog sistem, dan dokumentasi peluncuran fitur baru produk Mitrasova.',
       order: 4,
@@ -292,7 +292,6 @@ async function main() {
       slug: 'optimalisasi-bisnis-retail-konsinyasi-offline-pos-akuntansi',
       summary: 'Kajian mendalam strategi pengelolaan ratusan supplier konsinyasi, pencegahan antrean dengan arsitektur kasir offline-first, dan pencatatan neraca keuangan real-time.',
       coverImage: 'https://images.unsplash.com/photo-1556742049-0a67e5572293?q=80&w=1200&auto=format&fit=crop',
-      type: PostType.ARTICLE,
       status: PostStatus.PUBLISHED,
       featured: true,
       readTime: '8 min baca',
@@ -345,7 +344,6 @@ async function main() {
       slug: 'panduan-lengkap-pph21-ter-2026-otomatisasi-payroll',
       summary: 'Membedah formula TER Kategori A, B, C, integrasi iuran BPJS Ketenagakerjaan & Kesehatan, serta otomatisasi slip gaji digital terenkripsi.',
       coverImage: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?q=80&w=1200&auto=format&fit=crop',
-      type: PostType.ARTICLE,
       status: PostStatus.PUBLISHED,
       featured: false,
       readTime: '7 min baca',
@@ -395,7 +393,6 @@ async function main() {
       slug: 'membangun-arsitektur-cloud-high-availability-ddos-sla',
       summary: 'Kajian arsitektur multi-region data center di Jakarta dan Singapura, strategi auto-scaling cluster K8s, serta mekanisme failover tanpa downtime.',
       coverImage: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop',
-      type: PostType.ARTICLE,
       status: PostStatus.PUBLISHED,
       featured: false,
       readTime: '9 min baca',
@@ -438,7 +435,6 @@ async function main() {
       slug: 'modernisasi-sistem-monolitik-microservices-api-gateway',
       summary: 'Strategi migrasi sistem warisan (legacy ERP) menggunakan Next.js fullstack, GraphQL/REST gateway terpadu, dan standar audit OWASP Top 10.',
       coverImage: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop',
-      type: PostType.ARTICLE,
       status: PostStatus.PUBLISHED,
       featured: false,
       readTime: '8 min baca',
@@ -478,7 +474,6 @@ async function main() {
       slug: 'mitrasova-resmikan-pusat-layanan-solo-raya',
       summary: 'Ekspansi strategis memperkuat pendampingan teknis langsung, pelatihan staf kasir on-site, dan dukungan arsitektur IT untuk pelaku usaha Jawa Tengah.',
       coverImage: 'https://images.unsplash.com/photo-1577495508048-b635879837f1?q=80&w=1200&auto=format&fit=crop',
-      type: PostType.NEWS,
       status: PostStatus.PUBLISHED,
       featured: false,
       readTime: '4 min baca',
@@ -508,7 +503,6 @@ async function main() {
       slug: 'solo-tech-summit-2026-workshop-ritel-hr',
       summary: 'Sesi temu teknologi interaktif bersama Solution Architect Mitrasova membahas simulasi live sistem POS offline dan payroll otomatis.',
       coverImage: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200&auto=format&fit=crop',
-      type: PostType.EVENT,
       status: PostStatus.PUBLISHED,
       featured: false,
       readTime: '5 min baca',
@@ -546,7 +540,6 @@ async function main() {
       slug: 'catatan-rilis-mitrasova-pos-v26',
       summary: 'Peningkatan performa pemrosesan kasir 0ms latency, integrasi printer thermal Bluetooth berkecepatan tinggi, dan settlement faktur konsinyasi instan.',
       coverImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop',
-      type: PostType.RELEASE,
       status: PostStatus.PUBLISHED,
       featured: false,
       readTime: '5 min baca',

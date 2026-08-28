@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: BlogArticlePageRouteProps): P
       canonical: url,
     },
     openGraph: {
-      title: `${post.title} | Mitrasova Blog`,
+      title: `${post.title} | Mitrasova Editorial`,
       description,
       url,
       type: 'article',
@@ -82,7 +82,7 @@ export default async function BlogArticleRoutePage({ params }: BlogArticlePageRo
       <BreadcrumbJsonLd
         items={[
           { name: 'Beranda', url: buildCanonicalUrl('/') },
-          { name: 'Blog & Kabar', url: buildCanonicalUrl('/blog') },
+          { name: 'Wawasan & Jurnal', url: buildCanonicalUrl('/blog') },
           { name: post.categoryName, url: buildCanonicalUrl('/blog') },
           { name: post.title, url: articleUrl },
         ]}

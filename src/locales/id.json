@@ -2,172 +2,188 @@
   "common": {
     "version": "v",
     "learnMore": "Pelajari Selengkapnya",
-    "consultation": "Konsultasi Gratis",
+    "consultation": "Konsultasi Solusi",
     "contactUs": "Hubungi Kami",
     "allRightsReserved": "Hak Cipta Dilindungi Undang-Undang.",
-    "allOperational": "Seluruh Sistem Beroperasi Normal",
+    "allOperational": "Seluruh Layanan Beroperasi Normal",
     "systemStatus": "Status Sistem",
-    "readArticle": "Baca Selengkapnya",
-    "viewProduct": "Lihat Produk",
-    "requestDemo": "Jadwalkan Demo",
-    "viewDetail": "Lihat Detail",
-    "visitOfficialWeb": "Buka Web Resmi",
+    "readArticle": "Baca Artikel Lengkap",
+    "viewProduct": "Lihat Detail Solusi",
+    "requestDemo": "Jadwalkan Demo Interaktif",
+    "viewDetail": "Lihat Rincian",
+    "visitOfficialWeb": "Kunjungi Portal Resmi",
     "back": "Kembali"
   },
   "navbar": {
     "home": "Beranda",
     "products": "Produk & Solusi",
     "services": "Ekosistem Layanan",
-    "blog": "Blog & Kabar",
+    "blog": "Blog & Jurnal",
     "startConsultation": "Mulai Konsultasi",
     "megaMenu": {
       "saasTitle": "Aplikasi Bisnis & Operasional",
-      "saasDesc": "Software cerdas untuk efisiensi transaksi, konsinyasi, dan manajemen SDM",
-      "infraTitle": "Infrastruktur & Rekayasa",
-      "infraDesc": "Cloud hosting high-availability dan rekayasa custom enterprise",
-      "viewAllServices": "Lihat Semua Produk & Solusi",
-      "demoCardTitle": "Konsultasi & Demo Live",
-      "demoCardDesc": "Diskusikan implementasi sistem terintegrasi bersama Solution Architect kami.",
-      "demoCardBtn": "Jadwalkan Demo",
-      "integratedNote": "Solusi terintegrasi dalam satu basis data terpadu"
+      "saasDesc": "Software cerdas untuk efisiensi transaksi kasir, konsinyasi, dan manajemen SDM terpadu",
+      "infraTitle": "Infrastruktur & Rekayasa Software",
+      "infraDesc": "Managed cloud hosting high-availability dan rekayasa software kustom berskala enterprise",
+      "viewAllServices": "Jelajahi Seluruh Produk & Solusi",
+      "demoCardTitle": "Konsultasi & Simulasi Sistem",
+      "demoCardDesc": "Diskusikan rancangan arsitektur dan implementasi teknologi bersama Solution Architect kami.",
+      "demoCardBtn": "Jadwalkan Diskusi Teknis",
+      "integratedNote": "Ekosistem software terpadu dalam satu arsitektur basis data tersinkronisasi"
     }
   },
   "home": {
     "hero": {
-      "liveBadge": "MITRASOVA ENTERPRISE CLOUD ECOSYSTEM",
-      "title": "Satu Ekosistem Software Untuk",
-      "titleGradient": "Skalabilitas Bisnis Modern",
-      "description": "Arsitektur aplikasi terintegrasi mulai dari POS Kasir Multi-Cabang, Manajemen SDM & Payroll Terpadu, Infrastruktur Cloud Berkinerja Tinggi, hingga Pengembangan Aplikasi Kustom.",
-      "ctaPrimary": "Konsultasi Gratis",
-      "ctaSecondary": "Jelajahi Produk",
-      "uptimeBadge": "99.99% SLA Uptime",
-      "dbBadge": "PostgreSQL Cloud DB",
-      "encryptionBadge": "256-Bit Enkripsi End-to-End",
+      "liveBadge": "MITRASOVA ENTERPRISE SOFTWARE ECOSYSTEM",
+      "title": "Fondasi Software Tangguh untuk",
+      "titleGradient": "Skalabilitas & Akselerasi Bisnis",
+      "description": "Ekosistem aplikasi terintegrasi mulai dari POS Kasir Offline-First & Konsinyasi, Manajemen SDM & Payroll TER Otomatis, Infrastruktur Cloud Tier-4, hingga Rekayasa Software Kustom Skala Enterprise.",
+      "ctaPrimary": "Jadwalkan Konsultasi Gratis",
+      "ctaSecondary": "Jelajahi Solusi Kami",
+      "uptimeBadge": "99.99% SLA Uptime Terjamin",
+      "dbBadge": "Arsitektur PostgreSQL Cloud",
+      "encryptionBadge": "Enkripsi End-to-End 256-Bit",
       "telemetry": {
-        "allSystemsNominal": "SELURUH SISTEM NORMAL",
+        "allSystemsNominal": "SELURUH SISTEM BEROPERASI NORMAL",
         "querySpeed": "Kecepatan Query Cloud",
-        "latencyMetric": "-38% Latensi",
-        "pgSync": "Sinkronisasi PostgreSQL",
-        "realtimeNode": "Node Real-Time",
-        "throughput": "Throughput API",
-        "bandwidth": "+12% Bandwidth",
-        "clusterSec": "Keamanan Klaster",
-        "sslSecured": "Terproteksi SSL",
-        "logReady": "[READY] Sistem v{{version}} aktif & mendengarkan di edge aman",
-        "logGateway": "[GATEWAY] Load balancing aktif di datacenter Singapura & Jakarta"
+        "latencyMetric": "<15ms Latensi Rata-Rata",
+        "pgSync": "Sinkronisasi Real-Time PostgreSQL",
+        "realtimeNode": "Cluster Node Aktif",
+        "throughput": "Throughput API Enterprise",
+        "bandwidth": "+12% Efisiensi Bandwidth",
+        "clusterSec": "Keamanan Perimeter Klaster",
+        "sslSecured": "Terproteksi TLS 1.3 & Enkripsi",
+        "logReady": "[STATUS] Sistem v{{version}} beroperasi normal di secure edge network",
+        "logGateway": "[GATEWAY] Load balancer redundan aktif di data center Singapura & Jakarta"
       }
     },
     "marquee": {
-      "caption": "Infrastruktur & Standar Integrasi Teruji",
-      "paymentIntegration": "Integrasi Pembayaran",
-      "gatewayDirect": "Gateway Langsung",
-      "instantCheckout": "Pembayaran Instan",
-      "relationalDb": "Basis Data Relasional",
-      "lowLatencyCache": "Cache Latensi Rendah",
-      "containerizedInfra": "Infrastruktur Kontainer",
-      "fullstackFramework": "Kerangka Kerja Fullstack",
-      "ddosGlobalEdge": "DDoS & Distribusi Global",
-      "enterpriseSecurity": "Keamanan Enterprise"
+      "caption": "Standar Arsitektur & Rekayasa Sistem Teruji",
+      "paymentIntegration": "Integrasi Gateway Pembayaran",
+      "gatewayDirect": "Konektivitas Bank & QRIS Langsung",
+      "instantCheckout": "Transaksi Kasir 0ms Latensi",
+      "relationalDb": "Basis Data Relasional Berintegritas Tinggi",
+      "lowLatencyCache": "Cache In-Memory Latensi Ultra-Rendah",
+      "containerizedInfra": "Infrastruktur Kontainer Kubernetes",
+      "fullstackFramework": "Fullstack Framework Next.js & React Modern",
+      "ddosGlobalEdge": "Mitigasi DDoS & Edge CDN Global",
+      "enterpriseSecurity": "Standar Keamanan Enterprise Terverifikasi"
     },
     "products": {
-      "badge": "Enterprise Suite",
-      "title": "Empat Solusi Inti",
-      "titleGradient": "Satu Basis Data Terpadu",
-      "description": "Setiap produk dirancang untuk saling berkomunikasi secara real-time, mengeliminasi duplikasi data dan mempercepat alur kerja perusahaan.",
-      "learnService": "Pelajari Produk"
+      "badge": "Enterprise Solution Suite",
+      "title": "Empat Solusi Inti Terpadu,",
+      "titleGradient": "Satu Arsitektur Terintegrasi",
+      "description": "Setiap produk dirancang untuk saling terhubung secara real-time, mengeliminasi sekat antar departemen dan mempercepat alur kerja perusahaan Anda.",
+      "learnService": "Pelajari Solusi"
     },
     "advantages": {
-      "badge": "Keunggulan Arsitektur",
+      "badge": "Keunggulan Rekayasa Sistem",
       "title": "Mengapa Memilih Ekosistem",
       "titleGradient": "Teknologi Mitrasova?",
-      "description": "Dirancang secara presisi untuk menunjang skalabilitas bisnis Anda dari puluhan hingga ribuan transaksi setiap harinya.",
-      "consultCta": "Konsultasi Implementasi",
+      "description": "Dirancang secara presisi dengan arsitektur modern untuk menunjang pertumbuhan bisnis dari puluhan hingga puluhan ribu transaksi setiap hari.",
+      "consultCta": "Konsultasikan Kebutuhan Anda",
       "items": {
         "sync": {
           "badge": "Real-Time Sync",
           "title": "Sinkronisasi Multi-Cabang Instan",
-          "description": "Seluruh transaksi penjualan kasir, transfer persediaan gudang, dan rekonsiliasi keuangan antar cabang terhubung dalam satu basis data terpadu tanpa delay.",
-          "points": ["Stok inventaris terpusat", "Mendukung mode offline & online", "Rekonsiliasi transaksi otomatis"]
+          "description": "Seluruh transaksi kasir toko, mutasi persediaan gudang cabang, dan rekonsiliasi keuangan terhubung dalam satu basis data terpadu tanpa keterlambatan data.",
+          "points": [
+            "Manajemen stok persediaan terpusat real-time",
+            "Mendukung moda kasir offline-first tanpa hambatan",
+            "Rekonsiliasi transaksi penjualan otomatis"
+          ]
         },
         "security": {
           "badge": "Enterprise Security",
-          "title": "Keamanan Data & Role Permission",
-          "description": "Perlindungan data transaksi dan privasi karyawan dengan Role-Based Access Control (RBAC), enkripsi end-to-end 256-bit, dan pencatatan audit log komprehensif.",
-          "points": ["Hak akses bertingkat per jabatan", "Audit trail aktivitas pengguna", "Backup harian otomatis & terenkripsi"]
+          "title": "Keamanan Data & Kendali Hak Akses",
+          "description": "Perlindungan data transaksi dan privasi karyawan melalui Role-Based Access Control (RBAC) granular, enkripsi data 256-bit, dan pencatatan audit log komprehensif.",
+          "points": [
+            "Hak akses bertingkat per peran & jabatan",
+            "Audit trail lengkap untuk setiap aktivitas pengguna",
+            "Pencadangan data harian otomatis & terenkripsi"
+          ]
         },
         "uptime": {
           "badge": "Cloud Reliability",
           "title": "Infrastruktur Cloud High-Availability",
-          "description": "Arsitektur cloud modern dengan load balancing adaptif, auto-scaling saat jam sibuk, dan jaminan uptime 99.9% untuk kelancaran operasional bisnis tanpa henti.",
-          "points": ["SLA Uptime 99.9% bergaransi", "Proteksi DDoS & firewall pintar", "Node server redundansi ganda"]
+          "description": "Arsitektur cloud modern dengan load balancing adaptif, auto-scaling otomatis saat lonjakan jam sibuk, serta jaminan ketersediaan sistem 99.99%.",
+          "points": [
+            "SLA Uptime 99.99% bergaransi komitmen",
+            "Proteksi mitigasi DDoS & firewall cerdas",
+            "Node server redundansi ganda multi-zone"
+          ]
         },
         "support": {
           "badge": "Local Engineering",
-          "title": "Dukungan Teknis Lokal Solo Raya",
-          "description": "Dukungan langsung dari tim engineer Mitrasova di Karanganyar & Solo Raya. Kami siap mendampingi proses audit, implementasi, pelatihan tim, hingga kustomisasi.",
-          "points": ["Pendampingan setup & onboarding staf", "Respon cepat melalui hotline khusus", "Dukungan on-site & remote"]
+          "title": "Dukungan Teknis & Pendampingan Langsung",
+          "description": "Didukung langsung oleh tim software engineer Mitrasova di Solo Raya & Karanganyar. Kami mendampingi dari tahap audit, konfigurasi, migrasi data, pelatihan staf, hingga kustomisasi.",
+          "points": [
+            "Pendampingan setup, migrasi data & onboarding staf",
+            "Respon teknis cepat melalui saluran prioritas",
+            "Layanan dukungan on-site dan remote terpadu"
+          ]
         }
       }
     },
     "workflow": {
-      "badge": "Alur Implementasi Terstruktur",
+      "badge": "Metodologi Implementasi Terukur",
       "title": "Bagaimana Kami Mentransformasi",
       "titleGradient": "Operasional Bisnis Anda",
-      "description": "Empat tahapan implementasi yang terukur dan terencana untuk memastikan transisi sistem berlangsung mulus tanpa mengganggu aktivitas bisnis.",
-      "resultLabel": "Hasil: ",
+      "description": "Empat tahapan implementasi yang terencana dan terstruktur untuk memastikan transisi sistem berjalan lancar tanpa mengganggu aktivitas bisnis harian.",
+      "resultLabel": "Capaian: ",
       "prevStep": "Tahap Sebelumnya",
       "nextStep": "Tahap Selanjutnya",
       "stepOf": "dari",
-      "consultNow": "Mulai Konsultasi Tahap Ini",
-      "keyActivitiesTitle": "Aktivitas Kunci Tahap",
-      "executionAssurance": "Standar eksekusi profesional & pendampingan teknis langsung",
+      "consultNow": "Konsultasikan Tahap Ini",
+      "keyActivitiesTitle": "Aktivitas Kunci Pelaksanaan",
+      "executionAssurance": "Standar eksekusi profesional & pendampingan teknis langsung dari engineer berpengalaman",
       "steps": {
         "step1": {
           "step": "01",
-          "phase": "Tahap 1: Discovery",
-          "title": "Audit & Konsultasi Kebutuhan",
-          "description": "Kami membedah alur operasional kasir, sistem absensi & payroll, atau arsitektur custom software yang paling relevan dengan skala bisnis Anda.",
-          "deliverable": "Blueprint Sistem & Analisis Kebutuhan",
+          "phase": "Tahap 1: Discovery & Audit",
+          "title": "Audit Alur Kerja & Konsultasi Kebutuhan",
+          "description": "Kami menganalisis secara mendalam alur kasir, skema konsinyasi, aturan penggajian & absensi, atau spesifikasi custom software yang paling relevan dengan model bisnis Anda.",
+          "deliverable": "Blueprint Sistem & Dokumen Spesifikasi Kebutuhan",
           "highlights": [
-            "Audit alur transaksi kasir & shift harian",
+            "Audit alur transaksi kasir & pergantian shift harian",
             "Analisis skema konsinyasi & bagi hasil supplier",
-            "Pemetaan arsitektur server & integrasi hardware"
+            "Pemetaan topologi infrastruktur server & integrasi hardware"
           ]
         },
         "step2": {
           "step": "02",
-          "phase": "Tahap 2: Konfigurasi",
-          "title": "Penyesuaian & Integrasi Sistem",
-          "description": "Penyusunan basis data terpusat, pengujian hardware printer & scanner kasir, pengaturan shift kerja, serta konfigurasi hak akses pengguna.",
-          "deliverable": "Sistem Terkonfigurasi & Siap Uji",
+          "phase": "Tahap 2: Konfigurasi & Integrasi",
+          "title": "Penyesuaian Sistem & Integrasi Hardware",
+          "description": "Penyusunan basis data terpusat, pengujian hardware printer kasir & scanner barcode, konfigurasi rumus pajak payroll, serta penataan matriks hak akses.",
+          "deliverable": "Sistem Terkonfigurasi & Siap Uji Coba",
           "highlights": [
-            "Pengujian printer thermal Bluetooth & LAN ESC/POS",
-            "Konfigurasi akun general ledger & bagan akun (COA)",
-            "Setup hak akses peran kasir, admin, & supervisor"
+            "Pengujian kompatibilitas printer thermal Bluetooth & LAN ESC/POS",
+            "Konfigurasi bagan akun (COA) & jurnal akuntansi otomatis",
+            "Pengaturan hak akses bertingkat untuk kasir, admin, & supervisor"
           ]
         },
         "step3": {
           "step": "03",
-          "phase": "Tahap 3: Onboarding",
-          "title": "Migrasi Data & Pelatihan Staf",
-          "description": "Pemindahan aman master data produk, harga, dan profil karyawan ke dalam sistem, disertai sesi pelatihan interaktif hingga tim Anda mahir.",
-          "deliverable": "Master Data Rapi & Tim Terlatih",
+          "phase": "Tahap 3: Migrasi & Onboarding",
+          "title": "Migrasi Master Data & Pelatihan Tim",
+          "description": "Pemindahan master data produk, harga, supplier, dan profil karyawan secara aman ke dalam sistem, disertai simulasi transaksi dan pelatihan interaktif hingga tim Anda mandiri.",
+          "deliverable": "Master Data Rapi & Tim Operasional Siap Mandiri",
           "highlights": [
-            "Import master data produk, harga, & supplier",
-            "Simulasi transaksi kasir offline & rekonsiliasi",
-            "Pelatihan interaktif staf hingga operasional mandiri"
+            "Import aman data katalog produk, harga, & database supplier",
+            "Simulasi transaksi kasir offline & rekonsiliasi tutup kasir",
+            "Sesi pelatihan langsung bagi staf hingga memahami seluruh modul"
           ]
         },
         "step4": {
           "step": "04",
-          "phase": "Tahap 4: Go-Live",
-          "title": "Peluncuran & Monitoring 24/7",
-          "description": "Sistem resmi beroperasi melayani transaksi bisnis Anda. Didukung pemantauan uptime server berkala, backup harian otomatis, dan tim support responsif.",
-          "deliverable": "Sistem Live & Jaminan SLA 99.9%",
+          "phase": "Tahap 4: Go-Live & SLA",
+          "title": "Peluncuran Resmi & Pemantauan Proaktif",
+          "description": "Sistem resmi melayani operasional bisnis Anda. Didukung pemantauan uptime server berkala, pencadangan harian otomatis, dan respon cepat tim teknis.",
+          "deliverable": "Operasional Berjalan Lancar dengan Garansi SLA 99.99%",
           "highlights": [
-            "Peluncuran sistem resmi melayani pelanggan",
-            "Monitoring kesehatan server & auto-sync data",
-            "Hotline teknis prioritas & garansi SLA 99.9%"
+            "Peluncuran sistem melayani transaksi pelanggan secara live",
+            "Pemantauan performa server & sinkronisasi data berkala",
+            "Saluran bantuan teknis prioritas & pemeliharaan berkala"
           ]
         }
       }
@@ -175,248 +191,296 @@
   },
   "services": {
     "overview": {
-      "badge": "Enterprise Ecosystem",
-      "title": "Ekosistem Produk & Solusi",
+      "badge": "Ekosistem Produk & Rekayasa",
+      "title": "Ekosistem Solusi Software",
       "titleGradient": "Mitrasova Digital",
-      "description": "Solusi perangkat lunak lengkap dan terintegrasi untuk mendigitalkan seluruh lini operasi bisnis Anda.",
-      "consultSolution": "Jadwalkan Konsultasi",
-      "specsTitle": "Spesifikasi & Kapabilitas",
+      "description": "Rangkaian produk software berstandar enterprise yang dirancang untuk mendigitalkan dan mengoptimalkan seluruh lini operasional bisnis Anda.",
+      "consultSolution": "Jadwalkan Konsultasi Teknis",
+      "specsTitle": "Spesifikasi & Kapabilitas Arsitektur",
       "prodReady": "PROD READY",
-      "slaNote": "Dukungan SLA 99.9% & Setup Implementasi Terpadu"
+      "slaNote": "Garansi SLA Uptime 99.99% & Pendampingan Implementasi Menyeluruh"
     },
     "detail": {
-      "backToServices": "Kembali ke Produk & Solusi",
-      "keyFeatures": "Fitur Utama & Keunggulan",
-      "keyFeaturesDesc": "Modul dan kapabilitas teknologi yang dirancang untuk efisiensi maksimal bisnis Anda.",
-      "faqTitle": "Pertanyaan Umum (FAQ)",
-      "faqDesc": "Informasi teknis dan operasional yang sering ditanyakan seputar layanan ini."
+      "backToServices": "Kembali ke Katalog Produk & Solusi",
+      "keyFeatures": "Fitur Utama & Keunggulan Arsitektur",
+      "keyFeaturesDesc": "Modul dan kapabilitas teknologi yang dikembangkan untuk menghasilkan efisiensi maksimal bagi operasional bisnis Anda.",
+      "faqTitle": "Pertanyaan yang Sering Diajukan (FAQ)",
+      "faqDesc": "Informasi teknis, implementasi, dan operasional harian seputar solusi ini."
     },
     "items": {
       "mitrasova-pos": {
         "title": "Mitrasova POS",
         "heroTagline": "Kasir Offline-First, Konsinyasi & Akuntansi Terpadu",
-        "summary": "Sistem Kasir Offline Mode dengan Manajemen Konsinyasi & Bagi Hasil Supplier, Stok Multi-Cabang, serta Akuntansi Neraca & General Ledger.",
-        "description": "Mitrasova POS adalah solusi perangkat lunak kasir pintar generasi terbaru. Didesain untuk operasional ritel & grosir dengan dukungan mode offline penuh, pencatatan barang konsinyasi & bagi komisi supplier, sinkronisasi stok multi-cabang, serta sistem akuntansi terintegrasi (neraca, laba rugi, dan general ledger).",
-        "category": "SaaS POS & Accounting",
+        "summary": "Aplikasi Kasir Andal Berbasis Offline-First dengan Manajemen Konsinyasi Supplier, Sinkronisasi Stok Multi-Cabang, dan Jurnal Akuntansi Otomatis.",
+        "description": "Mitrasova POS adalah solusi software kasir pintar generasi modern yang dirancang khusus untuk ritel, grosir, dan usaha multi-cabang. Dibekali arsitektur Offline-First yang menjamin kasir tetap melayani tanpa jeda saat internet terputus, manajemen barang titipan (konsinyasi) lengkap dengan bagi hasil otomatis, sinkronisasi stok lintas cabang, serta modul akuntansi komprehensif (neraca saldo, laba rugi, dan buku besar).",
+        "category": "SaaS POS & Akuntansi",
         "badge": "Offline POS & Konsinyasi",
         "blueprint": {
-          "title": "Kasir Offline & Akuntansi",
-          "badge": "Live Auto-Sync",
-          "m1Label": "Moda Transaksi",
+          "title": "Kasir Offline & Akuntansi Terpadu",
+          "badge": "Sinkronisasi Otomatis Real-time",
+          "m1Label": "Moda Transaksi Kasir",
           "m1Val": "Offline-First",
           "m1Sub": "0ms Kasir Delay",
           "m2Label": "Konsinyasi Supplier",
           "m2Val": "Bagi Hasil Otomatis",
           "m2Sub": "Rekap Faktur Instan",
           "f1Label": "Modul Neraca Saldo & General Ledger:",
-          "f1Val": "Tersinkron Real-time",
+          "f1Val": "Tersinkron Real-time Otomatis",
           "f2Label": "Dukungan Cetak Struk:",
-          "f2Val": "Bluetooth & LAN ESC/POS"
+          "f2Val": "Bluetooth & LAN Thermal ESC/POS"
         },
         "specs": [
-          { "label": "Mode Operasional", "value": "Full Offline-First (0ms Delay)" },
-          { "label": "Manajemen Konsinyasi", "value": "Bagi Hasil & Retur Supplier" },
-          { "label": "Modul Akuntansi", "value": "Neraca, General Ledger, Laba Rugi" },
-          { "label": "Dukungan Hardware", "value": "Thermal ESC/POS Bluetooth & LAN" }
+          {
+            "label": "Moda Operasional Kasir",
+            "value": "Full Offline-First (0ms Delay)"
+          },
+          {
+            "label": "Manajemen Konsinyasi",
+            "value": "Bagi Hasil & Retur Supplier Otomatis"
+          },
+          {
+            "label": "Modul Akuntansi",
+            "value": "Neraca Saldo, General Ledger, Laba Rugi"
+          },
+          {
+            "label": "Kompatibilitas Hardware",
+            "value": "Thermal ESC/POS Bluetooth & LAN"
+          }
         ],
         "features": [
           {
-            "title": "Mode Kasir Offline-First & Auto-Sync",
-            "description": "Kasir tetap dapat memproses transaksi penjualan tanpa hambatan saat koneksi internet terputus, dan data otomatis tersinkron saat kembali online."
+            "title": "Moda Kasir Offline-First & Auto-Sync",
+            "description": "Kasir tetap dapat memproses ribuan transaksi penjualan tanpa hambatan saat koneksi internet terputus. Data transaksi akan otomatis tersinkronisasi ke server pusat saat internet kembali terhubung."
           },
           {
-            "title": "Manajemen Konsinyasi & Bagi Hasil",
-            "description": "Kelola penerimaan barang titipan/konsinyasi, perhitungan komisi otomatis, pemantauan retur, dan rekap pembayaran berkala ke supplier."
+            "title": "Manajemen Konsinyasi & Bagi Hasil Supplier",
+            "description": "Kelola penerimaan barang titipan, perhitungan bagi hasil komisi otomatis, pemantauan barang retur, serta penerbitan rekap faktur pembayaran berkala untuk supplier dengan akurat."
           },
           {
-            "title": "Modul Akuntansi & General Ledger",
-            "description": "Pencatatan jurnal transaksi otomatis, neraca saldo, buku besar (General Ledger), laporan laba rugi, dan analisis margin keuntungan."
+            "title": "Modul Akuntansi Terpadu & General Ledger",
+            "description": "Pencatatan jurnal transaksi otomatis, neraca saldo, buku besar (General Ledger), laporan laba rugi berkala, serta analisis margin keuntungan per produk secara real-time."
           },
           {
-            "title": "Multi-Outlet Stock Sync & Cetak Struk",
-            "description": "Pantau persediaan di puluhan cabang, transfer stok gudang, cetak printer thermal Bluetooth/LAN ESC/POS, dan manajemen shift kasir."
+            "title": "Sinkronisasi Stok Multi-Cabang & Cetak Struk Cepat",
+            "description": "Pantau pergerakan stok di seluruh cabang toko dan gudang, lakukan transfer persediaan antar cabang, dukung printer thermal Bluetooth/LAN ESC/POS, serta kelola shift kasir secara tertib."
           }
         ],
         "faqs": [
           {
-            "question": "Apakah Mitrasova POS mendukung manajemen barang konsinyasi / titipan?",
-            "answer": "Ya! Mitrasova POS memiliki modul konsinyasi terpadu untuk mencatat master data supplier konsinyasi, menghitung bagi hasil komisi otomatis, sisa stok titipan, dan rekap pembayaran faktur konsinyasi."
+            "question": "Apakah Mitrasova POS mendukung manajemen barang konsinyasi atau titip jual?",
+            "answer": "Ya! Mitrasova POS dilengkapi modul konsinyasi terpadu untuk mencatat data supplier konsinyasi, menghitung pembagian komisi otomatis saat barang terjual, melacak sisa stok titipan, dan mencetak rekap faktur pembayaran supplier."
           },
           {
-            "question": "Apakah Mitrasova POS bisa berjalan tanpa koneksi internet (Offline Mode)?",
-            "answer": "Ya! Mitrasova POS dirancang dengan arsitektur Offline-First. Anda tetap bisa memproses transaksi kasir saat internet padam, dan data transaksi akan otomatis tersinkronisasi ke server pusat saat jaringan pulih."
+            "question": "Apakah kasir tetap bisa melayani transaksi saat jaringan internet padam (Offline Mode)?",
+            "answer": "Ya! Mitrasova POS dibangun dengan fondasi arsitektur Offline-First. Kasir dapat terus melayani transaksi belanja tanpa ketergantungan koneksi internet. Ketika koneksi pulih, seluruh data transaksi akan langsung disinkronkan ke server pusat tanpa risiko duplikasi data."
           },
           {
-            "question": "Laporan keuangan apa saja yang disediakan oleh modul akuntansi Mitrasova POS?",
-            "answer": "Mitrasova POS menyediakan laporan Neraca Keuangan, Laporan Laba Rugi (P&L), Buku Besar (General Ledger), Jurnal Otomatis Penjualan & Pembelian, serta Laporan Arus Kas."
+            "question": "Laporan keuangan apa saja yang dihasilkan oleh modul akuntansi Mitrasova POS?",
+            "answer": "Mitrasova POS menyediakan laporan keuangan lengkap meliputi Neraca Saldo, Laporan Laba Rugi (P&L), Buku Besar (General Ledger), Jurnal Otomatis Penjualan & Pembelian, serta Laporan Arus Kas yang siap dipakai untuk audit keuangan."
           }
         ]
       },
       "mitrasova-daya": {
         "title": "Mitrasova Daya",
         "heroTagline": "Platform HRIS, Payroll, & Presensi Geolocation Karyawan",
-        "summary": "Otomatisasi Hitung Gaji/Payroll, PPh 21, BPJS, Absensi Face-Recognition, & Manajemen Cuti Karyawan Enterprise.",
-        "description": "Mitrasova Daya memberdayakan departemen HR dan pimpinan perusahaan dalam mengelola aset terpenting: Sumber Daya Manusia. Kelola jadwal shift, kalkulasi slip gaji instan dengan pajak PPh 21 TER terbaru, klaim reimbursement, dan evaluasi kinerja karyawan secara objektif.",
-        "category": "HRIS & Workforce",
+        "summary": "Platform Manajemen SDM Terpadu: Otomatisasi Payroll & Pajak PPh 21 TER, Integrasi BPJS, Presensi Geolocation Anti-Fake GPS, dan Employee Self-Service.",
+        "description": "Mitrasova Daya memberdayakan departemen HR dan pimpinan perusahaan dalam mengelola aset terpenting: Sumber Daya Manusia. Kelola jadwal shift kerja yang kompleks, kalkulasi slip gaji instan sesuai skema pajak PPh 21 TER terbaru dan BPJS, pengajuan cuti serta reimbursement via aplikasi mobile, dan evaluasi performa kinerja karyawan secara transparan.",
+        "category": "HRIS & Manajemen SDM",
         "badge": "HRIS & Payroll Enterprise",
         "blueprint": {
-          "title": "HRIS & Otomatisasi Payroll",
-          "badge": "TER PPh 21 2026",
+          "title": "HRIS & Otomatisasi Penggajian",
+          "badge": "Kepatuhan Pajak PPh 21 TER 2026",
           "m1Label": "Kalkulasi Payroll",
-          "m1Val": "Otomatisasi PPh 21",
-          "m1Sub": "BPJS Kes & TK Terpadu",
-          "m2Label": "Presensi Geolocation",
-          "m2Val": "Anti-Fake GPS",
-          "m2Sub": "Verifikasi Wajah",
-          "f1Label": "Penerbitan Slip Gaji Digital:",
-          "f1Val": "1-Click PDF WhatsApp & Email",
+          "m1Val": "Otomatisasi PPh 21 TER",
+          "m1Sub": "BPJS Kesehatan & Ketenagakerjaan",
+          "m2Label": "Presensi Karyawan",
+          "m2Val": "Geolocation & Face Check",
+          "m2Sub": "Proteksi Anti-Fake GPS",
+          "f1Label": "Distribusi Slip Gaji Digital:",
+          "f1Val": "1-Klik PDF via WhatsApp & Email",
           "f2Label": "Laporan Rekap Bulanan:",
-          "f2Val": "Siap Export Format Bank CSV"
+          "f2Val": "Format Ekspor Siap Kirim Bank CSV"
         },
         "specs": [
-          { "label": "Aturan Pajak Gaji", "value": "Pajak PPh 21 TER 2026 Otomatis" },
-          { "label": "Verifikasi Presensi", "value": "Geolocation & Anti-Fake GPS" },
-          { "label": "Integrasi Jaminan", "value": "BPJS Kesehatan & Ketenagakerjaan" },
-          { "label": "Distribusi Slip Gaji", "value": "PDF Instan WhatsApp & Email" }
+          {
+            "label": "Perhitungan Pajak Gaji",
+            "value": "Sesuai Regulasi PPh 21 TER Terbaru Otomatis"
+          },
+          {
+            "label": "Verifikasi Presensi",
+            "value": "Geolocation Geofence & Liveness Face Check"
+          },
+          {
+            "label": "Integrasi Jaminan Sosial",
+            "value": "Kalkulasi BPJS Kesehatan & Ketenagakerjaan"
+          },
+          {
+            "label": "Distribusi Slip Gaji",
+            "value": "Enkripsi PDF Otomatis via WhatsApp & Email"
+          }
         ],
         "features": [
           {
-            "title": "Kalkulasi Payroll & PPh 21 Otomatis",
-            "description": "Hitung ribuan gaji karyawan lengkap dengan potongan PPh 21 TER, BPJS Kesehatan, BPJS Ketenagakerjaan hanya dengan 1 klik."
+            "title": "Kalkulasi Payroll & Pajak PPh 21 TER Otomatis",
+            "description": "Hitung ribuan gaji karyawan lengkap dengan formula potongan PPh 21 skema TER terkini, iuran BPJS Kesehatan, BPJS Ketenagakerjaan, tunjangan, dan lembur hanya dalam hitungan detik."
           },
           {
-            "title": "Presensi Mobile + GPS & Liveness Face Check",
-            "description": "Cegah kecurangan titip absen dengan verifikasi wajah liveness detection dan radius geofencing lokasi kantor."
+            "title": "Presensi Mobile dengan Geolocation & Liveness Check",
+            "description": "Cegah kecurangan titip absensi dengan verifikasi wajah liveness detection berbasis AI dan radius lokasi kerja (geofencing) yang akurat pada smartphone karyawan."
           },
           {
-            "title": "Self-Service Employee Portal (ESS)",
-            "description": "Karyawan dapat mengajukan izin, cuti, lembur, dan mengunduh slip gaji terenkripsi langsung dari smartphone."
+            "title": "Portal Mandiri Karyawan (Employee Self-Service)",
+            "description": "Karyawan dapat mengajukan izin sakit, cuti tahunan, lembur, klaim reimbursement pengobatan, serta mengunduh dokumen slip gaji terenkripsi langsung dari aplikasi mobile."
           },
           {
-            "title": "Shift & Performance Review Engine",
-            "description": "Pengaturan jadwal shift fleksibel untuk ritel/pabrik dan matriks penilaian KPI bulanan."
+            "title": "Manajemen Shift Fleksibel & Evaluasi Kinerja (KPI)",
+            "description": "Pengaturan jadwal kerja shift bergilir yang fleksibel untuk ritel, perhotelan, atau manufaktur, disertai rekapitulasi penilaian indikator kinerja utama (KPI) karyawan secara berkala."
           }
         ],
         "faqs": [
           {
-            "question": "Apakah kalkulasi PPh 21 sudah memperhitungkan skema TER 2024+?",
-            "answer": "Tentu. Rumus perhitungan PPh 21 di Mitrasova Daya selalu diperbarui sesuai dengan regulasi perpajakan Kementerian Keuangan terbaru."
+            "question": "Apakah kalkulasi PPh 21 sudah mengikuti peraturan Tarif Efektif Rata-rata (TER) terbaru?",
+            "answer": "Ya! Algoritma perhitungan pajak gaji di Mitrasova Daya senantiasa diperbarui sesuai peraturan perpajakan Kementerian Keuangan Republik Indonesia terkini, sehingga menjamin kepatuhan pajak perusahaan Anda."
           },
           {
-            "question": "Berapa kapasitas maksimal karyawan yang didukung?",
-            "answer": "Mitrasova Daya teruji mampu menangani hingga 50.000+ karyawan aktif dengan waktu pembuatan slip gaji massal di bawah 2 menit."
+            "question": "Berapa kapasitas jumlah karyawan yang dapat dikelola Mitrasova Daya?",
+            "answer": "Mitrasova Daya dirancang dengan arsitektur cloud teruji yang mampu memproses data lebih dari 50.000 karyawan aktif dengan waktu pembuatan slip gaji massal di bawah 2 menit."
           }
         ]
       },
       "mitrasova-nexus": {
         "title": "Mitrasova Nexus",
         "heroTagline": "High-Availability Cloud Hosting, Managed VPS & Security",
-        "summary": "Infrastruktur Cloud Hosting Kinerja Tinggi dengan 99.99% Uptime SLA, DDoS Protection, & Auto-Scaling Server.",
-        "description": "Mitrasova Nexus adalah layanan infrastruktur cloud server terkelola (*Managed Cloud Services*) yang dirancang untuk aplikasi mission-critical. Didukung oleh jaringan server Tier-4 lokal di Jakarta & Singapura dengan latency ultra-rendah dan proteksi lapisan keamanan bertingkat.",
-        "category": "Cloud Infrastructure",
+        "summary": "Layanan Managed Cloud Hosting Kinerja Tinggi dengan Jaminan 99.99% Uptime SLA, Mitigasi Anti-DDoS Cerdas, dan Arsitektur Auto-Scaling.",
+        "description": "Mitrasova Nexus adalah solusi infrastruktur cloud terkelola (Managed Cloud Services) yang didesain untuk aplikasi mission-critical perusahaan. Didukung jaringan data center Tier-4 berkeamanan tinggi di Jakarta & Singapura dengan latensi ultra-rendah, penyimpanan NVMe PCIe 4.0, proteksi perimeter keamanan berlapis, dan pemantauan engineer 24/7.",
+        "category": "Infrastruktur Cloud",
         "badge": "Tier-4 Managed Cloud",
         "blueprint": {
           "title": "Infrastruktur Cloud Enterprise",
-          "badge": "99.99% Uptime SLA",
-          "m1Label": "Waktu Respon Query",
+          "badge": "Garansi 99.99% Uptime SLA",
+          "m1Label": "Waktu Respon Query Server",
           "m1Val": "< 15ms Latensi",
-          "m1Sub": "NVMe PCIe 4.0 Storage",
+          "m1Sub": "Penyimpanan NVMe PCIe 4.0",
           "m2Label": "Perimeter Keamanan",
-          "m2Val": "DDoS Edge Firewall",
-          "m2Sub": "Backup Harian Otomatis",
-          "f1Label": "Database Mirroring & Failover:",
-          "f1Val": "Redundansi Multi-Region",
-          "f2Label": "Jaringan Data Center:",
+          "m2Val": "Firewall Mitigasi DDoS",
+          "m2Sub": "Pencadangan Harian Otomatis",
+          "f1Label": "Database Failover & Mirroring:",
+          "f1Val": "Redundansi Multi-Region Siaga",
+          "f2Label": "Lokasi Jaringan Data Center:",
           "f2Val": "Equinix SG1 & Tier-4 Jakarta"
         },
         "specs": [
-          { "label": "Jaminan Ketersediaan", "value": "99.99% Uptime SLA Guarantee" },
-          { "label": "Waktu Respon Query", "value": "< 15ms NVMe PCIe 4.0 Storage" },
-          { "label": "Keamanan Perimeter", "value": "DDoS Edge Filter & TLS 1.3" },
-          { "label": "Skema Pencadangan", "value": "Automated Daily Multi-Region" }
+          {
+            "label": "Komitmen Ketersediaan",
+            "value": "Jaminan Garansi 99.99% Uptime SLA"
+          },
+          {
+            "label": "Kecepatan Akses Storage",
+            "value": "NVMe PCIe 4.0 dengan Latensi <15ms"
+          },
+          {
+            "label": "Keamanan Perimeter",
+            "value": "Mitigasi DDoS Layer 3/4/7 & TLS 1.3"
+          },
+          {
+            "label": "Skema Pencadangan",
+            "value": "Pencadangan Otomatis Harian Multi-Region"
+          }
         ],
         "features": [
           {
-            "title": "99.99% Guaranteed Uptime SLA",
-            "description": "Arsitektur redundant multi-zone dengan garansi pengembalian dana jika terjadi insiden downtime."
+            "title": "Garansi Uptime SLA 99.99% Teruji",
+            "description": "Arsitektur cloud redundan multi-zone yang dirancang untuk menjaga aplikasi bisnis dan layanan web Anda tetap aktif tanpa henti sepanjang tahun."
           },
           {
-            "title": "Advanced Anti-DDoS Mitigation",
-            "description": "Perlindungan otomatis dari serangan DDoS layer 3, 4, dan 7 dengan kapasitas scrubbing center hingga 2 Tbps."
+            "title": "Proteksi Mitigasi Serangan DDoS Tingkat Lanjut",
+            "description": "Perlindungan otomatis dari ancaman serangan siber DDoS pada Layer 3, Layer 4, dan Layer 7 dengan scrubbing center berkapasitas mitigasi tinggi hingga 2 Tbps."
           },
           {
-            "title": "Automated Daily Cloud Snapshot Backup",
-            "description": "Backup terenkripsi setiap hari ke lokasi off-site cadangan dengan opsi Disaster Recovery Point (RPO/RTO) dalam menit."
+            "title": "Pencadangan Harian Otomatis & Disaster Recovery",
+            "description": "Pencadangan database dan file terenkripsi setiap hari ke lokasi cadangan off-site dengan target Recovery Point Objective (RPO) dan Recovery Time Objective (RTO) dalam hitungan menit."
           },
           {
-            "title": "Kubernetes & Auto-Scaling Ready",
-            "description": "Dukungan containerization Docker/K8s untuk menangani lonjakan trafik mendadak tanpa lag."
+            "title": "Siap Klaster Kontainer Kubernetes & Auto-Scaling",
+            "description": "Dukungan penuh untuk containerization Docker dan orkestrasi Kubernetes agar server dapat secara adaptif menambah kapasitas saat terjadi lonjakan trafik mendadak."
           }
         ],
         "faqs": [
           {
-            "question": "Di mana lokasi fisik data center Mitrasova Nexus?",
-            "answer": "Server kami berlokasi di Data Center Tier-4 Jakarta (Indonesia) dan Data Center Equinix SG1 (Singapura) untuk konektivitas IX teraman."
+            "question": "Di mana letak fisik data center yang digunakan Mitrasova Nexus?",
+            "answer": "Server Mitrasova Nexus bertempat di Data Center Tier-4 Jakarta (Indonesia) dan Fasilitas Data Center Equinix SG1 (Singapura) untuk memastikan jalur interkoneksi internet tercepat dan paling aman."
           },
           {
-            "question": "Apakah tim support teknis siaga 24 jam?",
-            "answer": "Ya, tim Cloud Engineer Mitrasova siaga 24/7/365 dengan waktu respon SLA kurang dari 15 menit."
+            "question": "Apakah tim insinyur teknis siaga melakukan pemantauan 24 jam?",
+            "answer": "Ya! Tim Network Operation Center (NOC) dan Cloud Engineer Mitrasova siaga selama 24 jam sehari, 7 hari seminggu, 365 hari setahun dengan komitmen waktu respon SLA prioritas."
           }
         ]
       },
       "mitrasova-labs": {
         "title": "Mitrasova Labs",
         "heroTagline": "Custom Software Engineering, Web & Mobile Development",
-        "summary": "Layanan Pengembangan Aplikasi Web Enterprise, Mobile Apps Native, Microservices, & Integrasi API Sistem Custom.",
-        "description": "Mitrasova Labs menghadirkan tim software architect dan senior developer untuk merealisasikan sistem kustom skala besar bagi perusahaan Anda. Dari arsitektur microservices modern, integrasi payment gateway, hingga aplikasi mobile iOS/Android khusus.",
-        "category": "Custom Engineering",
-        "badge": "Enterprise Engineering",
+        "summary": "Layanan Rekayasa Software Kustom: Pengembangan Aplikasi Web Enterprise, Mobile Apps Native, Arsitektur Microservices, dan Integrasi API ERP Legacy.",
+        "description": "Mitrasova Labs menghadirkan tim software architect dan senior engineer untuk merealisasikan solusi software kustom berskala besar bagi perusahaan Anda. Kami membangun arsitektur aplikasi modern yang scalable, integrasi payment gateway dan sistem ERP warisan (SAP/Oracle), hingga aplikasi mobile iOS & Android berperforma tinggi.",
+        "category": "Rekayasa Software Kustom",
+        "badge": "Rekayasa Enterprise Kustom",
         "blueprint": {
-          "title": "Rekayasa Kustom & API Gateway",
-          "badge": "Production-Grade",
+          "title": "Rekayasa Kustom & Gateway API",
+          "badge": "Kualitas Standar Produksi",
           "m1Label": "Tech Stack Modern",
           "m1Val": "Next.js & React 19",
-          "m1Sub": "RESTful & GraphQL API",
+          "m1Sub": "RESTful & GraphQL Gateway",
           "m2Label": "Aplikasi Web & Mobile",
-          "m2Val": "iOS, Android, & Web",
+          "m2Val": "Web, iOS, & Android",
           "m2Sub": "Arsitektur Skalabilitas Tinggi",
-          "f1Label": "Kode Terstruktur & Bersih:",
-          "f1Val": "Dokumentasi API Standar Swagger/OpenAPI",
-          "f2Label": "Jaminan Kualitas Kode:",
-          "f2Val": "Audit Keamanan & Automated Testing"
+          "f1Label": "Struktur Kode Bersih:",
+          "f1Val": "Dokumentasi Standar OpenAPI / Swagger",
+          "f2Label": "Jaminan Kualitas Software:",
+          "f2Val": "Audit Keamanan OWASP & Automated Testing"
         },
         "specs": [
-          { "label": "Teknologi Utama", "value": "Next.js 16, React 19, TypeScript" },
-          { "label": "Protokol Integrasi", "value": "RESTful API & GraphQL Gateway" },
-          { "label": "Multi-Platform", "value": "Native Web, iOS, & Android" },
-          { "label": "Standar Arsitektur", "value": "Clean Code, SOLID, Modular" }
+          {
+            "label": "Teknologi Utama",
+            "value": "Next.js 16, React 19, TypeScript, PostgreSQL"
+          },
+          {
+            "label": "Protokol Integrasi",
+            "value": "RESTful API, GraphQL Gateway, & Webhook"
+          },
+          {
+            "label": "Platform Sasaran",
+            "value": "Web Enterprise, Mobile Native iOS & Android"
+          },
+          {
+            "label": "Prinsip Arsitektur",
+            "value": "Clean Code, SOLID Principles, Modular Design"
+          }
         ],
         "features": [
           {
-            "title": "Modern Fullstack Architecture",
-            "description": "Pembangunan aplikasi menggunakan teknologi Next.js, Node.js/Go, React Native, PostgreSQL, & Cloud Native stack."
+            "title": "Arsitektur Fullstack Modern & Skalabilitas Tinggi",
+            "description": "Pembangunan sistem menggunakan ekosistem teknologi modern seperti Next.js, Node.js/Go, React Native, PostgreSQL, serta infrastruktur cloud-native yang siap berkembang seiring pertumbuhan bisnis Anda."
           },
           {
-            "title": "API & Legacy System Integration",
-            "description": "Menghubungkan sistem ERP lama (SAP, Oracle) dengan platform digital modern via RESTful/GraphQL API."
+            "title": "Integrasi Sistem ERP Legacy & Gateway API",
+            "description": "Menghubungkan sistem basis data legacy (seperti SAP, Oracle, atau database lokal) dengan portal aplikasi modern melalui arsitektur RESTful/GraphQL API yang aman dan teruji."
           },
           {
-            "title": "Code Security Audit & Penetration Testing",
-            "description": "Pengujian celah keamanan aplikasi standar OWASP Top 10 sebelum masa migrasi dan komersialisasi rilis."
+            "title": "Audit Keamanan Kode & Pengujian Penetrasi",
+            "description": "Pengujian celah keamanan aplikasi secara berkala sesuai standar OWASP Top 10 sebelum masa migrasi dan peluncuran produksi untuk melindungi data penting perusahaan."
           },
           {
-            "title": "Agile Development Sprint & SLA Support",
-            "description": "Transparansi progres mingguan dengan metode Scrum, dokumentasi API Swagger, serta garansi pemeliharaan."
+            "title": "Metode Pengembangan Agile Sprint & Garansi Pemeliharaan",
+            "description": "Transparansi laporan progres mingguan dengan metodologi Scrum, dokumentasi API Swagger yang lengkap, serta jaminan garansi pemeliharaan teknis pasca-serah terima."
           }
         ],
         "faqs": [
           {
-            "question": "Berapa lama estimasi pengerjaan proyek custom web/app di Mitrasova Labs?",
-            "answer": "Tergantung pada cakupan modul. Proyek MVP menengah berkisar 4–8 minggu, sedangkan sistem enterprise skala besar membutuhkan waktu 12–24 minggu dengan sprint bertahap."
+            "question": "Berapa lama estimasi waktu pengerjaan proyek custom software di Mitrasova Labs?",
+            "answer": "Waktu pengerjaan disesuaikan dengan kompleksitas modul sistem. Proyek aplikasi MVP skala menengah umumnya membutuhkan 4–8 minggu, sedangkan sistem enterprise terintegrasi berkisar 12–24 minggu dengan sprint bertahap."
           },
           {
-            "question": "Apakah hak cipta kode sumber (Source Code) sepenuhnya menjadi milik klien?",
-            "answer": "Ya 100%. Setelah pengerjaan selesai dan serah terima, seluruh Intellectual Property (IP) dan Source Code menjadi hak milik klien."
+            "question": "Apakah hak cipta kode sumber (Source Code) sepenuhnya menjadi milik perusahaan klien?",
+            "answer": "Ya 100%. Setelah proyek selesai dan dilakukan serah terima resmi, seluruh Hak Kekayaan Intelektual (IP) dan Source Code menjadi hak milik penuh perusahaan Anda."
           }
         ]
       }
@@ -424,10 +488,10 @@
   },
   "consultation": {
     "header": {
-      "badge": "Konsultasi Solusi Bisnis",
+      "badge": "KONSULTASI SOLUSI & ARSITEKTUR",
       "title": "Diskusikan Transformasi Digital",
-      "titleGradient": "Bersama Tim Ahli Kami",
-      "description": "Jadwalkan sesi konsultasi gratis bersama Solution Architect Mitrasova. Kami siap membantu merancang arsitektur sistem yang tepat untuk bisnis Anda."
+      "titleGradient": "Bersama Tim Ahli Mitrasova",
+      "description": "Jadwalkan sesi diskusi teknis gratis bersama Solution Architect Mitrasova. Kami siap membantu membedah tantangan operasional dan merancang arsitektur sistem yang tepat untuk bisnis Anda."
     },
     "form": {
       "fullName": "Nama Lengkap",
@@ -438,214 +502,263 @@
       "emailPlaceholder": "cth. name@company.com",
       "phone": "Nomor WhatsApp / Telepon",
       "phonePlaceholder": "cth. 081234567890",
-      "servicesLabel": "Pilih Layanan / Produk Yang Diminati (Bisa lebih dari 1)",
-      "message": "Deskripsi Kebutuhan atau Catatan",
-      "messagePlaceholder": "Ceritakan mengenai kendala operasional saat ini atau fitur khusus yang Anda butuhkan...",
+      "servicesLabel": "Pilih Produk / Layanan yang Diminati (Dapat memilih lebih dari 1)",
+      "message": "Deskripsi Kebutuhan atau Catatan Teknis",
+      "messagePlaceholder": "Ceritakan mengenai kendala operasional saat ini, kebutuhan modul kasir/payroll/server, atau target waktu implementasi...",
       "submitBtn": "Kirim Jadwal Konsultasi",
       "submittingBtn": "Mengirim Permintaan...",
       "successTitle": "Permintaan Konsultasi Berhasil Terkirim!",
-      "successDesc": "Terima kasih telah menghubungi Mitrasova. Tim Solution Architect kami akan menghubungi Anda melalui WhatsApp / Email dalam 1x24 jam."
+      "successDesc": "Terima kasih telah menghubungi Mitrasova. Tim Solution Architect kami akan menghubungi Anda melalui WhatsApp atau Email dalam waktu maksimal 1x24 jam kerja."
     },
     "infoCard": {
       "cardTitle": "Konsultasi Solusi Enterprise",
-      "cardDesc": "Diskusikan kebutuhan arsitektur sistem, POS Kasir, HRIS, custom web & mobile app, atau deployment cloud bersama tim engineer Mitrasova.",
+      "cardDesc": "Diskusikan kebutuhan POS kasir offline, otomatisasi HRIS & payroll, custom web & mobile app, atau arsitektur managed cloud bersama tim engineer Mitrasova.",
       "officeLocation": "Lokasi Kantor",
       "fastResponse": "Respon Cepat 1x24 Jam",
-      "fastResponseDesc": "Tim kami akan mengkaji kebutuhan Anda dan menjadwalkan sesi demo interaktif.",
+      "fastResponseDesc": "Tim engineer kami akan menganalisis kebutuhan Anda dan menyiapkan sesi demonstrasi sistem yang interaktif.",
       "officialEmail": "Email Resmi",
-      "ndaGuarantee": "Garansi Kerahasiaan (NDA)",
-      "ndaDesc": "Setiap data proses bisnis dan dokumen spesifikasi dilindungi Non-Disclosure Agreement standar industri."
+      "ndaGuarantee": "Garansi Kerahasiaan Dokumen (NDA)",
+      "ndaDesc": "Seluruh data proses bisnis dan dokumen spesifikasi dilindungi Non-Disclosure Agreement standar industri."
     }
   },
   "blog": {
     "hub": {
-      "badge": "Mitrasova Publication & Media",
-      "title": "Blog, Berita & Wawasan",
-      "titleGradient": "Teknologi Digital",
-      "description": "Kumpulan artikel tren rekayasa perangkat lunak, kabar rilis produk, wawasan bisnis retail & HR, serta agenda event teknologi Mitrasova.",
-      "searchPlaceholder": "Cari artikel, topik, atau kata kunci...",
-      "allTab": "Semua Publikasi",
-      "articlesTab": "Wawasan & Blog",
-      "newsTab": "Berita & Media",
-      "eventsTab": "Events & Agenda",
-      "updatesTab": "Rilis Produk",
-      "featuredTag": "ARTIKEL UNGGULAN",
-      "readArticle": "Baca Selengkapnya",
-      "emptyTitle": "Tidak ada artikel ditemukan",
-      "emptyDesc": "Coba cari dengan kata kunci atau filter kategori yang lain."
+      "badge": "BLOG & JURNAL",
+      "title": "Eksplorasi Teknologi & Produk",
+      "titleGradient": "Cerita Rekayasa Sistem",
+      "subtitle": "Kajian mendalam seputar arsitektur software enterprise, optimasi ritel & payroll modern, hingga catatan rilis dan perspektif praktisi teknologi di Mitrasova.",
+      "description": "Kajian mendalam seputar arsitektur software enterprise, optimasi ritel & payroll modern, hingga catatan rilis dan perspektif praktisi teknologi di Mitrasova.",
+      "searchPlaceholder": "Cari topik, teknologi, studi kasus, atau arsitektur...",
+      "allTab": "Semua Tulisan",
+      "articlesTab": "Blog & Panduan",
+      "newsTab": "Kabar & Siaran Pers",
+      "eventsTab": "Agenda & Meetup",
+      "updatesTab": "Catatan Rilis",
+      "featuredTag": "ARTIKEL UNGGULAN PILIHAN",
+      "readArticle": "Baca Artikel Lengkap",
+      "emptyTitle": "Belum Ada Tulisan yang Sesuai",
+      "emptyDesc": "Coba gunakan kata kunci pencarian yang berbeda atau pilih kategori topik lainnya."
     },
     "card": {
-      "readAction": "Baca",
-      "eventAction": "Detail Event",
+      "readAction": "Baca Selengkapnya",
+      "eventAction": "Lihat Agenda & RSVP",
       "types": {
-        "article": "Wawasan & Blog",
-        "news": "Berita & Media",
-        "event": "Event & Webinar",
-        "release": "Rilis Pembaruan"
+        "article": "Blog & Panduan",
+        "news": "Kabar & Berita",
+        "event": "Agenda & Webinar",
+        "release": "Catatan Rilis"
       }
     },
     "article": {
       "author": "Penulis",
-      "updatedAt": "Dipublikasikan",
+      "updatedAt": "Dipublikasikan pada",
       "readTime": "Waktu Baca",
       "share": "Bagikan",
-      "tableOfContents": "Daftar Isi",
-      "relatedTitle": "Rekomendasi Publikasi",
-      "backToBlog": "Kembali ke Blog Hub",
+      "tableOfContents": "Daftar Isi Pembahasan",
+      "relatedTitle": "Rekomendasi Bacaan Terkait",
+      "backToBlog": "Kembali ke Indeks Publikasi",
       "eventInfoTitle": "Detail Pelaksanaan Acara",
       "dateLabel": "Tanggal & Waktu",
-      "locationLabel": "Lokasi Acara",
+      "locationLabel": "Lokasi / Platform",
       "registerBtn": "Daftar Acara Sekarang",
-      "relatedTags": "Topik Terkait:",
-      "likeArticle": "Suka artikel ini?",
-      "shareWithTeam": "Bagikan wawasan ini kepada rekan kerja dan tim Anda.",
-      "consultBadge": "KONSULTASI SOLUSI MITRASOVA",
-      "consultTitle": "Ingin Mengimplementasikan Solusi Serupa di Bisnis Anda?",
-      "consultDesc": "Tim Solution Architect Mitrasova siap mendiskusikan arsitektur POS offline, payroll TER, atau cloud infrastructure perusahaan Anda.",
-      "consultBtn": "Jadwalkan Konsultasi Gratis"
+      "relatedTags": "Topik Pembahasan:",
+      "likeArticle": "Menemukan Artikel Bermanfaat?",
+      "shareWithTeam": "Bagikan kajian dan panduan ini kepada tim atau rekan profesional Anda.",
+      "consultBadge": "KONSULTASI SOLUSI & ARSITEKTUR",
+      "consultTitle": "Ingin Mengimplementasikan Arsitektur Serupa di Perusahaan Anda?",
+      "consultDesc": "Diskusikan implementasi POS offline-first, otomatisasi payroll TER, atau skalabilitas cloud server bersama tim Solution Architect Mitrasova.",
+      "consultBtn": "Konsultasi Gratis dengan Architect"
     },
     "eventBanner": {
-      "badge": "AGENDA ACARA & TEMU TEKNOLOGI",
-      "title": "Pendaftaran & Partisipasi Event",
-      "timeLabel": "Waktu Pelaksanaan",
-      "locationLabel": "Lokasi Acara",
-      "actionBtn": "Registrasi / Hadiri Acara"
+      "badge": "AGENDA & TEMU KOMUNITAS TEKNOLOGI",
+      "title": "Partisipasi & Pendaftaran Acara",
+      "timeLabel": "Jadwal Pelaksanaan",
+      "locationLabel": "Lokasi / Platform",
+      "actionBtn": "Amankan Kursi / Daftar Sekarang"
     },
     "share": {
-      "shareModalTitle": "Bagikan Publikasi",
-      "shareModalDesc": "Pilih media untuk menyebarkan informasi ini",
+      "shareModalTitle": "Bagikan Artikel Ini",
+      "shareModalDesc": "Pilih platform untuk berbagi informasi kepada tim dan komunitas profesional Anda",
       "copyLink": "Salin Tautan",
-      "copied": "Tersalin!",
+      "copied": "Tautan Tersalin!",
       "sendEmail": "Kirim via Email",
-      "copyFullUrl": "Salin URL Lengkap:"
+      "copyFullUrl": "URL Artikel:"
     }
   },
   "product": {
     "badge": "Enterprise Solution Showcase",
     "overviewTitle": "Gambaran Umum & Modul Fitur",
-    "capabilitiesTitle": "Kapabilitas & Arsitektur",
-    "useCasesTitle": "Cocok Untuk Skala Bisnis Anda",
+    "capabilitiesTitle": "Kapabilitas & Arsitektur Sistem",
+    "useCasesTitle": "Penerapan Nyata di Berbagai Skala Bisnis",
     "faqTitle": "Pertanyaan yang Sering Diajukan",
     "ctaTitle": "Siap Mentransformasi Operasional Bisnis Anda?",
-    "ctaDesc": "Jadwalkan demo interaktif bersama Solution Architect Mitrasova untuk melihat sistem berjalan langsung.",
+    "ctaDesc": "Jadwalkan sesi demonstrasi langsung bersama Solution Architect Mitrasova untuk melihat sistem beroperasi secara nyata.",
     "ctaBtn": "Mulai Konsultasi & Demo",
-    "backToProducts": "Kembali ke Beranda",
+    "backToProducts": "Kembali ke Katalog Produk",
     "hub": {
       "badge": "KATALOG PRODUK & SOLUSI MITRASOVA",
       "title": "Satu Ekosistem Software Untuk",
-      "titleGradient": "Pertumbuhan Bisnis Anda",
-      "description": "Eksplorasi solusi perangkat lunak terpadu: Kasir Offline Mode, HRIS & Payroll TER, Cloud Hosting Tier-4, dan Rekayasa Software Enterprise.",
-      "searchPlaceholder": "Cari nama produk, fitur, modul...",
-      "allCategory": "Semua Produk",
+      "titleGradient": "Akselerasi Pertumbuhan Bisnis Anda",
+      "description": "Eksplorasi solusi software terpadu: Kasir POS Offline-First, HRIS & Payroll TER Otomatis, Cloud Hosting Tier-4, dan Rekayasa Software Kustom.",
+      "searchPlaceholder": "Cari nama produk, modul fitur, atau kebutuhan...",
+      "allCategory": "Semua Solusi",
       "categories": {
-        "all": "Semua Produk",
+        "all": "Semua Solusi",
         "pos": "SaaS Kasir & POS",
         "hris": "HRIS & Payroll",
-        "cloud": "Cloud & Server",
-        "custom": "Custom Engineering"
+        "cloud": "Cloud & Managed VPS",
+        "custom": "Rekayasa Software Kustom"
       },
-      "emptyTitle": "Tidak ada produk yang cocok",
-      "emptyDesc": "Coba gunakan kata kunci pencarian atau pilih kategori solusi yang lain.",
+      "emptyTitle": "Belum ada produk yang cocok",
+      "emptyDesc": "Coba gunakan kata kunci pencarian yang lain atau pilih kategori solusi di atas.",
       "consultBadge": "KONSULTASI SOLUSI TERPADU",
-      "consultTitle": "Butuh Rekomendasi Solusi yang Paling Pas?",
+      "consultTitle": "Butuh Rekomendasi Solusi yang Paling Tepat?",
       "consultDesc": "Diskusikan alur operasional dan kebutuhan teknologi bisnis Anda bersama Solution Architect kami.",
       "consultBtn": "Jadwalkan Sesi Konsultasi"
     },
     "hero": {
-      "learnMoreExternal": "Pelajari Lebih Lanjut di Web Resmi",
-      "requestDemo": "Jadwalkan Demo",
-      "slaGuarantee": "99.9% Uptime SLA Guarantee",
-      "support": "Dedicated Support Solo Raya",
-      "prodGrade": "Production Grade Architecture"
+      "learnMoreExternal": "Pelajari Lebih Lanjut di Portal Resmi",
+      "requestDemo": "Jadwalkan Demo Interaktif",
+      "slaGuarantee": "Garansi 99.99% Uptime SLA",
+      "support": "Pendampingan Langsung Solo Raya",
+      "prodGrade": "Arsitektur Kualitas Produksi Enterprise"
     },
     "card": {
-      "viewDetail": "Lihat Detail",
-      "openWeb": "Buka Web Produk"
+      "viewDetail": "Lihat Rincian Modul",
+      "openWeb": "Kunjungi Portal Resmi"
     },
     "detail": {
-      "moreInfoTitle": "Ingin Mengetahui Lebih Lengkap Seputar {{title}}?",
-      "moreInfoDesc": "Akses website resmi produk untuk melihat panduan lengkap, demo interaktif, dan simulasi implementasi.",
-      "openOfficialWeb": "Buka Web Resmi {{title}}"
+      "moreInfoTitle": "Ingin Mengetahui Lebih Mendalam Seputar {{title}}?",
+      "moreInfoDesc": "Kunjungi portal resmi produk untuk melihat panduan teknis lengkap, simulasi modul, dan panduan integrasi.",
+      "openOfficialWeb": "Buka Portal Resmi {{title}}"
     },
     "features": {
       "badge": "Modul & Kapabilitas Unggulan",
       "title": "Dirancang Khusus Untuk",
-      "titleGradient": "Efisiensi Maksimal",
-      "description": "Setiap modul dikembangkan dengan standar rekayasa perangkat lunak enterprise untuk performa tinggi tanpa kendala.",
+      "titleGradient": "Efisiensi & Skalabilitas Maksimal",
+      "description": "Setiap modul dikembangkan dengan standar rekayasa software enterprise untuk performa tinggi tanpa kendala.",
       "provenBadge": "Teruji di lingkungan produksi & tersinkron real-time"
     },
     "useCases": {
-      "badge": "Target Penerapan",
+      "badge": "Skenario Penerapan Industri",
       "title": "Dirancang Pas Untuk Berbagai",
-      "titleGradient": "Karakteristik Bisnis",
-      "description": "Solusi yang fleksibel dan dapat dikonfigurasi sesuai dengan ukuran tim dan kompleksitas alur kerja perusahaan Anda.",
+      "titleGradient": "Karakteristik & Skala Bisnis",
+      "description": "Solusi fleksibel dan adaptif yang dapat dikonfigurasi sesuai dengan ukuran tim dan kompleksitas alur kerja perusahaan Anda.",
       "items": {
         "mitrasova-pos": [
           {
             "title": "Toko Ritel & Minimarket Modern",
-            "desc": "Kasir offline-first menjamin operasional antrean cepat tanpa lag walau koneksi mati listrik/internet.",
-            "benefits": ["Scan barcode instan", "Multi-kasir shift report", "Stok alert otomatis"]
+            "desc": "Arsitektur kasir offline-first menjamin operasional antrean kasir tetap cepat tanpa hambatan walau internet padam.",
+            "benefits": [
+              "Scan barcode responsif 0ms",
+              "Laporan tutup kasir & shift rapi",
+              "Peringatan stok minimum otomatis"
+            ]
           },
           {
             "title": "Ritel Fashion & Multi-Supplier Konsinyasi",
-            "desc": "Otomatisasi bagi hasil supplier konsinyasi, rekap faktur pembayaran, dan pemantauan retur barang.",
-            "benefits": ["Bagi komisi otomatis", "Cetak nota retur", "Rekonsiliasi faktur titipan"]
+            "desc": "Otomatisasi bagi hasil supplier konsinyasi, rekap faktur pembayaran berkala, dan pemantauan retur barang titipan.",
+            "benefits": [
+              "Bagi komisi supplier otomatis",
+              "Cetak nota retur konsinyasi",
+              "Rekonsiliasi faktur titipan instan"
+            ]
           },
           {
-            "title": "Jaringan Grosir & Multi-Cabang",
-            "desc": "Sinkronisasi persediaan stok lintas puluhan gudang cabang dan pencatatan buku besar akuntansi terpadu.",
-            "benefits": ["Transfer stok antar cabang", "Neraca saldo real-time", "Jurnal laba rugi instan"]
+            "title": "Jaringan Grosir & Toko Multi-Cabang",
+            "desc": "Sinkronisasi persediaan stok lintas puluhan gudang cabang dan pencatatan buku besar akuntansi terpadu secara real-time.",
+            "benefits": [
+              "Transfer stok antar gudang cabang",
+              "Neraca saldo real-time",
+              "Jurnal laba rugi transaksi instan"
+            ]
           }
         ],
         "mitrasova-daya": [
           {
-            "title": "Perusahaan Korporat & Enterprise",
-            "desc": "Kalkulasi ribuan slip gaji dengan potongan PPh 21 TER dan BPJS dalam 1 klik tanpa rumus excel.",
-            "benefits": ["Otomatisasi PPh 21 TER", "Export format bank transfer", "Audit log payroll"]
+            "title": "Perusahaan Korporat & Skala Enterprise",
+            "desc": "Kalkulasi ribuan slip gaji dengan potongan PPh 21 TER dan BPJS otomatis dalam 1 klik tanpa rumus excel manual.",
+            "benefits": [
+              "Otomatisasi pajak PPh 21 TER",
+              "Ekspor file format transfer bank CSV",
+              "Audit trail aktivitas penggajian"
+            ]
           },
           {
-            "title": "Pabrik & Operasional Multi-Shift",
-            "desc": "Manajemen shift roster fleksibel, lembur otomatis sesuai formula Depnaker, dan absensi GPS anti-fake.",
-            "benefits": ["Roster shift generator", "Perhitungan lembur otomatis", "Liveness face verification"]
+            "title": "Pabrik Manufaktur & Operasional Multi-Shift",
+            "desc": "Manajemen jadwal shift kerja bergilir yang fleksibel, kalkulasi lembur otomatis, dan absensi GPS anti-fake.",
+            "benefits": [
+              "Generator roster shift otomatis",
+              "Perhitungan lembur akurat",
+              "Verifikasi wajah liveness check"
+            ]
           },
           {
-            "title": "Perusahaan Remote & Hybrid Team",
-            "desc": "Aplikasi ESS karyawan untuk mengajukan cuti, lembur, klaim reimbursement, dan unduh slip gaji.",
-            "benefits": ["Self-service mobile ESS", "Persetujuan cuti instan", "Distribusi slip gaji PDF"]
+            "title": "Perusahaan Remote & Tim Kerja Hybrid",
+            "desc": "Aplikasi ESS karyawan untuk mengajukan cuti, lembur, klaim reimbursement, dan mengunduh slip gaji terenkripsi.",
+            "benefits": [
+              "Aplikasi ESS mobile karyawan",
+              "Persetujuan cuti instan oleh atasan",
+              "Distribusi slip gaji PDF via WhatsApp"
+            ]
           }
         ],
         "mitrasova-nexus": [
           {
             "title": "Aplikasi Enterprise & SaaS Mission-Critical",
-            "desc": "Infrastruktur cloud server dengan jaminan uptime 99.99% dan arsitektur redundant multi-zone.",
-            "benefits": ["NVMe PCIe 4.0 storage", "Anti-DDoS 2 Tbps", "Multi-region failover"]
+            "desc": "Infrastruktur cloud server dengan jaminan uptime 99.99% dan arsitektur redundan multi-zone.",
+            "benefits": [
+              "Storage NVMe PCIe 4.0 ultra-cepat",
+              "Proteksi anti-DDoS hingga 2 Tbps",
+              "Failover cadangan multi-region"
+            ]
           },
           {
-            "title": "Platform E-Commerce & Flash Sale",
-            "desc": "Auto-scaling cluster yang secara dinamis menambah node saat lonjakan trafik diskon tinggi.",
-            "benefits": ["Kubernetes auto-scale", "Low latency <15ms", "Edge CDN caching"]
+            "title": "Platform E-Commerce & Event Flash Sale",
+            "desc": "Klaster auto-scaling yang secara dinamis menambah kapasitas server saat lonjakan pengunjung belanja.",
+            "benefits": [
+              "Auto-scaling kontainer Kubernetes",
+              "Latensi query rendah <15ms",
+              "Distribusi Edge CDN global"
+            ]
           },
           {
-            "title": "Fintech & Basis Data Sensitif",
-            "desc": "Enkripsi backup harian off-site dan perlindungan perimeter firewall lapis keamanan standar ISO.",
-            "benefits": ["AES-256 encrypted snapshot", "Disaster recovery RPO menit", "24/7/365 NOC engineer"]
+            "title": "Fintech & Pengelolaan Basis Data Sensitif",
+            "desc": "Pencadangan terenkripsi harian ke lokasi off-site dan perlindungan firewall perimeter berstandar ISO.",
+            "benefits": [
+              "Enkripsi snapshot AES-256",
+              "Disaster recovery RPO hitungan menit",
+              "Pemantauan NOC engineer 24/7"
+            ]
           }
         ],
         "mitrasova-labs": [
           {
-            "title": "Perusahaan yang Membutuhkan Sistem Kustom",
-            "desc": "Pengembangan perangkat lunak kustom berskala besar dengan arsitektur microservices dan API modern.",
-            "benefits": ["Fullstack Next.js & Go/Node", "API REST & GraphQL", "100% Hak Milik Source Code"]
+            "title": "Perusahaan dengan Kebutuhan Sistem Khusus",
+            "desc": "Pengembangan software kustom berskala besar dengan arsitektur microservices dan API modern.",
+            "benefits": [
+              "Fullstack Next.js, Go/Node, PostgreSQL",
+              "Gateway API RESTful & GraphQL",
+              "100% Hak Milik Source Code Klien"
+            ]
           },
           {
-            "title": "Integrasi Sistem ERP Legacy",
+            "title": "Modernisasi & Integrasi Sistem ERP Legacy",
             "desc": "Menghubungkan software database lama (SAP, Oracle, AS400) dengan aplikasi modern via gateway API terpadu.",
-            "benefits": ["Data sync pipeline", "Audit keamanan OWASP", "Zero downtime transition"]
+            "benefits": [
+              "Pipeline sinkronisasi data aman",
+              "Audit kepatuhan OWASP Top 10",
+              "Migrasi sistem tanpa downtime bisnis"
+            ]
           },
           {
             "title": "Aplikasi Mobile Native iOS & Android",
-            "desc": "Pembuatan aplikasi seluler performa tinggi untuk pelanggan atau operasional lapangan staf.",
-            "benefits": ["Cross-platform & Native", "Offline cache support", "Push notification gateway"]
+            "desc": "Pembangunan aplikasi mobile performa tinggi untuk pelanggan maupun operasional staf di lapangan.",
+            "benefits": [
+              "Cross-platform & Native architecture",
+              "Mendukung penyimpanan offline cache",
+              "Gateway push notification cepat"
+            ]
           }
         ]
       }
@@ -658,23 +771,23 @@
     }
   },
   "footer": {
-    "brandDesc": "Mitrasova Digital Solutions adalah penyedia teknologi dan rekayasa perangkat lunak enterprise. Menghadirkan solusi POS Kasir Offline, HRIS & Payroll, Managed Cloud Server, Custom Web & Mobile App.",
+    "brandDesc": "Mitrasova Digital Solutions adalah penyedia teknologi dan rekayasa software enterprise. Menghadirkan solusi POS Kasir Offline-First, HRIS & Payroll TER, Managed Cloud Tier-4, serta Rekayasa Custom Web & Mobile App.",
     "productSuite": "Ekosistem Produk",
     "pos": "Mitrasova POS",
     "daya": "Mitrasova Daya (HRIS)",
     "nexus": "Mitrasova Nexus (Cloud)",
     "labs": "Mitrasova Labs (Custom App)",
-    "publications": "Blog & Publikasi",
-    "insights": "Wawasan & Artikel",
-    "news": "Berita & Pengumuman",
-    "events": "Events & Seminar",
+    "publications": "Artikel & Jurnal",
+    "insights": "Artikel & Panduan",
+    "news": "Kabar & Siaran Pers",
+    "events": "Agenda & Meetup",
     "releases": "Catatan Rilis Produk",
     "contact": "Hubungi Kami",
     "navLinks": {
       "products": "Produk",
       "services": "Layanan",
       "consultation": "Konsultasi",
-      "blog": "Blog & Kabar"
+      "blog": "Blog & Jurnal"
     }
   },
   "console": {
@@ -682,8 +795,8 @@
       "title": "CONSOLE",
       "status": "ONLINE",
       "dashboard": "Dashboard",
-      "newPost": "New Post",
-      "liveSite": "Live Site",
+      "newPost": "Tulisan Baru",
+      "liveSite": "Lihat Web",
       "logout": "Keluar"
     }
   }
