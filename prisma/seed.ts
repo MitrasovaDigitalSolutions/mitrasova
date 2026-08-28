@@ -57,27 +57,27 @@ async function main() {
   console.log('📁 Membuat Master Categories...');
   const categoriesData = [
     {
-      name: 'Wawasan & Panduan',
+      name: 'Tips & Panduan',
       slug: 'wawasan-blog',
-      description: 'Kajian mendalam seputar strategi bisnis ritel, HRIS & perpajakan, arsitektur cloud, dan rekayasa perangkat lunak enterprise.',
+      description: 'Panduan praktis seputar pengelolaan kasir ritel, tips HR & payroll karyawan, teknologi cloud, dan arsitektur software.',
       order: 1,
     },
     {
-      name: 'Kabar & Siaran Pers',
+      name: 'Kabar & Berita',
       slug: 'berita-media',
-      description: 'Kabar resmi, siaran pers, kemitraan strategis, dan pengumuman korporasi Mitrasova Digital Solutions.',
+      description: 'Kabar resmi, cerita kemitraan, dan pengumuman terbaru dari Mitrasova Digital Solutions.',
       order: 2,
     },
     {
-      name: 'Agenda & Meetup',
+      name: 'Agenda Event',
       slug: 'event-agenda',
-      description: 'Agenda temu teknologi, workshop digitalisasi operasional, seminar industri, dan webinar live interaktif.',
+      description: 'Agenda temu komunitas bisnis, workshop operasional, seminar toko ritel, dan webinar online.',
       order: 3,
     },
     {
-      name: 'Catatan Rilis',
+      name: 'Update Produk',
       slug: 'rilis-produk',
-      description: 'Catatan rilis berkala, changelog sistem, dan dokumentasi peluncuran fitur baru produk Mitrasova.',
+      description: 'Informasi pembaruan fitur, peningkatan performa, dan catatan rilis sistem Mitrasova.',
       order: 4,
     },
   ];
