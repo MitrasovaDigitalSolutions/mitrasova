@@ -155,17 +155,9 @@ export const BlogArticleContainer: React.FC<BlogArticleProps> = ({
         {/* Event Banner (if Event post) */}
         {isEvent && <EventBanner post={post} />}
 
-        {/* Article Prose Body (Clean & Centered Reading Experience) */}
+        {/* Article Prose Body (Clean & Centered Reading Experience - 1:1 Identical with Console Editor) */}
         <main
-          className="blog-article-content prose prose-invert prose-indigo max-w-none 
-            prose-headings:font-bold prose-headings:tracking-tight prose-headings:text-white
-            prose-h2:text-2xl sm:prose-h2:text-3xl prose-h2:pt-8 prose-h2:pb-2 prose-h2:border-t prose-h2:border-slate-800/80
-            prose-h3:text-xl prose-h3:text-cyan-300 prose-h3:pt-4
-            prose-p:text-slate-300 prose-p:leading-relaxed prose-p:text-base sm:prose-p:text-lg
-            prose-li:text-slate-300 prose-li:text-base sm:prose-li:text-lg prose-li:my-1
-            prose-strong:text-white prose-strong:font-bold
-            prose-code:text-cyan-300 prose-code:bg-slate-900/90 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:border prose-code:border-slate-800
-            prose-pre:bg-slate-950 prose-pre:border prose-pre:border-slate-800/90"
+          className="blog-article-content w-full"
           dangerouslySetInnerHTML={{ __html: post.contentHtml }}
         />
 
